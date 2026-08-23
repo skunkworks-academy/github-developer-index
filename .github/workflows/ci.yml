@@ -23,11 +23,17 @@ jobs:
       - name: Run unit tests
         run: npm test
 
-      - name: Smoke-test live GitHub collection
+      - name: Smoke-test South Africa collection
         env:
           GH_TOKEN: ${{ github.token }}
           MAX_CANDIDATES: 5
         run: npm run collect:za
+
+      - name: Smoke-test generic country collection
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MAX_CANDIDATES: 2
+        run: node scripts/collect.mjs PT
 
       - name: Validate generated data and site contract
         run: npm run validate
