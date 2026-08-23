@@ -1,0 +1,58 @@
+name: Refresh GitHub Developer Index
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'scripts/**'
+      - 'package.json'
+      - '.github/workflows/refresh-index.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: github-developer-index-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh-south-africa:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v5
+        with:
+          ref: main
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24
+
+      - name: Collect and rank South Africa
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run collect:za
+
+      - name: Validate snapshot
+        run: |
+          npm test
+          npm run validate
+
+      - name: Commit refreshed dataset
+        shell: bash
+        run: |
+          if git diff --quiet -- public/data/ZA.json; then
+            echo "No dataset changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/ZA.json
+          git commit -m "data: refresh South Africa developer index"
+          git push origin HEAD:main
