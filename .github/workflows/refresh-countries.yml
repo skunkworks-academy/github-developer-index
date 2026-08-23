@@ -1,0 +1,72 @@
+name: Refresh Country Datasets
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '41 2 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'src/github/collect-country.mjs'
+      - 'src/locations/countries.mjs'
+      - 'scripts/collect.mjs'
+      - 'scripts/write-country-registry.mjs'
+      - '.github/workflows/refresh-countries.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: github-developer-index-country-refresh
+  cancel-in-progress: true
+
+jobs:
+  refresh-countries:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24
+
+      - name: Collect supported countries
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MAX_CANDIDATES: 50
+          HISTORY_YEARS: 5
+        shell: bash
+        run: |
+          set -euo pipefail
+          for code in BW CM RW NG KE GH EG MA PT MX US GB CA DE FR NL IN BR AU; do
+            echo "Collecting ${code}"
+            node scripts/collect.mjs "${code}"
+          done
+
+      - name: Rebuild public country registry
+        run: npm run registry
+
+      - name: Validate generated datasets
+        run: |
+          npm test
+          npm run validate
+
+      - name: Commit refreshed country datasets
+        shell: bash
+        run: |
+          if git diff --quiet -- public/data; then
+            echo "No country dataset changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data
+          git commit -m "data: refresh country developer indexes"
+          git pull --rebase origin main
+          git push origin HEAD:main
