@@ -9,7 +9,9 @@ on:
       - 'public/**'
       - '.github/workflows/pages.yml'
   workflow_run:
-    workflows: ['Refresh GitHub Developer Index']
+    workflows:
+      - 'Refresh GitHub Developer Index'
+      - 'Refresh Country Datasets'
     types: [completed]
 
 permissions:
