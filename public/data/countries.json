@@ -1,8 +1,22 @@
 [
-  {
-    "code": "ZA",
-    "name": "South Africa",
-    "status": "foundation-poc",
-    "dataset": "data/ZA.json"
-  }
+  {"code":"AU","name":"Australia","status":"pending","dataset":"data/AU.json"},
+  {"code":"BW","name":"Botswana","status":"pending","dataset":"data/BW.json"},
+  {"code":"BR","name":"Brazil","status":"pending","dataset":"data/BR.json"},
+  {"code":"CM","name":"Cameroon","status":"pending","dataset":"data/CM.json"},
+  {"code":"CA","name":"Canada","status":"pending","dataset":"data/CA.json"},
+  {"code":"EG","name":"Egypt","status":"pending","dataset":"data/EG.json"},
+  {"code":"FR","name":"France","status":"pending","dataset":"data/FR.json"},
+  {"code":"DE","name":"Germany","status":"pending","dataset":"data/DE.json"},
+  {"code":"GH","name":"Ghana","status":"pending","dataset":"data/GH.json"},
+  {"code":"IN","name":"India","status":"pending","dataset":"data/IN.json"},
+  {"code":"KE","name":"Kenya","status":"pending","dataset":"data/KE.json"},
+  {"code":"MX","name":"Mexico","status":"pending","dataset":"data/MX.json"},
+  {"code":"MA","name":"Morocco","status":"pending","dataset":"data/MA.json"},
+  {"code":"NL","name":"Netherlands","status":"pending","dataset":"data/NL.json"},
+  {"code":"NG","name":"Nigeria","status":"pending","dataset":"data/NG.json"},
+  {"code":"PT","name":"Portugal","status":"pending","dataset":"data/PT.json"},
+  {"code":"RW","name":"Rwanda","status":"pending","dataset":"data/RW.json"},
+  {"code":"ZA","name":"South Africa","status":"live","dataset":"data/ZA.json"},
+  {"code":"GB","name":"United Kingdom","status":"pending","dataset":"data/GB.json"},
+  {"code":"US","name":"United States","status":"pending","dataset":"data/US.json"}
 ]
