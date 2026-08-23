@@ -30,10 +30,11 @@ button, input, select { font: inherit; }
 h1 { margin: 0; color: var(--strong); font-size: clamp(2.2rem, 6vw, 4.5rem); line-height: .98; letter-spacing: -.05em; }
 .lede { max-width: 760px; margin: 1rem 0 0; color: var(--muted); font-size: 1.02rem; }
 .repo-link { padding: .7rem .9rem; border: 1px solid var(--border); border-radius: 9px; background: var(--surface); color: var(--strong); text-decoration: none; font-weight: 700; }
-.controls { display: grid; grid-template-columns: 1fr 1fr 1.2fr; gap: .9rem; margin: 1.3rem 0; padding: 1rem; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); }
+.controls { display: grid; grid-template-columns: .9fr .9fr 1fr 1.25fr; gap: .9rem; margin: 1.3rem 0; padding: 1rem; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); }
+.controls label { min-width: 0; }
 .controls label span { display: block; margin-bottom: .35rem; color: var(--muted); font-size: .72rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
 select, input { width: 100%; min-height: 46px; padding: .7rem .8rem; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--strong); }
-.summary { display: grid; grid-template-columns: repeat(4,1fr); gap: .8rem; }
+.summary { display: grid; grid-template-columns: repeat(5,1fr); gap: .8rem; }
 .summary article { min-width: 0; padding: 1rem; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
 .summary span { display: block; color: var(--muted); font-size: .7rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
 .summary strong { display: block; margin-top: .3rem; color: var(--strong); overflow-wrap: anywhere; }
@@ -61,6 +62,10 @@ tbody tr:last-child td { border-bottom: 0; }
 .cards { display: none; }
 footer { margin-top: 1.5rem; color: var(--muted); font-size: .8rem; }
 
+@media (max-width: 1050px) {
+  .controls { grid-template-columns: 1fr 1fr; }
+  .summary { grid-template-columns: repeat(3,1fr); }
+}
 @media (max-width: 850px) {
   .hero { grid-template-columns: 1fr; align-items: start; }
   .repo-link { justify-self: start; }
