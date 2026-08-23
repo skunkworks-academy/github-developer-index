@@ -5,6 +5,7 @@
     country: document.querySelector('#country'),
     period: document.querySelector('#period'),
     metric: document.querySelector('#metric'),
+    activityFilter: document.querySelector('#activity-filter'),
     search: document.querySelector('#search'),
     rows: document.querySelector('#rows'),
     cards: document.querySelector('#cards'),
@@ -26,7 +27,8 @@
     dataset: null,
     query: '',
     period: 'rolling',
-    metric: 'overall'
+    metric: 'overall',
+    activityFilter: 'all'
   };
 
   const fmt = new Intl.NumberFormat();
@@ -74,6 +76,10 @@
     };
   }
 
+  function isActiveContributor(developer) {
+    return selectedActivity(developer).contributions > 0;
+  }
+
   function metricValue(developer) {
     const activity = selectedActivity(developer);
 
@@ -91,19 +97,27 @@
     }
   }
 
-  function currentDevelopers() {
+  function filteredDevelopers() {
     const source = Array.isArray(state.dataset?.developers) ? [...state.dataset.developers] : [];
-    source.sort((a, b) => metricValue(b) - metricValue(a) || a.rank - b.rank);
+    const activityFiltered = state.activityFilter === 'active'
+      ? source.filter(isActiveContributor)
+      : source;
+
+    activityFiltered.sort((a, b) => metricValue(b) - metricValue(a) || a.rank - b.rank);
 
     const query = state.query.trim().toLowerCase();
-    if (!query) return source.slice(0, 20);
+    if (!query) return activityFiltered;
 
-    return source.filter((developer) => [
+    return activityFiltered.filter((developer) => [
       developer.login,
       developer.name,
       developer.company,
       developer.location?.raw
-    ].map((value) => clean(value, '')).join(' ').toLowerCase().includes(query)).slice(0, 20);
+    ].map((value) => clean(value, '')).join(' ').toLowerCase().includes(query));
+  }
+
+  function currentDevelopers() {
+    return filteredDevelopers().slice(0, 20);
   }
 
   function developerIdentity(developer) {
@@ -269,6 +283,10 @@
   function render() {
     const developers = currentDevelopers();
     const total = state.dataset?.developers?.length ?? 0;
+    const activeTotal = Array.isArray(state.dataset?.developers)
+      ? state.dataset.developers.filter(isActiveContributor).length
+      : 0;
+    const filteredTotal = filteredDevelopers().length;
     const hasData = total > 0;
     const period = periodLabel();
 
@@ -281,13 +299,20 @@
       ? new Date(state.dataset.generatedAt).toLocaleString()
       : 'Awaiting first refresh';
 
-    els.status.textContent = hasData
-      ? `Loaded ${fmt.format(total)} developers. Showing top ${developers.length} for ${period}.`
-      : 'Dataset is ready; run the refresh workflow to populate live GitHub data.';
+    if (hasData) {
+      const activityText = state.activityFilter === 'active'
+        ? `${fmt.format(activeTotal)} active contributors in ${period}`
+        : `${fmt.format(total)} indexed developers`;
+      els.status.textContent = `${activityText}. Showing ${developers.length} of ${fmt.format(filteredTotal)} matching results.`;
+    } else {
+      els.status.textContent = 'Dataset is ready; run the refresh workflow to populate live GitHub data.';
+    }
 
     els.empty.hidden = developers.length !== 0;
     els.empty.textContent = hasData
-      ? 'No developers match the current search and period.'
+      ? state.activityFilter === 'active'
+        ? 'No active contributors match the current country, period and search filters.'
+        : 'No developers match the current search and period.'
       : 'No live developer records yet. Trigger “Refresh GitHub Developer Index” in GitHub Actions.';
 
     renderTable(developers);
@@ -337,6 +362,10 @@
     render();
   });
   els.metric.addEventListener('change', () => { state.metric = els.metric.value; render(); });
+  els.activityFilter.addEventListener('change', () => {
+    state.activityFilter = els.activityFilter.value;
+    render();
+  });
   els.search.addEventListener('input', () => { state.query = els.search.value; render(); });
 
   init();

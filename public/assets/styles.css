@@ -30,7 +30,7 @@ button, input, select { font: inherit; }
 h1 { margin: 0; color: var(--strong); font-size: clamp(2.2rem, 6vw, 4.5rem); line-height: .98; letter-spacing: -.05em; }
 .lede { max-width: 760px; margin: 1rem 0 0; color: var(--muted); font-size: 1.02rem; }
 .repo-link { padding: .7rem .9rem; border: 1px solid var(--border); border-radius: 9px; background: var(--surface); color: var(--strong); text-decoration: none; font-weight: 700; }
-.controls { display: grid; grid-template-columns: .9fr .9fr 1fr 1.25fr; gap: .9rem; margin: 1.3rem 0; padding: 1rem; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); }
+.controls { display: grid; grid-template-columns: .9fr .9fr 1fr 1.1fr 1.25fr; gap: .9rem; margin: 1.3rem 0; padding: 1rem; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); }
 .controls label { min-width: 0; }
 .controls label span { display: block; margin-bottom: .35rem; color: var(--muted); font-size: .72rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
 select, input { width: 100%; min-height: 46px; padding: .7rem .8rem; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--strong); }
