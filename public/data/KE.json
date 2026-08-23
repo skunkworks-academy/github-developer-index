@@ -1,11 +1,2600 @@
 {
   "schemaVersion": 1,
-  "generatedAt": null,
-  "source": {"provider":"GitHub","api":"GraphQL","officialLeaderboard":false},
-  "country": {"code":"KE","name":"Kenya"},
-  "availableYears": [],
-  "calendarWindows": [],
-  "methodology": {"version":"1.0.0","weights":{"activity":0.45,"impact":0.25,"community":0.15,"collaboration":0.15},"windowDays":365,"notes":["Pending first live refresh."]},
-  "collection": {"discoveredCandidates":0,"acceptedCandidates":0,"rejectedCandidates":0,"window":null},
-  "developers": []
+  "generatedAt": "2026-08-23T21:41:50.459Z",
+  "source": {
+    "provider": "GitHub",
+    "api": "GraphQL",
+    "officialLeaderboard": false
+  },
+  "country": {
+    "code": "KE",
+    "name": "Kenya"
+  },
+  "availableYears": [
+    2026,
+    2025,
+    2024,
+    2023,
+    2022
+  ],
+  "calendarWindows": [
+    {
+      "year": 2026,
+      "from": "2026-01-01T00:00:00.000Z",
+      "to": "2026-08-23T21:41:50.459Z",
+      "complete": false
+    },
+    {
+      "year": 2025,
+      "from": "2025-01-01T00:00:00.000Z",
+      "to": "2025-12-31T23:59:59.999Z",
+      "complete": true
+    },
+    {
+      "year": 2024,
+      "from": "2024-01-01T00:00:00.000Z",
+      "to": "2024-12-31T23:59:59.999Z",
+      "complete": true
+    },
+    {
+      "year": 2023,
+      "from": "2023-01-01T00:00:00.000Z",
+      "to": "2023-12-31T23:59:59.999Z",
+      "complete": true
+    },
+    {
+      "year": 2022,
+      "from": "2022-01-01T00:00:00.000Z",
+      "to": "2022-12-31T23:59:59.999Z",
+      "complete": true
+    }
+  ],
+  "methodology": {
+    "version": "1.0.0",
+    "weights": {
+      "activity": 0.45,
+      "impact": 0.25,
+      "community": 0.15,
+      "collaboration": 0.15
+    },
+    "windowDays": 365,
+    "notes": [
+      "Candidate discovery uses GitHub user search location qualifiers.",
+      "Country resolution uses explicit country aliases plus a bounded set of recognized cities.",
+      "Repository impact samples up to the 100 most-starred public repositories owned by each user.",
+      "Calendar-year filters use GitHub contribution activity for the selected year; current stars and followers are not historical snapshots.",
+      "The index is independent and is not an official GitHub ranking."
+    ]
+  },
+  "collection": {
+    "discoveredCandidates": 30,
+    "acceptedCandidates": 30,
+    "rejectedCandidates": 0,
+    "window": {
+      "from": "2025-08-23T21:41:50.459Z",
+      "to": "2026-08-23T21:41:50.459Z"
+    }
+  },
+  "developers": [
+    {
+      "login": "Dark-Xploit",
+      "name": "Tylor",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/185170039?u=28ec9277a853deac7f48342ef9884106874b950d&v=4",
+      "profileUrl": "https://github.com/Dark-Xploit",
+      "bio": "Darkness isn't just a theme, it's the codebase. #Dark-Xploit",
+      "company": null,
+      "accountCreatedAt": "2024-10-16T06:39:44Z",
+      "location": {
+        "raw": "Kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1498,
+        "contributions365d": 15473,
+        "commits365d": 227,
+        "issues365d": 0,
+        "pullRequests365d": 7,
+        "reviews365d": 0,
+        "restrictedContributions365d": 15214,
+        "publicRepositories": 23,
+        "repositoriesSampled": 23,
+        "repoStatsTruncated": false,
+        "starsReceived": 4330,
+        "forksReceived": 11038,
+        "archivedRepositoriesSampled": 1
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 231,
+          "commits": 44,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 178
+        },
+        "2025": {
+          "contributions": 1261,
+          "commits": 540,
+          "issues": 0,
+          "pullRequests": 15,
+          "reviews": 0,
+          "restrictedContributions": 692
+        },
+        "2026": {
+          "contributions": 15419,
+          "commits": 208,
+          "issues": 0,
+          "pullRequests": 7,
+          "reviews": 0,
+          "restrictedContributions": 15180
+        }
+      },
+      "scores": {
+        "overall": 85.79,
+        "activity": 100,
+        "impact": 100,
+        "community": 68.84,
+        "collaboration": 36.46
+      },
+      "rank": 1
+    },
+    {
+      "login": "fbiego",
+      "name": "Felix Biego",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/45796740?u=12f5bcd3ecc9cdee7c39dfb2194c5b62675e8022&v=4",
+      "profileUrl": "https://github.com/fbiego",
+      "bio": "Embedded UI Developer",
+      "company": "LVGL kft @lvgl",
+      "accountCreatedAt": "2018-12-11T16:35:22Z",
+      "location": {
+        "raw": "Kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1606,
+        "contributions365d": 8174,
+        "commits365d": 7175,
+        "issues365d": 6,
+        "pullRequests365d": 23,
+        "reviews365d": 13,
+        "restrictedContributions365d": 924,
+        "publicRepositories": 219,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 2891,
+        "forksReceived": 609,
+        "archivedRepositoriesSampled": 1
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 529501,
+          "commits": 528077,
+          "issues": 3,
+          "pullRequests": 1,
+          "reviews": 3,
+          "restrictedContributions": 1381
+        },
+        "2023": {
+          "contributions": 27685,
+          "commits": 26827,
+          "issues": 4,
+          "pullRequests": 3,
+          "reviews": 1,
+          "restrictedContributions": 828
+        },
+        "2024": {
+          "contributions": 25350,
+          "commits": 23941,
+          "issues": 4,
+          "pullRequests": 14,
+          "reviews": 7,
+          "restrictedContributions": 1345
+        },
+        "2025": {
+          "contributions": 9590,
+          "commits": 8803,
+          "issues": 7,
+          "pullRequests": 51,
+          "reviews": 57,
+          "restrictedContributions": 634
+        },
+        "2026": {
+          "contributions": 4691,
+          "commits": 4031,
+          "issues": 3,
+          "pullRequests": 8,
+          "reviews": 6,
+          "restrictedContributions": 628
+        }
+      },
+      "scores": {
+        "overall": 82.98,
+        "activity": 93.39,
+        "impact": 81.73,
+        "community": 69.49,
+        "collaboration": 67.31
+      },
+      "rank": 2
+    },
+    {
+      "login": "iVGeek",
+      "name": "iVGeek",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/48223278?u=97384f842e1d980ddf9f495835ee19bcf75d34ce&v=4",
+      "profileUrl": "https://github.com/iVGeek",
+      "bio": "A kaffeinating nerd on a journey to vulnerability research.",
+      "company": "W∆K∆ND∆",
+      "accountCreatedAt": "2019-03-04T19:55:11Z",
+      "location": {
+        "raw": "Kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1741,
+        "contributions365d": 11996,
+        "commits365d": 653,
+        "issues365d": 0,
+        "pullRequests365d": 4,
+        "reviews365d": 25,
+        "restrictedContributions365d": 11287,
+        "publicRepositories": 109,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 116,
+        "forksReceived": 6,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1496,
+          "commits": 1474,
+          "issues": 1,
+          "pullRequests": 5,
+          "reviews": 0,
+          "restrictedContributions": 2
+        },
+        "2023": {
+          "contributions": 2715,
+          "commits": 2639,
+          "issues": 6,
+          "pullRequests": 3,
+          "reviews": 0,
+          "restrictedContributions": 35
+        },
+        "2024": {
+          "contributions": 6495,
+          "commits": 431,
+          "issues": 1,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 6035
+        },
+        "2025": {
+          "contributions": 27735,
+          "commits": 414,
+          "issues": 0,
+          "pullRequests": 3,
+          "reviews": 1,
+          "restrictedContributions": 27291
+        },
+        "2026": {
+          "contributions": 3028,
+          "commits": 420,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 24,
+          "restrictedContributions": 2574
+        }
+      },
+      "scores": {
+        "overall": 76.14,
+        "activity": 97.36,
+        "impact": 47.73,
+        "community": 70.25,
+        "collaboration": 65.74
+      },
+      "rank": 3
+    },
+    {
+      "login": "HarunMbaabu",
+      "name": "Harun Mbaabu ",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/51136314?u=ecf0fd5888f7a9fa6045adf3eb3ae5cd01a136ec&v=4",
+      "profileUrl": "https://github.com/HarunMbaabu",
+      "bio": "Data Engineer at NCBA Group Plc.",
+      "company": null,
+      "accountCreatedAt": "2019-05-28T20:04:45Z",
+      "location": {
+        "raw": "Nairobi, Kenya.",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": "Nairobi",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 973,
+        "contributions365d": 805,
+        "commits365d": 345,
+        "issues365d": 1,
+        "pullRequests365d": 47,
+        "reviews365d": 0,
+        "restrictedContributions365d": 392,
+        "publicRepositories": 134,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 803,
+        "forksReceived": 233,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 120,
+          "commits": 98,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 15
+        },
+        "2023": {
+          "contributions": 339,
+          "commits": 237,
+          "issues": 13,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 70
+        },
+        "2024": {
+          "contributions": 160,
+          "commits": 103,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 1,
+          "restrictedContributions": 48
+        },
+        "2025": {
+          "contributions": 339,
+          "commits": 262,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 1,
+          "restrictedContributions": 68
+        },
+        "2026": {
+          "contributions": 713,
+          "commits": 289,
+          "issues": 1,
+          "pullRequests": 47,
+          "reviews": 0,
+          "restrictedContributions": 359
+        }
+      },
+      "scores": {
+        "overall": 68.69,
+        "activity": 69.37,
+        "impact": 70.19,
+        "community": 64.78,
+        "collaboration": 68.05
+      },
+      "rank": 4
+    },
+    {
+      "login": "jumaallan",
+      "name": "Juma Allan",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/25085146?u=3c574e95ababae0a5f65e30ebc4549bb6bce7f7a&v=4",
+      "profileUrl": "https://github.com/jumaallan",
+      "bio": "Mobile @ SmileID",
+      "company": "@smileidentity",
+      "accountCreatedAt": "2017-01-12T17:15:04Z",
+      "location": {
+        "raw": "Nairobi Kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": "Nairobi",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1433,
+        "contributions365d": 264,
+        "commits365d": 48,
+        "issues365d": 1,
+        "pullRequests365d": 48,
+        "reviews365d": 167,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 32,
+        "repositoriesSampled": 32,
+        "repoStatsTruncated": false,
+        "starsReceived": 466,
+        "forksReceived": 326,
+        "archivedRepositoriesSampled": 3
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 268,
+          "commits": 170,
+          "issues": 4,
+          "pullRequests": 35,
+          "reviews": 52,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 298,
+          "commits": 151,
+          "issues": 1,
+          "pullRequests": 49,
+          "reviews": 88,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 200,
+          "commits": 57,
+          "issues": 0,
+          "pullRequests": 64,
+          "reviews": 78,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 375,
+          "commits": 94,
+          "issues": 2,
+          "pullRequests": 77,
+          "reviews": 202,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 150,
+          "commits": 31,
+          "issues": 1,
+          "pullRequests": 33,
+          "reviews": 85,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 68.53,
+        "activity": 57.84,
+        "impact": 68.95,
+        "community": 68.42,
+        "collaboration": 100
+      },
+      "rank": 5
+    },
+    {
+      "login": "omololevy",
+      "name": "Levy Omolo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/89441139?u=2a6a4c443499d10fa92b3f71b3b2317c59eb1bbc&v=4",
+      "profileUrl": "https://github.com/omololevy",
+      "bio": "Tech Lead & S. Engineer,\r\nComputer Science,\r\nMachine Learning ||\r\n(Python), (JavaScript), (TypeScript)",
+      "company": "| @cotechie-org | @Kiungor | @armjscom | @UTAWALA | @chesslablab | @masen0university |",
+      "accountCreatedAt": "2021-08-24T05:19:39Z",
+      "location": {
+        "raw": "Nairobi, Kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": "Nairobi",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 3894,
+        "contributions365d": 4778,
+        "commits365d": 17,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 4760,
+        "publicRepositories": 126,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 330,
+        "forksReceived": 24,
+        "archivedRepositoriesSampled": 2
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 11925,
+          "commits": 10119,
+          "issues": 8,
+          "pullRequests": 121,
+          "reviews": 0,
+          "restrictedContributions": 1607
+        },
+        "2023": {
+          "contributions": 11711,
+          "commits": 10841,
+          "issues": 1,
+          "pullRequests": 47,
+          "reviews": 0,
+          "restrictedContributions": 802
+        },
+        "2024": {
+          "contributions": 15053,
+          "commits": 12977,
+          "issues": 0,
+          "pullRequests": 3,
+          "reviews": 0,
+          "restrictedContributions": 2065
+        },
+        "2025": {
+          "contributions": 6871,
+          "commits": 3431,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 3439
+        },
+        "2026": {
+          "contributions": 4403,
+          "commits": 17,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 4386
+        }
+      },
+      "scores": {
+        "overall": 65.77,
+        "activity": 87.82,
+        "impact": 58.32,
+        "community": 77.82,
+        "collaboration": 0
+      },
+      "rank": 6
+    },
+    {
+      "login": "Obraims",
+      "name": "Stephen Baraka",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/194851135?u=2605facf08207632b13f344f4eadcae1a8512702&v=4",
+      "profileUrl": "https://github.com/Obraims",
+      "bio": "Software Engineering Student | Full-Stack Development | Systems Programming | Data Science",
+      "company": " Open University of Kenya (OUK)",
+      "accountCreatedAt": "2025-01-13T21:11:00Z",
+      "location": {
+        "raw": "kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 977,
+        "contributions365d": 4405,
+        "commits365d": 190,
+        "issues365d": 0,
+        "pullRequests365d": 9,
+        "reviews365d": 3,
+        "restrictedContributions365d": 4184,
+        "publicRepositories": 23,
+        "repositoriesSampled": 23,
+        "repoStatsTruncated": false,
+        "starsReceived": 32,
+        "forksReceived": 1,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 277,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 277
+        },
+        "2025": {
+          "contributions": 2841,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 2834
+        },
+        "2026": {
+          "contributions": 3107,
+          "commits": 190,
+          "issues": 0,
+          "pullRequests": 9,
+          "reviews": 3,
+          "restrictedContributions": 2888
+        }
+      },
+      "scores": {
+        "overall": 64.63,
+        "activity": 86.98,
+        "impact": 34.92,
+        "community": 64.82,
+        "collaboration": 46.88
+      },
+      "rank": 7
+    },
+    {
+      "login": "ADAMSmugwe",
+      "name": "Adams Mugwe",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/200044252?u=f79e76df1adb8f989f9c13f1bf639c39a2c94ea7&v=4",
+      "profileUrl": "https://github.com/ADAMSmugwe",
+      "bio": "A machine learning engineer. \r\nHey Dev!\r\n",
+      "company": "Safaricom PLC",
+      "accountCreatedAt": "2025-02-20T07:32:53Z",
+      "location": {
+        "raw": "Nairobi,Kenya.",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": "Nairobi",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 831,
+        "contributions365d": 2921,
+        "commits365d": 1252,
+        "issues365d": 0,
+        "pullRequests365d": 6,
+        "reviews365d": 0,
+        "restrictedContributions365d": 1639,
+        "publicRepositories": 30,
+        "repositoriesSampled": 30,
+        "repoStatsTruncated": false,
+        "starsReceived": 51,
+        "forksReceived": 25,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 3201,
+          "commits": 52,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 3134
+        },
+        "2026": {
+          "contributions": 1409,
+          "commits": 1213,
+          "issues": 0,
+          "pullRequests": 6,
+          "reviews": 0,
+          "restrictedContributions": 174
+        }
+      },
+      "scores": {
+        "overall": 63.19,
+        "activity": 82.72,
+        "impact": 45.43,
+        "community": 63.29,
+        "collaboration": 34.12
+      },
+      "rank": 8
+    },
+    {
+      "login": "vickkie",
+      "name": "Victor Kamau ",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/43224578?u=7cdd9ebeba01881d9e04f19ebe134cd6d6b145d3&v=4",
+      "profileUrl": "https://github.com/vickkie",
+      "bio": "Programmer,\r\nUI/UX designer,                          \r\nDeveloper ",
+      "company": "@BelvaDigitalke",
+      "accountCreatedAt": "2018-09-13T00:43:55Z",
+      "location": {
+        "raw": "Kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1058,
+        "contributions365d": 1708,
+        "commits365d": 160,
+        "issues365d": 1,
+        "pullRequests365d": 10,
+        "reviews365d": 0,
+        "restrictedContributions365d": 1534,
+        "publicRepositories": 37,
+        "repositoriesSampled": 37,
+        "repoStatsTruncated": false,
+        "starsReceived": 88,
+        "forksReceived": 15,
+        "archivedRepositoriesSampled": 1
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 27,
+          "commits": 22,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 1398,
+          "commits": 978,
+          "issues": 5,
+          "pullRequests": 57,
+          "reviews": 1,
+          "restrictedContributions": 323
+        },
+        "2025": {
+          "contributions": 970,
+          "commits": 389,
+          "issues": 1,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 575
+        },
+        "2026": {
+          "contributions": 1321,
+          "commits": 94,
+          "issues": 1,
+          "pullRequests": 10,
+          "reviews": 0,
+          "restrictedContributions": 1213
+        }
+      },
+      "scores": {
+        "overall": 62.72,
+        "activity": 77.16,
+        "impact": 46.94,
+        "community": 65.56,
+        "collaboration": 42.82
+      },
+      "rank": 9
+    },
+    {
+      "login": "Maxwell-Muthui-Mwangi",
+      "name": "Maxwell Muthui Mwangi(Justmwangii)",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/146504812?u=2790017a9641510f095603ba541974fad01d8f71&v=4",
+      "profileUrl": "https://github.com/Maxwell-Muthui-Mwangi",
+      "bio": "👋 Hi, I’m Maxwell Muthui Mwangi — a Full Stack Developer, Webmaster, Digital Learning Programmer, and AI & Cybersecurity Engineer with 3+ years of experience.",
+      "company": "Ballershopke",
+      "accountCreatedAt": "2023-09-30T03:55:06Z",
+      "location": {
+        "raw": "Kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 2219,
+        "contributions365d": 3995,
+        "commits365d": 19,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 3975,
+        "publicRepositories": 61,
+        "repositoriesSampled": 61,
+        "repoStatsTruncated": false,
+        "starsReceived": 86,
+        "forksReceived": 8,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 228,
+          "commits": 2,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 223
+        },
+        "2024": {
+          "contributions": 429,
+          "commits": 130,
+          "issues": 1,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 245
+        },
+        "2025": {
+          "contributions": 277,
+          "commits": 20,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 246
+        },
+        "2026": {
+          "contributions": 3849,
+          "commits": 19,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 3829
+        }
+      },
+      "scores": {
+        "overall": 60.94,
+        "activity": 85.97,
+        "impact": 45.52,
+        "community": 72.53,
+        "collaboration": 0
+      },
+      "rank": 10
+    },
+    {
+      "login": "peanutsx50",
+      "name": "Peanuts",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/206723935?u=f6f7363aa8330e715e2fe1010027a7b7575a006d&v=4",
+      "profileUrl": "https://github.com/peanutsx50",
+      "bio": "STAR MY PINNED REPOs :wink: ",
+      "company": null,
+      "accountCreatedAt": "2025-04-08T14:12:13Z",
+      "location": {
+        "raw": "Nakuru, Kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1150,
+        "contributions365d": 875,
+        "commits365d": 479,
+        "issues365d": 3,
+        "pullRequests365d": 22,
+        "reviews365d": 0,
+        "restrictedContributions365d": 356,
+        "publicRepositories": 19,
+        "repositoriesSampled": 19,
+        "repoStatsTruncated": false,
+        "starsReceived": 78,
+        "forksReceived": 0,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 894,
+          "commits": 36,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 849
+        },
+        "2026": {
+          "contributions": 513,
+          "commits": 461,
+          "issues": 3,
+          "pullRequests": 22,
+          "reviews": 0,
+          "restrictedContributions": 16
+        }
+      },
+      "scores": {
+        "overall": 60.7,
+        "activity": 70.23,
+        "impact": 42.92,
+        "community": 66.35,
+        "collaboration": 56.08
+      },
+      "rank": 11
+    },
+    {
+      "login": "larymak",
+      "name": "Hillary Nyakundi",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/63947040?u=d85969168a48bbc5958a24a7c66a1f5d041f8351&v=4",
+      "profileUrl": "https://github.com/larymak",
+      "bio": "Technical Writer ✍️ | Empowering Developers Through Clear, Actionable Content | Advocate for Open Source & Inclusive Tech Communities ❤️",
+      "company": "@freeCodeCamp",
+      "accountCreatedAt": "2020-04-19T07:06:44Z",
+      "location": {
+        "raw": "Kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 947,
+        "contributions365d": 80,
+        "commits365d": 52,
+        "issues365d": 0,
+        "pullRequests365d": 21,
+        "reviews365d": 3,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 42,
+        "repositoriesSampled": 42,
+        "repoStatsTruncated": false,
+        "starsReceived": 2857,
+        "forksReceived": 1646,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 678,
+          "commits": 645,
+          "issues": 5,
+          "pullRequests": 14,
+          "reviews": 2,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 144,
+          "commits": 127,
+          "issues": 0,
+          "pullRequests": 11,
+          "reviews": 2,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 71,
+          "commits": 51,
+          "issues": 0,
+          "pullRequests": 15,
+          "reviews": 2,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 119,
+          "commits": 70,
+          "issues": 1,
+          "pullRequests": 36,
+          "reviews": 12,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 56,
+          "commits": 39,
+          "issues": 0,
+          "pullRequests": 11,
+          "reviews": 2,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 60.22,
+        "activity": 45.55,
+        "impact": 85.69,
+        "community": 64.52,
+        "collaboration": 57.46
+      },
+      "rank": 12
+    },
+    {
+      "login": "david-kariuki",
+      "name": "David Kariuki (DK)",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/14153276?u=3cc424055abae11a85e9454fe7a0e71bcc41c02c&v=4",
+      "profileUrl": "https://github.com/david-kariuki",
+      "bio": "🥇 \r\n\r\nSoftware Engineer : { I chase code }\r\n\r\nBuilding: davidkariuki.dk, @liniantt",
+      "company": "Liniantt",
+      "accountCreatedAt": "2015-09-06T21:15:54Z",
+      "location": {
+        "raw": "Nairobi, Kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": "Nairobi",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 3888,
+        "contributions365d": 159,
+        "commits365d": 121,
+        "issues365d": 0,
+        "pullRequests365d": 18,
+        "reviews365d": 2,
+        "restrictedContributions365d": 15,
+        "publicRepositories": 22,
+        "repositoriesSampled": 22,
+        "repoStatsTruncated": false,
+        "starsReceived": 280,
+        "forksReceived": 62,
+        "archivedRepositoriesSampled": 2
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1052,
+          "commits": 666,
+          "issues": 183,
+          "pullRequests": 64,
+          "reviews": 1,
+          "restrictedContributions": 125
+        },
+        "2023": {
+          "contributions": 649,
+          "commits": 293,
+          "issues": 91,
+          "pullRequests": 21,
+          "reviews": 1,
+          "restrictedContributions": 230
+        },
+        "2024": {
+          "contributions": 5,
+          "commits": 3,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 2
+        },
+        "2025": {
+          "contributions": 525,
+          "commits": 6,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 517
+        },
+        "2026": {
+          "contributions": 151,
+          "commits": 115,
+          "issues": 0,
+          "pullRequests": 17,
+          "reviews": 2,
+          "restrictedContributions": 15
+        }
+      },
+      "scores": {
+        "overall": 58.22,
+        "activity": 52.61,
+        "impact": 58.97,
+        "community": 77.81,
+        "collaboration": 54.19
+      },
+      "rank": 13
+    },
+    {
+      "login": "ndolocr",
+      "name": "Raphael Ndolo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/5158478?u=3c759f5f5cd84de155394c9115c2dd384bc522bf&v=4",
+      "profileUrl": "https://github.com/ndolocr",
+      "bio": "Full stack Software Engineer with Extensive knowledge in Python, Django and Front-end development",
+      "company": null,
+      "accountCreatedAt": "2013-08-04T06:20:58Z",
+      "location": {
+        "raw": "Nairobi, Kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": "Nairobi",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 843,
+        "contributions365d": 281,
+        "commits365d": 139,
+        "issues365d": 0,
+        "pullRequests365d": 132,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 71,
+        "repositoriesSampled": 71,
+        "repoStatsTruncated": false,
+        "starsReceived": 28,
+        "forksReceived": 3,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 180,
+          "commits": 171,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 394,
+          "commits": 383,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 672,
+          "commits": 429,
+          "issues": 0,
+          "pullRequests": 230,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 431,
+          "commits": 256,
+          "issues": 0,
+          "pullRequests": 150,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 229,
+          "commits": 113,
+          "issues": 0,
+          "pullRequests": 108,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 57.42,
+        "activity": 58.48,
+        "impact": 34.92,
+        "community": 63.43,
+        "collaboration": 85.74
+      },
+      "rank": 14
+    },
+    {
+      "login": "Mathenge-Alex",
+      "name": "Alex M",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/60604208?u=7126d2dc076afdcbc920a4ee5c6bb15580f60c26&v=4",
+      "profileUrl": "https://github.com/Mathenge-Alex",
+      "bio": "Full-Stack Software Developer.",
+      "company": null,
+      "accountCreatedAt": "2020-02-03T10:28:42Z",
+      "location": {
+        "raw": "Nairobi, Kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": "Nairobi",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1758,
+        "contributions365d": 1002,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 1001,
+        "publicRepositories": 57,
+        "repositoriesSampled": 57,
+        "repoStatsTruncated": false,
+        "starsReceived": 29,
+        "forksReceived": 4,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1180,
+          "commits": 682,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 496
+        },
+        "2023": {
+          "contributions": 579,
+          "commits": 255,
+          "issues": 0,
+          "pullRequests": 7,
+          "reviews": 0,
+          "restrictedContributions": 292
+        },
+        "2024": {
+          "contributions": 27590,
+          "commits": 3214,
+          "issues": 1,
+          "pullRequests": 20,
+          "reviews": 0,
+          "restrictedContributions": 24329
+        },
+        "2025": {
+          "contributions": 10175,
+          "commits": 4,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 10167
+        },
+        "2026": {
+          "contributions": 496,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 496
+        }
+      },
+      "scores": {
+        "overall": 51.72,
+        "activity": 71.64,
+        "impact": 35.73,
+        "community": 70.34,
+        "collaboration": 0
+      },
+      "rank": 15
+    },
+    {
+      "login": "Mulandii",
+      "name": "Ace.",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/133756414?u=549a1ec614a180ae717a270c74279bf4b4651bfa&v=4",
+      "profileUrl": "https://github.com/Mulandii",
+      "bio": "Cybersecurity | Purple team | Forensics 👩‍💻\r\n",
+      "company": "Ace",
+      "accountCreatedAt": "2023-05-16T08:55:49Z",
+      "location": {
+        "raw": "Nairobi,Kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": "Nairobi",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1313,
+        "contributions365d": 434,
+        "commits365d": 52,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 361,
+        "publicRepositories": 60,
+        "repositoriesSampled": 60,
+        "repoStatsTruncated": false,
+        "starsReceived": 85,
+        "forksReceived": 15,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 2,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 2
+        },
+        "2023": {
+          "contributions": 149,
+          "commits": 47,
+          "issues": 0,
+          "pullRequests": 5,
+          "reviews": 0,
+          "restrictedContributions": 88
+        },
+        "2024": {
+          "contributions": 1274,
+          "commits": 84,
+          "issues": 0,
+          "pullRequests": 7,
+          "reviews": 0,
+          "restrictedContributions": 1162
+        },
+        "2025": {
+          "contributions": 1351,
+          "commits": 48,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 1286
+        },
+        "2026": {
+          "contributions": 238,
+          "commits": 49,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 174
+        }
+      },
+      "scores": {
+        "overall": 50.15,
+        "activity": 62.98,
+        "impact": 46.69,
+        "community": 67.6,
+        "collaboration": 0
+      },
+      "rank": 16
+    },
+    {
+      "login": "devjohnsonmwangi",
+      "name": "johnson mwangi",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/191533411?u=11291baab8fa1d168baa8d2585bc81b02501ed07&v=4",
+      "profileUrl": "https://github.com/devjohnsonmwangi",
+      "bio": " Full-Stack Developer | 🚀 Building Scalable Web Apps | 🔐 Passionate About Security & Authentication\r\n\r\n",
+      "company": null,
+      "accountCreatedAt": "2024-12-12T22:55:59Z",
+      "location": {
+        "raw": "kutus kirinyaga kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 818,
+        "contributions365d": 547,
+        "commits365d": 59,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 484,
+        "publicRepositories": 34,
+        "repositoriesSampled": 34,
+        "repoStatsTruncated": false,
+        "starsReceived": 67,
+        "forksReceived": 1,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 150,
+          "commits": 64,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 62
+        },
+        "2025": {
+          "contributions": 785,
+          "commits": 249,
+          "issues": 0,
+          "pullRequests": 3,
+          "reviews": 0,
+          "restrictedContributions": 522
+        },
+        "2026": {
+          "contributions": 246,
+          "commits": 27,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 219
+        }
+      },
+      "scores": {
+        "overall": 49.32,
+        "activity": 65.37,
+        "impact": 41.73,
+        "community": 63.15,
+        "collaboration": 0
+      },
+      "rank": 17
+    },
+    {
+      "login": "Emmanuel687",
+      "name": "Emmanuel Koech",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/93251478?u=eae95ec63848ff31d42f3534972abc89a2e99000&v=4",
+      "profileUrl": "https://github.com/Emmanuel687",
+      "bio": "Software Developer  || React & Vue || React Native || Typescript\r\n\r\nDreaming with Javascript.",
+      "company": "Grid Web Solutions",
+      "accountCreatedAt": "2021-10-27T08:33:49Z",
+      "location": {
+        "raw": "Nairobi,Kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": "Nairobi",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 789,
+        "contributions365d": 591,
+        "commits365d": 105,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 477,
+        "publicRepositories": 125,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 20,
+        "forksReceived": 12,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1386,
+          "commits": 632,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 712
+        },
+        "2023": {
+          "contributions": 1043,
+          "commits": 637,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 356
+        },
+        "2024": {
+          "contributions": 761,
+          "commits": 254,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 496
+        },
+        "2025": {
+          "contributions": 500,
+          "commits": 156,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 336
+        },
+        "2026": {
+          "contributions": 319,
+          "commits": 24,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 289
+        }
+      },
+      "scores": {
+        "overall": 48.55,
+        "activity": 66.17,
+        "impact": 37.39,
+        "community": 62.81,
+        "collaboration": 0
+      },
+      "rank": 18
+    },
+    {
+      "login": "JohnMwendwa",
+      "name": "John Mwendwa",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/72663882?u=fbeaea2dc64c633b6fbeb986e966ab812610025e&v=4",
+      "profileUrl": "https://github.com/JohnMwendwa",
+      "bio": "Developer, mentor and problem-solver. I love turning complex challenges into simple, usable products. My drive: writing code that makes a difference.",
+      "company": "Uni AirFibre Networks",
+      "accountCreatedAt": "2020-10-10T16:10:04Z",
+      "location": {
+        "raw": "Nairobi, Kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": "Nairobi",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 41080,
+        "contributions365d": 8,
+        "commits365d": 1,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 7,
+        "publicRepositories": 112,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 4041,
+        "forksReceived": 275,
+        "archivedRepositoriesSampled": 2
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 2178,
+          "commits": 2155,
+          "issues": 1,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 1
+        },
+        "2023": {
+          "contributions": 2881,
+          "commits": 1305,
+          "issues": 14,
+          "pullRequests": 92,
+          "reviews": 1,
+          "restrictedContributions": 1433
+        },
+        "2024": {
+          "contributions": 1106,
+          "commits": 636,
+          "issues": 37,
+          "pullRequests": 19,
+          "reviews": 2,
+          "restrictedContributions": 334
+        },
+        "2025": {
+          "contributions": 149,
+          "commits": 97,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 50
+        },
+        "2026": {
+          "contributions": 6,
+          "commits": 1,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 5
+        }
+      },
+      "scores": {
+        "overall": 45.95,
+        "activity": 22.78,
+        "impact": 82.82,
+        "community": 100,
+        "collaboration": 0
+      },
+      "rank": 19
+    },
+    {
+      "login": "betascribbles",
+      "name": "Firdaus H. Salim",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/52955271?u=167ee8763986c9c19d0bc217d345399ec607af41&v=4",
+      "profileUrl": "https://github.com/betascribbles",
+      "bio": "Software engineer.",
+      "company": "SAND Tech",
+      "accountCreatedAt": "2019-07-16T08:39:30Z",
+      "location": {
+        "raw": "Mombasa Kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": "Mombasa",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1398,
+        "contributions365d": 17,
+        "commits365d": 12,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 39,
+        "repositoriesSampled": 39,
+        "repoStatsTruncated": false,
+        "starsReceived": 89,
+        "forksReceived": 97,
+        "archivedRepositoriesSampled": 1
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1047,
+          "commits": 415,
+          "issues": 5,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 611
+        },
+        "2023": {
+          "contributions": 100,
+          "commits": 58,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 36
+        },
+        "2024": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 22,
+          "commits": 13,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 3
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 37.58,
+        "activity": 29.96,
+        "impact": 55.48,
+        "community": 68.19,
+        "collaboration": 0
+      },
+      "rank": 20
+    },
+    {
+      "login": "mbitujames",
+      "name": "Mbitu",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/78168933?u=29c9462954147ab2a1e6dd76acf599b93be5384c&v=4",
+      "profileUrl": "https://github.com/mbitujames",
+      "bio": "Passionate developer with interests in open source, web development & machine learning. Love solving problems, learning new tech & contributing to ideal Project",
+      "company": null,
+      "accountCreatedAt": "2021-01-28T17:46:30Z",
+      "location": {
+        "raw": "Nairobi, Kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": "Nairobi",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1432,
+        "contributions365d": 9,
+        "commits365d": 5,
+        "issues365d": 0,
+        "pullRequests365d": 1,
+        "reviews365d": 0,
+        "restrictedContributions365d": 1,
+        "publicRepositories": 31,
+        "repositoriesSampled": 31,
+        "repoStatsTruncated": false,
+        "starsReceived": 77,
+        "forksReceived": 3,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 45,
+          "commits": 20,
+          "issues": 0,
+          "pullRequests": 8,
+          "reviews": 0,
+          "restrictedContributions": 10
+        },
+        "2024": {
+          "contributions": 47,
+          "commits": 38,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 6
+        },
+        "2025": {
+          "contributions": 115,
+          "commits": 91,
+          "issues": 0,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 2
+        },
+        "2026": {
+          "contributions": 6,
+          "commits": 3,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 1
+        }
+      },
+      "scores": {
+        "overall": 33.71,
+        "activity": 23.87,
+        "impact": 43.52,
+        "community": 68.41,
+        "collaboration": 12.15
+      },
+      "rank": 21
+    },
+    {
+      "login": "godfreymatagaro",
+      "name": "Godfrey Matagaro",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/116557155?u=55ae57498572b2bea22bc9dda99a6f699098b542&v=4",
+      "profileUrl": "https://github.com/godfreymatagaro",
+      "bio": "",
+      "company": "Uptime Tech",
+      "accountCreatedAt": "2022-10-24T10:04:04Z",
+      "location": {
+        "raw": "Kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 3224,
+        "contributions365d": 5,
+        "commits365d": 3,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 1,
+        "publicRepositories": 39,
+        "repositoriesSampled": 39,
+        "repoStatsTruncated": false,
+        "starsReceived": 168,
+        "forksReceived": 8,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 3,
+          "commits": 1,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 481,
+          "commits": 438,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 18
+        },
+        "2024": {
+          "contributions": 645,
+          "commits": 402,
+          "issues": 1,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 234
+        },
+        "2025": {
+          "contributions": 788,
+          "commits": 305,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 476
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 32.58,
+        "activity": 18.57,
+        "impact": 51.27,
+        "community": 76.05,
+        "collaboration": 0
+      },
+      "rank": 22
+    },
+    {
+      "login": "jonkirathe",
+      "name": "John kirathe",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/8864750?u=64ca92b3455266fd843386a1b7ef32c2c8d0a08b&v=4",
+      "profileUrl": "https://github.com/jonkirathe",
+      "bio": "I'm a seasoned Senior Fullstack Developer with a passion for crafting efficient and scalable solutions. ",
+      "company": "Mbid ",
+      "accountCreatedAt": "2014-09-22T18:04:55Z",
+      "location": {
+        "raw": "Nairobi, Kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": "Nairobi",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 2241,
+        "contributions365d": 2,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 2,
+        "publicRepositories": 35,
+        "repositoriesSampled": 35,
+        "repoStatsTruncated": false,
+        "starsReceived": 143,
+        "forksReceived": 8,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 34,
+          "commits": 18,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 8
+        },
+        "2023": {
+          "contributions": 129,
+          "commits": 91,
+          "issues": 2,
+          "pullRequests": 19,
+          "reviews": 0,
+          "restrictedContributions": 7
+        },
+        "2024": {
+          "contributions": 169,
+          "commits": 142,
+          "issues": 1,
+          "pullRequests": 3,
+          "reviews": 0,
+          "restrictedContributions": 5
+        },
+        "2025": {
+          "contributions": 68,
+          "commits": 67,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 2,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 2
+        }
+      },
+      "scores": {
+        "overall": 28.48,
+        "activity": 11.39,
+        "impact": 49.85,
+        "community": 72.62,
+        "collaboration": 0
+      },
+      "rank": 23
+    },
+    {
+      "login": "jmoseka",
+      "name": "Mila",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/61447440?u=c736393b1557871427630b100c2ca924b32d5da0&v=4",
+      "profileUrl": "https://github.com/jmoseka",
+      "bio": "",
+      "company": null,
+      "accountCreatedAt": "2020-02-25T05:52:17Z",
+      "location": {
+        "raw": "Nairobi, Kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": "Nairobi",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1130,
+        "contributions365d": 1,
+        "commits365d": 1,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 81,
+        "repositoriesSampled": 81,
+        "repoStatsTruncated": false,
+        "starsReceived": 293,
+        "forksReceived": 47,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 2077,
+          "commits": 1587,
+          "issues": 38,
+          "pullRequests": 144,
+          "reviews": 14,
+          "restrictedContributions": 247
+        },
+        "2023": {
+          "contributions": 955,
+          "commits": 586,
+          "issues": 0,
+          "pullRequests": 52,
+          "reviews": 2,
+          "restrictedContributions": 306
+        },
+        "2024": {
+          "contributions": 92,
+          "commits": 54,
+          "issues": 0,
+          "pullRequests": 6,
+          "reviews": 2,
+          "restrictedContributions": 29
+        },
+        "2025": {
+          "contributions": 1,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 1
+        },
+        "2026": {
+          "contributions": 1,
+          "commits": 1,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 27.8,
+        "activity": 7.19,
+        "impact": 58.55,
+        "community": 66.18,
+        "collaboration": 0
+      },
+      "rank": 24
+    },
+    {
+      "login": "zung-ai",
+      "name": "Zung.AI",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/57898683?u=4c7f2fbb6fd8ed3597c05bff70d7593246923a7e&v=4",
+      "profileUrl": "https://github.com/zung-ai",
+      "bio": "Zung.ai is the #1 AI-native core banking platform built for SACCOs, MFIs, and cooperative financial institutions across 180 countries.",
+      "company": "Zung.AI",
+      "accountCreatedAt": "2019-11-18T10:59:15Z",
+      "location": {
+        "raw": "Kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 987,
+        "contributions365d": 0,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 100,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": false,
+        "starsReceived": 340,
+        "forksReceived": 145,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 25.57,
+        "activity": 0,
+        "impact": 63.32,
+        "community": 64.91,
+        "collaboration": 0
+      },
+      "rank": 25
+    },
+    {
+      "login": "dirambora",
+      "name": "Diram",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/42798758?u=ab9e5a73af7dd2780c118c55918eea6b213b9cc6&v=4",
+      "profileUrl": "https://github.com/dirambora",
+      "bio": "Software Engineer | \r\nJava | SpringBoot  | Flutter |\r\nDigital Creator |\r\nGoogle Women TechMakers Ambasaddor.",
+      "company": null,
+      "accountCreatedAt": "2018-08-29T07:32:40Z",
+      "location": {
+        "raw": "Nairobi,Kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": "Nairobi",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 5168,
+        "contributions365d": 0,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 31,
+        "repositoriesSampled": 31,
+        "repoStatsTruncated": false,
+        "starsReceived": 150,
+        "forksReceived": 40,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 127,
+          "commits": 24,
+          "issues": 1,
+          "pullRequests": 16,
+          "reviews": 1,
+          "restrictedContributions": 74
+        },
+        "2023": {
+          "contributions": 54,
+          "commits": 13,
+          "issues": 0,
+          "pullRequests": 10,
+          "reviews": 0,
+          "restrictedContributions": 25
+        },
+        "2024": {
+          "contributions": 111,
+          "commits": 49,
+          "issues": 0,
+          "pullRequests": 3,
+          "reviews": 0,
+          "restrictedContributions": 53
+        },
+        "2025": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 25.44,
+        "activity": 0,
+        "impact": 53.45,
+        "community": 80.49,
+        "collaboration": 0
+      },
+      "rank": 26
+    },
+    {
+      "login": "danielmuthama",
+      "name": "Daniel Muthama",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/40577986?u=4c2ee6f44b25ee01fad9cf07e8cc6426455c9dfa&v=4",
+      "profileUrl": "https://github.com/danielmuthama",
+      "bio": "Hi, let's grow and share new ideas =>\r\n⭕𝐅𝐮𝐥𝐥 𝐒𝐭𝐚𝐜𝐤 𝐃𝐞𝐯.|\r\n⭕Network Tech.(CCNA & Huawei) |\r\n⭕Machine Learning |\r\n⭕Cloud Dev.(Aws) |\r\n⭕Data Analyst |",
+      "company": "@moringaschool | @andela | @Holberton | @Dasom-Technologies-Inc. | @Udacity | @Aws | @Cisco | @Microsoft | @Huawei",
+      "accountCreatedAt": "2018-06-25T18:39:08Z",
+      "location": {
+        "raw": "Nairobi, Kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": "Nairobi",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1290,
+        "contributions365d": 0,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 226,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 297,
+        "forksReceived": 56,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 865,
+          "commits": 759,
+          "issues": 0,
+          "pullRequests": 5,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 70,
+          "commits": 47,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 24.89,
+        "activity": 0,
+        "impact": 59.09,
+        "community": 67.43,
+        "collaboration": 0
+      },
+      "rank": 27
+    },
+    {
+      "login": "Mach-Levi",
+      "name": "Lee Cotech",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/77607188?u=297ffa444f51ce4e2e8f0ef61428cc0b9a304744&v=4",
+      "profileUrl": "https://github.com/Mach-Levi",
+      "bio": "Machine Learning student, self-teaching, GitHub repos beneficiary, and free online courses dependant. Cool with that.\r\n@masen0university ",
+      "company": null,
+      "accountCreatedAt": "2021-01-18T07:12:08Z",
+      "location": {
+        "raw": "Kisumu, Kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 989,
+        "contributions365d": 0,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 51,
+        "repositoriesSampled": 51,
+        "repoStatsTruncated": false,
+        "starsReceived": 47,
+        "forksReceived": 4,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 3122,
+          "commits": 3078,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 9
+        },
+        "2023": {
+          "contributions": 6148,
+          "commits": 6098,
+          "issues": 1,
+          "pullRequests": 5,
+          "reviews": 0,
+          "restrictedContributions": 33
+        },
+        "2024": {
+          "contributions": 2,
+          "commits": 1,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 19.62,
+        "activity": 0,
+        "impact": 39.54,
+        "community": 64.93,
+        "collaboration": 0
+      },
+      "rank": 28
+    },
+    {
+      "login": "jackjulla",
+      "name": "Jacob",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/78025565?u=629e6ad792c0259f3ed24b12bf2620b124a8b658&v=4",
+      "profileUrl": "https://github.com/jackjulla",
+      "bio": "",
+      "company": null,
+      "accountCreatedAt": "2021-01-26T12:10:45Z",
+      "location": {
+        "raw": "Kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1254,
+        "contributions365d": 0,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 5,
+        "repositoriesSampled": 5,
+        "repoStatsTruncated": false,
+        "starsReceived": 30,
+        "forksReceived": 1,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 2,
+          "commits": 1,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 2,
+          "commits": 2,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 27,
+          "commits": 22,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 18.66,
+        "activity": 0,
+        "impact": 34.34,
+        "community": 67.16,
+        "collaboration": 0
+      },
+      "rank": 29
+    },
+    {
+      "login": "SpenceLabs",
+      "name": "Spence Labs International",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/173307172?u=9eab202a2cf2683bf06a5e55d451e624170e858b&v=4",
+      "profileUrl": "https://github.com/SpenceLabs",
+      "bio": "Spence Labs is a tech company dedicated to innovating and launching cool, new websites to the world. 🌐✨",
+      "company": null,
+      "accountCreatedAt": "2024-06-19T20:22:16Z",
+      "location": {
+        "raw": "Nairobi,Kenya",
+        "accepted": true,
+        "countryCode": "KE",
+        "country": "Kenya",
+        "city": "Nairobi",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 779,
+        "contributions365d": 0,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 12,
+        "repositoriesSampled": 12,
+        "repoStatsTruncated": false,
+        "starsReceived": 28,
+        "forksReceived": 2,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 40,
+          "commits": 24,
+          "issues": 1,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 1
+        },
+        "2025": {
+          "contributions": 4,
+          "commits": 3,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 17.99,
+        "activity": 0,
+        "impact": 34.34,
+        "community": 62.69,
+        "collaboration": 0
+      },
+      "rank": 30
+    }
+  ]
 }
