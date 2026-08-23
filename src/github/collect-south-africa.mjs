@@ -66,7 +66,7 @@ function isoWindow365d(now = new Date()) {
   return { from: from.toISOString(), to: to.toISOString() };
 }
 
-async function searchCandidateLogins(graphql, query) {
+async function searchCandidateLogins(graphql, query, maxResults = 200) {
   const logins = new Set();
   let cursor = null;
   let pages = 0;
@@ -78,11 +78,12 @@ async function searchCandidateLogins(graphql, query) {
 
     for (const node of search.nodes ?? []) {
       if (node?.login) logins.add(node.login);
+      if (logins.size >= maxResults) break;
     }
 
     cursor = search.pageInfo?.hasNextPage ? search.pageInfo.endCursor : null;
     pages += 1;
-  } while (cursor && pages < 10);
+  } while (cursor && pages < 10 && logins.size < maxResults);
 
   return logins;
 }
@@ -150,13 +151,19 @@ async function mapWithConcurrency(items, limit, mapper) {
   return results;
 }
 
-export async function collectSouthAfrica({ token, now = new Date(), concurrency = 4 } = {}) {
+export async function collectSouthAfrica({ token, now = new Date(), concurrency = 4, maxCandidates = 500 } = {}) {
   const graphql = createGraphQLClient({ token });
   const candidateLogins = new Set();
 
   for (const query of SOUTH_AFRICA_SEARCH_QUERIES) {
-    const discovered = await searchCandidateLogins(graphql, query);
-    for (const login of discovered) candidateLogins.add(login);
+    if (candidateLogins.size >= maxCandidates) break;
+
+    const remaining = maxCandidates - candidateLogins.size;
+    const discovered = await searchCandidateLogins(graphql, query, Math.min(remaining, 200));
+    for (const login of discovered) {
+      candidateLogins.add(login);
+      if (candidateLogins.size >= maxCandidates) break;
+    }
   }
 
   const { from, to } = isoWindow365d(now);
