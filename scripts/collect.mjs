@@ -13,8 +13,13 @@ if (!token) {
   throw new Error('GH_TOKEN or GITHUB_TOKEN is required to collect GitHub data.');
 }
 
+const configuredMaxCandidates = Number.parseInt(process.env.MAX_CANDIDATES ?? '500', 10);
+const maxCandidates = Number.isFinite(configuredMaxCandidates)
+  ? Math.min(Math.max(configuredMaxCandidates, 1), 1000)
+  : 500;
+
 const generatedAt = new Date();
-const collection = await collectSouthAfrica({ token, now: generatedAt });
+const collection = await collectSouthAfrica({ token, now: generatedAt, maxCandidates });
 const ranked = rankDevelopers(collection.developers);
 
 const output = {
