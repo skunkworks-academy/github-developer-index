@@ -1,11 +1,2600 @@
 {
   "schemaVersion": 1,
-  "generatedAt": null,
-  "source": {"provider":"GitHub","api":"GraphQL","officialLeaderboard":false},
-  "country": {"code":"AU","name":"Australia"},
-  "availableYears": [],
-  "calendarWindows": [],
-  "methodology": {"version":"1.0.0","weights":{"activity":0.45,"impact":0.25,"community":0.15,"collaboration":0.15},"windowDays":365,"notes":["Pending first live refresh."]},
-  "collection": {"discoveredCandidates":0,"acceptedCandidates":0,"rejectedCandidates":0,"window":null},
-  "developers": []
+  "generatedAt": "2026-08-23T21:50:12.908Z",
+  "source": {
+    "provider": "GitHub",
+    "api": "GraphQL",
+    "officialLeaderboard": false
+  },
+  "country": {
+    "code": "AU",
+    "name": "Australia"
+  },
+  "availableYears": [
+    2026,
+    2025,
+    2024,
+    2023,
+    2022
+  ],
+  "calendarWindows": [
+    {
+      "year": 2026,
+      "from": "2026-01-01T00:00:00.000Z",
+      "to": "2026-08-23T21:50:12.908Z",
+      "complete": false
+    },
+    {
+      "year": 2025,
+      "from": "2025-01-01T00:00:00.000Z",
+      "to": "2025-12-31T23:59:59.999Z",
+      "complete": true
+    },
+    {
+      "year": 2024,
+      "from": "2024-01-01T00:00:00.000Z",
+      "to": "2024-12-31T23:59:59.999Z",
+      "complete": true
+    },
+    {
+      "year": 2023,
+      "from": "2023-01-01T00:00:00.000Z",
+      "to": "2023-12-31T23:59:59.999Z",
+      "complete": true
+    },
+    {
+      "year": 2022,
+      "from": "2022-01-01T00:00:00.000Z",
+      "to": "2022-12-31T23:59:59.999Z",
+      "complete": true
+    }
+  ],
+  "methodology": {
+    "version": "1.0.0",
+    "weights": {
+      "activity": 0.45,
+      "impact": 0.25,
+      "community": 0.15,
+      "collaboration": 0.15
+    },
+    "windowDays": 365,
+    "notes": [
+      "Candidate discovery uses GitHub user search location qualifiers.",
+      "Country resolution uses explicit country aliases plus a bounded set of recognized cities.",
+      "Repository impact samples up to the 100 most-starred public repositories owned by each user.",
+      "Calendar-year filters use GitHub contribution activity for the selected year; current stars and followers are not historical snapshots.",
+      "The index is independent and is not an official GitHub ranking."
+    ]
+  },
+  "collection": {
+    "discoveredCandidates": 30,
+    "acceptedCandidates": 30,
+    "rejectedCandidates": 0,
+    "window": {
+      "from": "2025-08-23T21:50:12.908Z",
+      "to": "2026-08-23T21:50:12.908Z"
+    }
+  },
+  "developers": [
+    {
+      "login": "rvagg",
+      "name": "Rod Vagg",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/495647?u=ac27cc8c4205b4f7e1e0f7fa243c885d3534ceee&v=4",
+      "profileUrl": "https://github.com/rvagg",
+      "bio": "Byte herder",
+      "company": "require.io",
+      "accountCreatedAt": "2010-11-24T22:10:09Z",
+      "location": {
+        "raw": "NSW, Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 2571,
+        "contributions365d": 4374,
+        "commits365d": 1119,
+        "issues365d": 138,
+        "pullRequests365d": 600,
+        "reviews365d": 2187,
+        "restrictedContributions365d": 318,
+        "publicRepositories": 221,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 8341,
+        "forksReceived": 881,
+        "archivedRepositoriesSampled": 47
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1181,
+          "commits": 519,
+          "issues": 42,
+          "pullRequests": 254,
+          "reviews": 311,
+          "restrictedContributions": 51
+        },
+        "2023": {
+          "contributions": 1759,
+          "commits": 937,
+          "issues": 57,
+          "pullRequests": 419,
+          "reviews": 331,
+          "restrictedContributions": 6
+        },
+        "2024": {
+          "contributions": 2346,
+          "commits": 568,
+          "issues": 73,
+          "pullRequests": 372,
+          "reviews": 660,
+          "restrictedContributions": 656
+        },
+        "2025": {
+          "contributions": 3104,
+          "commits": 824,
+          "issues": 153,
+          "pullRequests": 463,
+          "reviews": 1186,
+          "restrictedContributions": 454
+        },
+        "2026": {
+          "contributions": 3177,
+          "commits": 867,
+          "issues": 68,
+          "pullRequests": 441,
+          "reviews": 1603,
+          "restrictedContributions": 190
+        }
+      },
+      "scores": {
+        "overall": 91.22,
+        "activity": 93.87,
+        "impact": 86.25,
+        "community": 82.79,
+        "collaboration": 100
+      },
+      "rank": 1
+    },
+    {
+      "login": "DonJayamanne",
+      "name": "Don Jayamanne",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1948812?u=4ef46d0bdcc8a0f7e215c9eca2b9977cd97ea88e&v=4",
+      "profileUrl": "https://github.com/DonJayamanne",
+      "bio": "Software engineer with a soft spot for Golang and Node.js. Loves tinkering with Arduino and Raspberry Pi. Lives in a cave.",
+      "company": "@microsoft ",
+      "accountCreatedAt": "2012-07-10T09:46:41Z",
+      "location": {
+        "raw": "Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 2142,
+        "contributions365d": 4423,
+        "commits365d": 1357,
+        "issues365d": 402,
+        "pullRequests365d": 1072,
+        "reviews365d": 1219,
+        "restrictedContributions365d": 369,
+        "publicRepositories": 229,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 4892,
+        "forksReceived": 2114,
+        "archivedRepositoriesSampled": 2
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 3099,
+          "commits": 1256,
+          "issues": 355,
+          "pullRequests": 749,
+          "reviews": 550,
+          "restrictedContributions": 135
+        },
+        "2023": {
+          "contributions": 3628,
+          "commits": 1465,
+          "issues": 313,
+          "pullRequests": 1026,
+          "reviews": 483,
+          "restrictedContributions": 323
+        },
+        "2024": {
+          "contributions": 2506,
+          "commits": 771,
+          "issues": 249,
+          "pullRequests": 762,
+          "reviews": 449,
+          "restrictedContributions": 256
+        },
+        "2025": {
+          "contributions": 3998,
+          "commits": 927,
+          "issues": 216,
+          "pullRequests": 713,
+          "reviews": 1043,
+          "restrictedContributions": 1086
+        },
+        "2026": {
+          "contributions": 3149,
+          "commits": 887,
+          "issues": 302,
+          "pullRequests": 776,
+          "reviews": 907,
+          "restrictedContributions": 275
+        }
+      },
+      "scores": {
+        "overall": 90.31,
+        "activity": 94,
+        "impact": 85.29,
+        "community": 80.87,
+        "collaboration": 97.08
+      },
+      "rank": 2
+    },
+    {
+      "login": "jph00",
+      "name": "Jeremy Howard",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/346999?v=4",
+      "profileUrl": "https://github.com/jph00",
+      "bio": "CEO / R&D @ answer.ai; Founder fast.ai",
+      "company": "@answerdotai",
+      "accountCreatedAt": "2010-07-28T13:53:32Z",
+      "location": {
+        "raw": "Brisbane, Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": "Brisbane",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 7580,
+        "contributions365d": 7560,
+        "commits365d": 6130,
+        "issues365d": 1295,
+        "pullRequests365d": 93,
+        "reviews365d": 38,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 66,
+        "repositoriesSampled": 66,
+        "repoStatsTruncated": false,
+        "starsReceived": 843,
+        "forksReceived": 138,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 2389,
+          "commits": 2194,
+          "issues": 136,
+          "pullRequests": 5,
+          "reviews": 40,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 289,
+          "commits": 264,
+          "issues": 7,
+          "pullRequests": 5,
+          "reviews": 9,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 2617,
+          "commits": 2270,
+          "issues": 299,
+          "pullRequests": 12,
+          "reviews": 29,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 2049,
+          "commits": 1740,
+          "issues": 259,
+          "pullRequests": 7,
+          "reviews": 40,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 6573,
+          "commits": 5294,
+          "issues": 1164,
+          "pullRequests": 91,
+          "reviews": 21,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 87.65,
+        "activity": 100,
+        "impact": 65.67,
+        "community": 94.19,
+        "collaboration": 80.69
+      },
+      "rank": 3
+    },
+    {
+      "login": "atomiks",
+      "name": "atomiks",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/22450188?u=34468c8ba8dc419f952724da66f7ede0dcc4d54d&v=4",
+      "profileUrl": "https://github.com/atomiks",
+      "bio": "",
+      "company": null,
+      "accountCreatedAt": "2016-09-26T13:57:04Z",
+      "location": {
+        "raw": "Gold Coast, Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 2541,
+        "contributions365d": 2111,
+        "commits365d": 713,
+        "issues365d": 15,
+        "pullRequests365d": 755,
+        "reviews365d": 430,
+        "restrictedContributions365d": 195,
+        "publicRepositories": 29,
+        "repositoriesSampled": 29,
+        "repoStatsTruncated": false,
+        "starsReceived": 16579,
+        "forksReceived": 719,
+        "archivedRepositoriesSampled": 6
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1093,
+          "commits": 493,
+          "issues": 26,
+          "pullRequests": 177,
+          "reviews": 29,
+          "restrictedContributions": 339
+        },
+        "2023": {
+          "contributions": 1015,
+          "commits": 456,
+          "issues": 20,
+          "pullRequests": 163,
+          "reviews": 25,
+          "restrictedContributions": 304
+        },
+        "2024": {
+          "contributions": 918,
+          "commits": 337,
+          "issues": 33,
+          "pullRequests": 251,
+          "reviews": 211,
+          "restrictedContributions": 62
+        },
+        "2025": {
+          "contributions": 1609,
+          "commits": 546,
+          "issues": 47,
+          "pullRequests": 563,
+          "reviews": 353,
+          "restrictedContributions": 97
+        },
+        "2026": {
+          "contributions": 1427,
+          "commits": 484,
+          "issues": 3,
+          "pullRequests": 497,
+          "reviews": 286,
+          "restrictedContributions": 155
+        }
+      },
+      "scores": {
+        "overall": 87.02,
+        "activity": 85.72,
+        "impact": 91.66,
+        "community": 82.67,
+        "collaboration": 87.55
+      },
+      "rank": 4
+    },
+    {
+      "login": "davecheney",
+      "name": "Dave Cheney",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/7171?u=5616ab442b740916bb53748d0cfeb1345d2ffa99&v=4",
+      "profileUrl": "https://github.com/davecheney",
+      "bio": "Everything's Computer!",
+      "company": "GitHub",
+      "accountCreatedAt": "2008-04-14T04:00:20Z",
+      "location": {
+        "raw": "Sydney, Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": "Sydney",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 6909,
+        "contributions365d": 4527,
+        "commits365d": 88,
+        "issues365d": 1,
+        "pullRequests365d": 25,
+        "reviews365d": 6,
+        "restrictedContributions365d": 4402,
+        "publicRepositories": 170,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 13712,
+        "forksReceived": 1346,
+        "archivedRepositoriesSampled": 16
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 2743,
+          "commits": 160,
+          "issues": 1,
+          "pullRequests": 2,
+          "reviews": 1,
+          "restrictedContributions": 2359
+        },
+        "2023": {
+          "contributions": 2875,
+          "commits": 297,
+          "issues": 1,
+          "pullRequests": 5,
+          "reviews": 4,
+          "restrictedContributions": 2495
+        },
+        "2024": {
+          "contributions": 3249,
+          "commits": 24,
+          "issues": 0,
+          "pullRequests": 6,
+          "reviews": 1,
+          "restrictedContributions": 3103
+        },
+        "2025": {
+          "contributions": 3039,
+          "commits": 15,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 3021
+        },
+        "2026": {
+          "contributions": 3575,
+          "commits": 82,
+          "issues": 1,
+          "pullRequests": 25,
+          "reviews": 6,
+          "restrictedContributions": 3457
+        }
+      },
+      "scores": {
+        "overall": 85.56,
+        "activity": 94.26,
+        "impact": 90.78,
+        "community": 93.21,
+        "collaboration": 43.1
+      },
+      "rank": 5
+    },
+    {
+      "login": "sanjay-kv",
+      "name": "Sanjay Viswanathan",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/30715153?u=5c0d3cb71bf76aedb1cafe33698bf06729177a86&v=4",
+      "profileUrl": "https://github.com/sanjay-kv",
+      "bio": "Data Engineer | Macquarie University 🎓\r\nFounder at recodehive.com | \r\nML • AI\r\n",
+      "company": "@recodehive",
+      "accountCreatedAt": "2017-08-04T05:31:36Z",
+      "location": {
+        "raw": "Sydney, Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": "Sydney",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 2397,
+        "contributions365d": 2205,
+        "commits365d": 965,
+        "issues365d": 213,
+        "pullRequests365d": 33,
+        "reviews365d": 607,
+        "restrictedContributions365d": 357,
+        "publicRepositories": 152,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 1232,
+        "forksReceived": 1386,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 172,
+          "commits": 89,
+          "issues": 7,
+          "pullRequests": 14,
+          "reviews": 0,
+          "restrictedContributions": 51
+        },
+        "2023": {
+          "contributions": 151,
+          "commits": 63,
+          "issues": 2,
+          "pullRequests": 11,
+          "reviews": 0,
+          "restrictedContributions": 58
+        },
+        "2024": {
+          "contributions": 5300,
+          "commits": 1680,
+          "issues": 571,
+          "pullRequests": 66,
+          "reviews": 812,
+          "restrictedContributions": 2073
+        },
+        "2025": {
+          "contributions": 2188,
+          "commits": 845,
+          "issues": 248,
+          "pullRequests": 12,
+          "reviews": 489,
+          "restrictedContributions": 552
+        },
+        "2026": {
+          "contributions": 1030,
+          "commits": 532,
+          "issues": 137,
+          "pullRequests": 32,
+          "reviews": 270,
+          "restrictedContributions": 48
+        }
+      },
+      "scores": {
+        "overall": 83.1,
+        "activity": 86.21,
+        "impact": 77.59,
+        "community": 82.05,
+        "collaboration": 84.01
+      },
+      "rank": 6
+    },
+    {
+      "login": "robjhyndman",
+      "name": "Rob J Hyndman",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/127518?u=ee9a9470735a100002069a6a32be2fd85b332d0e&v=4",
+      "profileUrl": "https://github.com/robjhyndman",
+      "bio": "Professor of Statistics at Monash University, Australia",
+      "company": "Monash University",
+      "accountCreatedAt": "2009-09-16T02:18:55Z",
+      "location": {
+        "raw": "Wurundjeri country, Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 3118,
+        "contributions365d": 4465,
+        "commits365d": 2811,
+        "issues365d": 45,
+        "pullRequests365d": 17,
+        "reviews365d": 15,
+        "restrictedContributions365d": 1556,
+        "publicRepositories": 162,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 3527,
+        "forksReceived": 1293,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 2079,
+          "commits": 1324,
+          "issues": 31,
+          "pullRequests": 7,
+          "reviews": 0,
+          "restrictedContributions": 378
+        },
+        "2023": {
+          "contributions": 3414,
+          "commits": 2143,
+          "issues": 44,
+          "pullRequests": 4,
+          "reviews": 1,
+          "restrictedContributions": 1205
+        },
+        "2024": {
+          "contributions": 2987,
+          "commits": 2060,
+          "issues": 55,
+          "pullRequests": 7,
+          "reviews": 3,
+          "restrictedContributions": 840
+        },
+        "2025": {
+          "contributions": 4278,
+          "commits": 2496,
+          "issues": 77,
+          "pullRequests": 19,
+          "reviews": 9,
+          "restrictedContributions": 1653
+        },
+        "2026": {
+          "contributions": 3017,
+          "commits": 1964,
+          "issues": 28,
+          "pullRequests": 7,
+          "reviews": 7,
+          "restrictedContributions": 999
+        }
+      },
+      "scores": {
+        "overall": 82.96,
+        "activity": 94.1,
+        "impact": 81.55,
+        "community": 84.82,
+        "collaboration": 50.03
+      },
+      "rank": 7
+    },
+    {
+      "login": "jasontaylordev",
+      "name": "Jason Taylor",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1988321?u=ff4b496f6d4bedf7e701aa36d4f04a9e45452440&v=4",
+      "profileUrl": "https://github.com/jasontaylordev",
+      "bio": "Solutions Architect • Microsoft MVP",
+      "company": "@Particular",
+      "accountCreatedAt": "2012-07-17T02:09:26Z",
+      "location": {
+        "raw": "Brisbane, Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": "Brisbane",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 6587,
+        "contributions365d": 939,
+        "commits365d": 215,
+        "issues365d": 13,
+        "pullRequests365d": 112,
+        "reviews365d": 60,
+        "restrictedContributions365d": 513,
+        "publicRepositories": 54,
+        "repositoriesSampled": 54,
+        "repoStatsTruncated": false,
+        "starsReceived": 26769,
+        "forksReceived": 6248,
+        "archivedRepositoriesSampled": 34
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 114,
+          "commits": 79,
+          "issues": 7,
+          "pullRequests": 16,
+          "reviews": 4,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 472,
+          "commits": 228,
+          "issues": 11,
+          "pullRequests": 73,
+          "reviews": 1,
+          "restrictedContributions": 147
+        },
+        "2024": {
+          "contributions": 110,
+          "commits": 73,
+          "issues": 3,
+          "pullRequests": 28,
+          "reviews": 1,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 548,
+          "commits": 207,
+          "issues": 6,
+          "pullRequests": 76,
+          "reviews": 33,
+          "restrictedContributions": 218
+        },
+        "2026": {
+          "contributions": 826,
+          "commits": 191,
+          "issues": 11,
+          "pullRequests": 101,
+          "reviews": 56,
+          "restrictedContributions": 445
+        }
+      },
+      "scores": {
+        "overall": 82.82,
+        "activity": 76.66,
+        "impact": 98.94,
+        "community": 92.71,
+        "collaboration": 64.54
+      },
+      "rank": 8
+    },
+    {
+      "login": "petercorke",
+      "name": "Peter Corke",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/11801682?u=c6f8c9ba184f406c6ac4f8fd0991290b0d5fb5bb&v=4",
+      "profileUrl": "https://github.com/petercorke",
+      "bio": "Robotics research and education.",
+      "company": null,
+      "accountCreatedAt": "2015-04-04T23:11:57Z",
+      "location": {
+        "raw": "Brisbane, Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": "Brisbane",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 2193,
+        "contributions365d": 1791,
+        "commits365d": 1380,
+        "issues365d": 71,
+        "pullRequests365d": 318,
+        "reviews365d": 7,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 52,
+        "repositoriesSampled": 52,
+        "repoStatsTruncated": false,
+        "starsReceived": 7078,
+        "forksReceived": 1601,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1119,
+          "commits": 795,
+          "issues": 3,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 309
+        },
+        "2023": {
+          "contributions": 628,
+          "commits": 568,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 6,
+          "restrictedContributions": 45
+        },
+        "2024": {
+          "contributions": 156,
+          "commits": 144,
+          "issues": 1,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 6
+        },
+        "2025": {
+          "contributions": 158,
+          "commits": 138,
+          "issues": 1,
+          "pullRequests": 10,
+          "reviews": 6,
+          "restrictedContributions": 1
+        },
+        "2026": {
+          "contributions": 1789,
+          "commits": 1379,
+          "issues": 71,
+          "pullRequests": 318,
+          "reviews": 7,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 82.2,
+        "activity": 83.88,
+        "impact": 86.41,
+        "community": 81.11,
+        "collaboration": 71.24
+      },
+      "rank": 9
+    },
+    {
+      "login": "ghuntley",
+      "name": "Geoffrey Huntley",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/127353?u=022d367a948fba3cfe178424b404ac8f2a28412e&v=4",
+      "profileUrl": "https://github.com/ghuntley",
+      "bio": "Pondering the ponderoos about using AI in unhinged ways and verifying outcomes @antithesishq. i created the “ralph loop”.",
+      "company": null,
+      "accountCreatedAt": "2009-09-15T17:07:32Z",
+      "location": {
+        "raw": "Kangaroo Island, Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 2849,
+        "contributions365d": 3342,
+        "commits365d": 1602,
+        "issues365d": 2,
+        "pullRequests365d": 12,
+        "reviews365d": 1,
+        "restrictedContributions365d": 1683,
+        "publicRepositories": 807,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 12293,
+        "forksReceived": 2046,
+        "archivedRepositoriesSampled": 6
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1079,
+          "commits": 218,
+          "issues": 93,
+          "pullRequests": 100,
+          "reviews": 46,
+          "restrictedContributions": 595
+        },
+        "2023": {
+          "contributions": 862,
+          "commits": 168,
+          "issues": 17,
+          "pullRequests": 29,
+          "reviews": 17,
+          "restrictedContributions": 620
+        },
+        "2024": {
+          "contributions": 1096,
+          "commits": 7,
+          "issues": 2,
+          "pullRequests": 2,
+          "reviews": 7,
+          "restrictedContributions": 1076
+        },
+        "2025": {
+          "contributions": 5722,
+          "commits": 3599,
+          "issues": 6,
+          "pullRequests": 7,
+          "reviews": 7,
+          "restrictedContributions": 2056
+        },
+        "2026": {
+          "contributions": 2228,
+          "commits": 650,
+          "issues": 1,
+          "pullRequests": 10,
+          "reviews": 1,
+          "restrictedContributions": 1532
+        }
+      },
+      "scores": {
+        "overall": 81.13,
+        "activity": 90.86,
+        "impact": 90.77,
+        "community": 83.87,
+        "collaboration": 33.1
+      },
+      "rank": 10
+    },
+    {
+      "login": "JakeLin",
+      "name": "Jake Lin",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/573856?v=4",
+      "profileUrl": "https://github.com/JakeLin",
+      "bio": "Dad of 👶👦. Mobile & AI dev passionate about design, animation & open source. Maker of @AINativeKit, @IBAnimatable & SwiftWeather. Building AI-Native",
+      "company": null,
+      "accountCreatedAt": "2011-01-20T03:22:02Z",
+      "location": {
+        "raw": "Melbourne, Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": "Melbourne",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 2685,
+        "contributions365d": 2975,
+        "commits365d": 321,
+        "issues365d": 18,
+        "pullRequests365d": 6,
+        "reviews365d": 2,
+        "restrictedContributions365d": 2627,
+        "publicRepositories": 78,
+        "repositoriesSampled": 78,
+        "repoStatsTruncated": false,
+        "starsReceived": 7266,
+        "forksReceived": 1732,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 542,
+          "commits": 23,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 5,
+          "restrictedContributions": 510
+        },
+        "2023": {
+          "contributions": 39,
+          "commits": 3,
+          "issues": 0,
+          "pullRequests": 3,
+          "reviews": 2,
+          "restrictedContributions": 28
+        },
+        "2024": {
+          "contributions": 215,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 215
+        },
+        "2025": {
+          "contributions": 1970,
+          "commits": 263,
+          "issues": 18,
+          "pullRequests": 2,
+          "reviews": 2,
+          "restrictedContributions": 1685
+        },
+        "2026": {
+          "contributions": 1110,
+          "commits": 58,
+          "issues": 0,
+          "pullRequests": 4,
+          "reviews": 0,
+          "restrictedContributions": 1047
+        }
+      },
+      "scores": {
+        "overall": 79.82,
+        "activity": 89.56,
+        "impact": 86.81,
+        "community": 83.25,
+        "collaboration": 35.55
+      },
+      "rank": 11
+    },
+    {
+      "login": "jessarcher",
+      "name": "Jess Archer",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/4977161?u=a6c1a5a9ff0e8aca7d908e0d5fbf7a61cf1b3b70&v=4",
+      "profileUrl": "https://github.com/jessarcher",
+      "bio": "Laravel core team",
+      "company": "@laravel",
+      "accountCreatedAt": "2013-07-09T22:40:40Z",
+      "location": {
+        "raw": "Brisbane, Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": "Brisbane",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1984,
+        "contributions365d": 1778,
+        "commits365d": 131,
+        "issues365d": 0,
+        "pullRequests365d": 37,
+        "reviews365d": 42,
+        "restrictedContributions365d": 1567,
+        "publicRepositories": 83,
+        "repositoriesSampled": 83,
+        "repoStatsTruncated": false,
+        "starsReceived": 1912,
+        "forksReceived": 209,
+        "archivedRepositoriesSampled": 1
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1602,
+          "commits": 513,
+          "issues": 3,
+          "pullRequests": 187,
+          "reviews": 62,
+          "restrictedContributions": 827
+        },
+        "2023": {
+          "contributions": 1488,
+          "commits": 676,
+          "issues": 1,
+          "pullRequests": 172,
+          "reviews": 95,
+          "restrictedContributions": 536
+        },
+        "2024": {
+          "contributions": 1324,
+          "commits": 95,
+          "issues": 1,
+          "pullRequests": 49,
+          "reviews": 45,
+          "restrictedContributions": 1128
+        },
+        "2025": {
+          "contributions": 2205,
+          "commits": 92,
+          "issues": 0,
+          "pullRequests": 30,
+          "reviews": 58,
+          "restrictedContributions": 2025
+        },
+        "2026": {
+          "contributions": 1040,
+          "commits": 61,
+          "issues": 0,
+          "pullRequests": 22,
+          "reviews": 21,
+          "restrictedContributions": 935
+        }
+      },
+      "scores": {
+        "overall": 76.21,
+        "activity": 83.8,
+        "impact": 72.53,
+        "community": 80.06,
+        "collaboration": 55.73
+      },
+      "rank": 12
+    },
+    {
+      "login": "tonybaloney",
+      "name": "Anthony Shaw",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1532417?u=5a9c1b3f5bea61c621e7fd4183742abb0dd8204f&v=4",
+      "profileUrl": "https://github.com/tonybaloney",
+      "bio": "0.10X developer. Technical Advisor for Apps & Agents at Microsoft. Python Software Foundation Fellow. Fellow of Macquarie University, Sydney",
+      "company": "Microsoft",
+      "accountCreatedAt": "2012-03-13T10:59:30Z",
+      "location": {
+        "raw": "Sydney, Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": "Sydney",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 2337,
+        "contributions365d": 463,
+        "commits365d": 223,
+        "issues365d": 57,
+        "pullRequests365d": 83,
+        "reviews365d": 58,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 391,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 10845,
+        "forksReceived": 1179,
+        "archivedRepositoriesSampled": 21
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1661,
+          "commits": 1115,
+          "issues": 123,
+          "pullRequests": 213,
+          "reviews": 161,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 1122,
+          "commits": 724,
+          "issues": 68,
+          "pullRequests": 168,
+          "reviews": 127,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 2454,
+          "commits": 1618,
+          "issues": 104,
+          "pullRequests": 508,
+          "reviews": 139,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 1833,
+          "commits": 1281,
+          "issues": 115,
+          "pullRequests": 209,
+          "reviews": 168,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 184,
+          "commits": 92,
+          "issues": 22,
+          "pullRequests": 37,
+          "reviews": 9,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 74.98,
+        "activity": 68.75,
+        "impact": 88.75,
+        "community": 81.78,
+        "collaboration": 63.95
+      },
+      "rank": 13
+    },
+    {
+      "login": "foyzulkarim",
+      "name": "Foyzul Karim",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/497812?u=671aa0b8aba0c100792bd4e7eca9106ae01f4d7d&v=4",
+      "profileUrl": "https://github.com/foyzulkarim",
+      "bio": "Technology Explorer, Software Maker, Entrepreneur, Technology Coach. ",
+      "company": "Self",
+      "accountCreatedAt": "2010-11-26T12:24:30Z",
+      "location": {
+        "raw": "Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1969,
+        "contributions365d": 867,
+        "commits365d": 558,
+        "issues365d": 82,
+        "pullRequests365d": 200,
+        "reviews365d": 7,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 93,
+        "repositoriesSampled": 93,
+        "repoStatsTruncated": false,
+        "starsReceived": 1883,
+        "forksReceived": 616,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 578,
+          "commits": 503,
+          "issues": 4,
+          "pullRequests": 54,
+          "reviews": 8,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 211,
+          "commits": 138,
+          "issues": 29,
+          "pullRequests": 27,
+          "reviews": 13,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 474,
+          "commits": 386,
+          "issues": 3,
+          "pullRequests": 64,
+          "reviews": 4,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 801,
+          "commits": 603,
+          "issues": 9,
+          "pullRequests": 170,
+          "reviews": 1,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 550,
+          "commits": 340,
+          "issues": 81,
+          "pullRequests": 107,
+          "reviews": 6,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 74.92,
+        "activity": 75.76,
+        "impact": 75.24,
+        "community": 79.98,
+        "collaboration": 66.79
+      },
+      "rank": 14
+    },
+    {
+      "login": "mishmanners",
+      "name": "Michelle \"MishManners®™\" Duke",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/36594527?u=8db9fd220dce6f3240cb950bc93ebb5f4719ccc5&v=4",
+      "profileUrl": "https://github.com/mishmanners",
+      "bio": "Senior Developer Evangelist | Hackathon Queen | International Speaker | Content Creator",
+      "company": "@github ",
+      "accountCreatedAt": "2018-02-18T11:07:49Z",
+      "location": {
+        "raw": "Melbourne, Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": "Melbourne",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 2033,
+        "contributions365d": 2177,
+        "commits365d": 223,
+        "issues365d": 47,
+        "pullRequests365d": 30,
+        "reviews365d": 1,
+        "restrictedContributions365d": 1861,
+        "publicRepositories": 147,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 472,
+        "forksReceived": 264,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1732,
+          "commits": 533,
+          "issues": 622,
+          "pullRequests": 80,
+          "reviews": 4,
+          "restrictedContributions": 465
+        },
+        "2023": {
+          "contributions": 1674,
+          "commits": 309,
+          "issues": 465,
+          "pullRequests": 34,
+          "reviews": 0,
+          "restrictedContributions": 847
+        },
+        "2024": {
+          "contributions": 1469,
+          "commits": 244,
+          "issues": 75,
+          "pullRequests": 32,
+          "reviews": 5,
+          "restrictedContributions": 1080
+        },
+        "2025": {
+          "contributions": 2076,
+          "commits": 291,
+          "issues": 198,
+          "pullRequests": 60,
+          "reviews": 6,
+          "restrictedContributions": 1502
+        },
+        "2026": {
+          "contributions": 1343,
+          "commits": 140,
+          "issues": 22,
+          "pullRequests": 3,
+          "reviews": 0,
+          "restrictedContributions": 1173
+        }
+      },
+      "scores": {
+        "overall": 74.22,
+        "activity": 86.06,
+        "impact": 64.62,
+        "community": 80.32,
+        "collaboration": 48.61
+      },
+      "rank": 15
+    },
+    {
+      "login": "markdalgleish",
+      "name": "Mark Dalgleish",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/696693?u=e1e15b2629838f78c6aa17acc618a3ebc667e26a&v=4",
+      "profileUrl": "https://github.com/markdalgleish",
+      "bio": "🦄 CSS Modules co-creator / 💿 @remix-run at @shopify 🛍️ / 🧁 Vanilla Extract / Creator of Braid, Playroom / MelbJS organiser / dad x4",
+      "company": "@remix-run",
+      "accountCreatedAt": "2011-03-29T07:10:09Z",
+      "location": {
+        "raw": "Melbourne, Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": "Melbourne",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 3286,
+        "contributions365d": 336,
+        "commits365d": 110,
+        "issues365d": 2,
+        "pullRequests365d": 105,
+        "reviews365d": 34,
+        "restrictedContributions365d": 77,
+        "publicRepositories": 259,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 10180,
+        "forksReceived": 1633,
+        "archivedRepositoriesSampled": 1
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 775,
+          "commits": 261,
+          "issues": 9,
+          "pullRequests": 224,
+          "reviews": 233,
+          "restrictedContributions": 19
+        },
+        "2023": {
+          "contributions": 1042,
+          "commits": 427,
+          "issues": 6,
+          "pullRequests": 182,
+          "reviews": 117,
+          "restrictedContributions": 298
+        },
+        "2024": {
+          "contributions": 1129,
+          "commits": 349,
+          "issues": 1,
+          "pullRequests": 285,
+          "reviews": 143,
+          "restrictedContributions": 344
+        },
+        "2025": {
+          "contributions": 712,
+          "commits": 230,
+          "issues": 2,
+          "pullRequests": 212,
+          "reviews": 98,
+          "restrictedContributions": 152
+        },
+        "2026": {
+          "contributions": 182,
+          "commits": 60,
+          "issues": 1,
+          "pullRequests": 62,
+          "reviews": 18,
+          "restrictedContributions": 40
+        }
+      },
+      "scores": {
+        "overall": 73.53,
+        "activity": 65.17,
+        "impact": 88.92,
+        "community": 85.38,
+        "collaboration": 61.13
+      },
+      "rank": 16
+    },
+    {
+      "login": "radar",
+      "name": "Ryan Bigg",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/2687?u=1931cab48a8e76951fbd0971b888d3e07256cb4a&v=4",
+      "profileUrl": "https://github.com/radar",
+      "bio": "Award-winning super-hero published author with a Ruby addiction, a love for TypeScript and React, and extreme fondness for Elixir.",
+      "company": null,
+      "accountCreatedAt": "2008-03-10T13:28:14Z",
+      "location": {
+        "raw": "Warrnambool (Outer outer western Melbourne),  Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": "Melbourne",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 2157,
+        "contributions365d": 497,
+        "commits365d": 375,
+        "issues365d": 1,
+        "pullRequests365d": 58,
+        "reviews365d": 21,
+        "restrictedContributions365d": 37,
+        "publicRepositories": 237,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 4924,
+        "forksReceived": 747,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 306,
+          "commits": 233,
+          "issues": 16,
+          "pullRequests": 25,
+          "reviews": 14,
+          "restrictedContributions": 4
+        },
+        "2023": {
+          "contributions": 858,
+          "commits": 263,
+          "issues": 494,
+          "pullRequests": 19,
+          "reviews": 22,
+          "restrictedContributions": 48
+        },
+        "2024": {
+          "contributions": 371,
+          "commits": 295,
+          "issues": 8,
+          "pullRequests": 14,
+          "reviews": 20,
+          "restrictedContributions": 27
+        },
+        "2025": {
+          "contributions": 131,
+          "commits": 108,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 12,
+          "restrictedContributions": 6
+        },
+        "2026": {
+          "contributions": 430,
+          "commits": 322,
+          "issues": 1,
+          "pullRequests": 57,
+          "reviews": 15,
+          "restrictedContributions": 32
+        }
+      },
+      "scores": {
+        "overall": 72.11,
+        "activity": 69.54,
+        "impact": 82,
+        "community": 80.94,
+        "collaboration": 54.47
+      },
+      "rank": 17
+    },
+    {
+      "login": "carlcastanas",
+      "name": "Carl Andrew Castañas",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/89068725?u=50ef983238d9fbb5d42faa7f73c8f7934ea83e2d&v=4",
+      "profileUrl": "https://github.com/carlcastanas",
+      "bio": "",
+      "company": "Icreatechs",
+      "accountCreatedAt": "2021-08-17T07:52:33Z",
+      "location": {
+        "raw": "Moscow, Russia | Perth, Australia | BGC, Philippines",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": "Perth",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 3160,
+        "contributions365d": 1143,
+        "commits365d": 5,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 1137,
+        "publicRepositories": 56,
+        "repositoriesSampled": 56,
+        "repoStatsTruncated": false,
+        "starsReceived": 2436,
+        "forksReceived": 265,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 2313,
+          "commits": 56,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 2253
+        },
+        "2023": {
+          "contributions": 277,
+          "commits": 45,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 218
+        },
+        "2024": {
+          "contributions": 469,
+          "commits": 85,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 369
+        },
+        "2025": {
+          "contributions": 1078,
+          "commits": 4,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 1074
+        },
+        "2026": {
+          "contributions": 202,
+          "commits": 5,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 196
+        }
+      },
+      "scores": {
+        "overall": 66.93,
+        "activity": 78.85,
+        "impact": 74.79,
+        "community": 84.96,
+        "collaboration": 0
+      },
+      "rank": 18
+    },
+    {
+      "login": "basarat",
+      "name": "Basarat Ali Syed",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/874898?u=faa0298491214204a2af78a9e1cea2f5f4c5e346&v=4",
+      "profileUrl": "https://github.com/basarat",
+      "bio": "Creating educational developer content and coding practices 🌹",
+      "company": "https://booleanart.com",
+      "accountCreatedAt": "2011-06-25T07:41:43Z",
+      "location": {
+        "raw": "Melbourne, Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": "Melbourne",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 4124,
+        "contributions365d": 239,
+        "commits365d": 7,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 231,
+        "publicRepositories": 446,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 24963,
+        "forksReceived": 3178,
+        "archivedRepositoriesSampled": 1
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 2269,
+          "commits": 762,
+          "issues": 1,
+          "pullRequests": 6,
+          "reviews": 0,
+          "restrictedContributions": 1428
+        },
+        "2023": {
+          "contributions": 2188,
+          "commits": 72,
+          "issues": 2,
+          "pullRequests": 3,
+          "reviews": 1,
+          "restrictedContributions": 2097
+        },
+        "2024": {
+          "contributions": 2224,
+          "commits": 408,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 1806
+        },
+        "2025": {
+          "contributions": 785,
+          "commits": 485,
+          "issues": 2,
+          "pullRequests": 3,
+          "reviews": 0,
+          "restrictedContributions": 292
+        },
+        "2026": {
+          "contributions": 234,
+          "commits": 3,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 231
+        }
+      },
+      "scores": {
+        "overall": 64.99,
+        "activity": 61.37,
+        "impact": 96.83,
+        "community": 87.77,
+        "collaboration": 0
+      },
+      "rank": 19
+    },
+    {
+      "login": "hakluke",
+      "name": "Luke Stephens (hakluke)",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/13975395?u=2901efccbf259b76108be8414c1fd6c94a74c4c9&v=4",
+      "profileUrl": "https://github.com/hakluke",
+      "bio": "hacker",
+      "company": "@haksecio ",
+      "accountCreatedAt": "2015-08-26T05:02:21Z",
+      "location": {
+        "raw": "Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 3461,
+        "contributions365d": 126,
+        "commits365d": 14,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 1,
+        "restrictedContributions365d": 109,
+        "publicRepositories": 69,
+        "repositoriesSampled": 69,
+        "repoStatsTruncated": false,
+        "starsReceived": 19097,
+        "forksReceived": 1784,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 400,
+          "commits": 93,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 9,
+          "restrictedContributions": 288
+        },
+        "2023": {
+          "contributions": 138,
+          "commits": 15,
+          "issues": 1,
+          "pullRequests": 2,
+          "reviews": 5,
+          "restrictedContributions": 113
+        },
+        "2024": {
+          "contributions": 97,
+          "commits": 28,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 5,
+          "restrictedContributions": 60
+        },
+        "2025": {
+          "contributions": 25,
+          "commits": 2,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 21
+        },
+        "2026": {
+          "contributions": 110,
+          "commits": 12,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 1,
+          "restrictedContributions": 97
+        }
+      },
+      "scores": {
+        "overall": 62.41,
+        "activity": 54.24,
+        "impact": 93.8,
+        "community": 85.92,
+        "collaboration": 11.06
+      },
+      "rank": 20
+    },
+    {
+      "login": "codingo",
+      "name": "Michael Skelton",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/886344?u=02eb14a4159bbd45e793f69b0f46565ec52c8bd6&v=4",
+      "profileUrl": "https://github.com/codingo",
+      "bio": "Vice President, Security Operations and Researcher Success @ Bugcrowd",
+      "company": "@bugcrowd ",
+      "accountCreatedAt": "2011-06-30T12:37:09Z",
+      "location": {
+        "raw": "Brisbane, Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": "Brisbane",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 3549,
+        "contributions365d": 130,
+        "commits365d": 30,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 2,
+        "restrictedContributions365d": 95,
+        "publicRepositories": 165,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 10264,
+        "forksReceived": 2049,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 52,
+          "commits": 35,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 8,
+          "restrictedContributions": 6
+        },
+        "2023": {
+          "contributions": 150,
+          "commits": 101,
+          "issues": 0,
+          "pullRequests": 2,
+          "reviews": 1,
+          "restrictedContributions": 41
+        },
+        "2024": {
+          "contributions": 18,
+          "commits": 6,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 4,
+          "restrictedContributions": 8
+        },
+        "2025": {
+          "contributions": 147,
+          "commits": 108,
+          "issues": 1,
+          "pullRequests": 1,
+          "reviews": 8,
+          "restrictedContributions": 26
+        },
+        "2026": {
+          "contributions": 119,
+          "commits": 29,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 2,
+          "restrictedContributions": 86
+        }
+      },
+      "scores": {
+        "overall": 62.39,
+        "activity": 54.59,
+        "impact": 89.54,
+        "community": 86.19,
+        "collaboration": 16.74
+      },
+      "rank": 21
+    },
+    {
+      "login": "nicknochnack",
+      "name": "Nicholas Renotte",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/5948934?u=63c24c0b0d48a11a284602eb571e5adb7dd3c14e&v=4",
+      "profileUrl": "https://github.com/nicknochnack",
+      "bio": "Data Science guy @IBM",
+      "company": null,
+      "accountCreatedAt": "2013-11-15T15:06:35Z",
+      "location": {
+        "raw": "Sydney, Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": "Sydney",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 13157,
+        "contributions365d": 102,
+        "commits365d": 89,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 220,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 10985,
+        "forksReceived": 8038,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 105,
+          "commits": 65,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 73,
+          "commits": 53,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 59,
+          "commits": 43,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 214,
+          "commits": 195,
+          "issues": 1,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 52,
+          "commits": 43,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 62.22,
+        "activity": 51.9,
+        "impact": 95.46,
+        "community": 100,
+        "collaboration": 0
+      },
+      "rank": 22
+    },
+    {
+      "login": "livinamuk",
+      "name": "Chris Burrows",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/7821313?u=de0ad648f5a7a6b12e0013c0812e35087f4b7d3b&v=4",
+      "profileUrl": "https://github.com/livinamuk",
+      "bio": null,
+      "company": null,
+      "accountCreatedAt": "2014-06-07T04:54:43Z",
+      "location": {
+        "raw": "Tasmania, Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 2183,
+        "contributions365d": 265,
+        "commits365d": 262,
+        "issues365d": 1,
+        "pullRequests365d": 1,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 12,
+        "repositoriesSampled": 12,
+        "repoStatsTruncated": false,
+        "starsReceived": 3037,
+        "forksReceived": 159,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 32,
+          "commits": 25,
+          "issues": 6,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 101,
+          "commits": 94,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 4
+        },
+        "2024": {
+          "contributions": 148,
+          "commits": 127,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 1,
+          "restrictedContributions": 18
+        },
+        "2025": {
+          "contributions": 251,
+          "commits": 198,
+          "issues": 1,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 46
+        },
+        "2026": {
+          "contributions": 183,
+          "commits": 183,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 60.94,
+        "activity": 62.52,
+        "impact": 75.94,
+        "community": 81.07,
+        "collaboration": 11.06
+      },
+      "rank": 23
+    },
+    {
+      "login": "kyal102",
+      "name": "Jarvi3.com",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/277543146?u=012854014b999c4666396b42d7cd116cb80a758d&v=4",
+      "profileUrl": "https://github.com/kyal102",
+      "bio": "Founder of EcoKure PtyLtd Building JARVI3 / DTL verification systems: AI proposes, gates verify, evidence records, replay checks drift. MedGate + Packages Labs.",
+      "company": "@EcoKure PtyLtd",
+      "accountCreatedAt": "2026-04-19T19:42:04Z",
+      "location": {
+        "raw": "Brisbane, Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": "Brisbane",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 2891,
+        "contributions365d": 237,
+        "commits365d": 129,
+        "issues365d": 0,
+        "pullRequests365d": 7,
+        "reviews365d": 0,
+        "restrictedContributions365d": 68,
+        "publicRepositories": 32,
+        "repositoriesSampled": 32,
+        "repoStatsTruncated": false,
+        "starsReceived": 676,
+        "forksReceived": 9,
+        "archivedRepositoriesSampled": 3
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 237,
+          "commits": 129,
+          "issues": 0,
+          "pullRequests": 7,
+          "reviews": 0,
+          "restrictedContributions": 68
+        }
+      },
+      "scores": {
+        "overall": 59.25,
+        "activity": 61.27,
+        "impact": 61.21,
+        "community": 84.03,
+        "collaboration": 25.11
+      },
+      "rank": 24
+    },
+    {
+      "login": "TheCherno",
+      "name": "Yan Chernikov",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1475290?u=afc80e3f2feeb9e425f2e449019950f82d37c220&v=4",
+      "profileUrl": "https://github.com/TheCherno",
+      "bio": null,
+      "company": null,
+      "accountCreatedAt": "2012-02-26T08:39:00Z",
+      "location": {
+        "raw": "Melbourne, Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": "Melbourne",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 12992,
+        "contributions365d": 9,
+        "commits365d": 4,
+        "issues365d": 0,
+        "pullRequests365d": 2,
+        "reviews365d": 1,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 38,
+        "repositoriesSampled": 38,
+        "repoStatsTruncated": false,
+        "starsReceived": 18085,
+        "forksReceived": 2712,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 83,
+          "commits": 77,
+          "issues": 3,
+          "pullRequests": 0,
+          "reviews": 1,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 28,
+          "commits": 25,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 17,
+          "commits": 15,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 18,
+          "commits": 14,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 2,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 1,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 52.84,
+        "activity": 25.78,
+        "impact": 94.15,
+        "community": 99.87,
+        "collaboration": 18.16
+      },
+      "rank": 25
+    },
+    {
+      "login": "0vm",
+      "name": "Ak",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/79897291?u=86a783d81083e7081848933d05a74b295f62f9ee&v=4",
+      "profileUrl": "https://github.com/0vm",
+      "bio": "(👉ﾟヮﾟ)👉",
+      "company": null,
+      "accountCreatedAt": "2021-03-02T06:55:10Z",
+      "location": {
+        "raw": "Sydney, Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": "Sydney",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 10088,
+        "contributions365d": 28,
+        "commits365d": 2,
+        "issues365d": 1,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 25,
+        "publicRepositories": 11,
+        "repositoriesSampled": 11,
+        "repoStatsTruncated": false,
+        "starsReceived": 673,
+        "forksReceived": 75,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 134,
+          "commits": 47,
+          "issues": 6,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 71
+        },
+        "2023": {
+          "contributions": 180,
+          "commits": 70,
+          "issues": 23,
+          "pullRequests": 4,
+          "reviews": 0,
+          "restrictedContributions": 77
+        },
+        "2024": {
+          "contributions": 14,
+          "commits": 8,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 6
+        },
+        "2025": {
+          "contributions": 124,
+          "commits": 84,
+          "issues": 2,
+          "pullRequests": 1,
+          "reviews": 2,
+          "restrictedContributions": 34
+        },
+        "2026": {
+          "contributions": 11,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 11
+        }
+      },
+      "scores": {
+        "overall": 47.98,
+        "activity": 37.7,
+        "impact": 62.8,
+        "community": 97.2,
+        "collaboration": 4.9
+      },
+      "rank": 26
+    },
+    {
+      "login": "DmitryBaranovskiy",
+      "name": "Dmitry Baranovskiy",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/22726?u=3ac09220c1c4805bca05cba6c42200277d7f49cb&v=4",
+      "profileUrl": "https://github.com/DmitryBaranovskiy",
+      "bio": "JavaScript Artist",
+      "company": "@adobe",
+      "accountCreatedAt": "2008-09-01T07:35:49Z",
+      "location": {
+        "raw": "Sydney, Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": "Sydney",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 2514,
+        "contributions365d": 3,
+        "commits365d": 2,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 15,
+        "repositoriesSampled": 15,
+        "repoStatsTruncated": false,
+        "starsReceived": 13004,
+        "forksReceived": 2131,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 2,
+          "commits": 2,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 2,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 3,
+          "commits": 2,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 42.18,
+        "activity": 15.52,
+        "impact": 91.26,
+        "community": 82.55,
+        "collaboration": 0
+      },
+      "rank": 27
+    },
+    {
+      "login": "Endermanch",
+      "name": "Andrew",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/44542704?u=40960bd395d7bd5e58dd6eefba8d517fc0bce2e9&v=4",
+      "profileUrl": "https://github.com/Endermanch",
+      "bio": "A software engineer, a malware enthusiast, a YouTuber and most importantly, a weird tall creature.",
+      "company": "Freelancing: HMU!",
+      "accountCreatedAt": "2018-10-28T08:37:12Z",
+      "location": {
+        "raw": "Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 3399,
+        "contributions365d": 3,
+        "commits365d": 3,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 19,
+        "repositoriesSampled": 19,
+        "repoStatsTruncated": false,
+        "starsReceived": 4763,
+        "forksReceived": 773,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 27,
+          "commits": 25,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 139,
+          "commits": 127,
+          "issues": 3,
+          "pullRequests": 2,
+          "reviews": 3,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 39,
+          "commits": 23,
+          "issues": 4,
+          "pullRequests": 4,
+          "reviews": 1,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 8,
+          "commits": 5,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 3,
+          "commits": 3,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 40.31,
+        "activity": 15.52,
+        "impact": 81.84,
+        "community": 85.73,
+        "collaboration": 0
+      },
+      "rank": 28
+    },
+    {
+      "login": "brendangregg",
+      "name": "Brendan Gregg",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1101211?u=fdc065e959dc60cddaf2db45ec6595a48a9e38a3&v=4",
+      "profileUrl": "https://github.com/brendangregg",
+      "bio": "Cloud computing performance engineer.",
+      "company": "Intel",
+      "accountCreatedAt": "2011-10-04T08:48:56Z",
+      "location": {
+        "raw": "Sydney, Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": "Sydney",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 8890,
+        "contributions365d": 0,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 42,
+        "repositoriesSampled": 42,
+        "repoStatsTruncated": false,
+        "starsReceived": 34669,
+        "forksReceived": 4644,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 8,
+          "commits": 8,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 16,
+          "commits": 13,
+          "issues": 2,
+          "pullRequests": 0,
+          "reviews": 1,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 3,
+          "commits": 2,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 39.38,
+        "activity": 0,
+        "impact": 100,
+        "community": 95.87,
+        "collaboration": 0
+      },
+      "rank": 29
+    },
+    {
+      "login": "cornflourblue",
+      "name": "Jason Watmore",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/785317?u=b7a87aff12e06cbc702dcfac1d6bf91af7f80998&v=4",
+      "profileUrl": "https://github.com/cornflourblue",
+      "bio": "Web Developer and Blogger, currently focusing on Angular, React, Vue, Node and .NET     \r\n                \r\n...also travel vlogging at youtube.com/TinaAndJason",
+      "company": "Point Blank Development",
+      "accountCreatedAt": "2011-05-13T04:38:16Z",
+      "location": {
+        "raw": "Sydney Australia",
+        "accepted": true,
+        "countryCode": "AU",
+        "country": "Australia",
+        "city": "Sydney",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 6705,
+        "contributions365d": 0,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 187,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 13803,
+        "forksReceived": 8940,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 102,
+          "commits": 79,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 59,
+          "commits": 42,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 38.17,
+        "activity": 0,
+        "impact": 96.94,
+        "community": 92.89,
+        "collaboration": 0
+      },
+      "rank": 30
+    }
+  ]
 }
