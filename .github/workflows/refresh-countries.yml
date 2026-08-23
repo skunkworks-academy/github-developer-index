@@ -35,18 +35,68 @@ jobs:
         with:
           node-version: 24
 
-      - name: Collect supported countries
+      - name: Configure dataset publisher
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Collect and progressively publish countries
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          MAX_CANDIDATES: 50
+          MAX_CANDIDATES: 30
           HISTORY_YEARS: 5
         shell: bash
         run: |
-          set -euo pipefail
-          for code in BW CM RW NG KE GH EG MA PT MX US GB CA DE FR NL IN BR AU; do
-            echo "Collecting ${code}"
-            node scripts/collect.mjs "${code}"
+          set -uo pipefail
+
+          countries=(BW CM RW NG KE GH EG MA PT MX US GB CA DE FR NL IN BR AU)
+          succeeded=()
+          failed=()
+
+          for code in "${countries[@]}"; do
+            echo "::group::Collecting ${code}"
+            collected=false
+
+            for attempt in 1 2 3; do
+              echo "Attempt ${attempt}/3 for ${code}"
+              if node scripts/collect.mjs "${code}"; then
+                collected=true
+                break
+              fi
+
+              if [ "${attempt}" -lt 3 ]; then
+                sleep $((attempt * 15))
+              fi
+            done
+
+            if [ "${collected}" != "true" ]; then
+              echo "::warning::Failed to collect ${code} after 3 attempts."
+              failed+=("${code}")
+              echo "::endgroup::"
+              continue
+            fi
+
+            count=$(node -e "const d=require('./public/data/${code}.json'); console.log(Array.isArray(d.developers) ? d.developers.length : 0)")
+            echo "${code}: ${count} indexed developers"
+
+            git add "public/data/${code}.json"
+            if ! git diff --cached --quiet; then
+              git commit -m "data: refresh ${code} developer index"
+              git pull --rebase origin main
+              git push origin HEAD:main
+            fi
+
+            succeeded+=("${code}")
+            echo "::endgroup::"
           done
+
+          printf 'Successful countries: %s\n' "${succeeded[*]:-none}"
+          printf 'Failed countries: %s\n' "${failed[*]:-none}"
+
+          if [ "${#succeeded[@]}" -eq 0 ]; then
+            echo "::error::No country datasets were refreshed."
+            exit 1
+          fi
 
       - name: Rebuild public country registry
         run: npm run registry
@@ -56,17 +106,15 @@ jobs:
           npm test
           npm run validate
 
-      - name: Commit refreshed country datasets
+      - name: Publish refreshed country registry
         shell: bash
         run: |
-          if git diff --quiet -- public/data; then
-            echo "No country dataset changes to commit."
+          git add public/data/countries.json
+          if git diff --cached --quiet; then
+            echo "Country registry unchanged."
             exit 0
           fi
 
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data
-          git commit -m "data: refresh country developer indexes"
+          git commit -m "data: update country dataset registry"
           git pull --rebase origin main
           git push origin HEAD:main
