@@ -1,7 +1,8 @@
-import { access, readFile, writeFile } from 'node:fs/promises';
+import { access, readFile, rename, rm, writeFile } from 'node:fs/promises';
 import { constants } from 'node:fs';
 import { resolve } from 'node:path';
 import { publicCountryRegistry } from '../src/locations/countries.mjs';
+import { validateDataset } from '../src/validation/dataset.mjs';
 
 const registry = [];
 
@@ -10,9 +11,8 @@ for (const country of publicCountryRegistry()) {
   try {
     await access(path, constants.R_OK);
     const dataset = JSON.parse(await readFile(path, 'utf8'));
-    if (dataset?.country?.code !== country.code || !Array.isArray(dataset?.developers)) {
-      throw new Error(`Dataset contract mismatch for ${country.code}.`);
-    }
+    validateDataset(dataset, country);
+
     registry.push({
       ...country,
       status: dataset.generatedAt ? 'live' : 'pending',
@@ -25,10 +25,14 @@ for (const country of publicCountryRegistry()) {
   }
 }
 
-await writeFile(
-  resolve('public/data/countries.json'),
-  `${JSON.stringify(registry, null, 2)}\n`,
-  'utf8'
-);
+const target = resolve('public/data/countries.json');
+const temporaryTarget = `${target}.tmp-${process.pid}-${Date.now()}`;
+
+try {
+  await writeFile(temporaryTarget, `${JSON.stringify(registry, null, 2)}\n`, 'utf8');
+  await rename(temporaryTarget, target);
+} finally {
+  await rm(temporaryTarget, { force: true }).catch(() => {});
+}
 
 console.log(`Wrote ${registry.length} countries to public/data/countries.json.`);
