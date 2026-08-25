@@ -1,22 +1,162 @@
 [
-  {"code":"AU","name":"Australia","status":"pending","dataset":"data/AU.json"},
-  {"code":"BW","name":"Botswana","status":"pending","dataset":"data/BW.json"},
-  {"code":"BR","name":"Brazil","status":"pending","dataset":"data/BR.json"},
-  {"code":"CM","name":"Cameroon","status":"pending","dataset":"data/CM.json"},
-  {"code":"CA","name":"Canada","status":"pending","dataset":"data/CA.json"},
-  {"code":"EG","name":"Egypt","status":"pending","dataset":"data/EG.json"},
-  {"code":"FR","name":"France","status":"pending","dataset":"data/FR.json"},
-  {"code":"DE","name":"Germany","status":"pending","dataset":"data/DE.json"},
-  {"code":"GH","name":"Ghana","status":"pending","dataset":"data/GH.json"},
-  {"code":"IN","name":"India","status":"pending","dataset":"data/IN.json"},
-  {"code":"KE","name":"Kenya","status":"pending","dataset":"data/KE.json"},
-  {"code":"MX","name":"Mexico","status":"pending","dataset":"data/MX.json"},
-  {"code":"MA","name":"Morocco","status":"pending","dataset":"data/MA.json"},
-  {"code":"NL","name":"Netherlands","status":"pending","dataset":"data/NL.json"},
-  {"code":"NG","name":"Nigeria","status":"pending","dataset":"data/NG.json"},
-  {"code":"PT","name":"Portugal","status":"pending","dataset":"data/PT.json"},
-  {"code":"RW","name":"Rwanda","status":"pending","dataset":"data/RW.json"},
-  {"code":"ZA","name":"South Africa","status":"live","dataset":"data/ZA.json"},
-  {"code":"GB","name":"United Kingdom","status":"pending","dataset":"data/GB.json"},
-  {"code":"US","name":"United States","status":"pending","dataset":"data/US.json"}
+  {
+    "code": "AU",
+    "name": "Australia",
+    "status": "pending",
+    "dataset": "data/AU.json",
+    "developersIndexed": 0,
+    "generatedAt": null
+  },
+  {
+    "code": "BW",
+    "name": "Botswana",
+    "status": "pending",
+    "dataset": "data/BW.json",
+    "developersIndexed": 0,
+    "generatedAt": null
+  },
+  {
+    "code": "BR",
+    "name": "Brazil",
+    "status": "pending",
+    "dataset": "data/BR.json",
+    "developersIndexed": 0,
+    "generatedAt": null
+  },
+  {
+    "code": "CM",
+    "name": "Cameroon",
+    "status": "pending",
+    "dataset": "data/CM.json",
+    "developersIndexed": 0,
+    "generatedAt": null
+  },
+  {
+    "code": "CA",
+    "name": "Canada",
+    "status": "pending",
+    "dataset": "data/CA.json",
+    "developersIndexed": 0,
+    "generatedAt": null
+  },
+  {
+    "code": "EG",
+    "name": "Egypt",
+    "status": "pending",
+    "dataset": "data/EG.json",
+    "developersIndexed": 0,
+    "generatedAt": null
+  },
+  {
+    "code": "FR",
+    "name": "France",
+    "status": "pending",
+    "dataset": "data/FR.json",
+    "developersIndexed": 0,
+    "generatedAt": null
+  },
+  {
+    "code": "DE",
+    "name": "Germany",
+    "status": "pending",
+    "dataset": "data/DE.json",
+    "developersIndexed": 0,
+    "generatedAt": null
+  },
+  {
+    "code": "GH",
+    "name": "Ghana",
+    "status": "pending",
+    "dataset": "data/GH.json",
+    "developersIndexed": 0,
+    "generatedAt": null
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "status": "live",
+    "dataset": "data/IN.json",
+    "developersIndexed": 30,
+    "generatedAt": "2026-08-25T17:23:42.395Z"
+  },
+  {
+    "code": "KE",
+    "name": "Kenya",
+    "status": "pending",
+    "dataset": "data/KE.json",
+    "developersIndexed": 0,
+    "generatedAt": null
+  },
+  {
+    "code": "MX",
+    "name": "Mexico",
+    "status": "pending",
+    "dataset": "data/MX.json",
+    "developersIndexed": 0,
+    "generatedAt": null
+  },
+  {
+    "code": "MA",
+    "name": "Morocco",
+    "status": "pending",
+    "dataset": "data/MA.json",
+    "developersIndexed": 0,
+    "generatedAt": null
+  },
+  {
+    "code": "NL",
+    "name": "Netherlands",
+    "status": "pending",
+    "dataset": "data/NL.json",
+    "developersIndexed": 0,
+    "generatedAt": null
+  },
+  {
+    "code": "NG",
+    "name": "Nigeria",
+    "status": "pending",
+    "dataset": "data/NG.json",
+    "developersIndexed": 0,
+    "generatedAt": null
+  },
+  {
+    "code": "PT",
+    "name": "Portugal",
+    "status": "pending",
+    "dataset": "data/PT.json",
+    "developersIndexed": 0,
+    "generatedAt": null
+  },
+  {
+    "code": "RW",
+    "name": "Rwanda",
+    "status": "pending",
+    "dataset": "data/RW.json",
+    "developersIndexed": 0,
+    "generatedAt": null
+  },
+  {
+    "code": "ZA",
+    "name": "South Africa",
+    "status": "live",
+    "dataset": "data/ZA.json",
+    "developersIndexed": 497,
+    "generatedAt": "2026-08-25T14:01:08.893Z"
+  },
+  {
+    "code": "GB",
+    "name": "United Kingdom",
+    "status": "pending",
+    "dataset": "data/GB.json",
+    "developersIndexed": 0,
+    "generatedAt": null
+  },
+  {
+    "code": "US",
+    "name": "United States",
+    "status": "pending",
+    "dataset": "data/US.json",
+    "developersIndexed": 0,
+    "generatedAt": null
+  }
 ]
