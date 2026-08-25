@@ -48,6 +48,58 @@ test('retries transient GitHub 502 responses and succeeds', async () => {
   assert.deepEqual(sleeps, [10]);
 });
 
+test('honors Retry-After without truncating it to the ordinary backoff cap', async () => {
+  const sleeps = [];
+  let calls = 0;
+  const graphql = createGraphQLClient({
+    token: 'test-token',
+    fetchImpl: async () => {
+      calls += 1;
+      if (calls === 1) {
+        return response(429, { message: 'slow down' }, { 'retry-after': '30' });
+      }
+      return response(200, { data: { viewer: { login: 'octocat' } } });
+    },
+    sleep: async (ms) => { sleeps.push(ms); },
+    random: () => 0,
+    maxDelayMs: 100,
+    requestTimeoutMs: 1000
+  });
+
+  assert.equal((await graphql('query { viewer { login } }')).viewer.login, 'octocat');
+  assert.deepEqual(sleeps, [30000]);
+});
+
+test('waits for x-ratelimit-reset when the primary rate limit is depleted', async () => {
+  const sleeps = [];
+  let calls = 0;
+  const now = Date.now();
+  const resetEpochSeconds = Math.ceil((now + 60000) / 1000);
+
+  const graphql = createGraphQLClient({
+    token: 'test-token',
+    fetchImpl: async () => {
+      calls += 1;
+      if (calls === 1) {
+        return response(403, { message: 'API rate limit exceeded' }, {
+          'x-ratelimit-remaining': '0',
+          'x-ratelimit-reset': String(resetEpochSeconds)
+        });
+      }
+      return response(200, { data: { viewer: { login: 'octocat' } } });
+    },
+    sleep: async (ms) => { sleeps.push(ms); },
+    random: () => 0,
+    maxDelayMs: 100,
+    requestTimeoutMs: 1000
+  });
+
+  assert.equal((await graphql('query { viewer { login } }')).viewer.login, 'octocat');
+  assert.equal(sleeps.length, 1);
+  assert.ok(sleeps[0] >= 59000, `expected a reset-aware delay, got ${sleeps[0]}ms`);
+  assert.ok(sleeps[0] <= 62000, `expected a bounded reset-aware delay, got ${sleeps[0]}ms`);
+});
+
 test('does not retry permanent authentication failures', async () => {
   let calls = 0;
   const graphql = createGraphQLClient({
