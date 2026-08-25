@@ -20,18 +20,22 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: github-developer-index-pages
   cancel-in-progress: true
 
 jobs:
   deploy:
-    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    # Automated refresh commits use GITHUB_TOKEN and therefore do not recursively
+    # trigger push workflows. Deploy the current main snapshot whenever either
+    # refresh workflow completes, including partial country refreshes where some
+    # validated country commits were published before a later country failed.
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
-      - name: Checkout
+      - name: Checkout current main
         uses: actions/checkout@v5
         with:
           ref: main

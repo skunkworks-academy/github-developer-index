@@ -32,6 +32,24 @@ test('accepts configured cities with lower confidence', () => {
   assert.ok(result.confidence < 1);
 });
 
+test('rejects ambiguous US New Mexico locations from the Mexico dataset', () => {
+  const mexico = getCountryConfig('MX');
+
+  for (const location of ['New Mexico', 'New Mexico, USA', 'Albuquerque, New Mexico']) {
+    const result = normalizeCountryLocation(location, mexico);
+    assert.equal(result.accepted, false, location);
+    assert.equal(result.reason, 'excluded-location', location);
+  }
+});
+
+test('rejects locations that explicitly name a different supported country', () => {
+  const mexico = getCountryConfig('MX');
+  const result = normalizeCountryLocation('Remote — USA / Mexico', mexico);
+
+  assert.equal(result.accepted, false);
+  assert.equal(result.reason, 'conflicting-country');
+});
+
 test('country search queries include country and city criteria', () => {
   const rwanda = getCountryConfig('RW');
   const queries = countrySearchQueries(rwanda);
