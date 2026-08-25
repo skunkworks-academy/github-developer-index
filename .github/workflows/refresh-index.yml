@@ -16,12 +16,13 @@ permissions:
   contents: write
 
 concurrency:
-  group: github-developer-index-refresh
-  cancel-in-progress: true
+  group: github-developer-index-data-publisher
+  cancel-in-progress: false
 
 jobs:
   refresh-south-africa:
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     steps:
       - name: Checkout main
         uses: actions/checkout@v5
@@ -34,27 +35,35 @@ jobs:
         with:
           node-version: 24
 
+      - name: Configure dataset publisher
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
       - name: Collect and rank South Africa
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
         run: npm run collect:za
 
-      - name: Validate snapshot
+      - name: Rebuild country registry
+        run: npm run registry
+
+      - name: Validate snapshot and registry
         run: |
           npm test
           npm run validate
 
-      - name: Commit refreshed dataset
+      - name: Publish South Africa dataset and registry atomically
         shell: bash
         run: |
-          if git diff --quiet -- public/data/ZA.json; then
-            echo "No dataset changes to commit."
+          set -euo pipefail
+          git add public/data/ZA.json public/data/countries.json
+
+          if git diff --cached --quiet; then
+            echo "No South Africa dataset or registry changes to commit."
             exit 0
           fi
 
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/ZA.json
           git commit -m "data: refresh South Africa developer index"
           git pull --rebase origin main
           git push origin HEAD:main
