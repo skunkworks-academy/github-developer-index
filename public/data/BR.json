@@ -1,11 +1,2600 @@
 {
   "schemaVersion": 1,
-  "generatedAt": null,
-  "source": {"provider":"GitHub","api":"GraphQL","officialLeaderboard":false},
-  "country": {"code":"BR","name":"Brazil"},
-  "availableYears": [],
-  "calendarWindows": [],
-  "methodology": {"version":"1.0.0","weights":{"activity":0.45,"impact":0.25,"community":0.15,"collaboration":0.15},"windowDays":365,"notes":["Pending first live refresh."]},
-  "collection": {"discoveredCandidates":0,"acceptedCandidates":0,"rejectedCandidates":0,"window":null},
-  "developers": []
+  "generatedAt": "2026-08-25T03:42:43.916Z",
+  "source": {
+    "provider": "GitHub",
+    "api": "GraphQL",
+    "officialLeaderboard": false
+  },
+  "country": {
+    "code": "BR",
+    "name": "Brazil"
+  },
+  "availableYears": [
+    2026,
+    2025,
+    2024,
+    2023,
+    2022
+  ],
+  "calendarWindows": [
+    {
+      "year": 2026,
+      "from": "2026-01-01T00:00:00.000Z",
+      "to": "2026-08-25T03:42:43.916Z",
+      "complete": false
+    },
+    {
+      "year": 2025,
+      "from": "2025-01-01T00:00:00.000Z",
+      "to": "2025-12-31T23:59:59.999Z",
+      "complete": true
+    },
+    {
+      "year": 2024,
+      "from": "2024-01-01T00:00:00.000Z",
+      "to": "2024-12-31T23:59:59.999Z",
+      "complete": true
+    },
+    {
+      "year": 2023,
+      "from": "2023-01-01T00:00:00.000Z",
+      "to": "2023-12-31T23:59:59.999Z",
+      "complete": true
+    },
+    {
+      "year": 2022,
+      "from": "2022-01-01T00:00:00.000Z",
+      "to": "2022-12-31T23:59:59.999Z",
+      "complete": true
+    }
+  ],
+  "methodology": {
+    "version": "1.0.0",
+    "weights": {
+      "activity": 0.45,
+      "impact": 0.25,
+      "community": 0.15,
+      "collaboration": 0.15
+    },
+    "windowDays": 365,
+    "notes": [
+      "Candidate discovery uses GitHub user search location qualifiers.",
+      "Country resolution uses explicit country aliases plus a bounded set of recognized cities.",
+      "Repository impact samples up to the 100 most-starred public repositories owned by each user.",
+      "Calendar-year filters use GitHub contribution activity for the selected year; current stars and followers are not historical snapshots.",
+      "The index is independent and is not an official GitHub ranking."
+    ]
+  },
+  "collection": {
+    "discoveredCandidates": 30,
+    "acceptedCandidates": 30,
+    "rejectedCandidates": 0,
+    "window": {
+      "from": "2025-08-25T03:42:43.916Z",
+      "to": "2026-08-25T03:42:43.916Z"
+    }
+  },
+  "developers": [
+    {
+      "login": "avelino",
+      "name": "Avelino",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/31996?u=867314ee32416a56c62d7b0715d31d7b0ccd8e62&v=4",
+      "profileUrl": "https://github.com/avelino",
+      "bio": "CTO at @buserbrasil, open source engineer",
+      "company": "@buserbrasil",
+      "accountCreatedAt": "2008-10-31T14:06:07Z",
+      "location": {
+        "raw": "Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 6564,
+        "contributions365d": 4038,
+        "commits365d": 1292,
+        "issues365d": 443,
+        "pullRequests365d": 254,
+        "reviews365d": 108,
+        "restrictedContributions365d": 1917,
+        "publicRepositories": 247,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 184359,
+        "forksReceived": 13905,
+        "archivedRepositoriesSampled": 16
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1376,
+          "commits": 693,
+          "issues": 135,
+          "pullRequests": 111,
+          "reviews": 97,
+          "restrictedContributions": 303
+        },
+        "2023": {
+          "contributions": 2199,
+          "commits": 626,
+          "issues": 165,
+          "pullRequests": 111,
+          "reviews": 188,
+          "restrictedContributions": 1066
+        },
+        "2024": {
+          "contributions": 1853,
+          "commits": 367,
+          "issues": 63,
+          "pullRequests": 40,
+          "reviews": 152,
+          "restrictedContributions": 1215
+        },
+        "2025": {
+          "contributions": 2247,
+          "commits": 738,
+          "issues": 93,
+          "pullRequests": 111,
+          "reviews": 83,
+          "restrictedContributions": 1202
+        },
+        "2026": {
+          "contributions": 3341,
+          "commits": 1067,
+          "issues": 420,
+          "pullRequests": 208,
+          "reviews": 64,
+          "restrictedContributions": 1565
+        }
+      },
+      "scores": {
+        "overall": 89.85,
+        "activity": 88.56,
+        "impact": 100,
+        "community": 75.42,
+        "collaboration": 91.24
+      },
+      "rank": 1
+    },
+    {
+      "login": "caarlos0",
+      "name": "Carlos Alexandro Becker",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/245435?u=016c628e1a5b95034b2b1af297827b7f545809bc&v=4",
+      "profileUrl": "https://github.com/caarlos0",
+      "bio": "The @goreleaser guy.",
+      "company": "@github",
+      "accountCreatedAt": "2010-04-16T12:16:39Z",
+      "location": {
+        "raw": "Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 4639,
+        "contributions365d": 7196,
+        "commits365d": 2825,
+        "issues365d": 66,
+        "pullRequests365d": 630,
+        "reviews365d": 349,
+        "restrictedContributions365d": 3277,
+        "publicRepositories": 96,
+        "repositoriesSampled": 96,
+        "repoStatsTruncated": false,
+        "starsReceived": 13227,
+        "forksReceived": 1013,
+        "archivedRepositoriesSampled": 55
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 6559,
+          "commits": 2183,
+          "issues": 44,
+          "pullRequests": 513,
+          "reviews": 185,
+          "restrictedContributions": 3533
+        },
+        "2023": {
+          "contributions": 7458,
+          "commits": 2345,
+          "issues": 48,
+          "pullRequests": 526,
+          "reviews": 574,
+          "restrictedContributions": 3902
+        },
+        "2024": {
+          "contributions": 5955,
+          "commits": 2221,
+          "issues": 27,
+          "pullRequests": 563,
+          "reviews": 889,
+          "restrictedContributions": 2187
+        },
+        "2025": {
+          "contributions": 5598,
+          "commits": 2389,
+          "issues": 63,
+          "pullRequests": 683,
+          "reviews": 501,
+          "restrictedContributions": 1891
+        },
+        "2026": {
+          "contributions": 5340,
+          "commits": 1979,
+          "issues": 53,
+          "pullRequests": 392,
+          "reviews": 199,
+          "restrictedContributions": 2685
+        }
+      },
+      "scores": {
+        "overall": 88.12,
+        "activity": 94.72,
+        "impact": 78.54,
+        "community": 72.44,
+        "collaboration": 100
+      },
+      "rank": 2
+    },
+    {
+      "login": "luizomf",
+      "name": "Otávio Miranda",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/553862?u=28d6db8f57fa7a7b0090b9b6f6f01199ed87fae2&v=4",
+      "profileUrl": "https://github.com/luizomf",
+      "bio": "Software developer working with Linux and server infrastructure since 2009.",
+      "company": "Otávio Miranda",
+      "accountCreatedAt": "2011-01-09T04:32:43Z",
+      "location": {
+        "raw": "Boa Esperança, MG, Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 9229,
+        "contributions365d": 6548,
+        "commits365d": 2507,
+        "issues365d": 217,
+        "pullRequests365d": 194,
+        "reviews365d": 0,
+        "restrictedContributions365d": 3603,
+        "publicRepositories": 140,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 5756,
+        "forksReceived": 2175,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 553,
+          "commits": 534,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 4
+        },
+        "2023": {
+          "contributions": 661,
+          "commits": 268,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 390
+        },
+        "2024": {
+          "contributions": 261,
+          "commits": 175,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 85
+        },
+        "2025": {
+          "contributions": 2187,
+          "commits": 919,
+          "issues": 0,
+          "pullRequests": 8,
+          "reviews": 0,
+          "restrictedContributions": 1235
+        },
+        "2026": {
+          "contributions": 5476,
+          "commits": 2222,
+          "issues": 217,
+          "pullRequests": 194,
+          "reviews": 0,
+          "restrictedContributions": 2822
+        }
+      },
+      "scores": {
+        "overall": 84.83,
+        "activity": 93.72,
+        "impact": 75.18,
+        "community": 78.34,
+        "collaboration": 80.73
+      },
+      "rank": 3
+    },
+    {
+      "login": "akitaonrails",
+      "name": "Fabio Akita",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/2840?u=6923ae49ba086f2c94d29287bc998bacf5b32010&v=4",
+      "profileUrl": "https://github.com/akitaonrails",
+      "bio": "Agile Senior Vibe Coder /\r\nSign up for my newsletter: https://themakitachronicles.com",
+      "company": "Codeminer 42",
+      "accountCreatedAt": "2008-03-11T17:14:52Z",
+      "location": {
+        "raw": "Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 19709,
+        "contributions365d": 4690,
+        "commits365d": 4451,
+        "issues365d": 30,
+        "pullRequests365d": 143,
+        "reviews365d": 18,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 175,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 11322,
+        "forksReceived": 1199,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 53,
+          "commits": 49,
+          "issues": 1,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 277,
+          "commits": 224,
+          "issues": 2,
+          "pullRequests": 23,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 9,
+          "commits": 3,
+          "issues": 1,
+          "pullRequests": 0,
+          "reviews": 1,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 217,
+          "commits": 187,
+          "issues": 2,
+          "pullRequests": 12,
+          "reviews": 6,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 4601,
+          "commits": 4366,
+          "issues": 30,
+          "pullRequests": 143,
+          "reviews": 15,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 83.79,
+        "activity": 90.16,
+        "impact": 77.67,
+        "community": 84.85,
+        "collaboration": 73.81
+      },
+      "rank": 4
+    },
+    {
+      "login": "insidegui",
+      "name": "Guilherme Rambo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/67184?u=8289404df610d8703b7d7a77a626d9e049dd886c&v=4",
+      "profileUrl": "https://github.com/insidegui",
+      "bio": "Mac and iOS developer, security researcher. ",
+      "company": "Best Buddy Apps",
+      "accountCreatedAt": "2009-03-25T20:03:18Z",
+      "location": {
+        "raw": "Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 4940,
+        "contributions365d": 4985,
+        "commits365d": 191,
+        "issues365d": 1,
+        "pullRequests365d": 28,
+        "reviews365d": 6,
+        "restrictedContributions365d": 4746,
+        "publicRepositories": 231,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 34365,
+        "forksReceived": 2179,
+        "archivedRepositoriesSampled": 22
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 3560,
+          "commits": 266,
+          "issues": 8,
+          "pullRequests": 29,
+          "reviews": 8,
+          "restrictedContributions": 3218
+        },
+        "2023": {
+          "contributions": 3527,
+          "commits": 367,
+          "issues": 5,
+          "pullRequests": 63,
+          "reviews": 10,
+          "restrictedContributions": 3048
+        },
+        "2024": {
+          "contributions": 3320,
+          "commits": 431,
+          "issues": 3,
+          "pullRequests": 41,
+          "reviews": 3,
+          "restrictedContributions": 2794
+        },
+        "2025": {
+          "contributions": 4131,
+          "commits": 387,
+          "issues": 6,
+          "pullRequests": 48,
+          "reviews": 7,
+          "restrictedContributions": 3653
+        },
+        "2026": {
+          "contributions": 3585,
+          "commits": 162,
+          "issues": 1,
+          "pullRequests": 27,
+          "reviews": 3,
+          "restrictedContributions": 3382
+        }
+      },
+      "scores": {
+        "overall": 81.08,
+        "activity": 90.81,
+        "impact": 86.13,
+        "community": 72.98,
+        "collaboration": 51.57
+      },
+      "rank": 5
+    },
+    {
+      "login": "jeffersongoncalves",
+      "name": "Jefferson Gonçalves",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/411493?u=53b5f0453da8f12a07b081a3b5e45103a571a2d8&v=4",
+      "profileUrl": "https://github.com/jeffersongoncalves",
+      "bio": "Full Stack PHP Developer | Filament | Laravel | Livewire | Alpine.js | Tailwind CSS",
+      "company": null,
+      "accountCreatedAt": "2010-09-22T13:33:26Z",
+      "location": {
+        "raw": "Assis, SP, Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 5391,
+        "contributions365d": 11805,
+        "commits365d": 9096,
+        "issues365d": 17,
+        "pullRequests365d": 201,
+        "reviews365d": 8,
+        "restrictedContributions365d": 2382,
+        "publicRepositories": 226,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 573,
+        "forksReceived": 43,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 11400,
+          "commits": 29,
+          "issues": 2,
+          "pullRequests": 14,
+          "reviews": 3,
+          "restrictedContributions": 11352
+        },
+        "2023": {
+          "contributions": 18834,
+          "commits": 27,
+          "issues": 0,
+          "pullRequests": 50,
+          "reviews": 1,
+          "restrictedContributions": 18756
+        },
+        "2024": {
+          "contributions": 18415,
+          "commits": 71,
+          "issues": 2,
+          "pullRequests": 50,
+          "reviews": 23,
+          "restrictedContributions": 18268
+        },
+        "2025": {
+          "contributions": 10394,
+          "commits": 6786,
+          "issues": 6,
+          "pullRequests": 256,
+          "reviews": 18,
+          "restrictedContributions": 3268
+        },
+        "2026": {
+          "contributions": 9335,
+          "commits": 7225,
+          "issues": 17,
+          "pullRequests": 160,
+          "reviews": 6,
+          "restrictedContributions": 1826
+        }
+      },
+      "scores": {
+        "overall": 80.74,
+        "activity": 100,
+        "impact": 52.93,
+        "community": 73.73,
+        "collaboration": 76.35
+      },
+      "rank": 6
+    },
+    {
+      "login": "felipefialho",
+      "name": "Felipe Fialho",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/3603793?u=6da1e86560b509ab87c0953a7faaaef82aac1c1f&v=4",
+      "profileUrl": "https://github.com/felipefialho",
+      "bio": "Staff Engineer at @juntossomosmais and Founder of @frontendbr. Building scalable architectures and surfing the AI-Augmented wave 🌊",
+      "company": "@juntossomosmais, @frontendbr ",
+      "accountCreatedAt": "2013-02-15T15:54:03Z",
+      "location": {
+        "raw": "Sao Paulo - Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": "Sao Paulo",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 7809,
+        "contributions365d": 2661,
+        "commits365d": 235,
+        "issues365d": 0,
+        "pullRequests365d": 47,
+        "reviews365d": 65,
+        "restrictedContributions365d": 2314,
+        "publicRepositories": 37,
+        "repositoriesSampled": 37,
+        "repoStatsTruncated": false,
+        "starsReceived": 20104,
+        "forksReceived": 2072,
+        "archivedRepositoriesSampled": 4
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 2147,
+          "commits": 341,
+          "issues": 0,
+          "pullRequests": 3,
+          "reviews": 54,
+          "restrictedContributions": 1749
+        },
+        "2023": {
+          "contributions": 3617,
+          "commits": 2257,
+          "issues": 36,
+          "pullRequests": 63,
+          "reviews": 145,
+          "restrictedContributions": 1112
+        },
+        "2024": {
+          "contributions": 1797,
+          "commits": 317,
+          "issues": 10,
+          "pullRequests": 55,
+          "reviews": 144,
+          "restrictedContributions": 1270
+        },
+        "2025": {
+          "contributions": 2594,
+          "commits": 253,
+          "issues": 3,
+          "pullRequests": 30,
+          "reviews": 73,
+          "restrictedContributions": 2233
+        },
+        "2026": {
+          "contributions": 1914,
+          "commits": 151,
+          "issues": 0,
+          "pullRequests": 36,
+          "reviews": 56,
+          "restrictedContributions": 1671
+        }
+      },
+      "scores": {
+        "overall": 80.52,
+        "activity": 84.11,
+        "impact": 82.32,
+        "community": 76.91,
+        "collaboration": 70.35
+      },
+      "rank": 7
+    },
+    {
+      "login": "maykbrito",
+      "name": "Mayk Brito",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6643122?u=0afcb7b2ccbaa4f7f4c7a850d9d203e1851cca37&v=4",
+      "profileUrl": "https://github.com/maykbrito",
+      "bio": "Senior Software Engineer & Instructor - #javascript #react #nodejs #fullstack",
+      "company": "@Rocketseat ",
+      "accountCreatedAt": "2014-02-10T20:07:04Z",
+      "location": {
+        "raw": "Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 16640,
+        "contributions365d": 9047,
+        "commits365d": 247,
+        "issues365d": 1,
+        "pullRequests365d": 8,
+        "reviews365d": 0,
+        "restrictedContributions365d": 8768,
+        "publicRepositories": 166,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 5429,
+        "forksReceived": 3951,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 9852,
+          "commits": 147,
+          "issues": 1,
+          "pullRequests": 5,
+          "reviews": 0,
+          "restrictedContributions": 9672
+        },
+        "2023": {
+          "contributions": 9725,
+          "commits": 192,
+          "issues": 0,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 9513
+        },
+        "2024": {
+          "contributions": 7701,
+          "commits": 248,
+          "issues": 0,
+          "pullRequests": 5,
+          "reviews": 0,
+          "restrictedContributions": 7427
+        },
+        "2025": {
+          "contributions": 8593,
+          "commits": 139,
+          "issues": 0,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 8441
+        },
+        "2026": {
+          "contributions": 6071,
+          "commits": 197,
+          "issues": 1,
+          "pullRequests": 6,
+          "reviews": 0,
+          "restrictedContributions": 5849
+        }
+      },
+      "scores": {
+        "overall": 80.36,
+        "activity": 97.16,
+        "impact": 77.44,
+        "community": 83.4,
+        "collaboration": 31.8
+      },
+      "rank": 8
+    },
+    {
+      "login": "ErickWendel",
+      "name": "Erick Wendel",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/8060102?u=de3bfaa57ccc7f15a33b67ea1bd86b76e5cebdda&v=4",
+      "profileUrl": "https://github.com/ErickWendel",
+      "bio": "Professional JS Educator, Microsoft MVP, Google Dev Expert, GitHub Star Alumni, OpenJS Path Finder Educator '23, @nodejs ambassador, Keynote Speaker🇧🇷",
+      "company": "@ew-academy ",
+      "accountCreatedAt": "2014-07-03T15:50:36Z",
+      "location": {
+        "raw": "São Paulo - Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": "São Paulo",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 11123,
+        "contributions365d": 1312,
+        "commits365d": 431,
+        "issues365d": 0,
+        "pullRequests365d": 170,
+        "reviews365d": 49,
+        "restrictedContributions365d": 653,
+        "publicRepositories": 334,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 18303,
+        "forksReceived": 4426,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 683,
+          "commits": 255,
+          "issues": 18,
+          "pullRequests": 19,
+          "reviews": 30,
+          "restrictedContributions": 319
+        },
+        "2023": {
+          "contributions": 569,
+          "commits": 234,
+          "issues": 9,
+          "pullRequests": 11,
+          "reviews": 25,
+          "restrictedContributions": 263
+        },
+        "2024": {
+          "contributions": 993,
+          "commits": 561,
+          "issues": 0,
+          "pullRequests": 2,
+          "reviews": 5,
+          "restrictedContributions": 390
+        },
+        "2025": {
+          "contributions": 619,
+          "commits": 204,
+          "issues": 0,
+          "pullRequests": 6,
+          "reviews": 6,
+          "restrictedContributions": 385
+        },
+        "2026": {
+          "contributions": 1101,
+          "commits": 395,
+          "issues": 0,
+          "pullRequests": 168,
+          "reviews": 45,
+          "restrictedContributions": 488
+        }
+      },
+      "scores": {
+        "overall": 78.91,
+        "activity": 76.58,
+        "impact": 83.24,
+        "community": 79.94,
+        "collaboration": 77.68
+      },
+      "rank": 9
+    },
+    {
+      "login": "danielhe4rt",
+      "name": "Daniel Reis",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6912596?u=517862825ee9ff10375c3b88b75be1c0f07a753f&v=4",
+      "profileUrl": "https://github.com/danielhe4rt",
+      "bio": "Coding useless stuff since 2011",
+      "company": null,
+      "accountCreatedAt": "2014-03-10T22:13:19Z",
+      "location": {
+        "raw": "Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 4937,
+        "contributions365d": 1510,
+        "commits365d": 1019,
+        "issues365d": 132,
+        "pullRequests365d": 141,
+        "reviews365d": 194,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 236,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 5552,
+        "forksReceived": 542,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 312,
+          "commits": 227,
+          "issues": 8,
+          "pullRequests": 24,
+          "reviews": 36,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 622,
+          "commits": 445,
+          "issues": 30,
+          "pullRequests": 65,
+          "reviews": 45,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 879,
+          "commits": 616,
+          "issues": 68,
+          "pullRequests": 79,
+          "reviews": 67,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 881,
+          "commits": 621,
+          "issues": 54,
+          "pullRequests": 72,
+          "reviews": 99,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 1022,
+          "commits": 678,
+          "issues": 109,
+          "pullRequests": 95,
+          "reviews": 124,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 77.18,
+        "activity": 78.07,
+        "impact": 71.75,
+        "community": 72.97,
+        "collaboration": 87.75
+      },
+      "rank": 10
+    },
+    {
+      "login": "arthurspk",
+      "name": "Arthur Coutinho",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/70382532?u=3188d7d5aeaadba11e20c30d82b581bbc9ef9e0c&v=4",
+      "profileUrl": "https://github.com/arthurspk",
+      "bio": "Software Engineer & Infrastructure Analyst with passions in Cybersecurity.",
+      "company": "Pantanal Studio",
+      "accountCreatedAt": "2020-08-28T14:06:01Z",
+      "location": {
+        "raw": "Alagoas, Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 9946,
+        "contributions365d": 5740,
+        "commits365d": 17,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 5722,
+        "publicRepositories": 161,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 27100,
+        "forksReceived": 2837,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 941,
+          "commits": 783,
+          "issues": 1,
+          "pullRequests": 6,
+          "reviews": 42,
+          "restrictedContributions": 4
+        },
+        "2023": {
+          "contributions": 94,
+          "commits": 88,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 4,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 1247,
+          "commits": 21,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 1225
+        },
+        "2026": {
+          "contributions": 5005,
+          "commits": 11,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 4994
+        }
+      },
+      "scores": {
+        "overall": 74.58,
+        "activity": 92.31,
+        "impact": 84.77,
+        "community": 78.98,
+        "collaboration": 0
+      },
+      "rank": 11
+    },
+    {
+      "login": "diego3g",
+      "name": "Diego Fernandes",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/2254731?u=62845aebc40eb4768981d586c3a5fe60c6d87bd8&v=4",
+      "profileUrl": "https://github.com/diego3g",
+      "bio": "coding...",
+      "company": null,
+      "accountCreatedAt": "2012-08-31T11:46:00Z",
+      "location": {
+        "raw": "Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 32692,
+        "contributions365d": 3642,
+        "commits365d": 412,
+        "issues365d": 0,
+        "pullRequests365d": 1,
+        "reviews365d": 0,
+        "restrictedContributions365d": 3228,
+        "publicRepositories": 75,
+        "repositoriesSampled": 75,
+        "repoStatsTruncated": false,
+        "starsReceived": 9405,
+        "forksReceived": 1758,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 438,
+          "commits": 142,
+          "issues": 1,
+          "pullRequests": 11,
+          "reviews": 10,
+          "restrictedContributions": 254
+        },
+        "2023": {
+          "contributions": 681,
+          "commits": 408,
+          "issues": 8,
+          "pullRequests": 24,
+          "reviews": 38,
+          "restrictedContributions": 190
+        },
+        "2024": {
+          "contributions": 1258,
+          "commits": 162,
+          "issues": 1,
+          "pullRequests": 11,
+          "reviews": 9,
+          "restrictedContributions": 1071
+        },
+        "2025": {
+          "contributions": 564,
+          "commits": 28,
+          "issues": 0,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 532
+        },
+        "2026": {
+          "contributions": 3513,
+          "commits": 412,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 3100
+        }
+      },
+      "scores": {
+        "overall": 73.5,
+        "activity": 87.46,
+        "impact": 77.18,
+        "community": 89.19,
+        "collaboration": 9.79
+      },
+      "rank": 12
+    },
+    {
+      "login": "Fernanda-Kipper",
+      "name": "Fernanda Kipper",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/61896274?u=975f950f1155ed72e481c2f5eb27c01b83b01999&v=4",
+      "profileUrl": "https://github.com/Fernanda-Kipper",
+      "bio": "Software Enginner passionate about web development",
+      "company": null,
+      "accountCreatedAt": "2020-03-07T03:50:39Z",
+      "location": {
+        "raw": "Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 8824,
+        "contributions365d": 3176,
+        "commits365d": 28,
+        "issues365d": 0,
+        "pullRequests365d": 1,
+        "reviews365d": 0,
+        "restrictedContributions365d": 3145,
+        "publicRepositories": 84,
+        "repositoriesSampled": 84,
+        "repoStatsTruncated": false,
+        "starsReceived": 3460,
+        "forksReceived": 916,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 2028,
+          "commits": 495,
+          "issues": 22,
+          "pullRequests": 25,
+          "reviews": 6,
+          "restrictedContributions": 1474
+        },
+        "2023": {
+          "contributions": 711,
+          "commits": 446,
+          "issues": 25,
+          "pullRequests": 26,
+          "reviews": 4,
+          "restrictedContributions": 179
+        },
+        "2024": {
+          "contributions": 484,
+          "commits": 298,
+          "issues": 21,
+          "pullRequests": 23,
+          "reviews": 37,
+          "restrictedContributions": 83
+        },
+        "2025": {
+          "contributions": 1390,
+          "commits": 50,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 2,
+          "restrictedContributions": 1332
+        },
+        "2026": {
+          "contributions": 2096,
+          "commits": 28,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 2065
+        }
+      },
+      "scores": {
+        "overall": 69.34,
+        "activity": 86,
+        "impact": 69.91,
+        "community": 77.95,
+        "collaboration": 9.79
+      },
+      "rank": 13
+    },
+    {
+      "login": "dunossauro",
+      "name": "Eduardo Mendes",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6801122?u=72b1753502bbad5d13b7727044f9bd861aef71d7&v=4",
+      "profileUrl": "https://github.com/dunossauro",
+      "bio": "Lambda maker, python lover, free software enthusiast. Migrating to Codeberg.",
+      "company": "@livedepython",
+      "accountCreatedAt": "2014-02-27T04:33:17Z",
+      "location": {
+        "raw": "São Paulo, Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": "São Paulo",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 4568,
+        "contributions365d": 662,
+        "commits365d": 576,
+        "issues365d": 38,
+        "pullRequests365d": 33,
+        "reviews365d": 7,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 196,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 4229,
+        "forksReceived": 711,
+        "archivedRepositoriesSampled": 4
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 989,
+          "commits": 304,
+          "issues": 37,
+          "pullRequests": 1,
+          "reviews": 1,
+          "restrictedContributions": 627
+        },
+        "2023": {
+          "contributions": 1186,
+          "commits": 944,
+          "issues": 30,
+          "pullRequests": 20,
+          "reviews": 6,
+          "restrictedContributions": 172
+        },
+        "2024": {
+          "contributions": 1438,
+          "commits": 1346,
+          "issues": 65,
+          "pullRequests": 16,
+          "reviews": 3,
+          "restrictedContributions": 4
+        },
+        "2025": {
+          "contributions": 1622,
+          "commits": 1478,
+          "issues": 98,
+          "pullRequests": 29,
+          "reviews": 7,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 377,
+          "commits": 316,
+          "issues": 26,
+          "pullRequests": 24,
+          "reviews": 7,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 68.43,
+        "activity": 69.29,
+        "impact": 70.44,
+        "community": 72.31,
+        "collaboration": 58.63
+      },
+      "rank": 14
+    },
+    {
+      "login": "falvojr",
+      "name": "Venilton FalvoJr",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/730492?u=2c181774f70ac6faab09344656a204618637f042&v=4",
+      "profileUrl": "https://github.com/falvojr",
+      "bio": "Doutorando no ICMC-USP, onde contribui junto ao CAEd. Atualmente é Tech Lead na DIO (dio.me), uma edtech que visa democratizar o ensino e capacitação em TI.",
+      "company": "@digitalinnovationone",
+      "accountCreatedAt": "2011-04-15T00:18:15Z",
+      "location": {
+        "raw": "Araraquara-SP, Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 6520,
+        "contributions365d": 851,
+        "commits365d": 318,
+        "issues365d": 0,
+        "pullRequests365d": 19,
+        "reviews365d": 0,
+        "restrictedContributions365d": 506,
+        "publicRepositories": 74,
+        "repositoriesSampled": 74,
+        "repoStatsTruncated": false,
+        "starsReceived": 1146,
+        "forksReceived": 1610,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 959,
+          "commits": 171,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 776
+        },
+        "2023": {
+          "contributions": 1234,
+          "commits": 885,
+          "issues": 3,
+          "pullRequests": 17,
+          "reviews": 20,
+          "restrictedContributions": 296
+        },
+        "2024": {
+          "contributions": 282,
+          "commits": 214,
+          "issues": 0,
+          "pullRequests": 5,
+          "reviews": 2,
+          "restrictedContributions": 59
+        },
+        "2025": {
+          "contributions": 532,
+          "commits": 142,
+          "issues": 1,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 382
+        },
+        "2026": {
+          "contributions": 741,
+          "commits": 264,
+          "issues": 0,
+          "pullRequests": 19,
+          "reviews": 0,
+          "restrictedContributions": 453
+        }
+      },
+      "scores": {
+        "overall": 67.12,
+        "activity": 71.96,
+        "impact": 68.34,
+        "community": 75.36,
+        "collaboration": 42.31
+      },
+      "rank": 15
+    },
+    {
+      "login": "lucasrmagalhaes",
+      "name": "Lucas Magalhães",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/43296467?u=325da88d4003c4ceb446409afed1fb30a9bda20e&v=4",
+      "profileUrl": "https://github.com/lucasrmagalhaes",
+      "bio": "Full Stack Developer | AI Engineer",
+      "company": "@Fiergs",
+      "accountCreatedAt": "2018-09-15T13:44:42Z",
+      "location": {
+        "raw": "Esteio, RS - Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 4670,
+        "contributions365d": 1059,
+        "commits365d": 114,
+        "issues365d": 50,
+        "pullRequests365d": 12,
+        "reviews365d": 0,
+        "restrictedContributions365d": 872,
+        "publicRepositories": 200,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 945,
+        "forksReceived": 228,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 4214,
+          "commits": 2069,
+          "issues": 621,
+          "pullRequests": 543,
+          "reviews": 9,
+          "restrictedContributions": 930
+        },
+        "2023": {
+          "contributions": 468,
+          "commits": 241,
+          "issues": 69,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 151
+        },
+        "2024": {
+          "contributions": 79,
+          "commits": 6,
+          "issues": 10,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 47
+        },
+        "2025": {
+          "contributions": 235,
+          "commits": 14,
+          "issues": 33,
+          "pullRequests": 0,
+          "reviews": 1,
+          "restrictedContributions": 164
+        },
+        "2026": {
+          "contributions": 993,
+          "commits": 110,
+          "issues": 17,
+          "pullRequests": 12,
+          "reviews": 0,
+          "restrictedContributions": 850
+        }
+      },
+      "scores": {
+        "overall": 66.78,
+        "activity": 74.29,
+        "impact": 59.08,
+        "community": 72.5,
+        "collaboration": 51.38
+      },
+      "rank": 16
+    },
+    {
+      "login": "acenelio",
+      "name": "Nelio Alves",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/13897257?u=5dd2dde5f8ab6ce062dd3772ff97d040d451ab04&v=4",
+      "profileUrl": "https://github.com/acenelio",
+      "bio": "Ajudo estudantes e profissionais de programação a ingressar ou se recolocar na carreira.\r\n20 anos de experiência profissional, mais de 160 mil alunos online. ",
+      "company": "@devsuperior ",
+      "accountCreatedAt": "2015-08-21T03:24:45Z",
+      "location": {
+        "raw": "Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 14043,
+        "contributions365d": 1168,
+        "commits365d": 79,
+        "issues365d": 0,
+        "pullRequests365d": 1,
+        "reviews365d": 0,
+        "restrictedContributions365d": 1086,
+        "publicRepositories": 290,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 3750,
+        "forksReceived": 2185,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 877,
+          "commits": 388,
+          "issues": 0,
+          "pullRequests": 4,
+          "reviews": 0,
+          "restrictedContributions": 465
+        },
+        "2023": {
+          "contributions": 513,
+          "commits": 126,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 380
+        },
+        "2024": {
+          "contributions": 247,
+          "commits": 63,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 184
+        },
+        "2025": {
+          "contributions": 436,
+          "commits": 69,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 363
+        },
+        "2026": {
+          "contributions": 982,
+          "commits": 36,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 945
+        }
+      },
+      "scores": {
+        "overall": 66.01,
+        "activity": 75.34,
+        "impact": 73.4,
+        "community": 81.94,
+        "collaboration": 9.79
+      },
+      "rank": 17
+    },
+    {
+      "login": "rodrigobranas",
+      "name": "Rodrigo Branas",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/7491283?u=af373a343dd451402953c7f2e82fc92c78550652&v=4",
+      "profileUrl": "https://github.com/rodrigobranas",
+      "bio": "Software Architect, Professor, Author and Speaker",
+      "company": null,
+      "accountCreatedAt": "2014-05-05T17:15:18Z",
+      "location": {
+        "raw": "Florianópolis, Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 6998,
+        "contributions365d": 1357,
+        "commits365d": 326,
+        "issues365d": 0,
+        "pullRequests365d": 1,
+        "reviews365d": 0,
+        "restrictedContributions365d": 955,
+        "publicRepositories": 394,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 2609,
+        "forksReceived": 1369,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 821,
+          "commits": 657,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 72
+        },
+        "2023": {
+          "contributions": 894,
+          "commits": 476,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 358
+        },
+        "2024": {
+          "contributions": 1220,
+          "commits": 440,
+          "issues": 4,
+          "pullRequests": 42,
+          "reviews": 51,
+          "restrictedContributions": 627
+        },
+        "2025": {
+          "contributions": 1957,
+          "commits": 383,
+          "issues": 0,
+          "pullRequests": 3,
+          "reviews": 16,
+          "restrictedContributions": 1486
+        },
+        "2026": {
+          "contributions": 996,
+          "commits": 230,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 718
+        }
+      },
+      "scores": {
+        "overall": 64.98,
+        "activity": 76.94,
+        "impact": 69.99,
+        "community": 75.97,
+        "collaboration": 9.79
+      },
+      "rank": 18
+    },
+    {
+      "login": "oluiscabral",
+      "name": "oluiscabral",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/58452540?u=daac901c3c1c4db030963ae31980685313244358&v=4",
+      "profileUrl": "https://github.com/oluiscabral",
+      "bio": "Full‑stack dev & educator. Creator of Studorama (3.7k users/24h). Rust, Python, JS/TS, Kotlin, Java. Remote.",
+      "company": "@studorama @ARK-Builders @taran-space",
+      "accountCreatedAt": "2019-12-03T02:03:18Z",
+      "location": {
+        "raw": "São Paulo, Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": "São Paulo",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 6280,
+        "contributions365d": 1579,
+        "commits365d": 20,
+        "issues365d": 0,
+        "pullRequests365d": 13,
+        "reviews365d": 4,
+        "restrictedContributions365d": 1541,
+        "publicRepositories": 40,
+        "repositoriesSampled": 40,
+        "repoStatsTruncated": false,
+        "starsReceived": 161,
+        "forksReceived": 19,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 21,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 21
+        },
+        "2023": {
+          "contributions": 381,
+          "commits": 39,
+          "issues": 0,
+          "pullRequests": 7,
+          "reviews": 1,
+          "restrictedContributions": 328
+        },
+        "2024": {
+          "contributions": 815,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 12,
+          "reviews": 1,
+          "restrictedContributions": 797
+        },
+        "2025": {
+          "contributions": 978,
+          "commits": 287,
+          "issues": 0,
+          "pullRequests": 21,
+          "reviews": 6,
+          "restrictedContributions": 656
+        },
+        "2026": {
+          "contributions": 1168,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 5,
+          "reviews": 1,
+          "restrictedContributions": 1161
+        }
+      },
+      "scores": {
+        "overall": 63.75,
+        "activity": 78.55,
+        "impact": 43.2,
+        "community": 75.04,
+        "collaboration": 42.31
+      },
+      "rank": 19
+    },
+    {
+      "login": "VictorTaelin",
+      "name": "Victor Taelin",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/13090166?u=8759860e1bbf00e8bc006bed24b9aeffea9acef3&v=4",
+      "profileUrl": "https://github.com/VictorTaelin",
+      "bio": "Functional-programming enthusiast, author of Kind and HVM.",
+      "company": "Higher Order Company",
+      "accountCreatedAt": "2015-06-28T20:11:59Z",
+      "location": {
+        "raw": "Rio de Janeiro, Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": "Rio de Janeiro",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 6156,
+        "contributions365d": 456,
+        "commits365d": 429,
+        "issues365d": 8,
+        "pullRequests365d": 2,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 260,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 8630,
+        "forksReceived": 575,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 585,
+          "commits": 542,
+          "issues": 14,
+          "pullRequests": 4,
+          "reviews": 3,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 452,
+          "commits": 426,
+          "issues": 2,
+          "pullRequests": 0,
+          "reviews": 2,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 1247,
+          "commits": 1195,
+          "issues": 9,
+          "pullRequests": 5,
+          "reviews": 20,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 263,
+          "commits": 246,
+          "issues": 2,
+          "pullRequests": 1,
+          "reviews": 1,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 445,
+          "commits": 424,
+          "issues": 8,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 63.48,
+        "activity": 65.32,
+        "impact": 74.91,
+        "community": 74.87,
+        "collaboration": 27.49
+      },
+      "rank": 20
+    },
+    {
+      "login": "cami-la",
+      "name": "Camila Cavalcante",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/64323124?u=88956a36bedc41b4b0bbc28bf549db72c67b6130&v=4",
+      "profileUrl": "https://github.com/cami-la",
+      "bio": "",
+      "company": null,
+      "accountCreatedAt": "2020-04-25T16:30:56Z",
+      "location": {
+        "raw": "Pernambuco, Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 8087,
+        "contributions365d": 485,
+        "commits365d": 1,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 484,
+        "publicRepositories": 163,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 9017,
+        "forksReceived": 4811,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 845,
+          "commits": 279,
+          "issues": 10,
+          "pullRequests": 79,
+          "reviews": 0,
+          "restrictedContributions": 423
+        },
+        "2023": {
+          "contributions": 557,
+          "commits": 321,
+          "issues": 0,
+          "pullRequests": 40,
+          "reviews": 0,
+          "restrictedContributions": 178
+        },
+        "2024": {
+          "contributions": 1024,
+          "commits": 65,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 952
+        },
+        "2025": {
+          "contributions": 57,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 57
+        },
+        "2026": {
+          "contributions": 454,
+          "commits": 1,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 453
+        }
+      },
+      "scores": {
+        "overall": 61.31,
+        "activity": 65.98,
+        "impact": 80.17,
+        "community": 77.21,
+        "collaboration": 0
+      },
+      "rank": 21
+    },
+    {
+      "login": "jakeliny",
+      "name": "Jakeliny Gracielly",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/17316392?u=eb030996fad6a43228e24528a9fe8f430daff56f&v=4",
+      "profileUrl": "https://github.com/jakeliny",
+      "bio": "Software Engineer",
+      "company": null,
+      "accountCreatedAt": "2016-02-18T13:47:47Z",
+      "location": {
+        "raw": "Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 4397,
+        "contributions365d": 1989,
+        "commits365d": 67,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 1921,
+        "publicRepositories": 12,
+        "repositoriesSampled": 12,
+        "repoStatsTruncated": false,
+        "starsReceived": 228,
+        "forksReceived": 82,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 47,
+          "commits": 25,
+          "issues": 1,
+          "pullRequests": 4,
+          "reviews": 0,
+          "restrictedContributions": 14
+        },
+        "2023": {
+          "contributions": 259,
+          "commits": 10,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 248
+        },
+        "2024": {
+          "contributions": 1309,
+          "commits": 18,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 1289
+        },
+        "2025": {
+          "contributions": 1450,
+          "commits": 74,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 1375
+        },
+        "2026": {
+          "contributions": 1499,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 1499
+        }
+      },
+      "scores": {
+        "overall": 59.43,
+        "activity": 81.01,
+        "impact": 48.71,
+        "community": 71.98,
+        "collaboration": 0
+      },
+      "rank": 22
+    },
+    {
+      "login": "gabrielfroes",
+      "name": "Gabriel Froes",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/19231904?u=e8d3dd3c30dd5af28dc30f86f6adb6d83f78cc21&v=4",
+      "profileUrl": "https://github.com/gabrielfroes",
+      "bio": "",
+      "company": "Código Fonte TV | RW Studio",
+      "accountCreatedAt": "2016-05-06T22:50:04Z",
+      "location": {
+        "raw": "São José dos Campos - SP - Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 4450,
+        "contributions365d": 175,
+        "commits365d": 17,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 153,
+        "publicRepositories": 41,
+        "repositoriesSampled": 41,
+        "repoStatsTruncated": false,
+        "starsReceived": 1804,
+        "forksReceived": 669,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 114,
+          "commits": 10,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 101
+        },
+        "2023": {
+          "contributions": 187,
+          "commits": 20,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 164
+        },
+        "2024": {
+          "contributions": 148,
+          "commits": 4,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 140
+        },
+        "2025": {
+          "contributions": 127,
+          "commits": 14,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 107
+        },
+        "2026": {
+          "contributions": 143,
+          "commits": 12,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 127
+        }
+      },
+      "scores": {
+        "overall": 52.04,
+        "activity": 55.14,
+        "impact": 65.66,
+        "community": 72.08,
+        "collaboration": 0
+      },
+      "rank": 23
+    },
+    {
+      "login": "AlianeAmaral",
+      "name": "Aliane Amaral",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/108065159?u=e2a0b53983174f4c437ded1b4cad1f936ba46896&v=4",
+      "profileUrl": "https://github.com/AlianeAmaral",
+      "bio": "\r\n",
+      "company": "AZ Tecnologia em Gestão",
+      "accountCreatedAt": "2022-06-23T10:38:17Z",
+      "location": {
+        "raw": "Campo Grande, MS - Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 4873,
+        "contributions365d": 231,
+        "commits365d": 149,
+        "issues365d": 3,
+        "pullRequests365d": 1,
+        "reviews365d": 0,
+        "restrictedContributions365d": 67,
+        "publicRepositories": 29,
+        "repositoriesSampled": 29,
+        "repoStatsTruncated": false,
+        "starsReceived": 208,
+        "forksReceived": 45,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 118,
+          "commits": 113,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 633,
+          "commits": 621,
+          "issues": 0,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 1
+        },
+        "2024": {
+          "contributions": 41,
+          "commits": 36,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 4
+        },
+        "2025": {
+          "contributions": 311,
+          "commits": 145,
+          "issues": 5,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 153
+        },
+        "2026": {
+          "contributions": 116,
+          "commits": 101,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 7
+        }
+      },
+      "scores": {
+        "overall": 51.34,
+        "activity": 58.09,
+        "impact": 46.48,
+        "community": 72.86,
+        "collaboration": 17.7
+      },
+      "rank": 24
+    },
+    {
+      "login": "felipeAguiarCode",
+      "name": "Felipe Silva Aguiar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/37452836?u=c2ee9c77db0b30faee7978ceb70b11cad1ec562c&v=4",
+      "profileUrl": "https://github.com/felipeAguiarCode",
+      "bio": "Software Consultant developer \r\n🚀 10 Anos desenvolvendo aplicações Web\r\n\r\n#javascript #typescript #nodejs #angular #react #dotnet #asp.net ",
+      "company": "@digitalinnovationone",
+      "accountCreatedAt": "2018-03-16T17:26:55Z",
+      "location": {
+        "raw": "São paulo - SP, Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": "São Paulo",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 6143,
+        "contributions365d": 33,
+        "commits365d": 7,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 2,
+        "restrictedContributions365d": 1,
+        "publicRepositories": 82,
+        "repositoriesSampled": 82,
+        "repoStatsTruncated": false,
+        "starsReceived": 2615,
+        "forksReceived": 6665,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 117,
+          "commits": 86,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 1,
+          "restrictedContributions": 11
+        },
+        "2023": {
+          "contributions": 229,
+          "commits": 195,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 23
+        },
+        "2024": {
+          "contributions": 144,
+          "commits": 131,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 1,
+          "restrictedContributions": 3
+        },
+        "2025": {
+          "contributions": 12,
+          "commits": 9,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 33,
+          "commits": 7,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 2,
+          "restrictedContributions": 1
+        }
+      },
+      "scores": {
+        "overall": 50.81,
+        "activity": 37.61,
+        "impact": 78.9,
+        "community": 74.85,
+        "collaboration": 19.58
+      },
+      "rank": 25
+    },
+    {
+      "login": "otaviossousa",
+      "name": "Otavio Sousa",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/130789571?u=755397e08c7c57ab68c95341de0e2086c9744ec7&v=4",
+      "profileUrl": "https://github.com/otaviossousa",
+      "bio": "Systems Analysis and Development Student at IFPI",
+      "company": null,
+      "accountCreatedAt": "2023-04-14T18:14:31Z",
+      "location": {
+        "raw": "Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 9400,
+        "contributions365d": 199,
+        "commits365d": 163,
+        "issues365d": 0,
+        "pullRequests365d": 1,
+        "reviews365d": 0,
+        "restrictedContributions365d": 26,
+        "publicRepositories": 54,
+        "repositoriesSampled": 54,
+        "repoStatsTruncated": false,
+        "starsReceived": 306,
+        "forksReceived": 31,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 26,
+          "commits": 15,
+          "issues": 0,
+          "pullRequests": 3,
+          "reviews": 0,
+          "restrictedContributions": 2
+        },
+        "2024": {
+          "contributions": 466,
+          "commits": 425,
+          "issues": 0,
+          "pullRequests": 13,
+          "reviews": 1,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 189,
+          "commits": 140,
+          "issues": 1,
+          "pullRequests": 18,
+          "reviews": 0,
+          "restrictedContributions": 17
+        },
+        "2026": {
+          "contributions": 182,
+          "commits": 163,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 9
+        }
+      },
+      "scores": {
+        "overall": 50.72,
+        "activity": 56.51,
+        "impact": 48.19,
+        "community": 78.5,
+        "collaboration": 9.79
+      },
+      "rank": 26
+    },
+    {
+      "login": "Rafaelmdcarneiro",
+      "name": "Rafael Carneiro",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/20961091?u=40859f43eb1812f57c0b2cca247e3ab31e7e9757&v=4",
+      "profileUrl": "https://github.com/Rafaelmdcarneiro",
+      "bio": "I'm CEO of O2D, a Brazilian software development company. Rust enthusiast!",
+      "company": "O2D On Demand Development",
+      "accountCreatedAt": "2016-08-11T02:19:56Z",
+      "location": {
+        "raw": "Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 7930,
+        "contributions365d": 39,
+        "commits365d": 23,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 301,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 778,
+        "forksReceived": 29,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 30,
+          "commits": 23,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 930,
+          "commits": 829,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 61,
+          "commits": 33,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 32,
+          "commits": 19,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 42.98,
+        "activity": 39.34,
+        "impact": 54.87,
+        "community": 77.04,
+        "collaboration": 0
+      },
+      "rank": 27
+    },
+    {
+      "login": "gustavoguanabara",
+      "name": "Gustavo Guanabara",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/8683378?u=01b06a154f04dadaa4e4131497fa2442e6323cbc&v=4",
+      "profileUrl": "https://github.com/gustavoguanabara",
+      "bio": "Nerd por natureza. Professor por vocação. Estou aqui para compartilhar conteúdos para iniciantes em Tecnologia.",
+      "company": "Curso em Vídeo",
+      "accountCreatedAt": "2014-09-07T03:56:50Z",
+      "location": {
+        "raw": "Rio de Janeiro, Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": "Rio de Janeiro",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 115232,
+        "contributions365d": 0,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 8,
+        "repositoriesSampled": 8,
+        "repoStatsTruncated": false,
+        "starsReceived": 29808,
+        "forksReceived": 6730,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1,
+          "commits": 1,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 7,
+          "commits": 6,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 28,
+          "commits": 27,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 8,
+          "commits": 7,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 36.76,
+        "activity": 0,
+        "impact": 87.04,
+        "community": 100,
+        "collaboration": 0
+      },
+      "rank": 28
+    },
+    {
+      "login": "professorguanabara",
+      "name": "Gustavo Guanabara",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/66076428?u=a0349b456988e351cca2d9f31cb05dfb25a7a4b2&v=4",
+      "profileUrl": "https://github.com/professorguanabara",
+      "bio": "Professor de Tecnologia",
+      "company": "Curso em Vídeo",
+      "accountCreatedAt": "2020-05-28T14:34:22Z",
+      "location": {
+        "raw": "Rio de Janeiro, Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": "Rio de Janeiro",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 13536,
+        "contributions365d": 0,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 7,
+        "repositoriesSampled": 7,
+        "repoStatsTruncated": false,
+        "starsReceived": 1227,
+        "forksReceived": 127,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 29,
+          "commits": 28,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 27.13,
+        "activity": 0,
+        "impact": 59.53,
+        "community": 81.63,
+        "collaboration": 0
+      },
+      "rank": 29
+    },
+    {
+      "login": "alineai18",
+      "name": "Aline Angela Ibers",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/93167956?u=2074ee8fcc47c22384fb93e0b1637b888aa15665&v=4",
+      "profileUrl": "https://github.com/alineai18",
+      "bio": " 🌈  I am a persistent script girl.\r\n\r\nI believe in people's freedom, and I am currently learning @aplus-framework ⭐",
+      "company": "XSS",
+      "accountCreatedAt": "2021-10-26T00:27:19Z",
+      "location": {
+        "raw": "Brazil",
+        "accepted": true,
+        "countryCode": "BR",
+        "country": "Brazil",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 8270,
+        "contributions365d": 0,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 4,
+        "repositoriesSampled": 4,
+        "repoStatsTruncated": false,
+        "starsReceived": 128,
+        "forksReceived": 9,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 1,
+          "commits": 0,
+          "issues": 1,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 21.78,
+        "activity": 0,
+        "impact": 40.69,
+        "community": 77.4,
+        "collaboration": 0
+      },
+      "rank": 30
+    }
+  ]
 }

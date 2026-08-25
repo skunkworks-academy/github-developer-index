@@ -1,9 +1,10 @@
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, rename, rm, writeFile } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { collectSouthAfrica } from '../src/github/collect-south-africa.mjs';
 import { collectCountry } from '../src/github/collect-country.mjs';
 import { getCountryConfig } from '../src/locations/countries.mjs';
 import { METHODOLOGY_VERSION, SCORE_WEIGHTS, rankDevelopers } from '../src/ranking/score.mjs';
+import { validateDataset } from '../src/validation/dataset.mjs';
 
 const countryCode = String(process.argv[2] ?? 'ZA').toUpperCase();
 const countryConfig = getCountryConfig(countryCode);
@@ -42,8 +43,14 @@ const collection = countryCode === 'ZA'
     });
 
 const ranked = rankDevelopers(collection.developers);
-const calendarYears = collection.calendarYears ?? [];
+if (!collection.discoveredCandidates || ranked.length === 0) {
+  throw new Error(
+    `Refusing to publish an empty ${countryConfig.name} dataset ` +
+    `(${collection.discoveredCandidates ?? 0} discovered, ${ranked.length} accepted).`
+  );
+}
 
+const calendarYears = collection.calendarYears ?? [];
 const output = {
   schemaVersion: 1,
   generatedAt: generatedAt.toISOString(),
@@ -65,6 +72,7 @@ const output = {
     notes: [
       'Candidate discovery uses GitHub user search location qualifiers.',
       'Country resolution uses explicit country aliases plus a bounded set of recognized cities.',
+      'Ambiguous or conflicting country locations are rejected rather than guessed.',
       'Repository impact samples up to the 100 most-starred public repositories owned by each user.',
       'Calendar-year filters use GitHub contribution activity for the selected year; current stars and followers are not historical snapshots.',
       'The index is independent and is not an official GitHub ranking.'
@@ -79,9 +87,18 @@ const output = {
   developers: ranked
 };
 
+validateDataset(output, countryConfig);
+
 const target = resolve(`public/data/${countryCode}.json`);
+const temporaryTarget = `${target}.tmp-${process.pid}-${Date.now()}`;
 await mkdir(dirname(target), { recursive: true });
-await writeFile(target, `${JSON.stringify(output, null, 2)}\n`, 'utf8');
+
+try {
+  await writeFile(temporaryTarget, `${JSON.stringify(output, null, 2)}\n`, 'utf8');
+  await rename(temporaryTarget, target);
+} finally {
+  await rm(temporaryTarget, { force: true }).catch(() => {});
+}
 
 console.log(
   `Wrote ${ranked.length} ranked ${countryConfig.name} developers to ${target} ` +

@@ -8,21 +8,25 @@ on:
     branches: [main]
     paths:
       - 'src/github/collect-country.mjs'
+      - 'src/github/graphql-client.mjs'
       - 'src/locations/countries.mjs'
+      - 'src/validation/**'
       - 'scripts/collect.mjs'
       - 'scripts/write-country-registry.mjs'
+      - 'scripts/validate.mjs'
       - '.github/workflows/refresh-countries.yml'
 
 permissions:
   contents: write
 
 concurrency:
-  group: github-developer-index-country-refresh
-  cancel-in-progress: true
+  group: github-developer-index-data-publisher
+  cancel-in-progress: false
 
 jobs:
   refresh-countries:
     runs-on: ubuntu-latest
+    timeout-minutes: 240
     steps:
       - name: Checkout main
         uses: actions/checkout@v5
@@ -40,9 +44,14 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Collect and progressively publish countries
+      - name: Run deterministic tests before publishing
+        run: |
+          npm test
+          npm run validate
+
+      - name: Collect, validate and progressively publish countries
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
           MAX_CANDIDATES: 30
           HISTORY_YEARS: 5
         shell: bash
@@ -55,66 +64,125 @@ jobs:
 
           for code in "${countries[@]}"; do
             echo "::group::Collecting ${code}"
-            collected=false
 
+            if ! git pull --rebase origin main; then
+              echo "::error::Unable to synchronize with main before collecting ${code}."
+              git rebase --abort 2>/dev/null || true
+              git fetch origin main
+              git reset --hard origin/main
+              failed+=("${code}:sync")
+              echo "::endgroup::"
+              continue
+            fi
+
+            collected=false
             for attempt in 1 2 3; do
-              echo "Attempt ${attempt}/3 for ${code}"
+              echo "Collection attempt ${attempt}/3 for ${code}"
               if node scripts/collect.mjs "${code}"; then
                 collected=true
                 break
               fi
 
+              git reset --hard HEAD
               if [ "${attempt}" -lt 3 ]; then
                 sleep $((attempt * 15))
               fi
             done
 
             if [ "${collected}" != "true" ]; then
-              echo "::warning::Failed to collect ${code} after 3 attempts."
-              failed+=("${code}")
+              echo "::warning::Failed to collect ${code} after 3 attempts; existing published data is unchanged."
+              failed+=("${code}:collect")
+              echo "::endgroup::"
+              continue
+            fi
+
+            if ! npm run registry || ! npm run validate; then
+              echo "::error::Validation failed for ${code}; refusing to publish generated data."
+              git reset --hard HEAD
+              failed+=("${code}:validate")
               echo "::endgroup::"
               continue
             fi
 
             count=$(node -e "const d=require('./public/data/${code}.json'); console.log(Array.isArray(d.developers) ? d.developers.length : 0)")
-            echo "${code}: ${count} indexed developers"
+            echo "${code}: ${count} validated developers"
 
-            git add "public/data/${code}.json"
-            if ! git diff --cached --quiet; then
-              git commit -m "data: refresh ${code} developer index"
-              git pull --rebase origin main
-              git push origin HEAD:main
+            git add "public/data/${code}.json" public/data/countries.json
+            if git diff --cached --quiet; then
+              echo "${code}: validated data is unchanged."
+              succeeded+=("${code}")
+              echo "::endgroup::"
+              continue
+            fi
+
+            git commit -m "data: refresh ${code} developer index"
+
+            published=false
+            publish_failed=false
+            for push_attempt in 1 2 3; do
+              if git push origin HEAD:main; then
+                published=true
+                break
+              fi
+
+              if [ "${push_attempt}" -ge 3 ]; then
+                break
+              fi
+
+              echo "::warning::Publish attempt ${push_attempt}/3 for ${code} was rejected; synchronizing with main before retry."
+              if ! git pull --rebase origin main; then
+                echo "::error::Unable to rebase ${code} refresh onto the latest main."
+                git rebase --abort 2>/dev/null || true
+                publish_failed=true
+                break
+              fi
+
+              # A concurrent publisher may have changed another country and the registry.
+              # Rebuild and revalidate after every rebase before attempting another push.
+              if ! npm run registry || ! npm run validate; then
+                echo "::error::Rebased ${code} refresh no longer validates; refusing to retry publication."
+                publish_failed=true
+                break
+              fi
+
+              git add public/data/countries.json
+              if ! git diff --cached --quiet; then
+                git commit --amend --no-edit
+              fi
+
+              sleep $((push_attempt * 10))
+            done
+
+            if [ "${published}" != "true" ]; then
+              if [ "${publish_failed}" = "true" ]; then
+                echo "::error::Publication synchronization failed for ${code}; existing remote data remains authoritative."
+              else
+                echo "::error::Unable to publish ${code} after 3 attempts."
+              fi
+              git rebase --abort 2>/dev/null || true
+              git fetch origin main
+              git reset --hard origin/main
+              failed+=("${code}:push")
+              echo "::endgroup::"
+              continue
             fi
 
             succeeded+=("${code}")
             echo "::endgroup::"
           done
 
+          {
+            echo "## Country refresh summary"
+            echo
+            echo "Successful: ${succeeded[*]:-none}"
+            echo
+            echo "Failed: ${failed[*]:-none}"
+          } >> "${GITHUB_STEP_SUMMARY}"
+
           printf 'Successful countries: %s\n' "${succeeded[*]:-none}"
           printf 'Failed countries: %s\n' "${failed[*]:-none}"
 
-          if [ "${#succeeded[@]}" -eq 0 ]; then
-            echo "::error::No country datasets were refreshed."
+          if [ "${#failed[@]}" -gt 0 ]; then
+            echo "::error::One or more country refreshes failed. Successful validated publishes were retained; failed countries kept their previous datasets."
             exit 1
           fi
-
-      - name: Rebuild public country registry
-        run: npm run registry
-
-      - name: Validate generated datasets
-        run: |
-          npm test
-          npm run validate
-
-      - name: Publish refreshed country registry
-        shell: bash
-        run: |
-          git add public/data/countries.json
-          if git diff --cached --quiet; then
-            echo "Country registry unchanged."
-            exit 0
-          fi
-
-          git commit -m "data: update country dataset registry"
-          git pull --rebase origin main
-          git push origin HEAD:main
