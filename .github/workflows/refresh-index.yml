@@ -65,5 +65,35 @@ jobs:
           fi
 
           git commit -m "data: refresh South Africa developer index"
-          git pull --rebase origin main
-          git push origin HEAD:main
+
+          for push_attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              echo "South Africa dataset and registry published successfully."
+              exit 0
+            fi
+
+            if [ "${push_attempt}" -ge 3 ]; then
+              break
+            fi
+
+            echo "::warning::Publish attempt ${push_attempt}/3 was rejected; rebasing onto the latest main."
+            if ! git pull --rebase origin main; then
+              echo "::error::Unable to rebase the South Africa refresh onto the latest main."
+              git rebase --abort 2>/dev/null || true
+              exit 1
+            fi
+
+            # Recompute registry metadata after a concurrent main update and
+            # validate the rebased snapshot before another publication attempt.
+            npm run registry
+            npm run validate
+            git add public/data/countries.json
+            if ! git diff --cached --quiet; then
+              git commit --amend --no-edit
+            fi
+
+            sleep $((push_attempt * 10))
+          done
+
+          echo "::error::Unable to publish the South Africa refresh after 3 attempts; remote main is unchanged by this job."
+          exit 1
