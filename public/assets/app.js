@@ -418,18 +418,19 @@
     try {
       const countries = await fetchJson('data/countries.json');
       if (!Array.isArray(countries)) throw new Error('Country registry has an invalid format.');
-      state.countries = countries;
+      state.countries = countries.filter((country) =>
+        country?.code && country?.name && country?.dataset
+      );
       els.country.replaceChildren();
 
       for (const country of state.countries) {
-        if (!country?.code || !country?.name || !country?.dataset) continue;
         const option = document.createElement('option');
         option.value = country.dataset;
         option.textContent = country.status === 'pending' ? `${country.name} · pending` : country.name;
         els.country.append(option);
       }
 
-      if (!els.country.options.length) throw new Error('Country registry is empty.');
+      if (!state.countries.length) throw new Error('Country registry is empty or contains no valid entries.');
       const initialCountry = state.countries.find((country) => country.code === 'ZA' && country.status === 'live')
         ?? state.countries.find((country) => country.status === 'live')
         ?? state.countries[0];
