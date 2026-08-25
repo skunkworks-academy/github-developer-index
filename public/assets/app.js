@@ -25,13 +25,16 @@
   const state = {
     countries: [],
     dataset: null,
+    datasetPath: null,
     query: '',
     period: 'rolling',
     metric: 'overall',
-    activityFilter: 'all'
+    activityFilter: 'all',
+    loadSequence: 0
   };
 
   const fmt = new Intl.NumberFormat();
+  const RETRYABLE_HTTP_STATUSES = new Set([408, 425, 429, 500, 502, 503, 504]);
 
   const rollingMetricOptions = [
     ['overall', 'Developer Index'],
@@ -53,6 +56,47 @@
   function clean(value, fallback = '—') {
     const text = value == null ? '' : String(value).trim();
     return text || fallback;
+  }
+
+  function delay(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
+
+  async function fetchJson(url, { attempts = 3, timeoutMs = 10000 } = {}) {
+    let lastError = null;
+
+    for (let attempt = 1; attempt <= attempts; attempt += 1) {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), timeoutMs);
+
+      try {
+        const response = await fetch(url, { cache: 'no-store', signal: controller.signal });
+        if (!response.ok) {
+          const error = new Error(`Request failed (${response.status}) for ${url}.`);
+          error.status = response.status;
+          if (!RETRYABLE_HTTP_STATUSES.has(response.status) || attempt === attempts) throw error;
+          lastError = error;
+        } else {
+          const payload = await response.json();
+          if (!payload || typeof payload !== 'object') {
+            throw new Error(`Invalid JSON payload returned for ${url}.`);
+          }
+          return payload;
+        }
+      } catch (error) {
+        const retryable = error?.name === 'AbortError'
+          || error instanceof TypeError
+          || RETRYABLE_HTTP_STATUSES.has(Number(error?.status));
+        if (!retryable || attempt === attempts) throw error;
+        lastError = error;
+      } finally {
+        clearTimeout(timeout);
+      }
+
+      await delay(Math.min(250 * (2 ** (attempt - 1)), 1500));
+    }
+
+    throw lastError ?? new Error(`Unable to load ${url}.`);
   }
 
   function selectedActivity(developer) {
@@ -129,6 +173,7 @@
     avatar.src = developer.avatarUrl;
     avatar.alt = '';
     avatar.loading = 'lazy';
+    avatar.referrerPolicy = 'no-referrer';
 
     const link = document.createElement('a');
     link.className = 'profile';
@@ -319,43 +364,87 @@
     renderCards(developers);
   }
 
+  function assertDatasetShape(dataset, datasetPath) {
+    const country = state.countries.find((item) => item.dataset === datasetPath);
+    if (!country) throw new Error('Selected country is not present in the country registry.');
+    if (!Array.isArray(dataset?.developers)) throw new Error('Country dataset is missing its developer list.');
+    if (dataset?.country?.code !== country.code) {
+      throw new Error(`Country dataset mismatch: expected ${country.code}, received ${clean(dataset?.country?.code, 'unknown')}.`);
+    }
+  }
+
   async function loadCountry(datasetPath) {
+    const requestId = ++state.loadSequence;
+    const previousPath = state.datasetPath;
     els.status.textContent = 'Loading country dataset…';
-    const response = await fetch(datasetPath, { cache: 'no-store' });
-    if (!response.ok) throw new Error(`Dataset request failed (${response.status}).`);
-    state.dataset = await response.json();
-    state.query = '';
-    state.metric = 'overall';
-    els.search.value = '';
-    setPeriodOptions();
-    setMetricOptions();
-    render();
+    els.country.disabled = true;
+    document.documentElement.setAttribute('aria-busy', 'true');
+
+    try {
+      const dataset = await fetchJson(datasetPath);
+      if (requestId !== state.loadSequence) return;
+
+      assertDatasetShape(dataset, datasetPath);
+      state.dataset = dataset;
+      state.datasetPath = datasetPath;
+      state.query = '';
+      state.metric = 'overall';
+      els.search.value = '';
+      setPeriodOptions();
+      setMetricOptions();
+      render();
+    } catch (error) {
+      if (requestId !== state.loadSequence) return;
+      console.error(error);
+
+      if (previousPath && state.dataset) {
+        els.country.value = previousPath;
+        render();
+        els.status.textContent = `Unable to load the selected country. Showing the previous dataset. ${error.message ?? ''}`.trim();
+      } else {
+        els.status.textContent = error.message || 'Unable to load the leaderboard.';
+        els.empty.hidden = false;
+        els.empty.textContent = 'Leaderboard data could not be loaded. Retry in a moment.';
+      }
+    } finally {
+      if (requestId === state.loadSequence) {
+        els.country.disabled = state.countries.length < 2;
+        document.documentElement.removeAttribute('aria-busy');
+      }
+    }
   }
 
   async function init() {
     try {
-      const response = await fetch('data/countries.json', { cache: 'no-store' });
-      if (!response.ok) throw new Error(`Country registry request failed (${response.status}).`);
-      state.countries = await response.json();
+      const countries = await fetchJson('data/countries.json');
+      if (!Array.isArray(countries)) throw new Error('Country registry has an invalid format.');
+      state.countries = countries;
       els.country.replaceChildren();
+
       for (const country of state.countries) {
+        if (!country?.code || !country?.name || !country?.dataset) continue;
         const option = document.createElement('option');
         option.value = country.dataset;
-        option.textContent = country.name;
+        option.textContent = country.status === 'pending' ? `${country.name} · pending` : country.name;
         els.country.append(option);
       }
-      els.country.disabled = state.countries.length < 2;
-      if (!state.countries.length) throw new Error('Country registry is empty.');
-      await loadCountry(state.countries[0].dataset);
+
+      if (!els.country.options.length) throw new Error('Country registry is empty.');
+      const initialCountry = state.countries.find((country) => country.code === 'ZA' && country.status === 'live')
+        ?? state.countries.find((country) => country.status === 'live')
+        ?? state.countries[0];
+      els.country.value = initialCountry.dataset;
+      await loadCountry(initialCountry.dataset);
     } catch (error) {
       console.error(error);
       els.status.textContent = error.message || 'Unable to load the leaderboard.';
       els.empty.hidden = false;
-      els.empty.textContent = 'Leaderboard data could not be loaded.';
+      els.empty.textContent = 'Leaderboard data could not be loaded. Retry in a moment.';
+      document.documentElement.removeAttribute('aria-busy');
     }
   }
 
-  els.country.addEventListener('change', () => loadCountry(els.country.value));
+  els.country.addEventListener('change', () => { loadCountry(els.country.value); });
   els.period.addEventListener('change', () => {
     state.period = els.period.value;
     setMetricOptions();
