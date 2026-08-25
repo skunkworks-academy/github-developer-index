@@ -3,6 +3,7 @@ const DEFAULT_MAX_ATTEMPTS = 4;
 const DEFAULT_BASE_DELAY_MS = 500;
 const DEFAULT_MAX_DELAY_MS = 8000;
 const DEFAULT_REQUEST_TIMEOUT_MS = 30000;
+const RATE_LIMIT_RESET_BUFFER_MS = 1000;
 const RETRYABLE_HTTP_STATUSES = new Set([408, 425, 429, 500, 502, 503, 504]);
 
 export class GitHubGraphQLError extends Error {
@@ -29,9 +30,19 @@ function parseRetryAfterMs(value, now = Date.now()) {
   return Number.isFinite(timestamp) ? Math.max(timestamp - now, 0) : null;
 }
 
-function retryDelayMs({ attempt, baseDelayMs, maxDelayMs, retryAfter, random }) {
+function parseRateResetMs(value, now = Date.now()) {
+  if (!value) return null;
+  const epochSeconds = Number(value);
+  if (!Number.isFinite(epochSeconds) || epochSeconds < 0) return null;
+  return Math.max((epochSeconds * 1000) - now, 0) + RATE_LIMIT_RESET_BUFFER_MS;
+}
+
+function retryDelayMs({ attempt, baseDelayMs, maxDelayMs, retryAfter, rateReset, random }) {
   const retryAfterMs = parseRetryAfterMs(retryAfter);
-  if (retryAfterMs !== null) return Math.min(retryAfterMs, maxDelayMs);
+  if (retryAfterMs !== null) return retryAfterMs;
+
+  const rateResetMs = parseRateResetMs(rateReset);
+  if (rateResetMs !== null) return rateResetMs;
 
   const exponential = Math.min(baseDelayMs * (2 ** Math.max(attempt - 1, 0)), maxDelayMs);
   const jitter = Math.floor(exponential * 0.2 * random());
@@ -136,11 +147,13 @@ export function createGraphQLClient({
           }
 
           lastError = error;
+          clearTimeout(timeout);
           await sleep(retryDelayMs({
             attempt,
             baseDelayMs: safeBaseDelayMs,
             maxDelayMs: safeMaxDelayMs,
             retryAfter: details.retryAfter,
+            rateReset: details.rateRemaining === '0' ? details.rateReset : null,
             random
           }));
           continue;
@@ -171,11 +184,13 @@ export function createGraphQLClient({
           }
 
           lastError = error;
+          clearTimeout(timeout);
           await sleep(retryDelayMs({
             attempt,
             baseDelayMs: safeBaseDelayMs,
             maxDelayMs: safeMaxDelayMs,
             retryAfter: details.retryAfter,
+            rateReset: details.rateRemaining === '0' ? details.rateReset : null,
             random
           }));
           continue;
@@ -208,11 +223,13 @@ export function createGraphQLClient({
         }
 
         lastError = wrapped;
+        clearTimeout(timeout);
         await sleep(retryDelayMs({
           attempt,
           baseDelayMs: safeBaseDelayMs,
           maxDelayMs: safeMaxDelayMs,
           retryAfter: null,
+          rateReset: null,
           random
         }));
       } finally {
