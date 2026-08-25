@@ -1,26 +1,102 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-ZA">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>GitHub Developer Index | Top Developers by Country & Year | Skunkworks Academy</title>
+  <meta name="description" content="Explore independent GitHub developer rankings by country, year, activity, contributions, stars and followers. Built by Skunkworks Academy.">
+  <meta name="keywords" content="GitHub developer index, top GitHub developers, GitHub leaderboard, developer rankings, active contributors, open source developers, GitHub South Africa, GitHub Africa, developer contributions, Skunkworks Academy">
+  <meta name="author" content="Skunkworks Academy">
+  <meta name="publisher" content="Skunkworks Academy">
+  <meta name="application-name" content="Skunkworks Academy GitHub Developer Index">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="color-scheme" content="dark">
-  <meta name="description" content="Skunkworks Academy GitHub Developer Index: an independent, transparent ranking of GitHub developers by country and activity year.">
-  <title>GitHub Developer Index | Skunkworks Academy</title>
+  <meta name="theme-color" content="#03033A">
+
+  <link rel="canonical" href="https://github.skunkworksacademy.com/">
+  <link rel="sitemap" type="application/xml" href="https://github.skunkworksacademy.com/sitemap.xml">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://www.skunkworksacademy.com/images/favicon-black.png?v=2026.08.25.1" media="(prefers-color-scheme: light)">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://www.skunkworksacademy.com/images/favicon-white.png?v=2026.08.25.1" media="(prefers-color-scheme: dark)">
+  <link rel="shortcut icon" type="image/png" href="https://www.skunkworksacademy.com/images/favicon-black.png?v=2026.08.25.1">
+  <link rel="apple-touch-icon" href="https://www.skunkworksacademy.com/images/favicon-black.png?v=2026.08.25.1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Skunkworks Academy">
+  <meta property="og:title" content="GitHub Developer Index | Independent Developer Rankings">
+  <meta property="og:description" content="Compare GitHub developers by country, year, contribution activity and independent Skunkworks Academy ranking metrics.">
+  <meta property="og:url" content="https://github.skunkworksacademy.com/">
+  <meta property="og:image" content="https://www.skunkworksacademy.com/images/favicon-black.png?v=2026.08.25.1">
+  <meta property="og:image:alt" content="Skunkworks Academy skunk logo">
+  <meta property="og:locale" content="en_ZA">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@skunkworksza">
+  <meta name="twitter:title" content="GitHub Developer Index | Skunkworks Academy">
+  <meta name="twitter:description" content="Independent GitHub developer rankings by country, year and contribution activity.">
+  <meta name="twitter:image" content="https://www.skunkworksacademy.com/images/favicon-black.png?v=2026.08.25.1">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "EducationalOrganization",
+        "@id": "https://www.skunkworksacademy.com/#organization",
+        "name": "Skunkworks Academy",
+        "url": "https://www.skunkworksacademy.com/",
+        "sameAs": [
+          "https://github.com/skunkworks-academy",
+          "https://www.linkedin.com/company/skunkworksacademy/",
+          "https://x.com/skunkworksza"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://github.skunkworksacademy.com/#website",
+        "name": "Skunkworks Academy GitHub Developer Index",
+        "url": "https://github.skunkworksacademy.com/",
+        "description": "Independent country-by-country GitHub developer rankings generated from public GitHub API data.",
+        "publisher": {"@id": "https://www.skunkworksacademy.com/#organization"},
+        "inLanguage": "en-ZA"
+      },
+      {
+        "@type": "Dataset",
+        "@id": "https://github.skunkworksacademy.com/#dataset",
+        "name": "Skunkworks Academy GitHub Developer Index",
+        "description": "A continuously refreshed independent index of GitHub developers with country, contribution, repository-impact and community metrics.",
+        "url": "https://github.skunkworksacademy.com/",
+        "creator": {"@id": "https://www.skunkworksacademy.com/#organization"},
+        "isAccessibleForFree": true,
+        "license": "https://github.com/skunkworks-academy/github-developer-index/blob/main/LICENSE",
+        "keywords": ["GitHub", "developers", "open source", "contributions", "developer rankings", "country leaderboard"],
+        "spatialCoverage": "Global"
+      }
+    ]
+  }
+  </script>
+
   <link rel="stylesheet" href="assets/styles.css">
   <script src="assets/app.js" defer></script>
 </head>
-<body>
+<body data-domain="github.skunkworksacademy.com">
+  <a class="skip-link" href="#leaderboard">Skip to leaderboard</a>
   <main class="shell">
     <header class="hero">
       <div>
         <p class="eyebrow"><span class="pulse" aria-hidden="true"></span>Skunkworks Academy · Independent Index</p>
         <h1>GitHub Developer Index</h1>
-        <p class="lede">A transparent country leaderboard built directly from GitHub API data, with our own location normalization and ranking methodology.</p>
+        <p class="lede">Discover and compare GitHub developers by country, year, contribution activity and independent ranking metrics generated directly from public GitHub API data.</p>
+        <div class="hero-actions" aria-label="Primary actions">
+          <a class="button primary" href="#leaderboard">Explore rankings</a>
+          <a class="button" href="https://www.skunkworksacademy.com/courses" target="_blank" rel="noopener noreferrer">Explore Academy courses</a>
+          <a class="button" href="https://www.linkedin.com/company/skunkworksacademy/" target="_blank" rel="noopener noreferrer">Follow on LinkedIn</a>
+        </div>
       </div>
       <a class="repo-link" href="https://github.com/skunkworks-academy/github-developer-index" target="_blank" rel="noopener noreferrer">Methodology & source ↗</a>
     </header>
 
-    <section class="controls" aria-label="Leaderboard controls">
+    <section class="controls" id="leaderboard" aria-label="Leaderboard controls">
       <label>
         <span>Country</span>
         <select id="country" disabled><option>Loading…</option></select>
@@ -84,7 +160,16 @@
     </section>
 
     <footer>
-      <p><strong>Independent methodology.</strong> This is not an official GitHub leaderboard. Rankings are generated by Skunkworks Academy from public GitHub API data. Location values are user-supplied and normalized heuristically; repository impact currently samples up to 100 public repositories per developer. Calendar-year filtering applies to contribution activity; stars, followers and the Developer Index are current snapshot/rolling-index values rather than reconstructed historical values. “Active Contributors” means developers with at least one GitHub contribution in the selected rolling or calendar-year period.</p>
+      <div class="footer-inner">
+        <p><strong>Independent methodology.</strong> This is not an official GitHub leaderboard. Rankings are generated by Skunkworks Academy from public GitHub API data. Location values are user-supplied and normalized heuristically; repository impact currently samples up to 100 public repositories per developer. Calendar-year filtering applies to contribution activity; stars, followers and the Developer Index are current snapshot/rolling-index values rather than reconstructed historical values. “Active Contributors” means developers with at least one GitHub contribution in the selected rolling or calendar-year period.</p>
+        <nav class="footer-links" aria-label="Skunkworks Academy links">
+          <a href="https://www.skunkworksacademy.com/">Academy</a>
+          <a href="https://blog.skunkworksacademy.com/">Insights</a>
+          <a href="https://www.linkedin.com/company/skunkworksacademy/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://x.com/skunkworksza" target="_blank" rel="noopener noreferrer">X</a>
+          <a href="https://github.com/skunkworks-academy" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </nav>
+      </div>
     </footer>
   </main>
 </body>
