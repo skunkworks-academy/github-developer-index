@@ -14,7 +14,13 @@ export const COUNTRY_CONFIGS = Object.freeze({
   EG: { code: 'EG', name: 'Egypt', aliases: ['Egypt'], cities: ['Cairo', 'Alexandria'] },
   MA: { code: 'MA', name: 'Morocco', aliases: ['Morocco', 'Maroc'], cities: ['Casablanca', 'Rabat', 'Marrakesh', 'Marrakech'] },
   PT: { code: 'PT', name: 'Portugal', aliases: ['Portugal'], cities: ['Lisbon', 'Lisboa', 'Porto'] },
-  MX: { code: 'MX', name: 'Mexico', aliases: ['Mexico', 'México'], cities: ['Mexico City', 'Ciudad de México', 'Guadalajara', 'Monterrey'] },
+  MX: {
+    code: 'MX',
+    name: 'Mexico',
+    aliases: ['Mexico', 'México'],
+    cities: ['Mexico City', 'Ciudad de México', 'Guadalajara', 'Monterrey'],
+    excludedLocations: ['New Mexico']
+  },
   US: { code: 'US', name: 'United States', aliases: ['United States', 'United States of America', 'USA'], cities: ['New York', 'San Francisco', 'Seattle', 'Austin', 'Boston'] },
   GB: { code: 'GB', name: 'United Kingdom', aliases: ['United Kingdom', 'UK', 'Great Britain'], cities: ['London', 'Manchester', 'Edinburgh', 'Bristol'] },
   CA: { code: 'CA', name: 'Canada', aliases: ['Canada'], cities: ['Toronto', 'Vancouver', 'Montreal', 'Montréal'] },
@@ -28,6 +34,21 @@ export const COUNTRY_CONFIGS = Object.freeze({
 
 function escapeRegex(value) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function boundedPattern(values = []) {
+  if (!values.length) return null;
+  return new RegExp(
+    `(?:^|[^\\p{L}\\p{N}])(?:${values.map(escapeRegex).join('|')})(?:$|[^\\p{L}\\p{N}])`,
+    'iu'
+  );
+}
+
+function explicitCountryConflicts(location, targetCode) {
+  return Object.values(COUNTRY_CONFIGS)
+    .filter((country) => country.code !== targetCode)
+    .filter((country) => boundedPattern([country.name, ...(country.aliases ?? [])])?.test(location))
+    .map((country) => country.code);
 }
 
 export function getCountryConfig(code) {
@@ -67,19 +88,23 @@ export function normalizeCountryLocation(rawLocation, config) {
   }
 
   const location = rawLocation.trim();
+  const excludedPattern = boundedPattern(config.excludedLocations ?? []);
+  if (excludedPattern?.test(location)) {
+    return { ...base, reason: 'excluded-location' };
+  }
+
+  const conflicts = explicitCountryConflicts(location, config.code);
+  if (conflicts.length) {
+    return { ...base, reason: 'conflicting-country' };
+  }
+
   const aliases = [config.name, ...(config.aliases ?? [])];
-  const countryPattern = new RegExp(
-    `(?:^|[^\\p{L}\\p{N}])(?:${aliases.map(escapeRegex).join('|')})(?:$|[^\\p{L}\\p{N}])`,
-    'iu'
-  );
+  const countryPattern = boundedPattern(aliases);
   const matchedCity = (config.cities ?? []).find((city) =>
-    new RegExp(
-      `(?:^|[^\\p{L}\\p{N}])${escapeRegex(city)}(?:$|[^\\p{L}\\p{N}])`,
-      'iu'
-    ).test(location)
+    boundedPattern([city])?.test(location)
   ) ?? null;
 
-  if (countryPattern.test(location)) {
+  if (countryPattern?.test(location)) {
     return {
       accepted: true,
       countryCode: config.code,

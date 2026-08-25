@@ -5,6 +5,7 @@
     country: document.querySelector('#country'),
     period: document.querySelector('#period'),
     metric: document.querySelector('#metric'),
+    activityFilter: document.querySelector('#activity-filter'),
     search: document.querySelector('#search'),
     rows: document.querySelector('#rows'),
     cards: document.querySelector('#cards'),
@@ -24,12 +25,15 @@
   const state = {
     countries: [],
     dataset: null,
+    datasetPath: null,
     query: '',
     period: 'rolling',
-    metric: 'overall'
+    metric: 'overall',
+    activityFilter: 'all'
   };
 
   const fmt = new Intl.NumberFormat();
+  const RETRYABLE_HTTP_STATUSES = new Set([408, 425, 429, 500, 502, 503, 504]);
 
   const rollingMetricOptions = [
     ['overall', 'Developer Index'],
@@ -53,6 +57,47 @@
     return text || fallback;
   }
 
+  function delay(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
+
+  async function fetchJson(url, { attempts = 3, timeoutMs = 10000 } = {}) {
+    let lastError = null;
+
+    for (let attempt = 1; attempt <= attempts; attempt += 1) {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), timeoutMs);
+
+      try {
+        const response = await fetch(url, { cache: 'no-store', signal: controller.signal });
+        if (!response.ok) {
+          const error = new Error(`Request failed (${response.status}) for ${url}.`);
+          error.status = response.status;
+          if (!RETRYABLE_HTTP_STATUSES.has(response.status) || attempt === attempts) throw error;
+          lastError = error;
+        } else {
+          const payload = await response.json();
+          if (!payload || typeof payload !== 'object') {
+            throw new Error(`Invalid JSON payload returned for ${url}.`);
+          }
+          return payload;
+        }
+      } catch (error) {
+        const retryable = error?.name === 'AbortError'
+          || error instanceof TypeError
+          || RETRYABLE_HTTP_STATUSES.has(Number(error?.status));
+        if (!retryable || attempt === attempts) throw error;
+        lastError = error;
+      } finally {
+        clearTimeout(timeout);
+      }
+
+      await delay(Math.min(250 * (2 ** (attempt - 1)), 1500));
+    }
+
+    throw lastError ?? new Error(`Unable to load ${url}.`);
+  }
+
   function selectedActivity(developer) {
     if (state.period === 'rolling') {
       return {
@@ -74,6 +119,10 @@
     };
   }
 
+  function isActiveContributor(developer) {
+    return selectedActivity(developer).contributions > 0;
+  }
+
   function metricValue(developer) {
     const activity = selectedActivity(developer);
 
@@ -91,19 +140,27 @@
     }
   }
 
-  function currentDevelopers() {
+  function filteredDevelopers() {
     const source = Array.isArray(state.dataset?.developers) ? [...state.dataset.developers] : [];
-    source.sort((a, b) => metricValue(b) - metricValue(a) || a.rank - b.rank);
+    const activityFiltered = state.activityFilter === 'active'
+      ? source.filter(isActiveContributor)
+      : source;
+
+    activityFiltered.sort((a, b) => metricValue(b) - metricValue(a) || a.rank - b.rank);
 
     const query = state.query.trim().toLowerCase();
-    if (!query) return source.slice(0, 20);
+    if (!query) return activityFiltered;
 
-    return source.filter((developer) => [
+    return activityFiltered.filter((developer) => [
       developer.login,
       developer.name,
       developer.company,
       developer.location?.raw
-    ].map((value) => clean(value, '')).join(' ').toLowerCase().includes(query)).slice(0, 20);
+    ].map((value) => clean(value, '')).join(' ').toLowerCase().includes(query));
+  }
+
+  function currentDevelopers() {
+    return filteredDevelopers().slice(0, 20);
   }
 
   function developerIdentity(developer) {
@@ -115,6 +172,7 @@
     avatar.src = developer.avatarUrl;
     avatar.alt = '';
     avatar.loading = 'lazy';
+    avatar.referrerPolicy = 'no-referrer';
 
     const link = document.createElement('a');
     link.className = 'profile';
@@ -269,6 +327,10 @@
   function render() {
     const developers = currentDevelopers();
     const total = state.dataset?.developers?.length ?? 0;
+    const activeTotal = Array.isArray(state.dataset?.developers)
+      ? state.dataset.developers.filter(isActiveContributor).length
+      : 0;
+    const filteredTotal = filteredDevelopers().length;
     const hasData = total > 0;
     const period = periodLabel();
 
@@ -281,62 +343,118 @@
       ? new Date(state.dataset.generatedAt).toLocaleString()
       : 'Awaiting first refresh';
 
-    els.status.textContent = hasData
-      ? `Loaded ${fmt.format(total)} developers. Showing top ${developers.length} for ${period}.`
-      : 'Dataset is ready; run the refresh workflow to populate live GitHub data.';
+    if (hasData) {
+      const activityText = state.activityFilter === 'active'
+        ? `${fmt.format(activeTotal)} active contributors in ${period}`
+        : `${fmt.format(total)} indexed developers`;
+      els.status.textContent = `${activityText}. Showing ${developers.length} of ${fmt.format(filteredTotal)} matching results.`;
+    } else {
+      els.status.textContent = 'Dataset is ready; run the refresh workflow to populate live GitHub data.';
+    }
 
     els.empty.hidden = developers.length !== 0;
     els.empty.textContent = hasData
-      ? 'No developers match the current search and period.'
+      ? state.activityFilter === 'active'
+        ? 'No active contributors match the current country, period and search filters.'
+        : 'No developers match the current search and period.'
       : 'No live developer records yet. Trigger “Refresh GitHub Developer Index” in GitHub Actions.';
 
     renderTable(developers);
     renderCards(developers);
   }
 
+  function assertDatasetShape(dataset, datasetPath) {
+    const country = state.countries.find((item) => item.dataset === datasetPath);
+    if (!country) throw new Error('Selected country is not present in the country registry.');
+    if (!Array.isArray(dataset?.developers)) throw new Error('Country dataset is missing its developer list.');
+    if (dataset?.country?.code !== country.code) {
+      throw new Error(`Country dataset mismatch: expected ${country.code}, received ${clean(dataset?.country?.code, 'unknown')}.`);
+    }
+  }
+
   async function loadCountry(datasetPath) {
+    const requestId = ++state.loadSequence;
+    const previousPath = state.datasetPath;
     els.status.textContent = 'Loading country dataset…';
-    const response = await fetch(datasetPath, { cache: 'no-store' });
-    if (!response.ok) throw new Error(`Dataset request failed (${response.status}).`);
-    state.dataset = await response.json();
-    state.query = '';
-    state.metric = 'overall';
-    els.search.value = '';
-    setPeriodOptions();
-    setMetricOptions();
-    render();
+    els.country.disabled = true;
+    document.documentElement.setAttribute('aria-busy', 'true');
+
+    try {
+      const dataset = await fetchJson(datasetPath);
+      if (requestId !== state.loadSequence) return;
+
+      assertDatasetShape(dataset, datasetPath);
+      state.dataset = dataset;
+      state.datasetPath = datasetPath;
+      state.query = '';
+      state.metric = 'overall';
+      els.search.value = '';
+      setPeriodOptions();
+      setMetricOptions();
+      render();
+    } catch (error) {
+      if (requestId !== state.loadSequence) return;
+      console.error(error);
+
+      if (previousPath && state.dataset) {
+        els.country.value = previousPath;
+        render();
+        els.status.textContent = `Unable to load the selected country. Showing the previous dataset. ${error.message ?? ''}`.trim();
+      } else {
+        els.status.textContent = error.message || 'Unable to load the leaderboard.';
+        els.empty.hidden = false;
+        els.empty.textContent = 'Leaderboard data could not be loaded. Retry in a moment.';
+      }
+    } finally {
+      if (requestId === state.loadSequence) {
+        els.country.disabled = state.countries.length < 2;
+        document.documentElement.removeAttribute('aria-busy');
+      }
+    }
   }
 
   async function init() {
     try {
-      const response = await fetch('data/countries.json', { cache: 'no-store' });
-      if (!response.ok) throw new Error(`Country registry request failed (${response.status}).`);
-      state.countries = await response.json();
+      const countries = await fetchJson('data/countries.json');
+      if (!Array.isArray(countries)) throw new Error('Country registry has an invalid format.');
+      state.countries = countries.filter((country) =>
+        country?.code && country?.name && country?.dataset
+      );
       els.country.replaceChildren();
+
       for (const country of state.countries) {
         const option = document.createElement('option');
         option.value = country.dataset;
-        option.textContent = country.name;
+        option.textContent = country.status === 'pending' ? `${country.name} · pending` : country.name;
         els.country.append(option);
       }
-      els.country.disabled = state.countries.length < 2;
-      if (!state.countries.length) throw new Error('Country registry is empty.');
-      await loadCountry(state.countries[0].dataset);
+
+      if (!state.countries.length) throw new Error('Country registry is empty or contains no valid entries.');
+      const initialCountry = state.countries.find((country) => country.code === 'ZA' && country.status === 'live')
+        ?? state.countries.find((country) => country.status === 'live')
+        ?? state.countries[0];
+      els.country.value = initialCountry.dataset;
+      await loadCountry(initialCountry.dataset);
     } catch (error) {
       console.error(error);
       els.status.textContent = error.message || 'Unable to load the leaderboard.';
       els.empty.hidden = false;
-      els.empty.textContent = 'Leaderboard data could not be loaded.';
+      els.empty.textContent = 'Leaderboard data could not be loaded. Retry in a moment.';
+      document.documentElement.removeAttribute('aria-busy');
     }
   }
 
-  els.country.addEventListener('change', () => loadCountry(els.country.value));
+  els.country.addEventListener('change', () => { loadCountry(els.country.value); });
   els.period.addEventListener('change', () => {
     state.period = els.period.value;
     setMetricOptions();
     render();
   });
   els.metric.addEventListener('change', () => { state.metric = els.metric.value; render(); });
+  els.activityFilter.addEventListener('change', () => {
+    state.activityFilter = els.activityFilter.value;
+    render();
+  });
   els.search.addEventListener('input', () => { state.query = els.search.value; render(); });
 
   init();
