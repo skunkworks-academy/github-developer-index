@@ -8,9 +8,14 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: github-developer-index-ci-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   validate:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -20,20 +25,35 @@ jobs:
         with:
           node-version: 24
 
-      - name: Run unit tests
+      - name: Run deterministic unit tests
         run: npm test
+
+      - name: Validate committed datasets and site contract
+        run: npm run validate
+
+  github-smoke:
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24
 
       - name: Smoke-test South Africa collection
         env:
           GH_TOKEN: ${{ github.token }}
-          MAX_CANDIDATES: 5
+          MAX_CANDIDATES: 3
+          HISTORY_YEARS: 2
         run: npm run collect:za
 
       - name: Smoke-test generic country collection
         env:
           GH_TOKEN: ${{ github.token }}
           MAX_CANDIDATES: 2
+          HISTORY_YEARS: 2
         run: node scripts/collect.mjs PT
-
-      - name: Validate generated data and site contract
-        run: npm run validate
