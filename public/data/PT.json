@@ -1,11 +1,2601 @@
 {
   "schemaVersion": 1,
-  "generatedAt": null,
-  "source": {"provider":"GitHub","api":"GraphQL","officialLeaderboard":false},
-  "country": {"code":"PT","name":"Portugal"},
-  "availableYears": [],
-  "calendarWindows": [],
-  "methodology": {"version":"1.0.0","weights":{"activity":0.45,"impact":0.25,"community":0.15,"collaboration":0.15},"windowDays":365,"notes":["Pending first live refresh."]},
-  "collection": {"discoveredCandidates":0,"acceptedCandidates":0,"rejectedCandidates":0,"window":null},
-  "developers": []
+  "generatedAt": "2026-08-26T03:41:21.537Z",
+  "source": {
+    "provider": "GitHub",
+    "api": "GraphQL",
+    "officialLeaderboard": false
+  },
+  "country": {
+    "code": "PT",
+    "name": "Portugal"
+  },
+  "availableYears": [
+    2026,
+    2025,
+    2024,
+    2023,
+    2022
+  ],
+  "calendarWindows": [
+    {
+      "year": 2026,
+      "from": "2026-01-01T00:00:00.000Z",
+      "to": "2026-08-26T03:41:21.537Z",
+      "complete": false
+    },
+    {
+      "year": 2025,
+      "from": "2025-01-01T00:00:00.000Z",
+      "to": "2025-12-31T23:59:59.999Z",
+      "complete": true
+    },
+    {
+      "year": 2024,
+      "from": "2024-01-01T00:00:00.000Z",
+      "to": "2024-12-31T23:59:59.999Z",
+      "complete": true
+    },
+    {
+      "year": 2023,
+      "from": "2023-01-01T00:00:00.000Z",
+      "to": "2023-12-31T23:59:59.999Z",
+      "complete": true
+    },
+    {
+      "year": 2022,
+      "from": "2022-01-01T00:00:00.000Z",
+      "to": "2022-12-31T23:59:59.999Z",
+      "complete": true
+    }
+  ],
+  "methodology": {
+    "version": "1.0.0",
+    "weights": {
+      "activity": 0.45,
+      "impact": 0.25,
+      "community": 0.15,
+      "collaboration": 0.15
+    },
+    "windowDays": 365,
+    "notes": [
+      "Candidate discovery uses GitHub user search location qualifiers.",
+      "Country resolution uses explicit country aliases plus a bounded set of recognized cities.",
+      "Ambiguous or conflicting country locations are rejected rather than guessed.",
+      "Repository impact samples up to the 100 most-starred public repositories owned by each user.",
+      "Calendar-year filters use GitHub contribution activity for the selected year; current stars and followers are not historical snapshots.",
+      "The index is independent and is not an official GitHub ranking."
+    ]
+  },
+  "collection": {
+    "discoveredCandidates": 30,
+    "acceptedCandidates": 30,
+    "rejectedCandidates": 0,
+    "window": {
+      "from": "2025-08-26T03:41:21.537Z",
+      "to": "2026-08-26T03:41:21.537Z"
+    }
+  },
+  "developers": [
+    {
+      "login": "nunomaduro",
+      "name": "nuno maduro",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/5457236?u=b9985416db9b918ba2003206b111d0afc49852b6&v=4",
+      "profileUrl": "https://github.com/nunomaduro",
+      "bio": "staff software engineer at @laravel · speaker · content creator · created @pestphp, pint, pail, @larastan, @laravel-zero, @openai for php, @phpinsights, etc",
+      "company": "@laravel ",
+      "accountCreatedAt": "2013-09-14T08:11:58Z",
+      "location": {
+        "raw": "Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 9318,
+        "contributions365d": 4756,
+        "commits365d": 2737,
+        "issues365d": 17,
+        "pullRequests365d": 430,
+        "reviews365d": 12,
+        "restrictedContributions365d": 1527,
+        "publicRepositories": 318,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 22291,
+        "forksReceived": 1341,
+        "archivedRepositoriesSampled": 1
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1880,
+          "commits": 912,
+          "issues": 5,
+          "pullRequests": 231,
+          "reviews": 80,
+          "restrictedContributions": 635
+        },
+        "2023": {
+          "contributions": 2479,
+          "commits": 1237,
+          "issues": 29,
+          "pullRequests": 369,
+          "reviews": 147,
+          "restrictedContributions": 672
+        },
+        "2024": {
+          "contributions": 5264,
+          "commits": 2223,
+          "issues": 86,
+          "pullRequests": 266,
+          "reviews": 96,
+          "restrictedContributions": 2559
+        },
+        "2025": {
+          "contributions": 4309,
+          "commits": 1872,
+          "issues": 11,
+          "pullRequests": 45,
+          "reviews": 16,
+          "restrictedContributions": 2331
+        },
+        "2026": {
+          "contributions": 3224,
+          "commits": 2169,
+          "issues": 15,
+          "pullRequests": 403,
+          "reviews": 7,
+          "restrictedContributions": 606
+        }
+      },
+      "scores": {
+        "overall": 89.18,
+        "activity": 93.6,
+        "impact": 88.21,
+        "community": 88.96,
+        "collaboration": 77.74
+      },
+      "rank": 1
+    },
+    {
+      "login": "nelsonic",
+      "name": "Nelson",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/194400?u=405fb897c18f414ea8c4f4f2613fbef605855f02&v=4",
+      "profileUrl": "https://github.com/nelsonic",
+      "bio": "Love learning/writing code @dwyl \r\nSystematic about sharing all knowledge/skills. Learn something new every day. \r\nhttps://github.com/dwyl/?q=learn",
+      "company": "@dwyl",
+      "accountCreatedAt": "2010-02-02T08:44:49Z",
+      "location": {
+        "raw": "Braga, Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 3433,
+        "contributions365d": 5029,
+        "commits365d": 1609,
+        "issues365d": 235,
+        "pullRequests365d": 33,
+        "reviews365d": 1661,
+        "restrictedContributions365d": 1490,
+        "publicRepositories": 319,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 813,
+        "forksReceived": 132,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 5807,
+          "commits": 2224,
+          "issues": 661,
+          "pullRequests": 91,
+          "reviews": 1107,
+          "restrictedContributions": 1712
+        },
+        "2023": {
+          "contributions": 7620,
+          "commits": 3182,
+          "issues": 562,
+          "pullRequests": 61,
+          "reviews": 2255,
+          "restrictedContributions": 1556
+        },
+        "2024": {
+          "contributions": 5795,
+          "commits": 1862,
+          "issues": 294,
+          "pullRequests": 29,
+          "reviews": 1767,
+          "restrictedContributions": 1838
+        },
+        "2025": {
+          "contributions": 4925,
+          "commits": 1522,
+          "issues": 298,
+          "pullRequests": 13,
+          "reviews": 1520,
+          "restrictedContributions": 1569
+        },
+        "2026": {
+          "contributions": 3695,
+          "commits": 1256,
+          "issues": 167,
+          "pullRequests": 31,
+          "reviews": 1273,
+          "restrictedContributions": 967
+        }
+      },
+      "scores": {
+        "overall": 84.49,
+        "activity": 94.22,
+        "impact": 60.83,
+        "community": 79.24,
+        "collaboration": 100
+      },
+      "rank": 2
+    },
+    {
+      "login": "otaviojava",
+      "name": "Otávio Santana",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/863011?u=56465da918ab3e1ffdd707eade89d36032082a21&v=4",
+      "profileUrl": "https://github.com/otaviojava",
+      "bio": "Award-Winning Software Architect and Open Source Leader",
+      "company": "@eclipse @soujava @apache",
+      "accountCreatedAt": "2011-06-21T00:11:04Z",
+      "location": {
+        "raw": "Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1317,
+        "contributions365d": 8485,
+        "commits365d": 7885,
+        "issues365d": 47,
+        "pullRequests365d": 219,
+        "reviews365d": 291,
+        "restrictedContributions365d": 41,
+        "publicRepositories": 81,
+        "repositoriesSampled": 81,
+        "repoStatsTruncated": false,
+        "starsReceived": 247,
+        "forksReceived": 168,
+        "archivedRepositoriesSampled": 2
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 4484,
+          "commits": 4131,
+          "issues": 25,
+          "pullRequests": 105,
+          "reviews": 57,
+          "restrictedContributions": 153
+        },
+        "2023": {
+          "contributions": 6085,
+          "commits": 5054,
+          "issues": 65,
+          "pullRequests": 198,
+          "reviews": 190,
+          "restrictedContributions": 575
+        },
+        "2024": {
+          "contributions": 5600,
+          "commits": 2810,
+          "issues": 45,
+          "pullRequests": 174,
+          "reviews": 195,
+          "restrictedContributions": 2365
+        },
+        "2025": {
+          "contributions": 6910,
+          "commits": 4925,
+          "issues": 49,
+          "pullRequests": 180,
+          "reviews": 270,
+          "restrictedContributions": 1482
+        },
+        "2026": {
+          "contributions": 6144,
+          "commits": 5777,
+          "issues": 15,
+          "pullRequests": 150,
+          "reviews": 167,
+          "restrictedContributions": 34
+        }
+      },
+      "scores": {
+        "overall": 81.78,
+        "activity": 100,
+        "impact": 55.49,
+        "community": 69.92,
+        "collaboration": 82.77
+      },
+      "rank": 3
+    },
+    {
+      "login": "snipe",
+      "name": "snipe",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/197404?u=3a3faa7eb52d0ccb5d757cab2633677328bbffb2&v=4",
+      "profileUrl": "https://github.com/snipe",
+      "bio": "Creator of Snipe-IT and the Downworthy plugin, CEO of @Grokability",
+      "company": "@grokability ",
+      "accountCreatedAt": "2010-02-05T06:13:25Z",
+      "location": {
+        "raw": "Lisbon, Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": "Lisbon",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1997,
+        "contributions365d": 4597,
+        "commits365d": 4144,
+        "issues365d": 18,
+        "pullRequests365d": 370,
+        "reviews365d": 30,
+        "restrictedContributions365d": 22,
+        "publicRepositories": 115,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 1053,
+        "forksReceived": 257,
+        "archivedRepositoriesSampled": 1
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 3528,
+          "commits": 3075,
+          "issues": 2,
+          "pullRequests": 258,
+          "reviews": 50,
+          "restrictedContributions": 136
+        },
+        "2023": {
+          "contributions": 4264,
+          "commits": 3701,
+          "issues": 5,
+          "pullRequests": 365,
+          "reviews": 67,
+          "restrictedContributions": 110
+        },
+        "2024": {
+          "contributions": 3183,
+          "commits": 2677,
+          "issues": 11,
+          "pullRequests": 365,
+          "reviews": 71,
+          "restrictedContributions": 47
+        },
+        "2025": {
+          "contributions": 3475,
+          "commits": 2962,
+          "issues": 67,
+          "pullRequests": 342,
+          "reviews": 61,
+          "restrictedContributions": 29
+        },
+        "2026": {
+          "contributions": 3506,
+          "commits": 3179,
+          "issues": 7,
+          "pullRequests": 278,
+          "reviews": 15,
+          "restrictedContributions": 21
+        }
+      },
+      "scores": {
+        "overall": 80.59,
+        "activity": 93.23,
+        "impact": 64.1,
+        "community": 73.97,
+        "collaboration": 76.81
+      },
+      "rank": 4
+    },
+    {
+      "login": "rochacbruno",
+      "name": "Bruno Rocha",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/458654?u=efa3b748f27fa3f3ac6bc6b0d16cc9221b44670b&v=4",
+      "profileUrl": "https://github.com/rochacbruno",
+      "bio": "Bruno Cesar Rocha - Principal Software Engineer at @RedHatOfficial. \r\n#Python #Rust\r\n\r\n. Working on: \r\n@openshift  @python @dynaconf  Marmite",
+      "company": "Red Hat",
+      "accountCreatedAt": "2010-10-28T20:59:39Z",
+      "location": {
+        "raw": "Viana do Castelo, Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 4687,
+        "contributions365d": 1243,
+        "commits365d": 790,
+        "issues365d": 36,
+        "pullRequests365d": 176,
+        "reviews365d": 91,
+        "restrictedContributions365d": 96,
+        "publicRepositories": 370,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 9031,
+        "forksReceived": 2177,
+        "archivedRepositoriesSampled": 7
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 736,
+          "commits": 373,
+          "issues": 43,
+          "pullRequests": 100,
+          "reviews": 125,
+          "restrictedContributions": 61
+        },
+        "2023": {
+          "contributions": 505,
+          "commits": 228,
+          "issues": 25,
+          "pullRequests": 55,
+          "reviews": 134,
+          "restrictedContributions": 38
+        },
+        "2024": {
+          "contributions": 1149,
+          "commits": 529,
+          "issues": 129,
+          "pullRequests": 181,
+          "reviews": 169,
+          "restrictedContributions": 101
+        },
+        "2025": {
+          "contributions": 1565,
+          "commits": 827,
+          "issues": 71,
+          "pullRequests": 161,
+          "reviews": 194,
+          "restrictedContributions": 250
+        },
+        "2026": {
+          "contributions": 548,
+          "commits": 325,
+          "issues": 17,
+          "pullRequests": 107,
+          "reviews": 45,
+          "restrictedContributions": 34
+        }
+      },
+      "scores": {
+        "overall": 79.53,
+        "activity": 78.77,
+        "impact": 82.78,
+        "community": 82.27,
+        "collaboration": 73.65
+      },
+      "rank": 5
+    },
+    {
+      "login": "jonasschmedtmann",
+      "name": "Jonas Schmedtmann",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/18718850?u=50cbca280870e8794e7fdf2ecc8d5b2ba913ceaa&v=4",
+      "profileUrl": "https://github.com/jonasschmedtmann",
+      "bio": "Developer. Designer. Online teacher.",
+      "company": null,
+      "accountCreatedAt": "2016-04-28T11:17:03Z",
+      "location": {
+        "raw": "Faro, Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 28985,
+        "contributions365d": 1904,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 1904,
+        "publicRepositories": 7,
+        "repositoriesSampled": 7,
+        "repoStatsTruncated": false,
+        "starsReceived": 33147,
+        "forksReceived": 31740,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 45,
+          "commits": 1,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 44
+        },
+        "2023": {
+          "contributions": 121,
+          "commits": 9,
+          "issues": 0,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 108
+        },
+        "2024": {
+          "contributions": 206,
+          "commits": 8,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 198
+        },
+        "2025": {
+          "contributions": 258,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 258
+        },
+        "2026": {
+          "contributions": 1841,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 1841
+        }
+      },
+      "scores": {
+        "overall": 77.57,
+        "activity": 83.49,
+        "impact": 100,
+        "community": 100,
+        "collaboration": 0
+      },
+      "rank": 6
+    },
+    {
+      "login": "dpgaspar",
+      "name": "Daniel Vaz Gaspar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/4025227?u=baab56022cb77c91dd55a2d523568f2614a35605&v=4",
+      "profileUrl": "https://github.com/dpgaspar",
+      "bio": "",
+      "company": "@preset-io @apache",
+      "accountCreatedAt": "2013-04-01T08:54:13Z",
+      "location": {
+        "raw": "Lisbon, Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": "Lisbon",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1439,
+        "contributions365d": 1712,
+        "commits365d": 74,
+        "issues365d": 0,
+        "pullRequests365d": 87,
+        "reviews365d": 78,
+        "restrictedContributions365d": 1473,
+        "publicRepositories": 39,
+        "repositoriesSampled": 39,
+        "repoStatsTruncated": false,
+        "starsReceived": 5056,
+        "forksReceived": 1518,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1424,
+          "commits": 131,
+          "issues": 1,
+          "pullRequests": 128,
+          "reviews": 115,
+          "restrictedContributions": 1049
+        },
+        "2023": {
+          "contributions": 1675,
+          "commits": 149,
+          "issues": 1,
+          "pullRequests": 149,
+          "reviews": 168,
+          "restrictedContributions": 1204
+        },
+        "2024": {
+          "contributions": 1810,
+          "commits": 148,
+          "issues": 5,
+          "pullRequests": 121,
+          "reviews": 131,
+          "restrictedContributions": 1403
+        },
+        "2025": {
+          "contributions": 1597,
+          "commits": 76,
+          "issues": 2,
+          "pullRequests": 101,
+          "reviews": 69,
+          "restrictedContributions": 1348
+        },
+        "2026": {
+          "contributions": 1095,
+          "commits": 44,
+          "issues": 0,
+          "pullRequests": 57,
+          "reviews": 45,
+          "restrictedContributions": 949
+        }
+      },
+      "scores": {
+        "overall": 77.39,
+        "activity": 82.31,
+        "impact": 78.4,
+        "community": 70.78,
+        "collaboration": 67.55
+      },
+      "rank": 7
+    },
+    {
+      "login": "m1guelpf",
+      "name": "Miguel Piedrafita",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/23558090?u=8033dca78038cf5ea97779318407f3408d181430&v=4",
+      "profileUrl": "https://github.com/m1guelpf",
+      "bio": "friendly ambitious nerd, purple-haired dev @worldcoin, serial builder.",
+      "company": "@worldcoin",
+      "accountCreatedAt": "2016-11-18T16:03:44Z",
+      "location": {
+        "raw": "Lisbon, Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": "Lisbon",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 3488,
+        "contributions365d": 1095,
+        "commits365d": 466,
+        "issues365d": 4,
+        "pullRequests365d": 29,
+        "reviews365d": 10,
+        "restrictedContributions365d": 554,
+        "publicRepositories": 291,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 19042,
+        "forksReceived": 2132,
+        "archivedRepositoriesSampled": 2
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1701,
+          "commits": 971,
+          "issues": 12,
+          "pullRequests": 77,
+          "reviews": 47,
+          "restrictedContributions": 542
+        },
+        "2023": {
+          "contributions": 1410,
+          "commits": 676,
+          "issues": 15,
+          "pullRequests": 139,
+          "reviews": 112,
+          "restrictedContributions": 423
+        },
+        "2024": {
+          "contributions": 676,
+          "commits": 243,
+          "issues": 9,
+          "pullRequests": 20,
+          "reviews": 22,
+          "restrictedContributions": 353
+        },
+        "2025": {
+          "contributions": 1052,
+          "commits": 270,
+          "issues": 14,
+          "pullRequests": 24,
+          "reviews": 23,
+          "restrictedContributions": 688
+        },
+        "2026": {
+          "contributions": 721,
+          "commits": 373,
+          "issues": 2,
+          "pullRequests": 18,
+          "reviews": 6,
+          "restrictedContributions": 299
+        }
+      },
+      "scores": {
+        "overall": 75.96,
+        "activity": 77.37,
+        "impact": 87.61,
+        "community": 79.39,
+        "collaboration": 48.86
+      },
+      "rank": 8
+    },
+    {
+      "login": "pgte",
+      "name": "Pedro Teixeira",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/47910?u=15f01b65841f1aaeaaf2df82c0496660f5ac14a0&v=4",
+      "profileUrl": "https://github.com/pgte",
+      "bio": "👾 Software Engineer 🚀 Entrepreneur",
+      "company": null,
+      "accountCreatedAt": "2009-01-20T10:54:20Z",
+      "location": {
+        "raw": "Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1057,
+        "contributions365d": 2119,
+        "commits365d": 1140,
+        "issues365d": 0,
+        "pullRequests365d": 147,
+        "reviews365d": 0,
+        "restrictedContributions365d": 831,
+        "publicRepositories": 221,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 1803,
+        "forksReceived": 318,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1616,
+          "commits": 695,
+          "issues": 3,
+          "pullRequests": 465,
+          "reviews": 449,
+          "restrictedContributions": 3
+        },
+        "2023": {
+          "contributions": 1515,
+          "commits": 727,
+          "issues": 2,
+          "pullRequests": 483,
+          "reviews": 302,
+          "restrictedContributions": 1
+        },
+        "2024": {
+          "contributions": 846,
+          "commits": 360,
+          "issues": 1,
+          "pullRequests": 249,
+          "reviews": 201,
+          "restrictedContributions": 35
+        },
+        "2025": {
+          "contributions": 2463,
+          "commits": 1490,
+          "issues": 0,
+          "pullRequests": 98,
+          "reviews": 11,
+          "restrictedContributions": 863
+        },
+        "2026": {
+          "contributions": 1575,
+          "commits": 704,
+          "issues": 0,
+          "pullRequests": 94,
+          "reviews": 0,
+          "restrictedContributions": 776
+        }
+      },
+      "scores": {
+        "overall": 74.77,
+        "activity": 84.67,
+        "impact": 67.95,
+        "community": 67.78,
+        "collaboration": 63.42
+      },
+      "rank": 9
+    },
+    {
+      "login": "elizabetdev",
+      "name": "Elizabet Oliveira",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/2750668?u=a10c1936533c219bdc25f5cefb4fe79ee8e5f90b&v=4",
+      "profileUrl": "https://github.com/elizabetdev",
+      "bio": "That designer who codes @ClickHouse",
+      "company": "@ClickHouse",
+      "accountCreatedAt": "2012-11-08T12:33:14Z",
+      "location": {
+        "raw": "Lisbon, Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": "Lisbon",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1023,
+        "contributions365d": 725,
+        "commits365d": 108,
+        "issues365d": 2,
+        "pullRequests365d": 119,
+        "reviews365d": 60,
+        "restrictedContributions365d": 436,
+        "publicRepositories": 58,
+        "repositoriesSampled": 58,
+        "repoStatsTruncated": false,
+        "starsReceived": 3572,
+        "forksReceived": 173,
+        "archivedRepositoriesSampled": 1
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 560,
+          "commits": 84,
+          "issues": 7,
+          "pullRequests": 81,
+          "reviews": 129,
+          "restrictedContributions": 254
+        },
+        "2023": {
+          "contributions": 431,
+          "commits": 78,
+          "issues": 14,
+          "pullRequests": 27,
+          "reviews": 25,
+          "restrictedContributions": 285
+        },
+        "2024": {
+          "contributions": 614,
+          "commits": 80,
+          "issues": 0,
+          "pullRequests": 9,
+          "reviews": 0,
+          "restrictedContributions": 523
+        },
+        "2025": {
+          "contributions": 508,
+          "commits": 49,
+          "issues": 0,
+          "pullRequests": 32,
+          "reviews": 26,
+          "restrictedContributions": 399
+        },
+        "2026": {
+          "contributions": 572,
+          "commits": 78,
+          "issues": 2,
+          "pullRequests": 91,
+          "reviews": 38,
+          "restrictedContributions": 363
+        }
+      },
+      "scores": {
+        "overall": 71.1,
+        "activity": 72.82,
+        "impact": 72.08,
+        "community": 67.46,
+        "collaboration": 67.92
+      },
+      "rank": 10
+    },
+    {
+      "login": "motanelson",
+      "name": "nelson jr mota",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/118323821?u=bf96166edb8519aee0066ea505108f93cfdadf8a&v=4",
+      "profileUrl": "https://github.com/motanelson",
+      "bio": "America is the best\r\n",
+      "company": "https://youtube.com/@nelsonmotamota-e5j",
+      "accountCreatedAt": "2022-11-16T02:06:47Z",
+      "location": {
+        "raw": "Portugal,Lisbon",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": "Lisbon",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 9078,
+        "contributions365d": 5627,
+        "commits365d": 5486,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 444,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 427,
+        "forksReceived": 27,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 278,
+          "commits": 250,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 27,
+          "commits": 23,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 905,
+          "commits": 816,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 4247,
+          "commits": 4115,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 4113,
+          "commits": 4033,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 69.72,
+        "activity": 95.46,
+        "impact": 53.82,
+        "community": 88.7,
+        "collaboration": 0
+      },
+      "rank": 11
+    },
+    {
+      "login": "abo-abo",
+      "name": "Oleh Krehel",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/2937359?u=e6ef55f2c196413dc7e690a7321523055e6241ab&v=4",
+      "profileUrl": "https://github.com/abo-abo",
+      "bio": "\r\n",
+      "company": "@wavemm ",
+      "accountCreatedAt": "2012-12-01T08:04:52Z",
+      "location": {
+        "raw": "Matosinhos, Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1857,
+        "contributions365d": 1832,
+        "commits365d": 16,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 1816,
+        "publicRepositories": 109,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 12472,
+        "forksReceived": 1205,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1969,
+          "commits": 351,
+          "issues": 2,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 1613
+        },
+        "2023": {
+          "contributions": 2615,
+          "commits": 98,
+          "issues": 2,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 2512
+        },
+        "2024": {
+          "contributions": 2169,
+          "commits": 8,
+          "issues": 2,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 2156
+        },
+        "2025": {
+          "contributions": 1672,
+          "commits": 65,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 1607
+        },
+        "2026": {
+          "contributions": 1281,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 1281
+        }
+      },
+      "scores": {
+        "overall": 69.29,
+        "activity": 83.06,
+        "impact": 83.7,
+        "community": 73.26,
+        "collaboration": 0
+      },
+      "rank": 12
+    },
+    {
+      "login": "filhodanuvem",
+      "name": "Claudson Oliveira",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/94096?u=6f9d843cc6fc91ce32d0d18c00a85dd4907b294f&v=4",
+      "profileUrl": "https://github.com/filhodanuvem",
+      "bio": "I'm a Software Engineer with a passion on education. My past projects were my youtube channel and Devgym. ",
+      "company": "@devgymbr",
+      "accountCreatedAt": "2009-06-10T20:34:10Z",
+      "location": {
+        "raw": "Lisbon - Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": "Lisbon",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 2332,
+        "contributions365d": 1739,
+        "commits365d": 15,
+        "issues365d": 1,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 1722,
+        "publicRepositories": 87,
+        "repositoriesSampled": 87,
+        "repoStatsTruncated": false,
+        "starsReceived": 6928,
+        "forksReceived": 305,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 744,
+          "commits": 169,
+          "issues": 0,
+          "pullRequests": 7,
+          "reviews": 0,
+          "restrictedContributions": 564
+        },
+        "2023": {
+          "contributions": 1000,
+          "commits": 265,
+          "issues": 14,
+          "pullRequests": 3,
+          "reviews": 9,
+          "restrictedContributions": 699
+        },
+        "2024": {
+          "contributions": 2904,
+          "commits": 28,
+          "issues": 1,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 2870
+        },
+        "2025": {
+          "contributions": 2543,
+          "commits": 0,
+          "issues": 1,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 2542
+        },
+        "2026": {
+          "contributions": 441,
+          "commits": 15,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 425
+        }
+      },
+      "scores": {
+        "overall": 68.66,
+        "activity": 82.48,
+        "impact": 77.78,
+        "community": 75.48,
+        "collaboration": 5.15
+      },
+      "rank": 13
+    },
+    {
+      "login": "brocaar",
+      "name": "Orne Brocaar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/165497?u=93ed22c26e46fb293b5ecdf9c35a9412d0e4ace7&v=4",
+      "profileUrl": "https://github.com/brocaar",
+      "bio": "Founder of the ChirpStack open-source LoRaWAN Network Server.",
+      "company": "Brocaar",
+      "accountCreatedAt": "2009-12-10T11:20:51Z",
+      "location": {
+        "raw": "Aljezur, Algarve, Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1036,
+        "contributions365d": 542,
+        "commits365d": 514,
+        "issues365d": 9,
+        "pullRequests365d": 4,
+        "reviews365d": 11,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 73,
+        "repositoriesSampled": 73,
+        "repoStatsTruncated": false,
+        "starsReceived": 2871,
+        "forksReceived": 1383,
+        "archivedRepositoriesSampled": 12
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 684,
+          "commits": 648,
+          "issues": 15,
+          "pullRequests": 5,
+          "reviews": 7,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 810,
+          "commits": 781,
+          "issues": 9,
+          "pullRequests": 9,
+          "reviews": 3,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 613,
+          "commits": 575,
+          "issues": 12,
+          "pullRequests": 6,
+          "reviews": 18,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 481,
+          "commits": 461,
+          "issues": 8,
+          "pullRequests": 1,
+          "reviews": 8,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 372,
+          "commits": 351,
+          "issues": 7,
+          "pullRequests": 3,
+          "reviews": 8,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 66.48,
+        "activity": 69.61,
+        "impact": 75.25,
+        "community": 67.59,
+        "collaboration": 41.35
+      },
+      "rank": 14
+    },
+    {
+      "login": "franciscofranco",
+      "name": "Francisco Franco",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/792248?u=03b2bd978df9ae613b87a19e7a79892d76b128a1&v=4",
+      "profileUrl": "https://github.com/franciscofranco",
+      "bio": "",
+      "company": "Circuit",
+      "accountCreatedAt": "2011-05-17T00:47:47Z",
+      "location": {
+        "raw": "Lisbon, Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": "Lisbon",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1015,
+        "contributions365d": 2990,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 2990,
+        "publicRepositories": 44,
+        "repositoriesSampled": 44,
+        "repoStatsTruncated": false,
+        "starsReceived": 823,
+        "forksReceived": 516,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 188,
+          "commits": 4,
+          "issues": 0,
+          "pullRequests": 4,
+          "reviews": 0,
+          "restrictedContributions": 179
+        },
+        "2023": {
+          "contributions": 20,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 20
+        },
+        "2024": {
+          "contributions": 421,
+          "commits": 4,
+          "issues": 3,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 413
+        },
+        "2025": {
+          "contributions": 977,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 977
+        },
+        "2026": {
+          "contributions": 2430,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 2430
+        }
+      },
+      "scores": {
+        "overall": 66.31,
+        "activity": 88.47,
+        "impact": 65.57,
+        "community": 67.39,
+        "collaboration": 0
+      },
+      "rank": 15
+    },
+    {
+      "login": "pedrouid",
+      "name": "Pedro Gomes",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/10136079?u=75eae9ce8d884c821a7eb81bf26d47c455da72dc&v=4",
+      "profileUrl": "https://github.com/pedrouid",
+      "bio": "Founder & Director at WalletConnect",
+      "company": "@WalletConnect",
+      "accountCreatedAt": "2014-12-09T23:50:46Z",
+      "location": {
+        "raw": "Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1022,
+        "contributions365d": 1245,
+        "commits365d": 228,
+        "issues365d": 2,
+        "pullRequests365d": 16,
+        "reviews365d": 6,
+        "restrictedContributions365d": 986,
+        "publicRepositories": 252,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 467,
+        "forksReceived": 144,
+        "archivedRepositoriesSampled": 6
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1262,
+          "commits": 793,
+          "issues": 15,
+          "pullRequests": 87,
+          "reviews": 40,
+          "restrictedContributions": 319
+        },
+        "2023": {
+          "contributions": 839,
+          "commits": 364,
+          "issues": 0,
+          "pullRequests": 85,
+          "reviews": 74,
+          "restrictedContributions": 315
+        },
+        "2024": {
+          "contributions": 130,
+          "commits": 72,
+          "issues": 6,
+          "pullRequests": 22,
+          "reviews": 11,
+          "restrictedContributions": 16
+        },
+        "2025": {
+          "contributions": 170,
+          "commits": 112,
+          "issues": 1,
+          "pullRequests": 18,
+          "reviews": 11,
+          "restrictedContributions": 26
+        },
+        "2026": {
+          "contributions": 1149,
+          "commits": 166,
+          "issues": 2,
+          "pullRequests": 10,
+          "reviews": 2,
+          "restrictedContributions": 962
+        }
+      },
+      "scores": {
+        "overall": 66.28,
+        "activity": 78.79,
+        "impact": 57.74,
+        "community": 67.45,
+        "collaboration": 41.83
+      },
+      "rank": 16
+    },
+    {
+      "login": "gabrieldejesus",
+      "name": "Gabriel de Jesus",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/59370348?u=7d7a9f4cdd2a5450fe5b60301ff56ef7eac0aa37&v=4",
+      "profileUrl": "https://github.com/gabrieldejesus",
+      "bio": "AI Engineer & Senior Creative Technologist. Webby Award Winner ⭐️",
+      "company": null,
+      "accountCreatedAt": "2019-12-30T17:00:55Z",
+      "location": {
+        "raw": "Lisbon, Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": "Lisbon",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 961,
+        "contributions365d": 2513,
+        "commits365d": 15,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 2496,
+        "publicRepositories": 99,
+        "repositoriesSampled": 99,
+        "repoStatsTruncated": false,
+        "starsReceived": 699,
+        "forksReceived": 125,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1016,
+          "commits": 14,
+          "issues": 3,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 995
+        },
+        "2023": {
+          "contributions": 913,
+          "commits": 192,
+          "issues": 0,
+          "pullRequests": 3,
+          "reviews": 1,
+          "restrictedContributions": 695
+        },
+        "2024": {
+          "contributions": 2315,
+          "commits": 33,
+          "issues": 12,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 2267
+        },
+        "2025": {
+          "contributions": 1954,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 1952
+        },
+        "2026": {
+          "contributions": 1856,
+          "commits": 15,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 1839
+        }
+      },
+      "scores": {
+        "overall": 63.91,
+        "activity": 86.55,
+        "impact": 59.73,
+        "community": 66.85,
+        "collaboration": 0
+      },
+      "rank": 17
+    },
+    {
+      "login": "r00t-3xp10it",
+      "name": "pedro ubuntu",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/23490060?u=206a5bae4117809b75f06dd2052d1948b928361b&v=4",
+      "profileUrl": "https://github.com/r00t-3xp10it",
+      "bio": "\"Be a hacker not a criminal\"...      Pentester | IT enthusiastic | blogger",
+      "company": "@Suspicious-Shell-Activity",
+      "accountCreatedAt": "2016-11-16T01:46:58Z",
+      "location": {
+        "raw": "Lisbon - portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": "Lisbon",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 2273,
+        "contributions365d": 509,
+        "commits365d": 509,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 46,
+        "repositoriesSampled": 46,
+        "repoStatsTruncated": false,
+        "starsReceived": 6790,
+        "forksReceived": 2167,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 2635,
+          "commits": 2623,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 969,
+          "commits": 969,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 159,
+          "commits": 158,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 9,
+          "commits": 9,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 503,
+          "commits": 503,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 62.59,
+        "activity": 68.92,
+        "impact": 81.17,
+        "community": 75.23,
+        "collaboration": 0
+      },
+      "rank": 18
+    },
+    {
+      "login": "vasturiano",
+      "name": "Vasco Asturiano",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6784226?u=36b61db7588e94f64ae8b11a7ba8091149b9eff0&v=4",
+      "profileUrl": "https://github.com/vasturiano",
+      "bio": "Data sculptor",
+      "company": "@cloudflare ",
+      "accountCreatedAt": "2014-02-25T15:57:32Z",
+      "location": {
+        "raw": "Lisbon, Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": "Lisbon",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 2321,
+        "contributions365d": 174,
+        "commits365d": 128,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 2,
+        "restrictedContributions365d": 43,
+        "publicRepositories": 95,
+        "repositoriesSampled": 95,
+        "repoStatsTruncated": false,
+        "starsReceived": 21514,
+        "forksReceived": 3196,
+        "archivedRepositoriesSampled": 1
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 584,
+          "commits": 565,
+          "issues": 1,
+          "pullRequests": 1,
+          "reviews": 4,
+          "restrictedContributions": 10
+        },
+        "2023": {
+          "contributions": 788,
+          "commits": 751,
+          "issues": 0,
+          "pullRequests": 24,
+          "reviews": 6,
+          "restrictedContributions": 4
+        },
+        "2024": {
+          "contributions": 610,
+          "commits": 590,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 1,
+          "restrictedContributions": 7
+        },
+        "2025": {
+          "contributions": 877,
+          "commits": 851,
+          "issues": 2,
+          "pullRequests": 0,
+          "reviews": 1,
+          "restrictedContributions": 12
+        },
+        "2026": {
+          "contributions": 134,
+          "commits": 94,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 2,
+          "restrictedContributions": 37
+        }
+      },
+      "scores": {
+        "overall": 61.94,
+        "activity": 57.09,
+        "impact": 89.18,
+        "community": 75.43,
+        "collaboration": 17.59
+      },
+      "rank": 19
+    },
+    {
+      "login": "crnacura",
+      "name": "Manoela Ilic",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1044196?v=4",
+      "profileUrl": "https://github.com/crnacura",
+      "bio": "TBD",
+      "company": "@codrops ",
+      "accountCreatedAt": "2011-09-12T11:48:18Z",
+      "location": {
+        "raw": "Portimão, Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 7145,
+        "contributions365d": 224,
+        "commits365d": 132,
+        "issues365d": 0,
+        "pullRequests365d": 1,
+        "reviews365d": 0,
+        "restrictedContributions365d": 88,
+        "publicRepositories": 13,
+        "repositoriesSampled": 13,
+        "repoStatsTruncated": false,
+        "starsReceived": 931,
+        "forksReceived": 194,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 119,
+          "commits": 118,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 122,
+          "commits": 121,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 442,
+          "commits": 131,
+          "issues": 1,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 307
+        },
+        "2025": {
+          "contributions": 291,
+          "commits": 128,
+          "issues": 0,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 156
+        },
+        "2026": {
+          "contributions": 100,
+          "commits": 66,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 30
+        }
+      },
+      "scores": {
+        "overall": 56.87,
+        "activity": 59.87,
+        "impact": 62.6,
+        "community": 86.37,
+        "collaboration": 8.8
+      },
+      "rank": 20
+    },
+    {
+      "login": "guithepc",
+      "name": "Guilherme Pessoa",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/77997696?u=95af66e090bcf1aa43684692fcd05b73935fee86&v=4",
+      "profileUrl": "https://github.com/guithepc",
+      "bio": "@pctheonee",
+      "company": null,
+      "accountCreatedAt": "2021-01-25T22:25:38Z",
+      "location": {
+        "raw": "Lisbon, Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": "Lisbon",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1022,
+        "contributions365d": 399,
+        "commits365d": 35,
+        "issues365d": 4,
+        "pullRequests365d": 6,
+        "reviews365d": 0,
+        "restrictedContributions365d": 347,
+        "publicRepositories": 38,
+        "repositoriesSampled": 38,
+        "repoStatsTruncated": false,
+        "starsReceived": 113,
+        "forksReceived": 10,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 74,
+          "commits": 46,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 18
+        },
+        "2023": {
+          "contributions": 105,
+          "commits": 101,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 187,
+          "commits": 122,
+          "issues": 0,
+          "pullRequests": 60,
+          "reviews": 2,
+          "restrictedContributions": 2
+        },
+        "2025": {
+          "contributions": 34,
+          "commits": 9,
+          "issues": 2,
+          "pullRequests": 7,
+          "reviews": 0,
+          "restrictedContributions": 12
+        },
+        "2026": {
+          "contributions": 389,
+          "commits": 33,
+          "issues": 2,
+          "pullRequests": 4,
+          "reviews": 0,
+          "restrictedContributions": 343
+        }
+      },
+      "scores": {
+        "overall": 54.77,
+        "activity": 66.23,
+        "impact": 42.67,
+        "community": 67.45,
+        "collaboration": 27.88
+      },
+      "rank": 21
+    },
+    {
+      "login": "RuiSantosdotme",
+      "name": "Rui Santos",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6280520?u=bfba7e79a90675c93d82ebb5fb8fbb501500fa4c&v=4",
+      "profileUrl": "https://github.com/RuiSantosdotme",
+      "bio": "",
+      "company": null,
+      "accountCreatedAt": "2013-12-29T11:31:02Z",
+      "location": {
+        "raw": "Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 988,
+        "contributions365d": 135,
+        "commits365d": 132,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 74,
+        "repositoriesSampled": 74,
+        "repoStatsTruncated": false,
+        "starsReceived": 1920,
+        "forksReceived": 927,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 99,
+          "commits": 98,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 191,
+          "commits": 189,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 568,
+          "commits": 558,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 334,
+          "commits": 314,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 14
+        },
+        "2026": {
+          "contributions": 79,
+          "commits": 76,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 52.44,
+        "activity": 54.31,
+        "impact": 71.75,
+        "community": 67.12,
+        "collaboration": 0
+      },
+      "rank": 22
+    },
+    {
+      "login": "diogocarrola",
+      "name": "Diogo Carrola",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/94233657?u=b03099d22bae0bfb647936041c485676916cdaf3&v=4",
+      "profileUrl": "https://github.com/diogocarrola",
+      "bio": "Full-stack Software Developer | React & PWA Specialist | AI-Integrated Development",
+      "company": null,
+      "accountCreatedAt": "2021-11-13T15:17:11Z",
+      "location": {
+        "raw": "Porto, Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": "Porto",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1035,
+        "contributions365d": 430,
+        "commits365d": 389,
+        "issues365d": 1,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 30,
+        "publicRepositories": 53,
+        "repositoriesSampled": 53,
+        "repoStatsTruncated": false,
+        "starsReceived": 36,
+        "forksReceived": 5,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 57,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 57
+        },
+        "2023": {
+          "contributions": 925,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 925
+        },
+        "2024": {
+          "contributions": 864,
+          "commits": 78,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 767
+        },
+        "2025": {
+          "contributions": 1253,
+          "commits": 831,
+          "issues": 7,
+          "pullRequests": 5,
+          "reviews": 0,
+          "restrictedContributions": 377
+        },
+        "2026": {
+          "contributions": 65,
+          "commits": 63,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 49.47,
+        "activity": 67.06,
+        "impact": 33.54,
+        "community": 67.58,
+        "collaboration": 5.15
+      },
+      "rank": 23
+    },
+    {
+      "login": "sgolemon",
+      "name": "Sara Golemon",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/812538?u=f0d0781b9e5d1913369ac17b4f2de0c092b1dcff&v=4",
+      "profileUrl": "https://github.com/sgolemon",
+      "bio": "C/C++ stan.\r\nPHP Promoter (and critic).\r\nEither nurturing or belligerent. Seldom anything in between.",
+      "company": "@ThePHPF ",
+      "accountCreatedAt": "2011-05-26T17:11:21Z",
+      "location": {
+        "raw": "Lisboa, Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": "Lisboa",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1453,
+        "contributions365d": 37,
+        "commits365d": 13,
+        "issues365d": 0,
+        "pullRequests365d": 3,
+        "reviews365d": 3,
+        "restrictedContributions365d": 16,
+        "publicRepositories": 44,
+        "repositoriesSampled": 44,
+        "repoStatsTruncated": false,
+        "starsReceived": 656,
+        "forksReceived": 63,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 865,
+          "commits": 53,
+          "issues": 0,
+          "pullRequests": 4,
+          "reviews": 11,
+          "restrictedContributions": 795
+        },
+        "2023": {
+          "contributions": 257,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 14,
+          "reviews": 10,
+          "restrictedContributions": 233
+        },
+        "2024": {
+          "contributions": 48,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 2,
+          "reviews": 1,
+          "restrictedContributions": 45
+        },
+        "2025": {
+          "contributions": 57,
+          "commits": 33,
+          "issues": 0,
+          "pullRequests": 4,
+          "reviews": 3,
+          "restrictedContributions": 16
+        },
+        "2026": {
+          "contributions": 15,
+          "commits": 10,
+          "issues": 0,
+          "pullRequests": 2,
+          "reviews": 2,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 47.31,
+        "activity": 40.21,
+        "impact": 58.05,
+        "community": 70.87,
+        "collaboration": 27.16
+      },
+      "rank": 24
+    },
+    {
+      "login": "gdbinit",
+      "name": "fG!",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/859134?u=2f7962ffc0815071a999ccfab100adc4d7a20c2d&v=4",
+      "profileUrl": "https://github.com/gdbinit",
+      "bio": "I like debuggers, disassemblers, and C (and some Go)!\r\n",
+      "company": "Put.as",
+      "accountCreatedAt": "2011-06-19T00:18:28Z",
+      "location": {
+        "raw": "Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1707,
+        "contributions365d": 15,
+        "commits365d": 9,
+        "issues365d": 2,
+        "pullRequests365d": 1,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 103,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 8221,
+        "forksReceived": 1880,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 6,
+          "commits": 2,
+          "issues": 1,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 139,
+          "commits": 125,
+          "issues": 2,
+          "pullRequests": 3,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 31,
+          "commits": 28,
+          "issues": 1,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 18,
+          "commits": 10,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 10,
+          "commits": 6,
+          "issues": 2,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 47.2,
+        "activity": 30.65,
+        "impact": 81.81,
+        "community": 72.44,
+        "collaboration": 13.94
+      },
+      "rank": 25
+    },
+    {
+      "login": "sikozonpc",
+      "name": "Tiago",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/20475266?u=28768f353e0b1d21237e3d280d5802fdd6995e52&v=4",
+      "profileUrl": "https://github.com/sikozonpc",
+      "bio": "",
+      "company": "Codealong",
+      "accountCreatedAt": "2016-07-15T10:47:13Z",
+      "location": {
+        "raw": "Lisbon, Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": "Lisbon",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1179,
+        "contributions365d": 32,
+        "commits365d": 29,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 101,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 1732,
+        "forksReceived": 400,
+        "archivedRepositoriesSampled": 3
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 77,
+          "commits": 68,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 1,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 65,
+          "commits": 61,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 1,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 147,
+          "commits": 125,
+          "issues": 0,
+          "pullRequests": 4,
+          "reviews": 7,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 159,
+          "commits": 155,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 26,
+          "commits": 24,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 44.79,
+        "activity": 38.65,
+        "impact": 68.28,
+        "community": 68.84,
+        "collaboration": 0
+      },
+      "rank": 26
+    },
+    {
+      "login": "cusspvz",
+      "name": "José Moreira",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/3604053?u=d1fe198629ce2efb587438237749f22ee93bbafe&v=4",
+      "profileUrl": "https://github.com/cusspvz",
+      "bio": "Software Architecture, Security and Infrastructure | Open-Source <3",
+      "company": "mosano.eu",
+      "accountCreatedAt": "2013-02-15T16:31:20Z",
+      "location": {
+        "raw": "Póvoa de Varzim, Porto, Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": "Porto",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 8308,
+        "contributions365d": 23,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 21,
+        "publicRepositories": 173,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 957,
+        "forksReceived": 119,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 263,
+          "commits": 11,
+          "issues": 3,
+          "pullRequests": 5,
+          "reviews": 0,
+          "restrictedContributions": 238
+        },
+        "2023": {
+          "contributions": 194,
+          "commits": 54,
+          "issues": 1,
+          "pullRequests": 4,
+          "reviews": 0,
+          "restrictedContributions": 129
+        },
+        "2024": {
+          "contributions": 81,
+          "commits": 14,
+          "issues": 2,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 59
+        },
+        "2025": {
+          "contributions": 33,
+          "commits": 0,
+          "issues": 1,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 29
+        },
+        "2026": {
+          "contributions": 14,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 13
+        }
+      },
+      "scores": {
+        "overall": 44.42,
+        "activity": 35.13,
+        "impact": 61.74,
+        "community": 87.84,
+        "collaboration": 0
+      },
+      "rank": 27
+    },
+    {
+      "login": "Pedromdsn",
+      "name": "Pedro Nogueira",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/57453260?u=a316088754357be4ca7f46470ddee4f3feafc059&v=4",
+      "profileUrl": "https://github.com/Pedromdsn",
+      "bio": "Software Engineer - Fan of TypeScript and Kotlin. I'm a FullStack developer working as a freelancer around the globe.",
+      "company": null,
+      "accountCreatedAt": "2019-11-06T16:29:54Z",
+      "location": {
+        "raw": "Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1144,
+        "contributions365d": 39,
+        "commits365d": 15,
+        "issues365d": 2,
+        "pullRequests365d": 5,
+        "reviews365d": 0,
+        "restrictedContributions365d": 14,
+        "publicRepositories": 54,
+        "repositoriesSampled": 54,
+        "repoStatsTruncated": false,
+        "starsReceived": 231,
+        "forksReceived": 12,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1093,
+          "commits": 183,
+          "issues": 18,
+          "pullRequests": 8,
+          "reviews": 0,
+          "restrictedContributions": 863
+        },
+        "2023": {
+          "contributions": 1128,
+          "commits": 34,
+          "issues": 6,
+          "pullRequests": 4,
+          "reviews": 0,
+          "restrictedContributions": 1076
+        },
+        "2024": {
+          "contributions": 60,
+          "commits": 6,
+          "issues": 1,
+          "pullRequests": 6,
+          "reviews": 0,
+          "restrictedContributions": 46
+        },
+        "2025": {
+          "contributions": 8,
+          "commits": 3,
+          "issues": 2,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 34,
+          "commits": 14,
+          "issues": 0,
+          "pullRequests": 3,
+          "reviews": 0,
+          "restrictedContributions": 14
+        }
+      },
+      "scores": {
+        "overall": 44.41,
+        "activity": 40.78,
+        "impact": 48.31,
+        "community": 68.55,
+        "collaboration": 24.7
+      },
+      "rank": 28
+    },
+    {
+      "login": "SimCoderYoutube",
+      "name": "SimCoder",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/30011307?u=72cc8b1c50acd84ad2105642162665fd6ebe2553&v=4",
+      "profileUrl": "https://github.com/SimCoderYoutube",
+      "bio": "Full-Stack Developer. Founder of the Simcoder Youtube chanel. Working mainly with react native with @expo.\r\n\r\nLet's make coding simple!",
+      "company": "SimCoder",
+      "accountCreatedAt": "2017-07-09T00:11:11Z",
+      "location": {
+        "raw": "Porto, Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": "Porto",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1832,
+        "contributions365d": 0,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 15,
+        "repositoriesSampled": 15,
+        "repoStatsTruncated": false,
+        "starsReceived": 3398,
+        "forksReceived": 1812,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 10,
+          "commits": 6,
+          "issues": 0,
+          "pullRequests": 3,
+          "reviews": 1,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 2,
+          "commits": 1,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 30.26,
+        "activity": 0,
+        "impact": 77.16,
+        "community": 73.13,
+        "collaboration": 0
+      },
+      "rank": 29
+    },
+    {
+      "login": "brunocasanova",
+      "name": "Bruno Casanova",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/4107768?v=4",
+      "profileUrl": "https://github.com/brunocasanova",
+      "bio": "",
+      "company": null,
+      "accountCreatedAt": "2013-04-09T19:50:13Z",
+      "location": {
+        "raw": "Póvoa de Varzim, Porto, Portugal",
+        "accepted": true,
+        "countryCode": "PT",
+        "country": "Portugal",
+        "city": "Porto",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 2361,
+        "contributions365d": 0,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 54,
+        "repositoriesSampled": 54,
+        "repoStatsTruncated": false,
+        "starsReceived": 50,
+        "forksReceived": 25,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 21.39,
+        "activity": 0,
+        "impact": 40.21,
+        "community": 75.6,
+        "collaboration": 0
+      },
+      "rank": 30
+    }
+  ]
 }
