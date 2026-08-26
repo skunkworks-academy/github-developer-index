@@ -29,7 +29,8 @@
     query: '',
     period: 'rolling',
     metric: 'overall',
-    activityFilter: 'all'
+    activityFilter: 'all',
+    loadSequence: 0
   };
 
   const fmt = new Intl.NumberFormat();
