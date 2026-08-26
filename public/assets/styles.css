@@ -33,11 +33,36 @@ button, input, select { font: inherit; }
 .pulse { display: inline-block; width: 8px; height: 8px; margin-right: .45rem; border-radius: 50%; background: currentColor; box-shadow: 0 0 12px currentColor; }
 h1 { margin: 0; color: var(--strong); font-size: clamp(2.2rem, 6vw, 4.5rem); line-height: .98; letter-spacing: -.05em; }
 .lede { max-width: 760px; margin: 1rem 0 0; color: var(--muted); font-size: 1.02rem; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: 1.1rem; }
 .repo-link { padding: .7rem .9rem; border: 1px solid var(--border); border-radius: 9px; background: var(--surface); color: var(--strong); text-decoration: none; font-weight: 700; }
 .controls { display: grid; grid-template-columns: .9fr .9fr 1fr 1.1fr 1.25fr; gap: .9rem; margin: 1.3rem 0; padding: 1rem; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); }
 .controls label { min-width: 0; }
 .controls label span { display: block; margin-bottom: .35rem; color: var(--muted); font-size: .72rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
-select, input { width: 100%; min-height: 46px; padding: .7rem .8rem; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--strong); }
+select, input {
+  width: 100%;
+  min-width: 0;
+  min-height: 46px;
+  padding: .7rem .8rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--strong);
+  line-height: 1.25;
+}
+select {
+  -webkit-appearance: menulist;
+  appearance: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+select option,
+select optgroup {
+  background: var(--bg);
+  color: var(--strong);
+}
+select:disabled,
+input:disabled { opacity: .72; }
 .summary { display: grid; grid-template-columns: repeat(5,1fr); gap: .8rem; }
 .summary article { min-width: 0; padding: 1rem; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
 .summary span { display: block; color: var(--muted); font-size: .7rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
@@ -64,12 +89,8 @@ tbody tr:last-child td { border-bottom: 0; }
 .num { font-variant-numeric: tabular-nums; color: var(--muted); }
 .empty { padding: 3rem 1rem; text-align: center; color: var(--muted); }
 .cards { display: none; }
-footer { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--muted); font-size: .8rem; }
-.footer-inner { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 1.25rem; align-items: start; }
-.footer-inner p { margin: 0; }
-.footer-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .45rem; }
-.footer-links a { padding: .45rem .6rem; border: 1px solid var(--border); border-radius: 999px; color: var(--strong); text-decoration: none; font-weight: 800; }
-.footer-links a:hover { border-color: var(--accent); color: #fff; }
+.methodology-disclaimer { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--muted); font-size: .8rem; }
+.methodology-disclaimer p { margin: 0; }
 
 @media (max-width: 1050px) {
   .controls { grid-template-columns: 1fr 1fr; }
@@ -79,12 +100,22 @@ footer { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--bord
   .hero { grid-template-columns: 1fr; align-items: start; }
   .repo-link { justify-self: start; }
   .summary { grid-template-columns: 1fr 1fr; }
-  .footer-inner { grid-template-columns: 1fr; }
-  .footer-links { justify-content: flex-start; }
 }
 @media (max-width: 680px) {
   .shell { width: min(100% - 1rem,1180px); padding-top: 1rem; }
-  .controls { grid-template-columns: 1fr; }
+  .controls { grid-template-columns: minmax(0, 1fr); gap: 1rem; padding: 1rem; }
+  .controls label,
+  .controls .swa-field { width: 100%; min-width: 0; max-width: 100%; }
+  .controls select,
+  .controls input {
+    width: 100%;
+    max-width: 100%;
+    min-height: 52px;
+    font-size: 16px;
+    line-height: 1.25;
+    padding: .8rem .9rem;
+  }
+  .hero-actions { display: grid; grid-template-columns: 1fr; }
   .hero-actions .button { width: 100%; }
   .table-wrap { display: none; }
   .cards { display: block; }
@@ -99,4 +130,5 @@ footer { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--bord
 }
 @media (max-width: 400px) {
   .summary { grid-template-columns: 1fr; }
+  .card-metrics { grid-template-columns: 1fr; }
 }
