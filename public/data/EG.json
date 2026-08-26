@@ -1,11 +1,2517 @@
 {
   "schemaVersion": 1,
-  "generatedAt": null,
-  "source": {"provider":"GitHub","api":"GraphQL","officialLeaderboard":false},
-  "country": {"code":"EG","name":"Egypt"},
-  "availableYears": [],
-  "calendarWindows": [],
-  "methodology": {"version":"1.0.0","weights":{"activity":0.45,"impact":0.25,"community":0.15,"collaboration":0.15},"windowDays":365,"notes":["Pending first live refresh."]},
-  "collection": {"discoveredCandidates":0,"acceptedCandidates":0,"rejectedCandidates":0,"window":null},
-  "developers": []
+  "generatedAt": "2026-08-26T03:40:19.719Z",
+  "source": {
+    "provider": "GitHub",
+    "api": "GraphQL",
+    "officialLeaderboard": false
+  },
+  "country": {
+    "code": "EG",
+    "name": "Egypt"
+  },
+  "availableYears": [
+    2026,
+    2025,
+    2024,
+    2023,
+    2022
+  ],
+  "calendarWindows": [
+    {
+      "year": 2026,
+      "from": "2026-01-01T00:00:00.000Z",
+      "to": "2026-08-26T03:40:19.719Z",
+      "complete": false
+    },
+    {
+      "year": 2025,
+      "from": "2025-01-01T00:00:00.000Z",
+      "to": "2025-12-31T23:59:59.999Z",
+      "complete": true
+    },
+    {
+      "year": 2024,
+      "from": "2024-01-01T00:00:00.000Z",
+      "to": "2024-12-31T23:59:59.999Z",
+      "complete": true
+    },
+    {
+      "year": 2023,
+      "from": "2023-01-01T00:00:00.000Z",
+      "to": "2023-12-31T23:59:59.999Z",
+      "complete": true
+    },
+    {
+      "year": 2022,
+      "from": "2022-01-01T00:00:00.000Z",
+      "to": "2022-12-31T23:59:59.999Z",
+      "complete": true
+    }
+  ],
+  "methodology": {
+    "version": "1.0.0",
+    "weights": {
+      "activity": 0.45,
+      "impact": 0.25,
+      "community": 0.15,
+      "collaboration": 0.15
+    },
+    "windowDays": 365,
+    "notes": [
+      "Candidate discovery uses GitHub user search location qualifiers.",
+      "Country resolution uses explicit country aliases plus a bounded set of recognized cities.",
+      "Ambiguous or conflicting country locations are rejected rather than guessed.",
+      "Repository impact samples up to the 100 most-starred public repositories owned by each user.",
+      "Calendar-year filters use GitHub contribution activity for the selected year; current stars and followers are not historical snapshots.",
+      "The index is independent and is not an official GitHub ranking."
+    ]
+  },
+  "collection": {
+    "discoveredCandidates": 30,
+    "acceptedCandidates": 29,
+    "rejectedCandidates": 1,
+    "window": {
+      "from": "2025-08-26T03:40:19.719Z",
+      "to": "2026-08-26T03:40:19.719Z"
+    }
+  },
+  "developers": [
+    {
+      "login": "A-Hemeda",
+      "name": "Ahmed Hemeda",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/101954795?u=68cf28d849138c2390075951055bdcd444acc8ea&v=4",
+      "profileUrl": "https://github.com/A-Hemeda",
+      "bio": "Software Engineer | Full Stack Developer | Backend .NET",
+      "company": "AOU",
+      "accountCreatedAt": "2022-03-19T23:39:31Z",
+      "location": {
+        "raw": "Cairo, Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": "Cairo",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1803,
+        "contributions365d": 7856,
+        "commits365d": 3950,
+        "issues365d": 2,
+        "pullRequests365d": 992,
+        "reviews365d": 0,
+        "restrictedContributions365d": 2910,
+        "publicRepositories": 31,
+        "repositoriesSampled": 31,
+        "repoStatsTruncated": false,
+        "starsReceived": 1722,
+        "forksReceived": 169,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 352,
+          "commits": 347,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 45,
+          "commits": 45,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 443,
+          "commits": 409,
+          "issues": 17,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 12
+        },
+        "2025": {
+          "contributions": 2319,
+          "commits": 1570,
+          "issues": 3,
+          "pullRequests": 53,
+          "reviews": 0,
+          "restrictedContributions": 672
+        },
+        "2026": {
+          "contributions": 6629,
+          "commits": 3208,
+          "issues": 0,
+          "pullRequests": 992,
+          "reviews": 0,
+          "restrictedContributions": 2428
+        }
+      },
+      "scores": {
+        "overall": 89.51,
+        "activity": 100,
+        "impact": 65.96,
+        "community": 86.84,
+        "collaboration": 100
+      },
+      "rank": 1
+    },
+    {
+      "login": "D4Vinci",
+      "name": "Karim shoair",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/20604835?u=09b7c5077ccfe08e9d863f07bfa60fa0168d0061&v=4",
+      "profileUrl": "https://github.com/D4Vinci",
+      "bio": "An extremely curious creature who loves to learn. A Computer Science and Information Security enthusiast. Web Scraping Expert.",
+      "company": null,
+      "accountCreatedAt": "2016-07-22T22:10:18Z",
+      "location": {
+        "raw": "Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 3659,
+        "contributions365d": 2073,
+        "commits365d": 877,
+        "issues365d": 11,
+        "pullRequests365d": 33,
+        "reviews365d": 11,
+        "restrictedContributions365d": 1129,
+        "publicRepositories": 45,
+        "repositoriesSampled": 45,
+        "repoStatsTruncated": false,
+        "starsReceived": 85929,
+        "forksReceived": 9948,
+        "archivedRepositoriesSampled": 1
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 840,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 840
+        },
+        "2023": {
+          "contributions": 1147,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 1146
+        },
+        "2024": {
+          "contributions": 1677,
+          "commits": 316,
+          "issues": 9,
+          "pullRequests": 18,
+          "reviews": 0,
+          "restrictedContributions": 1330
+        },
+        "2025": {
+          "contributions": 2022,
+          "commits": 664,
+          "issues": 6,
+          "pullRequests": 22,
+          "reviews": 1,
+          "restrictedContributions": 1323
+        },
+        "2026": {
+          "contributions": 1265,
+          "commits": 584,
+          "issues": 6,
+          "pullRequests": 20,
+          "reviews": 10,
+          "restrictedContributions": 636
+        }
+      },
+      "scores": {
+        "overall": 86.32,
+        "activity": 85.15,
+        "impact": 100,
+        "community": 95.03,
+        "collaboration": 58.32
+      },
+      "rank": 2
+    },
+    {
+      "login": "amElnagdy",
+      "name": "Ahmed Nagdy",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/7650147?u=321ba9f301c4e47270a101bf729434ca1ea020fa&v=4",
+      "profileUrl": "https://github.com/amElnagdy",
+      "bio": "",
+      "company": "OnTheGoSystems",
+      "accountCreatedAt": "2014-05-21T00:02:55Z",
+      "location": {
+        "raw": "Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 832,
+        "contributions365d": 3426,
+        "commits365d": 347,
+        "issues365d": 9,
+        "pullRequests365d": 58,
+        "reviews365d": 3,
+        "restrictedContributions365d": 3000,
+        "publicRepositories": 28,
+        "repositoriesSampled": 28,
+        "repoStatsTruncated": false,
+        "starsReceived": 2678,
+        "forksReceived": 301,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 47,
+          "commits": 3,
+          "issues": 2,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 42
+        },
+        "2023": {
+          "contributions": 149,
+          "commits": 89,
+          "issues": 0,
+          "pullRequests": 4,
+          "reviews": 0,
+          "restrictedContributions": 47
+        },
+        "2024": {
+          "contributions": 54,
+          "commits": 39,
+          "issues": 4,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 8
+        },
+        "2025": {
+          "contributions": 246,
+          "commits": 30,
+          "issues": 3,
+          "pullRequests": 9,
+          "reviews": 0,
+          "restrictedContributions": 201
+        },
+        "2026": {
+          "contributions": 3325,
+          "commits": 342,
+          "issues": 8,
+          "pullRequests": 52,
+          "reviews": 3,
+          "restrictedContributions": 2912
+        }
+      },
+      "scores": {
+        "overall": 79.18,
+        "activity": 90.75,
+        "impact": 69.98,
+        "community": 77.89,
+        "collaboration": 61.14
+      },
+      "rank": 3
+    },
+    {
+      "login": "AbdallahHemdan",
+      "name": "Abdallah Hemdan",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/40190772?u=011f75d9976d5d140e700e938e54858c9b846f87&v=4",
+      "profileUrl": "https://github.com/AbdallahHemdan",
+      "bio": "Frontend @wondercraft-ai | x-@Instabug  | ICPC World Finalist 2021 | Full-time Ninja",
+      "company": "@wondercraft-ai",
+      "accountCreatedAt": "2018-06-12T03:34:12Z",
+      "location": {
+        "raw": "Cairo, Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": "Cairo",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 880,
+        "contributions365d": 4926,
+        "commits365d": 3,
+        "issues365d": 0,
+        "pullRequests365d": 4,
+        "reviews365d": 0,
+        "restrictedContributions365d": 4919,
+        "publicRepositories": 92,
+        "repositoriesSampled": 92,
+        "repoStatsTruncated": false,
+        "starsReceived": 1168,
+        "forksReceived": 270,
+        "archivedRepositoriesSampled": 1
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1203,
+          "commits": 164,
+          "issues": 2,
+          "pullRequests": 2,
+          "reviews": 1,
+          "restrictedContributions": 1033
+        },
+        "2023": {
+          "contributions": 886,
+          "commits": 61,
+          "issues": 1,
+          "pullRequests": 1,
+          "reviews": 1,
+          "restrictedContributions": 819
+        },
+        "2024": {
+          "contributions": 915,
+          "commits": 15,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 899
+        },
+        "2025": {
+          "contributions": 2513,
+          "commits": 414,
+          "issues": 0,
+          "pullRequests": 5,
+          "reviews": 1,
+          "restrictedContributions": 2092
+        },
+        "2026": {
+          "contributions": 4135,
+          "commits": 1,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 4134
+        }
+      },
+      "scores": {
+        "overall": 74.02,
+        "activity": 94.8,
+        "impact": 64.34,
+        "community": 78.54,
+        "collaboration": 23.32
+      },
+      "rank": 4
+    },
+    {
+      "login": "kerolloz",
+      "name": "Kerollos Magdy",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/36763164?u=7803d618d2a38c2eef4b8a960774f02fc7ed86a3&v=4",
+      "profileUrl": "https://github.com/kerolloz",
+      "bio": "Software Engineer | ex-@Microsoft",
+      "company": null,
+      "accountCreatedAt": "2018-02-23T11:34:44Z",
+      "location": {
+        "raw": "Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1085,
+        "contributions365d": 1883,
+        "commits365d": 142,
+        "issues365d": 5,
+        "pullRequests365d": 10,
+        "reviews365d": 2,
+        "restrictedContributions365d": 1719,
+        "publicRepositories": 78,
+        "repositoriesSampled": 78,
+        "repoStatsTruncated": false,
+        "starsReceived": 1236,
+        "forksReceived": 164,
+        "archivedRepositoriesSampled": 1
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 765,
+          "commits": 444,
+          "issues": 15,
+          "pullRequests": 40,
+          "reviews": 40,
+          "restrictedContributions": 218
+        },
+        "2023": {
+          "contributions": 1305,
+          "commits": 316,
+          "issues": 5,
+          "pullRequests": 16,
+          "reviews": 7,
+          "restrictedContributions": 954
+        },
+        "2024": {
+          "contributions": 1266,
+          "commits": 330,
+          "issues": 1,
+          "pullRequests": 13,
+          "reviews": 8,
+          "restrictedContributions": 910
+        },
+        "2025": {
+          "contributions": 181,
+          "commits": 54,
+          "issues": 2,
+          "pullRequests": 7,
+          "reviews": 1,
+          "restrictedContributions": 113
+        },
+        "2026": {
+          "contributions": 1836,
+          "commits": 124,
+          "issues": 4,
+          "pullRequests": 9,
+          "reviews": 2,
+          "restrictedContributions": 1693
+        }
+      },
+      "scores": {
+        "overall": 71.97,
+        "activity": 84.08,
+        "impact": 63.58,
+        "community": 80.96,
+        "collaboration": 40.62
+      },
+      "rank": 5
+    },
+    {
+      "login": "Moataz-Elmesmary",
+      "name": "Moataz Elmesmary ",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/92026137?u=ae16f1da669873e92e4c7c9587dfabf59c392e17&v=4",
+      "profileUrl": "https://github.com/Moataz-Elmesmary",
+      "bio": "",
+      "company": null,
+      "accountCreatedAt": "2021-10-06T10:32:09Z",
+      "location": {
+        "raw": "Cairo, Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": "Cairo",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 928,
+        "contributions365d": 1612,
+        "commits365d": 19,
+        "issues365d": 0,
+        "pullRequests365d": 3,
+        "reviews365d": 0,
+        "restrictedContributions365d": 1588,
+        "publicRepositories": 31,
+        "repositoriesSampled": 31,
+        "repoStatsTruncated": false,
+        "starsReceived": 4473,
+        "forksReceived": 628,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 164,
+          "commits": 138,
+          "issues": 2,
+          "pullRequests": 16,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 607,
+          "commits": 247,
+          "issues": 0,
+          "pullRequests": 88,
+          "reviews": 1,
+          "restrictedContributions": 262
+        },
+        "2024": {
+          "contributions": 121,
+          "commits": 67,
+          "issues": 0,
+          "pullRequests": 36,
+          "reviews": 0,
+          "restrictedContributions": 18
+        },
+        "2025": {
+          "contributions": 934,
+          "commits": 324,
+          "issues": 0,
+          "pullRequests": 23,
+          "reviews": 0,
+          "restrictedContributions": 576
+        },
+        "2026": {
+          "contributions": 1424,
+          "commits": 13,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 1409
+        }
+      },
+      "scores": {
+        "overall": 70.64,
+        "activity": 82.35,
+        "impact": 74.8,
+        "community": 79.15,
+        "collaboration": 20.09
+      },
+      "rank": 6
+    },
+    {
+      "login": "bakrianoo",
+      "name": "Abu Bakr Soliman",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/14326057?u=4eedd29ecea88054965a64c7444ab6724419605d&v=4",
+      "profileUrl": "https://github.com/bakrianoo",
+      "bio": "JUST IMPLEMENT IT.",
+      "company": null,
+      "accountCreatedAt": "2015-09-17T06:42:50Z",
+      "location": {
+        "raw": "Sinai, Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1034,
+        "contributions365d": 1699,
+        "commits365d": 205,
+        "issues365d": 1,
+        "pullRequests365d": 2,
+        "reviews365d": 0,
+        "restrictedContributions365d": 1485,
+        "publicRepositories": 29,
+        "repositoriesSampled": 29,
+        "repoStatsTruncated": false,
+        "starsReceived": 2132,
+        "forksReceived": 565,
+        "archivedRepositoriesSampled": 1
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 16,
+          "commits": 1,
+          "issues": 4,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 12,
+          "commits": 2,
+          "issues": 1,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 6
+        },
+        "2024": {
+          "contributions": 292,
+          "commits": 9,
+          "issues": 2,
+          "pullRequests": 6,
+          "reviews": 1,
+          "restrictedContributions": 269
+        },
+        "2025": {
+          "contributions": 893,
+          "commits": 53,
+          "issues": 2,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 832
+        },
+        "2026": {
+          "contributions": 1389,
+          "commits": 194,
+          "issues": 0,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 1188
+        }
+      },
+      "scores": {
+        "overall": 69.58,
+        "activity": 82.93,
+        "impact": 69.93,
+        "community": 80.4,
+        "collaboration": 18.15
+      },
+      "rank": 7
+    },
+    {
+      "login": "ahmadalfy",
+      "name": "Ahmad Alfy",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/87611?v=4",
+      "profileUrl": "https://github.com/ahmadalfy",
+      "bio": "CTO @RobustaStudio , Google Developer Expert in Web Technologies.",
+      "company": "@RobustaStudio",
+      "accountCreatedAt": "2009-05-22T16:07:43Z",
+      "location": {
+        "raw": "Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 997,
+        "contributions365d": 1582,
+        "commits365d": 59,
+        "issues365d": 5,
+        "pullRequests365d": 9,
+        "reviews365d": 3,
+        "restrictedContributions365d": 1501,
+        "publicRepositories": 58,
+        "repositoriesSampled": 58,
+        "repoStatsTruncated": false,
+        "starsReceived": 220,
+        "forksReceived": 50,
+        "archivedRepositoriesSampled": 2
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 104,
+          "commits": 44,
+          "issues": 5,
+          "pullRequests": 3,
+          "reviews": 0,
+          "restrictedContributions": 48
+        },
+        "2023": {
+          "contributions": 424,
+          "commits": 33,
+          "issues": 0,
+          "pullRequests": 3,
+          "reviews": 0,
+          "restrictedContributions": 384
+        },
+        "2024": {
+          "contributions": 977,
+          "commits": 40,
+          "issues": 8,
+          "pullRequests": 7,
+          "reviews": 1,
+          "restrictedContributions": 918
+        },
+        "2025": {
+          "contributions": 257,
+          "commits": 57,
+          "issues": 3,
+          "pullRequests": 6,
+          "reviews": 0,
+          "restrictedContributions": 185
+        },
+        "2026": {
+          "contributions": 1465,
+          "commits": 34,
+          "issues": 4,
+          "pullRequests": 6,
+          "reviews": 3,
+          "restrictedContributions": 1415
+        }
+      },
+      "scores": {
+        "overall": 67.59,
+        "activity": 82.14,
+        "impact": 49.88,
+        "community": 79.98,
+        "collaboration": 41.05
+      },
+      "rank": 8
+    },
+    {
+      "login": "7oSkaaa",
+      "name": "Ahmed Hossam",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/63050133?u=6212d44775cf0cc2397cc2219c1423d7b4765357&v=4",
+      "profileUrl": "https://github.com/7oSkaaa",
+      "bio": "SDE 2 @ noon || 3x ACPC Finalist\r\n",
+      "company": "noon",
+      "accountCreatedAt": "2020-04-02T11:29:49Z",
+      "location": {
+        "raw": "Port Said, Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1003,
+        "contributions365d": 1072,
+        "commits365d": 154,
+        "issues365d": 0,
+        "pullRequests365d": 3,
+        "reviews365d": 2,
+        "restrictedContributions365d": 910,
+        "publicRepositories": 45,
+        "repositoriesSampled": 45,
+        "repoStatsTruncated": false,
+        "starsReceived": 798,
+        "forksReceived": 228,
+        "archivedRepositoriesSampled": 5
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1080,
+          "commits": 1004,
+          "issues": 2,
+          "pullRequests": 52,
+          "reviews": 0,
+          "restrictedContributions": 4
+        },
+        "2023": {
+          "contributions": 5361,
+          "commits": 4929,
+          "issues": 2,
+          "pullRequests": 117,
+          "reviews": 284,
+          "restrictedContributions": 16
+        },
+        "2024": {
+          "contributions": 599,
+          "commits": 179,
+          "issues": 1,
+          "pullRequests": 12,
+          "reviews": 27,
+          "restrictedContributions": 373
+        },
+        "2025": {
+          "contributions": 970,
+          "commits": 33,
+          "issues": 0,
+          "pullRequests": 5,
+          "reviews": 0,
+          "restrictedContributions": 930
+        },
+        "2026": {
+          "contributions": 708,
+          "commits": 133,
+          "issues": 0,
+          "pullRequests": 3,
+          "reviews": 2,
+          "restrictedContributions": 568
+        }
+      },
+      "scores": {
+        "overall": 66.67,
+        "activity": 77.8,
+        "impact": 61.67,
+        "community": 80.05,
+        "collaboration": 28.19
+      },
+      "rank": 9
+    },
+    {
+      "login": "AhmadElsagheer",
+      "name": "Ahmad Elsagheer",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16364930?u=0dac26c00f552f1472e99b40c2458dfe4379801b&v=4",
+      "profileUrl": "https://github.com/AhmadElsagheer",
+      "bio": "Software Engineer, Competitive Programmer",
+      "company": null,
+      "accountCreatedAt": "2015-12-19T19:37:22Z",
+      "location": {
+        "raw": "Cairo, Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": "Cairo",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 848,
+        "contributions365d": 1033,
+        "commits365d": 8,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 1020,
+        "publicRepositories": 42,
+        "repositoriesSampled": 42,
+        "repoStatsTruncated": false,
+        "starsReceived": 2596,
+        "forksReceived": 518,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 67,
+          "commits": 9,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 56
+        },
+        "2023": {
+          "contributions": 1361,
+          "commits": 5,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 1352
+        },
+        "2024": {
+          "contributions": 838,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 838
+        },
+        "2025": {
+          "contributions": 517,
+          "commits": 0,
+          "issues": 1,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 514
+        },
+        "2026": {
+          "contributions": 800,
+          "commits": 8,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 787
+        }
+      },
+      "scores": {
+        "overall": 64.26,
+        "activity": 77.39,
+        "impact": 70.86,
+        "community": 78.11,
+        "collaboration": 0
+      },
+      "rank": 10
+    },
+    {
+      "login": "Abdullah4345",
+      "name": "Abdullah",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/133496519?u=4b427ddfce5115387e3c8976f246c2cd6fddf53b&v=4",
+      "profileUrl": "https://github.com/Abdullah4345",
+      "bio": "My project is stable.\r\nUntil someone touches the backend.",
+      "company": "Elsewedy University of Technology",
+      "accountCreatedAt": "2023-05-13T09:42:19Z",
+      "location": {
+        "raw": "Cairo, Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": "Cairo",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1203,
+        "contributions365d": 1447,
+        "commits365d": 14,
+        "issues365d": 0,
+        "pullRequests365d": 1,
+        "reviews365d": 1,
+        "restrictedContributions365d": 1430,
+        "publicRepositories": 17,
+        "repositoriesSampled": 17,
+        "repoStatsTruncated": false,
+        "starsReceived": 188,
+        "forksReceived": 22,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 1,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 3477,
+          "commits": 301,
+          "issues": 3,
+          "pullRequests": 9,
+          "reviews": 54,
+          "restrictedContributions": 3080
+        },
+        "2026": {
+          "contributions": 71,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 70
+        }
+      },
+      "scores": {
+        "overall": 63.34,
+        "activity": 81.14,
+        "impact": 47.12,
+        "community": 82.15,
+        "collaboration": 18.15
+      },
+      "rank": 11
+    },
+    {
+      "login": "AhmedDabish",
+      "name": "Ahmed Dabish",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/111189633?u=721369dbeea54b9449ffc50e572f507f05f9c9de&v=4",
+      "profileUrl": "https://github.com/AhmedDabish",
+      "bio": " Full Stack .NET & Angular Developer | Expert in ASP.NET Core, EF Core, and REST APIs | Experienced in AI & automation | Building intelligent APIs ",
+      "company": null,
+      "accountCreatedAt": "2022-08-13T14:54:44Z",
+      "location": {
+        "raw": "EGYPT-Kafr El Sheikh",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 5620,
+        "contributions365d": 404,
+        "commits365d": 270,
+        "issues365d": 1,
+        "pullRequests365d": 13,
+        "reviews365d": 0,
+        "restrictedContributions365d": 94,
+        "publicRepositories": 35,
+        "repositoriesSampled": 35,
+        "repoStatsTruncated": false,
+        "starsReceived": 240,
+        "forksReceived": 8,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 5,
+          "commits": 3,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 13,
+          "commits": 7,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 2
+        },
+        "2025": {
+          "contributions": 57,
+          "commits": 43,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 3
+        },
+        "2026": {
+          "contributions": 356,
+          "commits": 233,
+          "issues": 1,
+          "pullRequests": 12,
+          "reviews": 0,
+          "restrictedContributions": 91
+        }
+      },
+      "scores": {
+        "overall": 62.93,
+        "activity": 66.94,
+        "impact": 47.96,
+        "community": 100,
+        "collaboration": 38.75
+      },
+      "rank": 12
+    },
+    {
+      "login": "mostafaalagamy",
+      "name": "MO AGAMY",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/80542861?u=d2cf00c18a89e4f7b52db398038e2a3949ddeaa0&v=4",
+      "profileUrl": "https://github.com/mostafaalagamy",
+      "bio": "",
+      "company": "Metrolist",
+      "accountCreatedAt": "2021-03-12T18:31:37Z",
+      "location": {
+        "raw": "Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 897,
+        "contributions365d": 738,
+        "commits365d": 467,
+        "issues365d": 1,
+        "pullRequests365d": 254,
+        "reviews365d": 8,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 8,
+        "repositoriesSampled": 8,
+        "repoStatsTruncated": false,
+        "starsReceived": 9,
+        "forksReceived": 1,
+        "archivedRepositoriesSampled": 2
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 13,
+          "commits": 11,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 358,
+          "commits": 173,
+          "issues": 34,
+          "pullRequests": 149,
+          "reviews": 1,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 921,
+          "commits": 596,
+          "issues": 0,
+          "pullRequests": 321,
+          "reviews": 4,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 501,
+          "commits": 319,
+          "issues": 1,
+          "pullRequests": 167,
+          "reviews": 6,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 62.47,
+        "activity": 73.64,
+        "impact": 21.48,
+        "community": 78.76,
+        "collaboration": 80.98
+      },
+      "rank": 13
+    },
+    {
+      "login": "Pythondeveloper6",
+      "name": "Mahmoud Ahmed",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/13594839?u=d3cbf95bea04f20a518c2cae8e38fd647fccc537&v=4",
+      "profileUrl": "https://github.com/Pythondeveloper6",
+      "bio": "Fullstack Data Scientist & Instructor",
+      "company": "code4learn.com ",
+      "accountCreatedAt": "2015-07-31T23:49:58Z",
+      "location": {
+        "raw": "Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 3718,
+        "contributions365d": 312,
+        "commits365d": 40,
+        "issues365d": 0,
+        "pullRequests365d": 1,
+        "reviews365d": 0,
+        "restrictedContributions365d": 266,
+        "publicRepositories": 128,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 1644,
+        "forksReceived": 669,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 988,
+          "commits": 60,
+          "issues": 40,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 871
+        },
+        "2023": {
+          "contributions": 2226,
+          "commits": 131,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 2081
+        },
+        "2024": {
+          "contributions": 1032,
+          "commits": 87,
+          "issues": 0,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 929
+        },
+        "2025": {
+          "contributions": 259,
+          "commits": 24,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 230
+        },
+        "2026": {
+          "contributions": 197,
+          "commits": 29,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 165
+        }
+      },
+      "scores": {
+        "overall": 61.91,
+        "activity": 64.07,
+        "impact": 69.15,
+        "community": 95.22,
+        "collaboration": 10.04
+      },
+      "rank": 14
+    },
+    {
+      "login": "Maher-Elmair",
+      "name": "Maher",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/139779947?u=1b038ef7545a2de60ef8be1feee5c72f2c351b37&v=4",
+      "profileUrl": "https://github.com/Maher-Elmair",
+      "bio": "Web Developer | Frontend Web Developer | Web Designer",
+      "company": "Open to opportunities",
+      "accountCreatedAt": "2023-07-17T13:39:35Z",
+      "location": {
+        "raw": "Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 5319,
+        "contributions365d": 587,
+        "commits365d": 117,
+        "issues365d": 0,
+        "pullRequests365d": 2,
+        "reviews365d": 0,
+        "restrictedContributions365d": 449,
+        "publicRepositories": 71,
+        "repositoriesSampled": 71,
+        "repoStatsTruncated": false,
+        "starsReceived": 241,
+        "forksReceived": 7,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 42,
+          "commits": 8,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 4,
+          "commits": 2,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 183,
+          "commits": 140,
+          "issues": 0,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 8
+        },
+        "2026": {
+          "contributions": 487,
+          "commits": 43,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 441
+        }
+      },
+      "scores": {
+        "overall": 61.27,
+        "activity": 71.1,
+        "impact": 47.93,
+        "community": 99.36,
+        "collaboration": 15.92
+      },
+      "rank": 15
+    },
+    {
+      "login": "abdullahmansss",
+      "name": "Abdullah Mansour",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/34492145?u=9afaf9ed1a750c2d94496bccbcbe8a9102b501e6&v=4",
+      "profileUrl": "https://github.com/abdullahmansss",
+      "bio": "It Entrepreneur",
+      "company": null,
+      "accountCreatedAt": "2017-12-12T21:56:12Z",
+      "location": {
+        "raw": "Cairo, Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": "Cairo",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 2856,
+        "contributions365d": 429,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 429,
+        "publicRepositories": 117,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 481,
+        "forksReceived": 256,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 609,
+          "commits": 97,
+          "issues": 0,
+          "pullRequests": 4,
+          "reviews": 0,
+          "restrictedContributions": 504
+        },
+        "2023": {
+          "contributions": 142,
+          "commits": 12,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 130
+        },
+        "2024": {
+          "contributions": 309,
+          "commits": 11,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 296
+        },
+        "2025": {
+          "contributions": 233,
+          "commits": 1,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 225
+        },
+        "2026": {
+          "contributions": 381,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 381
+        }
+      },
+      "scores": {
+        "overall": 59.16,
+        "activity": 67.61,
+        "impact": 59.65,
+        "community": 92.16,
+        "collaboration": 0
+      },
+      "rank": 16
+    },
+    {
+      "login": "YoussefMoHlemyAlpha",
+      "name": "Youssef MO Helmy ",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/161648183?u=8515ecd9af17cba9ba5ebd5db1b41b89dae50f1c&v=4",
+      "profileUrl": "https://github.com/YoussefMoHlemyAlpha",
+      "bio": "AI & Backend Engineer | Specialized in Scalable APIs & ML-Driven Applications | Node.js • FastAPI • TensorFlow | RAG, NLP, CV | IoT & Cloud-Connected Systems",
+      "company": null,
+      "accountCreatedAt": "2024-02-28T20:33:39Z",
+      "location": {
+        "raw": "Alexandria , Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": "Alexandria",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1851,
+        "contributions365d": 305,
+        "commits365d": 284,
+        "issues365d": 1,
+        "pullRequests365d": 2,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 60,
+        "repositoriesSampled": 60,
+        "repoStatsTruncated": false,
+        "starsReceived": 200,
+        "forksReceived": 10,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 280,
+          "commits": 249,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 321,
+          "commits": 295,
+          "issues": 1,
+          "pullRequests": 3,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 67,
+          "commits": 59,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 56.17,
+        "activity": 63.81,
+        "impact": 46.66,
+        "community": 87.14,
+        "collaboration": 18.15
+      },
+      "rank": 17
+    },
+    {
+      "login": "mohamedtamer0",
+      "name": "Mohamed Tamer",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/51374446?u=cdd6a6cbceace1073e3e632c67eb5d1c2f04019a&v=4",
+      "profileUrl": "https://github.com/mohamedtamer0",
+      "bio": "Software Engineer | 7+ Years of Experience | Founder & CEO | Udemy Instructor | Mentor | Ex-Elsewedy Electric | CS Postgraduate Diploma",
+      "company": "Elsewedy Electric",
+      "accountCreatedAt": "2019-06-04T14:49:03Z",
+      "location": {
+        "raw": "Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1074,
+        "contributions365d": 173,
+        "commits365d": 129,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 41,
+        "publicRepositories": 166,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 472,
+        "forksReceived": 79,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 781,
+          "commits": 718,
+          "issues": 0,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 155,
+          "commits": 147,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 555,
+          "commits": 529,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 6
+        },
+        "2025": {
+          "contributions": 98,
+          "commits": 93,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 105,
+          "commits": 64,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 41
+        }
+      },
+      "scores": {
+        "overall": 51.94,
+        "activity": 57.52,
+        "impact": 55.73,
+        "community": 80.84,
+        "collaboration": 0
+      },
+      "rank": 18
+    },
+    {
+      "login": "SaadAbdElGhaffar",
+      "name": "Saad Abd El-Ghaffar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/158309546?u=37b20e20b25aa3f26421247ae67809378800a9e5&v=4",
+      "profileUrl": "https://github.com/SaadAbdElGhaffar",
+      "bio": "Machine Learning and Computer Vision Engineer",
+      "company": null,
+      "accountCreatedAt": "2024-01-31T15:54:59Z",
+      "location": {
+        "raw": "Mansoura, Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 951,
+        "contributions365d": 201,
+        "commits365d": 181,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 23,
+        "repositoriesSampled": 23,
+        "repoStatsTruncated": false,
+        "starsReceived": 27,
+        "forksReceived": 6,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 17,
+          "commits": 14,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 226,
+          "commits": 205,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 46.52,
+        "activity": 59.18,
+        "impact": 31.88,
+        "community": 79.43,
+        "collaboration": 0
+      },
+      "rank": 19
+    },
+    {
+      "login": "Abdullahsaleh203",
+      "name": "Abdallah Saleh",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/132389571?u=07bc5ae65186a85e4bb0c629f366246eef12a4d8&v=4",
+      "profileUrl": "https://github.com/Abdullahsaleh203",
+      "bio": "Software Engineer ",
+      "company": null,
+      "accountCreatedAt": "2023-05-02T17:38:10Z",
+      "location": {
+        "raw": "Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1979,
+        "contributions365d": 89,
+        "commits365d": 11,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 73,
+        "publicRepositories": 84,
+        "repositoriesSampled": 84,
+        "repoStatsTruncated": false,
+        "starsReceived": 77,
+        "forksReceived": 9,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 1275,
+          "commits": 636,
+          "issues": 3,
+          "pullRequests": 6,
+          "reviews": 0,
+          "restrictedContributions": 593
+        },
+        "2024": {
+          "contributions": 1757,
+          "commits": 539,
+          "issues": 2,
+          "pullRequests": 19,
+          "reviews": 14,
+          "restrictedContributions": 1154
+        },
+        "2025": {
+          "contributions": 966,
+          "commits": 149,
+          "issues": 1,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 795
+        },
+        "2026": {
+          "contributions": 7,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 6
+        }
+      },
+      "scores": {
+        "overall": 45.63,
+        "activity": 50.17,
+        "impact": 39.45,
+        "community": 87.92,
+        "collaboration": 0
+      },
+      "rank": 20
+    },
+    {
+      "login": "khloudcode",
+      "name": "Khloud Ahmed",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/189562076?u=b4e5e76e2302d053170b9e1a4c0317c289eb27f6&v=4",
+      "profileUrl": "https://github.com/khloudcode",
+      "bio": "software engineer👩🏻‍💻 full stack 👩🏻‍💻 frond end and back end \r\n(Flutter) ",
+      "company": null,
+      "accountCreatedAt": "2024-11-24T23:01:22Z",
+      "location": {
+        "raw": "Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1016,
+        "contributions365d": 71,
+        "commits365d": 39,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 40,
+        "repositoriesSampled": 40,
+        "repoStatsTruncated": false,
+        "starsReceived": 57,
+        "forksReceived": 2,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 11,
+          "commits": 4,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 7,
+          "commits": 5,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 71,
+          "commits": 39,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 42.4,
+        "activity": 47.68,
+        "impact": 35.67,
+        "community": 80.2,
+        "collaboration": 0
+      },
+      "rank": 21
+    },
+    {
+      "login": "ayatoullah",
+      "name": "Ayatoullah Ramzy",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/40855411?u=9ff6cb7a371004e45694d3224b69e56a60a53363&v=4",
+      "profileUrl": "https://github.com/ayatoullah",
+      "bio": "Mid-level Front-end Developer with 4+ years experience in building responsive websites with HTML,CSS,SASS,JavaScript,JQuery,Angular 8, React.js ,Redux ,vue.js\r\n",
+      "company": "DXC Technology",
+      "accountCreatedAt": "2018-07-05T09:34:36Z",
+      "location": {
+        "raw": "Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 866,
+        "contributions365d": 14,
+        "commits365d": 0,
+        "issues365d": 6,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 139,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 198,
+        "forksReceived": 31,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 18,
+          "commits": 7,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 19,
+          "commits": 12,
+          "issues": 0,
+          "pullRequests": 2,
+          "reviews": 2,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 4,
+          "commits": 2,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 40,
+          "commits": 19,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 14,
+          "commits": 0,
+          "issues": 6,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 40.38,
+        "activity": 30.19,
+        "impact": 48.1,
+        "community": 78.35,
+        "collaboration": 20.09
+      },
+      "rank": 22
+    },
+    {
+      "login": "mbadry1",
+      "name": "Mahmoud Badry",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16426491?u=88151ca5481ea227e43e22062df09b1a14f688b9&v=4",
+      "profileUrl": "https://github.com/mbadry1",
+      "bio": "A deep learning researcher, a .NET developer, and a good learner.",
+      "company": null,
+      "accountCreatedAt": "2015-12-24T11:18:02Z",
+      "location": {
+        "raw": "Cairo, Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": "Cairo",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1055,
+        "contributions365d": 2,
+        "commits365d": 1,
+        "issues365d": 0,
+        "pullRequests365d": 1,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 28,
+        "repositoriesSampled": 28,
+        "repoStatsTruncated": false,
+        "starsReceived": 9418,
+        "forksReceived": 3557,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 3,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 2,
+          "commits": 1,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 40.1,
+        "activity": 12.25,
+        "impact": 83.95,
+        "community": 80.64,
+        "collaboration": 10.04
+      },
+      "rank": 23
+    },
+    {
+      "login": "mohamedelmougy",
+      "name": "Mohamed Elmougy",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/160643822?u=3f52530d701eb4cf0703bac9a87a01843da21c95&v=4",
+      "profileUrl": "https://github.com/mohamedelmougy",
+      "bio": "Full Stack Developer",
+      "company": null,
+      "accountCreatedAt": "2024-02-20T17:15:05Z",
+      "location": {
+        "raw": "Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 2040,
+        "contributions365d": 21,
+        "commits365d": 21,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 20,
+        "repositoriesSampled": 20,
+        "repoStatsTruncated": false,
+        "starsReceived": 76,
+        "forksReceived": 3,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 191,
+          "commits": 51,
+          "issues": 0,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 128
+        },
+        "2025": {
+          "contributions": 106,
+          "commits": 62,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 33
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 38.3,
+        "activity": 34.46,
+        "impact": 38.19,
+        "community": 88.27,
+        "collaboration": 0
+      },
+      "rank": 24
+    },
+    {
+      "login": "aboul3la",
+      "name": "Ahmed Aboul-Ela",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/7898559?u=e7f4168834b8659219d1b17b1906fdd14cc86a2e&v=4",
+      "profileUrl": "https://github.com/aboul3la",
+      "bio": null,
+      "company": null,
+      "accountCreatedAt": "2014-06-16T04:42:29Z",
+      "location": {
+        "raw": "Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1449,
+        "contributions365d": 0,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 3,
+        "repositoriesSampled": 3,
+        "repoStatsTruncated": false,
+        "starsReceived": 11024,
+        "forksReceived": 2216,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 3,
+          "commits": 1,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 33.49,
+        "activity": 0,
+        "impact": 83.37,
+        "community": 84.31,
+        "collaboration": 0
+      },
+      "rank": 25
+    },
+    {
+      "login": "h9-tect",
+      "name": "Hesham Haroon",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/61054665?u=aef275ff59c553d351d6d24f2b6b87a65460012b&v=4",
+      "profileUrl": "https://github.com/h9-tect",
+      "bio": "Innovating GenAI - where bytes build brilliance. Join the adventure.",
+      "company": "SmsmAI",
+      "accountCreatedAt": "2020-02-14T13:49:43Z",
+      "location": {
+        "raw": "Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1781,
+        "contributions365d": 0,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 117,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 3373,
+        "forksReceived": 402,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 171,
+          "commits": 130,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 1
+        },
+        "2023": {
+          "contributions": 336,
+          "commits": 290,
+          "issues": 5,
+          "pullRequests": 6,
+          "reviews": 0,
+          "restrictedContributions": 4
+        },
+        "2024": {
+          "contributions": 247,
+          "commits": 197,
+          "issues": 2,
+          "pullRequests": 11,
+          "reviews": 0,
+          "restrictedContributions": 1
+        },
+        "2025": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 31.02,
+        "activity": 0,
+        "impact": 72.06,
+        "community": 86.7,
+        "collaboration": 0
+      },
+      "rank": 26
+    },
+    {
+      "login": "0xRick",
+      "name": "Ahmed Hesham",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/26961201?u=bb6104edb2a2ef989348fada6e073337e1de878c&v=4",
+      "profileUrl": "https://github.com/0xRick",
+      "bio": "Offensive Security Engineer.",
+      "company": null,
+      "accountCreatedAt": "2017-04-06T09:51:16Z",
+      "location": {
+        "raw": "Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1003,
+        "contributions365d": 0,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 6,
+        "repositoriesSampled": 6,
+        "repoStatsTruncated": false,
+        "starsReceived": 383,
+        "forksReceived": 98,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1,
+          "commits": 1,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 25.76,
+        "activity": 0,
+        "impact": 55,
+        "community": 80.05,
+        "collaboration": 0
+      },
+      "rank": 27
+    },
+    {
+      "login": "OsamaElzero",
+      "name": "Osama",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/3822745?u=19540aeeb2829eef631db621c22f22ee26af91ea&v=4",
+      "profileUrl": "https://github.com/OsamaElzero",
+      "bio": "Code Is Life",
+      "company": "Elzero",
+      "accountCreatedAt": "2013-03-10T09:51:20Z",
+      "location": {
+        "raw": "Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 3411,
+        "contributions365d": 0,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 0,
+        "repositoriesSampled": 0,
+        "repoStatsTruncated": false,
+        "starsReceived": 0,
+        "forksReceived": 0,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 5,
+          "commits": 5,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 14.13,
+        "activity": 0,
+        "impact": 0,
+        "community": 94.22,
+        "collaboration": 0
+      },
+      "rank": 28
+    },
+    {
+      "login": "QidarSarhan",
+      "name": "Qidar Sarhan",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/18348217?u=00b54aabb2ddcdf5a087d8fe1ea9c1f556bf2a95&v=4",
+      "profileUrl": "https://github.com/QidarSarhan",
+      "bio": "Full Stack Web Developer.  (PHP, WordPress , Laravel)",
+      "company": null,
+      "accountCreatedAt": "2016-04-08T11:48:11Z",
+      "location": {
+        "raw": "Egypt",
+        "accepted": true,
+        "countryCode": "EG",
+        "country": "Egypt",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1689,
+        "contributions365d": 0,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 29,
+        "repositoriesSampled": 29,
+        "repoStatsTruncated": false,
+        "starsReceived": 0,
+        "forksReceived": 0,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 8,
+          "commits": 3,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 12.91,
+        "activity": 0,
+        "impact": 0,
+        "community": 86.08,
+        "collaboration": 0
+      },
+      "rank": 29
+    }
+  ]
 }
