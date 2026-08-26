@@ -1,11 +1,2601 @@
 {
   "schemaVersion": 1,
-  "generatedAt": null,
-  "source": {"provider":"GitHub","api":"GraphQL","officialLeaderboard":false},
-  "country": {"code":"RW","name":"Rwanda"},
-  "availableYears": [],
-  "calendarWindows": [],
-  "methodology": {"version":"1.0.0","weights":{"activity":0.45,"impact":0.25,"community":0.15,"collaboration":0.15},"windowDays":365,"notes":["Pending first live refresh."]},
-  "collection": {"discoveredCandidates":0,"acceptedCandidates":0,"rejectedCandidates":0,"window":null},
-  "developers": []
+  "generatedAt": "2026-08-26T03:38:21.654Z",
+  "source": {
+    "provider": "GitHub",
+    "api": "GraphQL",
+    "officialLeaderboard": false
+  },
+  "country": {
+    "code": "RW",
+    "name": "Rwanda"
+  },
+  "availableYears": [
+    2026,
+    2025,
+    2024,
+    2023,
+    2022
+  ],
+  "calendarWindows": [
+    {
+      "year": 2026,
+      "from": "2026-01-01T00:00:00.000Z",
+      "to": "2026-08-26T03:38:21.654Z",
+      "complete": false
+    },
+    {
+      "year": 2025,
+      "from": "2025-01-01T00:00:00.000Z",
+      "to": "2025-12-31T23:59:59.999Z",
+      "complete": true
+    },
+    {
+      "year": 2024,
+      "from": "2024-01-01T00:00:00.000Z",
+      "to": "2024-12-31T23:59:59.999Z",
+      "complete": true
+    },
+    {
+      "year": 2023,
+      "from": "2023-01-01T00:00:00.000Z",
+      "to": "2023-12-31T23:59:59.999Z",
+      "complete": true
+    },
+    {
+      "year": 2022,
+      "from": "2022-01-01T00:00:00.000Z",
+      "to": "2022-12-31T23:59:59.999Z",
+      "complete": true
+    }
+  ],
+  "methodology": {
+    "version": "1.0.0",
+    "weights": {
+      "activity": 0.45,
+      "impact": 0.25,
+      "community": 0.15,
+      "collaboration": 0.15
+    },
+    "windowDays": 365,
+    "notes": [
+      "Candidate discovery uses GitHub user search location qualifiers.",
+      "Country resolution uses explicit country aliases plus a bounded set of recognized cities.",
+      "Ambiguous or conflicting country locations are rejected rather than guessed.",
+      "Repository impact samples up to the 100 most-starred public repositories owned by each user.",
+      "Calendar-year filters use GitHub contribution activity for the selected year; current stars and followers are not historical snapshots.",
+      "The index is independent and is not an official GitHub ranking."
+    ]
+  },
+  "collection": {
+    "discoveredCandidates": 30,
+    "acceptedCandidates": 30,
+    "rejectedCandidates": 0,
+    "window": {
+      "from": "2025-08-26T03:38:21.654Z",
+      "to": "2026-08-26T03:38:21.654Z"
+    }
+  },
+  "developers": [
+    {
+      "login": "AlineHub-tech",
+      "name": "Umugwaneza Aline",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/218368977?u=2ccb66ca017788ec989983396954551207ebdaf7&v=4",
+      "profileUrl": "https://github.com/AlineHub-tech",
+      "bio": "Engineering Digital Success",
+      "company": "ByteFlow Ltd",
+      "accountCreatedAt": "2025-06-28T12:17:22Z",
+      "location": {
+        "raw": "Kigali, Rwanda",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": "Kigali",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 507,
+        "contributions365d": 26286,
+        "commits365d": 21337,
+        "issues365d": 1,
+        "pullRequests365d": 72,
+        "reviews365d": 0,
+        "restrictedContributions365d": 4835,
+        "publicRepositories": 43,
+        "repositoriesSampled": 43,
+        "repoStatsTruncated": false,
+        "starsReceived": 150,
+        "forksReceived": 2,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 756,
+          "commits": 640,
+          "issues": 1,
+          "pullRequests": 39,
+          "reviews": 0,
+          "restrictedContributions": 40
+        },
+        "2026": {
+          "contributions": 25536,
+          "commits": 20700,
+          "issues": 0,
+          "pullRequests": 33,
+          "reviews": 0,
+          "restrictedContributions": 4795
+        }
+      },
+      "scores": {
+        "overall": 89.36,
+        "activity": 100,
+        "impact": 74.93,
+        "community": 83.88,
+        "collaboration": 86.96
+      },
+      "rank": 1
+    },
+    {
+      "login": "Timtech4u",
+      "name": "Timothy Olaleke",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/11256481?u=9714476a649237dd07e7d5874e49a5e3aec971e2&v=4",
+      "profileUrl": "https://github.com/Timtech4u",
+      "bio": "Platform Engineer  | GDE Cloud ",
+      "company": null,
+      "accountCreatedAt": "2015-03-01T13:14:22Z",
+      "location": {
+        "raw": "Kigali, Rwanda",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": "Kigali",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 251,
+        "contributions365d": 18887,
+        "commits365d": 57,
+        "issues365d": 1,
+        "pullRequests365d": 28,
+        "reviews365d": 0,
+        "restrictedContributions365d": 18792,
+        "publicRepositories": 457,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 235,
+        "forksReceived": 81,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1753,
+          "commits": 142,
+          "issues": 2,
+          "pullRequests": 25,
+          "reviews": 7,
+          "restrictedContributions": 1560
+        },
+        "2023": {
+          "contributions": 3001,
+          "commits": 189,
+          "issues": 2,
+          "pullRequests": 151,
+          "reviews": 27,
+          "restrictedContributions": 2616
+        },
+        "2024": {
+          "contributions": 4193,
+          "commits": 43,
+          "issues": 0,
+          "pullRequests": 34,
+          "reviews": 8,
+          "restrictedContributions": 4087
+        },
+        "2025": {
+          "contributions": 6859,
+          "commits": 92,
+          "issues": 5,
+          "pullRequests": 40,
+          "reviews": 5,
+          "restrictedContributions": 6715
+        },
+        "2026": {
+          "contributions": 16482,
+          "commits": 44,
+          "issues": 0,
+          "pullRequests": 13,
+          "reviews": 0,
+          "restrictedContributions": 16416
+        }
+      },
+      "scores": {
+        "overall": 87.21,
+        "activity": 96.75,
+        "impact": 88.94,
+        "community": 74.44,
+        "collaboration": 68.49
+      },
+      "rank": 2
+    },
+    {
+      "login": "codeWithEdison",
+      "name": "Edison UWIHANGANYE",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/116379485?u=3386395e281f5e6e206be0d1a99021dce03b54db&v=4",
+      "profileUrl": "https://github.com/codeWithEdison",
+      "bio": " 🌐Full-Stack Software Engineer\r\n🧑‍💻Innovator \r\n👨‍🏫EdTech Mentor\r\n👨‍💻Open Source Builder \r\n Mentored 2,000+ developers and educators\r\n📞+250788240303",
+      "company": "UR Binary Hub",
+      "accountCreatedAt": "2022-10-21T17:13:24Z",
+      "location": {
+        "raw": "Rwanda",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1021,
+        "contributions365d": 9012,
+        "commits365d": 859,
+        "issues365d": 3,
+        "pullRequests365d": 10,
+        "reviews365d": 1,
+        "restrictedContributions365d": 8116,
+        "publicRepositories": 141,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 204,
+        "forksReceived": 18,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 212,
+          "commits": 70,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 133
+        },
+        "2023": {
+          "contributions": 233,
+          "commits": 94,
+          "issues": 0,
+          "pullRequests": 12,
+          "reviews": 0,
+          "restrictedContributions": 118
+        },
+        "2024": {
+          "contributions": 4378,
+          "commits": 1396,
+          "issues": 2,
+          "pullRequests": 2,
+          "reviews": 1,
+          "restrictedContributions": 2907
+        },
+        "2025": {
+          "contributions": 3920,
+          "commits": 749,
+          "issues": 1,
+          "pullRequests": 13,
+          "reviews": 1,
+          "restrictedContributions": 3118
+        },
+        "2026": {
+          "contributions": 6984,
+          "commits": 376,
+          "issues": 3,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 6588
+        }
+      },
+      "scores": {
+        "overall": 82.64,
+        "activity": 89.48,
+        "impact": 81.49,
+        "community": 93.29,
+        "collaboration": 53.4
+      },
+      "rank": 3
+    },
+    {
+      "login": "Edouard144",
+      "name": "Edouard",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/182372855?u=9b4d20ff5fc38ad410900e534e83861e55622645&v=4",
+      "profileUrl": "https://github.com/Edouard144",
+      "bio": "Software Engineer focused on building scalable, reliable, and impactful software.\r\n\r\n",
+      "company": null,
+      "accountCreatedAt": "2024-09-21T19:48:29Z",
+      "location": {
+        "raw": "Kigali, Rwanda",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": "Kigali",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1150,
+        "contributions365d": 1831,
+        "commits365d": 961,
+        "issues365d": 8,
+        "pullRequests365d": 47,
+        "reviews365d": 0,
+        "restrictedContributions365d": 723,
+        "publicRepositories": 83,
+        "repositoriesSampled": 83,
+        "repoStatsTruncated": false,
+        "starsReceived": 416,
+        "forksReceived": 9,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 51,
+          "commits": 1,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 48
+        },
+        "2025": {
+          "contributions": 534,
+          "commits": 50,
+          "issues": 1,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 443
+        },
+        "2026": {
+          "contributions": 1686,
+          "commits": 926,
+          "issues": 7,
+          "pullRequests": 45,
+          "reviews": 0,
+          "restrictedContributions": 637
+        }
+      },
+      "scores": {
+        "overall": 82.01,
+        "activity": 73.83,
+        "impact": 90.26,
+        "community": 94.89,
+        "collaboration": 79.96
+      },
+      "rank": 4
+    },
+    {
+      "login": "pacifiquem",
+      "name": "Murangwa Pacifique",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/96472682?u=9e05a13869c24575ea750f75e0996375aa06db28&v=4",
+      "profileUrl": "https://github.com/pacifiquem",
+      "bio": "Developing/Maintaining Softwares & Utils",
+      "company": "@kin-lang",
+      "accountCreatedAt": "2021-12-21T10:07:03Z",
+      "location": {
+        "raw": "Kigali, Rwanda",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": "Kigali",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 209,
+        "contributions365d": 1666,
+        "commits365d": 368,
+        "issues365d": 2,
+        "pullRequests365d": 56,
+        "reviews365d": 16,
+        "restrictedContributions365d": 1215,
+        "publicRepositories": 105,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 531,
+        "forksReceived": 47,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1317,
+          "commits": 1008,
+          "issues": 3,
+          "pullRequests": 21,
+          "reviews": 0,
+          "restrictedContributions": 244
+        },
+        "2023": {
+          "contributions": 1073,
+          "commits": 725,
+          "issues": 41,
+          "pullRequests": 130,
+          "reviews": 29,
+          "restrictedContributions": 93
+        },
+        "2024": {
+          "contributions": 917,
+          "commits": 562,
+          "issues": 41,
+          "pullRequests": 36,
+          "reviews": 83,
+          "restrictedContributions": 182
+        },
+        "2025": {
+          "contributions": 480,
+          "commits": 70,
+          "issues": 5,
+          "pullRequests": 5,
+          "reviews": 22,
+          "restrictedContributions": 373
+        },
+        "2026": {
+          "contributions": 1422,
+          "commits": 344,
+          "issues": 2,
+          "pullRequests": 56,
+          "reviews": 15,
+          "restrictedContributions": 998
+        }
+      },
+      "scores": {
+        "overall": 80.9,
+        "activity": 72.9,
+        "impact": 95.67,
+        "community": 71.99,
+        "collaboration": 89.18
+      },
+      "rank": 5
+    },
+    {
+      "login": "Manzi-Elvis",
+      "name": "Elvis Manzi Rurangirwa",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/141098290?u=413dc6a4c3fe7a93879406a43f34cccb5ea09ae4&v=4",
+      "profileUrl": "https://github.com/Manzi-Elvis",
+      "bio": "I write code to relieve stress",
+      "company": "MiCorp",
+      "accountCreatedAt": "2023-08-01T02:05:41Z",
+      "location": {
+        "raw": "Rwanda",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 299,
+        "contributions365d": 7078,
+        "commits365d": 5868,
+        "issues365d": 1,
+        "pullRequests365d": 38,
+        "reviews365d": 2,
+        "restrictedContributions365d": 1067,
+        "publicRepositories": 117,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 131,
+        "forksReceived": 3,
+        "archivedRepositoriesSampled": 2
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 1,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 2164,
+          "commits": 1209,
+          "issues": 1,
+          "pullRequests": 14,
+          "reviews": 0,
+          "restrictedContributions": 875
+        },
+        "2026": {
+          "contributions": 4942,
+          "commits": 4659,
+          "issues": 0,
+          "pullRequests": 24,
+          "reviews": 2,
+          "restrictedContributions": 196
+        }
+      },
+      "scores": {
+        "overall": 80.4,
+        "activity": 87.11,
+        "impact": 73.2,
+        "community": 76.79,
+        "collaboration": 75.88
+      },
+      "rank": 6
+    },
+    {
+      "login": "Goal651",
+      "name": " Wilson Goal BUGIRI",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/151470917?u=aeec925d0153a32cbcb3544dd14e4f6ea7ebf5f4&v=4",
+      "profileUrl": "https://github.com/Goal651",
+      "bio": "Build, Learn, Repeat",
+      "company": "@Echo-Sols-Ltd",
+      "accountCreatedAt": "2023-11-19T20:49:22Z",
+      "location": {
+        "raw": "Rwanda-Kigali",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": "Kigali",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 336,
+        "contributions365d": 4090,
+        "commits365d": 1804,
+        "issues365d": 2,
+        "pullRequests365d": 138,
+        "reviews365d": 0,
+        "restrictedContributions365d": 2105,
+        "publicRepositories": 58,
+        "repositoriesSampled": 58,
+        "repoStatsTruncated": false,
+        "starsReceived": 85,
+        "forksReceived": 3,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 1,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 77,
+          "commits": 62,
+          "issues": 1,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 5
+        },
+        "2025": {
+          "contributions": 2023,
+          "commits": 1129,
+          "issues": 1,
+          "pullRequests": 100,
+          "reviews": 0,
+          "restrictedContributions": 758
+        },
+        "2026": {
+          "contributions": 2867,
+          "commits": 1267,
+          "issues": 1,
+          "pullRequests": 91,
+          "reviews": 0,
+          "restrictedContributions": 1487
+        }
+      },
+      "scores": {
+        "overall": 80.32,
+        "activity": 81.72,
+        "impact": 67.18,
+        "community": 78.36,
+        "collaboration": 100
+      },
+      "rank": 7
+    },
+    {
+      "login": "ProgrammerDATCH",
+      "name": "Mr. David",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/128073754?u=895aaf15e25c3ddf041ebad181b13c003166098f&v=4",
+      "profileUrl": "https://github.com/ProgrammerDATCH",
+      "bio": "Mr. David is a Full Stack Web & App Developer with 8 years of experience from 2018. Enthusiastic about AI, Natural Language Processing (NLP) and ML.",
+      "company": "@gokabisa",
+      "accountCreatedAt": "2023-03-16T16:34:55Z",
+      "location": {
+        "raw": "Kigali Rwanda",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": "Kigali",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 895,
+        "contributions365d": 6363,
+        "commits365d": 42,
+        "issues365d": 0,
+        "pullRequests365d": 6,
+        "reviews365d": 0,
+        "restrictedContributions365d": 6310,
+        "publicRepositories": 118,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 138,
+        "forksReceived": 14,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1,
+          "commits": 1,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 79,
+          "commits": 55,
+          "issues": 0,
+          "pullRequests": 4,
+          "reviews": 1,
+          "restrictedContributions": 15
+        },
+        "2024": {
+          "contributions": 3229,
+          "commits": 429,
+          "issues": 1,
+          "pullRequests": 70,
+          "reviews": 21,
+          "restrictedContributions": 2641
+        },
+        "2025": {
+          "contributions": 4376,
+          "commits": 88,
+          "issues": 1,
+          "pullRequests": 5,
+          "reviews": 0,
+          "restrictedContributions": 4267
+        },
+        "2026": {
+          "contributions": 3375,
+          "commits": 18,
+          "issues": 0,
+          "pullRequests": 6,
+          "reviews": 0,
+          "restrictedContributions": 3349
+        }
+      },
+      "scores": {
+        "overall": 77.37,
+        "activity": 86.06,
+        "impact": 76.04,
+        "community": 91.52,
+        "collaboration": 39.38
+      },
+      "rank": 8
+    },
+    {
+      "login": "shemaikuzwe",
+      "name": "Ikuzwe shema Elie",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/130182097?u=75b0a61433d3bd2d59895827ec578d7fec8076b3&v=4",
+      "profileUrl": "https://github.com/shemaikuzwe",
+      "bio": "Full stack developer Ts||Go||Python",
+      "company": null,
+      "accountCreatedAt": "2023-04-07T19:39:06Z",
+      "location": {
+        "raw": "rwanda",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 315,
+        "contributions365d": 1566,
+        "commits365d": 428,
+        "issues365d": 0,
+        "pullRequests365d": 34,
+        "reviews365d": 2,
+        "restrictedContributions365d": 1080,
+        "publicRepositories": 52,
+        "repositoriesSampled": 52,
+        "repoStatsTruncated": false,
+        "starsReceived": 185,
+        "forksReceived": 10,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 1,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 363,
+          "commits": 142,
+          "issues": 5,
+          "pullRequests": 12,
+          "reviews": 1,
+          "restrictedContributions": 181
+        },
+        "2025": {
+          "contributions": 1209,
+          "commits": 554,
+          "issues": 2,
+          "pullRequests": 28,
+          "reviews": 4,
+          "restrictedContributions": 600
+        },
+        "2026": {
+          "contributions": 1234,
+          "commits": 209,
+          "issues": 0,
+          "pullRequests": 27,
+          "reviews": 1,
+          "restrictedContributions": 985
+        }
+      },
+      "scores": {
+        "overall": 74.98,
+        "activity": 72.29,
+        "impact": 79.15,
+        "community": 77.49,
+        "collaboration": 73.61
+      },
+      "rank": 9
+    },
+    {
+      "login": "Mucyo-chris",
+      "name": "Christian MUCYO",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/183734587?u=acba4c049d2ed120f977874e749b7ff056305aac&v=4",
+      "profileUrl": "https://github.com/Mucyo-chris",
+      "bio": "I'm a Chris✝️ian",
+      "company": null,
+      "accountCreatedAt": "2024-10-03T14:15:20Z",
+      "location": {
+        "raw": "KIGALI-RWANDA",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": "Kigali",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 381,
+        "contributions365d": 1227,
+        "commits365d": 1147,
+        "issues365d": 3,
+        "pullRequests365d": 42,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 20,
+        "repositoriesSampled": 20,
+        "repoStatsTruncated": false,
+        "starsReceived": 200,
+        "forksReceived": 0,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 2,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 444,
+          "commits": 427,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 789,
+          "commits": 723,
+          "issues": 3,
+          "pullRequests": 42,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 74.68,
+        "activity": 69.9,
+        "impact": 78.79,
+        "community": 80.04,
+        "collaboration": 76.81
+      },
+      "rank": 10
+    },
+    {
+      "login": "descholar-ceo",
+      "name": "Mugirase Emmanuel",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/56886064?u=7a353d96929d2e4cc1c0a60cae8b2aed3862191f&v=4",
+      "profileUrl": "https://github.com/descholar-ceo",
+      "bio": "Let's be REGIC!!!",
+      "company": null,
+      "accountCreatedAt": "2019-10-22T16:04:09Z",
+      "location": {
+        "raw": "Kigali, Rwanda",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": "Kigali",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 329,
+        "contributions365d": 632,
+        "commits365d": 566,
+        "issues365d": 0,
+        "pullRequests365d": 62,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 165,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 196,
+        "forksReceived": 12,
+        "archivedRepositoriesSampled": 2
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 787,
+          "commits": 51,
+          "issues": 2,
+          "pullRequests": 3,
+          "reviews": 716,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 223,
+          "commits": 2,
+          "issues": 4,
+          "pullRequests": 1,
+          "reviews": 190,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 124,
+          "commits": 88,
+          "issues": 3,
+          "pullRequests": 10,
+          "reviews": 4,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 99,
+          "commits": 52,
+          "issues": 0,
+          "pullRequests": 42,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 623,
+          "commits": 566,
+          "issues": 0,
+          "pullRequests": 53,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 72.86,
+        "activity": 63.38,
+        "impact": 80.2,
+        "community": 78.07,
+        "collaboration": 83.84
+      },
+      "rank": 11
+    },
+    {
+      "login": "Nsoro-Allan",
+      "name": "Nsoro Allan",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/135638821?u=5b4a5047e4f5f72de6bbf573ab93ff4c9ce204b1&v=4",
+      "profileUrl": "https://github.com/Nsoro-Allan",
+      "bio": "🧑‍💻 Software Engineer.",
+      "company": "AllanCorp",
+      "accountCreatedAt": "2023-06-05T15:51:44Z",
+      "location": {
+        "raw": "Kigali, Rwanda",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": "Kigali",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 985,
+        "contributions365d": 1809,
+        "commits365d": 46,
+        "issues365d": 0,
+        "pullRequests365d": 1,
+        "reviews365d": 0,
+        "restrictedContributions365d": 1677,
+        "publicRepositories": 416,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 297,
+        "forksReceived": 5,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 241,
+          "commits": 148,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 43
+        },
+        "2024": {
+          "contributions": 1956,
+          "commits": 394,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 1509
+        },
+        "2025": {
+          "contributions": 2445,
+          "commits": 96,
+          "issues": 1,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 2252
+        },
+        "2026": {
+          "contributions": 1437,
+          "commits": 29,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 1323
+        }
+      },
+      "scores": {
+        "overall": 70.48,
+        "activity": 73.71,
+        "impact": 85.13,
+        "community": 92.81,
+        "collaboration": 14.03
+      },
+      "rank": 12
+    },
+    {
+      "login": "PATRICKNDIZEYE",
+      "name": "PATRICKNDIZEYE",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/116964464?u=e592a75157b3965854830bed08a4a0b80f23fc68&v=4",
+      "profileUrl": "https://github.com/PATRICKNDIZEYE",
+      "bio": "",
+      "company": "(' \" ...\" ' );",
+      "accountCreatedAt": "2022-10-29T15:04:26Z",
+      "location": {
+        "raw": "rwanda",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 283,
+        "contributions365d": 2269,
+        "commits365d": 124,
+        "issues365d": 0,
+        "pullRequests365d": 3,
+        "reviews365d": 1,
+        "restrictedContributions365d": 2122,
+        "publicRepositories": 68,
+        "repositoriesSampled": 68,
+        "repoStatsTruncated": false,
+        "starsReceived": 126,
+        "forksReceived": 7,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 6201,
+          "commits": 5950,
+          "issues": 0,
+          "pullRequests": 7,
+          "reviews": 0,
+          "restrictedContributions": 214
+        },
+        "2025": {
+          "contributions": 1815,
+          "commits": 1018,
+          "issues": 3,
+          "pullRequests": 3,
+          "reviews": 0,
+          "restrictedContributions": 770
+        },
+        "2026": {
+          "contributions": 1957,
+          "commits": 109,
+          "issues": 0,
+          "pullRequests": 3,
+          "reviews": 1,
+          "restrictedContributions": 1827
+        }
+      },
+      "scores": {
+        "overall": 69.13,
+        "activity": 75.93,
+        "impact": 73.52,
+        "community": 76.05,
+        "collaboration": 34.5
+      },
+      "rank": 13
+    },
+    {
+      "login": "regis-mucyo",
+      "name": "Regis Mucyo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/176018348?u=36ce6e8f673ffdabf8214ae316c89b5d875444e3&v=4",
+      "profileUrl": "https://github.com/regis-mucyo",
+      "bio": "Aspiring Junior & Senior Software Developer | Eager to learn, build, and contribute to open-source projects. Always exploring new ideas and technologies.",
+      "company": null,
+      "accountCreatedAt": "2024-07-19T08:04:17Z",
+      "location": {
+        "raw": "Kigali, Rwanda",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": "Kigali",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 354,
+        "contributions365d": 2531,
+        "commits365d": 409,
+        "issues365d": 1,
+        "pullRequests365d": 48,
+        "reviews365d": 3,
+        "restrictedContributions365d": 2046,
+        "publicRepositories": 32,
+        "repositoriesSampled": 32,
+        "repoStatsTruncated": false,
+        "starsReceived": 9,
+        "forksReceived": 0,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 1,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 829,
+          "commits": 336,
+          "issues": 0,
+          "pullRequests": 54,
+          "reviews": 10,
+          "restrictedContributions": 408
+        },
+        "2026": {
+          "contributions": 1839,
+          "commits": 155,
+          "issues": 1,
+          "pullRequests": 9,
+          "reviews": 0,
+          "restrictedContributions": 1663
+        }
+      },
+      "scores": {
+        "overall": 67.17,
+        "activity": 77.01,
+        "impact": 34.21,
+        "community": 79.06,
+        "collaboration": 80.72
+      },
+      "rank": 14
+    },
+    {
+      "login": "ikuzweelisa",
+      "name": "Ikuzwe",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/163114861?v=4",
+      "profileUrl": "https://github.com/ikuzweelisa",
+      "bio": "Software Engineer",
+      "company": null,
+      "accountCreatedAt": "2024-03-12T08:53:50Z",
+      "location": {
+        "raw": "Rwanda",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1681,
+        "contributions365d": 362,
+        "commits365d": 24,
+        "issues365d": 0,
+        "pullRequests365d": 1,
+        "reviews365d": 0,
+        "restrictedContributions365d": 335,
+        "publicRepositories": 22,
+        "repositoriesSampled": 22,
+        "repoStatsTruncated": false,
+        "starsReceived": 293,
+        "forksReceived": 16,
+        "archivedRepositoriesSampled": 1
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 2,
+          "commits": 2,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 465,
+          "commits": 261,
+          "issues": 6,
+          "pullRequests": 11,
+          "reviews": 2,
+          "restrictedContributions": 163
+        },
+        "2025": {
+          "contributions": 657,
+          "commits": 54,
+          "issues": 3,
+          "pullRequests": 4,
+          "reviews": 5,
+          "restrictedContributions": 588
+        },
+        "2026": {
+          "contributions": 199,
+          "commits": 5,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 194
+        }
+      },
+      "scores": {
+        "overall": 64.66,
+        "activity": 57.92,
+        "impact": 85.97,
+        "community": 100,
+        "collaboration": 14.03
+      },
+      "rank": 15
+    },
+    {
+      "login": "umutambyi-gad",
+      "name": "Gad",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/65312850?u=e0675af8e27e371b58af95776b1b7c74d0fcdf85&v=4",
+      "profileUrl": "https://github.com/umutambyi-gad",
+      "bio": "Software Engineer\r\n",
+      "company": null,
+      "accountCreatedAt": "2020-05-13T20:42:13Z",
+      "location": {
+        "raw": "Kigali, Rwanda",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": "Kigali",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 653,
+        "contributions365d": 921,
+        "commits365d": 1,
+        "issues365d": 6,
+        "pullRequests365d": 2,
+        "reviews365d": 0,
+        "restrictedContributions365d": 905,
+        "publicRepositories": 12,
+        "repositoriesSampled": 12,
+        "repoStatsTruncated": false,
+        "starsReceived": 36,
+        "forksReceived": 5,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1103,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 1103
+        },
+        "2023": {
+          "contributions": 1326,
+          "commits": 3,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 1323
+        },
+        "2024": {
+          "contributions": 903,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 903
+        },
+        "2025": {
+          "contributions": 1278,
+          "commits": 3,
+          "issues": 6,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 1260
+        },
+        "2026": {
+          "contributions": 551,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 551
+        }
+      },
+      "scores": {
+        "overall": 63.02,
+        "activity": 67.08,
+        "impact": 57.2,
+        "community": 87.28,
+        "collaboration": 36.26
+      },
+      "rank": 16
+    },
+    {
+      "login": "Pericles001",
+      "name": "Pericles Adjovi",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/55035365?u=edd05d838c22284286d36a30be66884aff8b3a46&v=4",
+      "profileUrl": "https://github.com/Pericles001",
+      "bio": "Software Engineer | Python Developer  | Web & API Development | Applied Machine Learning & Data Science  | CMU Alum",
+      "company": "Carnegie Mellon University",
+      "accountCreatedAt": "2019-09-07T21:46:03Z",
+      "location": {
+        "raw": "Kigali, Rwanda",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": "Kigali",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 508,
+        "contributions365d": 209,
+        "commits365d": 108,
+        "issues365d": 0,
+        "pullRequests365d": 1,
+        "reviews365d": 0,
+        "restrictedContributions365d": 92,
+        "publicRepositories": 69,
+        "repositoriesSampled": 69,
+        "repoStatsTruncated": false,
+        "starsReceived": 181,
+        "forksReceived": 288,
+        "archivedRepositoriesSampled": 2
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 3214,
+          "commits": 2100,
+          "issues": 16,
+          "pullRequests": 70,
+          "reviews": 2,
+          "restrictedContributions": 1000
+        },
+        "2023": {
+          "contributions": 1063,
+          "commits": 194,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 868
+        },
+        "2024": {
+          "contributions": 1295,
+          "commits": 312,
+          "issues": 4,
+          "pullRequests": 19,
+          "reviews": 1,
+          "restrictedContributions": 956
+        },
+        "2025": {
+          "contributions": 421,
+          "commits": 138,
+          "issues": 0,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 274
+        },
+        "2026": {
+          "contributions": 121,
+          "commits": 47,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 70
+        }
+      },
+      "scores": {
+        "overall": 62.96,
+        "activity": 52.54,
+        "impact": 98.51,
+        "community": 83.91,
+        "collaboration": 14.03
+      },
+      "rank": 17
+    },
+    {
+      "login": "API-Imperfect",
+      "name": "Alpha Omondi Ogilo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/3863497?u=d631907058c01c0f139f7239e840b8a891246c7a&v=4",
+      "profileUrl": "https://github.com/API-Imperfect",
+      "bio": "I solve technical Software Engineering Problems at Scale",
+      "company": "@andela ",
+      "accountCreatedAt": "2013-03-14T11:10:26Z",
+      "location": {
+        "raw": "Kigali,Rwanda",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": "Kigali",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 222,
+        "contributions365d": 204,
+        "commits365d": 70,
+        "issues365d": 4,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 126,
+        "publicRepositories": 43,
+        "repositoriesSampled": 43,
+        "repoStatsTruncated": false,
+        "starsReceived": 355,
+        "forksReceived": 241,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 220,
+          "commits": 58,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 159
+        },
+        "2023": {
+          "contributions": 69,
+          "commits": 44,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 24
+        },
+        "2024": {
+          "contributions": 142,
+          "commits": 104,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 36
+        },
+        "2025": {
+          "contributions": 152,
+          "commits": 82,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 67
+        },
+        "2026": {
+          "contributions": 189,
+          "commits": 56,
+          "issues": 4,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 126
+        }
+      },
+      "scores": {
+        "overall": 62.79,
+        "activity": 52.31,
+        "impact": 100,
+        "community": 72.8,
+        "collaboration": 22.23
+      },
+      "rank": 18
+    },
+    {
+      "login": "uwenayoallain",
+      "name": "Alain Pacifique UWENAYO",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/66881609?u=1802425fa4a526a27cc841893bb249675e9ce85a&v=4",
+      "profileUrl": "https://github.com/uwenayoallain",
+      "bio": "Hi, I'm Alain, a passionate full-stack developer from Rwanda with a mission to build scalable, user-friendly, and impactful tech solutions.",
+      "company": null,
+      "accountCreatedAt": "2020-06-13T17:19:47Z",
+      "location": {
+        "raw": "Kigali,Rwanda",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": "Kigali",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 432,
+        "contributions365d": 782,
+        "commits365d": 386,
+        "issues365d": 0,
+        "pullRequests365d": 13,
+        "reviews365d": 0,
+        "restrictedContributions365d": 368,
+        "publicRepositories": 43,
+        "repositoriesSampled": 43,
+        "repoStatsTruncated": false,
+        "starsReceived": 11,
+        "forksReceived": 2,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 209,
+          "commits": 65,
+          "issues": 2,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 131
+        },
+        "2023": {
+          "contributions": 7,
+          "commits": 1,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 6
+        },
+        "2024": {
+          "contributions": 166,
+          "commits": 18,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 143
+        },
+        "2025": {
+          "contributions": 877,
+          "commits": 431,
+          "issues": 0,
+          "pullRequests": 10,
+          "reviews": 0,
+          "restrictedContributions": 416
+        },
+        "2026": {
+          "contributions": 519,
+          "commits": 285,
+          "issues": 0,
+          "pullRequests": 9,
+          "reviews": 0,
+          "restrictedContributions": 217
+        }
+      },
+      "scores": {
+        "overall": 60.03,
+        "activity": 65.47,
+        "impact": 41.19,
+        "community": 81.73,
+        "collaboration": 53.4
+      },
+      "rank": 19
+    },
+    {
+      "login": "obedeveloper",
+      "name": "NIYOMUGISHA Obed",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/204957866?u=5d26cb879275490e8e0f942ba17d80185500bac9&v=4",
+      "profileUrl": "https://github.com/obedeveloper",
+      "bio": "Svelte | SvelteKit | TypeScript | Tailwind | pnpm | SQLite | Drizzle ",
+      "company": null,
+      "accountCreatedAt": "2025-03-26T01:53:33Z",
+      "location": {
+        "raw": "Kigali, Rwanda",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": "Kigali",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 169,
+        "contributions365d": 689,
+        "commits365d": 453,
+        "issues365d": 0,
+        "pullRequests365d": 36,
+        "reviews365d": 0,
+        "restrictedContributions365d": 187,
+        "publicRepositories": 15,
+        "repositoriesSampled": 15,
+        "repoStatsTruncated": false,
+        "starsReceived": 9,
+        "forksReceived": 0,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 177,
+          "commits": 160,
+          "issues": 0,
+          "pullRequests": 8,
+          "reviews": 0,
+          "restrictedContributions": 6
+        },
+        "2026": {
+          "contributions": 608,
+          "commits": 381,
+          "issues": 0,
+          "pullRequests": 32,
+          "reviews": 0,
+          "restrictedContributions": 182
+        }
+      },
+      "scores": {
+        "overall": 58.79,
+        "activity": 64.23,
+        "impact": 34.21,
+        "community": 69.14,
+        "collaboration": 73.07
+      },
+      "rank": 20
+    },
+    {
+      "login": "NTAGOZERAKevin",
+      "name": "NTAGOZERA Kevin",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/186942371?u=64b5ff2c9de55e686cb02128a566c4cea0c1f990&v=4",
+      "profileUrl": "https://github.com/NTAGOZERAKevin",
+      "bio": "👋 Hi, I'm Ntagozera Kevin. I love coding \r\n         and solving problems. Check out my \r\n           projects and let's connect!",
+      "company": null,
+      "accountCreatedAt": "2024-10-31T14:46:27Z",
+      "location": {
+        "raw": "Kigali ,Rwanda",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": "Kigali",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 201,
+        "contributions365d": 138,
+        "commits365d": 90,
+        "issues365d": 2,
+        "pullRequests365d": 24,
+        "reviews365d": 1,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 36,
+        "repositoriesSampled": 36,
+        "repoStatsTruncated": false,
+        "starsReceived": 12,
+        "forksReceived": 1,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 8,
+          "commits": 2,
+          "issues": 0,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 147,
+          "commits": 93,
+          "issues": 2,
+          "pullRequests": 25,
+          "reviews": 1,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 18,
+          "commits": 10,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 52.66,
+        "activity": 48.49,
+        "impact": 40.23,
+        "community": 71.47,
+        "collaboration": 67.07
+      },
+      "rank": 21
+    },
+    {
+      "login": "DeliceLydia",
+      "name": "Lydia Ingabire",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/44745855?u=7696c7f4ac8b959eaa81cfb3cb09815a5fef4224&v=4",
+      "profileUrl": "https://github.com/DeliceLydia",
+      "bio": "Full-stack software/mobile Developer | Travel Enthusiast | Open to new opportunities ",
+      "company": "Software developer",
+      "accountCreatedAt": "2018-11-04T11:44:14Z",
+      "location": {
+        "raw": "Kigali-Rwanda",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": "Kigali",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 169,
+        "contributions365d": 234,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 233,
+        "publicRepositories": 53,
+        "repositoriesSampled": 53,
+        "repoStatsTruncated": false,
+        "starsReceived": 57,
+        "forksReceived": 11,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 974,
+          "commits": 39,
+          "issues": 1,
+          "pullRequests": 3,
+          "reviews": 879,
+          "restrictedContributions": 49
+        },
+        "2023": {
+          "contributions": 787,
+          "commits": 163,
+          "issues": 0,
+          "pullRequests": 11,
+          "reviews": 591,
+          "restrictedContributions": 19
+        },
+        "2024": {
+          "contributions": 640,
+          "commits": 340,
+          "issues": 0,
+          "pullRequests": 19,
+          "reviews": 63,
+          "restrictedContributions": 203
+        },
+        "2025": {
+          "contributions": 388,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 387
+        },
+        "2026": {
+          "contributions": 94,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 94
+        }
+      },
+      "scores": {
+        "overall": 50.79,
+        "activity": 53.65,
+        "impact": 65.1,
+        "community": 69.14,
+        "collaboration": 0
+      },
+      "rank": 22
+    },
+    {
+      "login": "habibundayishimiye",
+      "name": "SPM_Habibu",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/108430936?u=72d4a0199a39aa505cdb23953c3bc00dbbd09cf5&v=4",
+      "profileUrl": "https://github.com/habibundayishimiye",
+      "bio": "Dedicated and motivated Computer Scientist with a strong foundation in programming, system analysis, and leadership. Currently working on EduTech Systems",
+      "company": "UR",
+      "accountCreatedAt": "2022-06-29T19:43:14Z",
+      "location": {
+        "raw": "Kigali Rwanda",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": "Kigali",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1453,
+        "contributions365d": 28,
+        "commits365d": 22,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 47,
+        "repositoriesSampled": 47,
+        "repoStatsTruncated": false,
+        "starsReceived": 78,
+        "forksReceived": 13,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 268,
+          "commits": 257,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 81,
+          "commits": 56,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 93,
+          "commits": 61,
+          "issues": 21,
+          "pullRequests": 3,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 18,
+          "commits": 15,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 46.88,
+        "activity": 33.09,
+        "impact": 69.14,
+        "community": 98.04,
+        "collaboration": 0
+      },
+      "rank": 23
+    },
+    {
+      "login": "Elie1Z",
+      "name": "Elie Mugisha",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/103949227?u=0b4ce489087d1e6328c17d4f625bdd867f320d21&v=4",
+      "profileUrl": "https://github.com/Elie1Z",
+      "bio": "",
+      "company": null,
+      "accountCreatedAt": "2022-04-18T15:20:42Z",
+      "location": {
+        "raw": "Kigali, Rwanda ",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": "Kigali",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 196,
+        "contributions365d": 625,
+        "commits365d": 601,
+        "issues365d": 0,
+        "pullRequests365d": 8,
+        "reviews365d": 2,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 32,
+        "repositoriesSampled": 32,
+        "repoStatsTruncated": false,
+        "starsReceived": 0,
+        "forksReceived": 0,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 3,
+          "commits": 1,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 156,
+          "commits": 146,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 243,
+          "commits": 210,
+          "issues": 0,
+          "pullRequests": 17,
+          "reviews": 2,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 437,
+          "commits": 428,
+          "issues": 0,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 46.69,
+        "activity": 63.27,
+        "impact": 0,
+        "community": 71.13,
+        "collaboration": 50.29
+      },
+      "rank": 24
+    },
+    {
+      "login": "njosuedev",
+      "name": "NIYOMWUNGERI Josue",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/149709646?u=b2d963ffd15555744dbc056ab3c7294185cc766a&v=4",
+      "profileUrl": "https://github.com/njosuedev",
+      "bio": "Code. Build. Maintain. Repeat.",
+      "company": "higoverse",
+      "accountCreatedAt": "2023-11-02T17:12:53Z",
+      "location": {
+        "raw": "kigali,Rwanda",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": "Kigali",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 222,
+        "contributions365d": 1248,
+        "commits365d": 39,
+        "issues365d": 1,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 1205,
+        "publicRepositories": 2,
+        "repositoriesSampled": 2,
+        "repoStatsTruncated": false,
+        "starsReceived": 1,
+        "forksReceived": 0,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 1,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 23,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 23
+        },
+        "2025": {
+          "contributions": 817,
+          "commits": 61,
+          "issues": 4,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 750
+        },
+        "2026": {
+          "contributions": 1090,
+          "commits": 39,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 1050
+        }
+      },
+      "scores": {
+        "overall": 46.25,
+        "activity": 70.06,
+        "impact": 10.3,
+        "community": 72.8,
+        "collaboration": 8.21
+      },
+      "rank": 25
+    },
+    {
+      "login": "thepiratehub",
+      "name": "home of source code",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/166730728?u=b0d05206745a686a14881624bc58d561cf92a9ec&v=4",
+      "profileUrl": "https://github.com/thepiratehub",
+      "bio": "WE FORK USEFUL RESOURCES OVER INTERNET \r\nopen source coding projects by @codeWithEdison ",
+      "company": "@codewithedison",
+      "accountCreatedAt": "2024-04-11T14:39:21Z",
+      "location": {
+        "raw": "kigali rwanda",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": "Kigali",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1510,
+        "contributions365d": 2,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 54,
+        "repositoriesSampled": 54,
+        "repoStatsTruncated": false,
+        "starsReceived": 27,
+        "forksReceived": 5,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 48,
+          "commits": 4,
+          "issues": 1,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 11,
+          "commits": 1,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 2,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 33.15,
+        "activity": 10.8,
+        "impact": 54.04,
+        "community": 98.56,
+        "collaboration": 0
+      },
+      "rank": 26
+    },
+    {
+      "login": "neoscratchteam",
+      "name": "NeoScratch",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/264497402?u=a95ee7782094c80a20327afefd4ef9e934db3816&v=4",
+      "profileUrl": "https://github.com/neoscratchteam",
+      "bio": "NeoScratch is a Rwanda-based software development and open-source technology company focused on building modern, scalable, and affordable digital solutions for ",
+      "company": "NeoScratch",
+      "accountCreatedAt": "2026-02-27T20:14:42Z",
+      "location": {
+        "raw": "Kigali, Rwanda",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": "Kigali",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 395,
+        "contributions365d": 6,
+        "commits365d": 3,
+        "issues365d": 0,
+        "pullRequests365d": 1,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 1,
+        "repositoriesSampled": 1,
+        "repoStatsTruncated": false,
+        "starsReceived": 5,
+        "forksReceived": 2,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 6,
+          "commits": 3,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 31.34,
+        "activity": 19.12,
+        "impact": 34.21,
+        "community": 80.53,
+        "collaboration": 14.03
+      },
+      "rank": 27
+    },
+    {
+      "login": "NailTechLtd",
+      "name": "Nail Tech Ltd",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/117844250?u=334a16da5eb2d4902388516c2d2d67d903884386&v=4",
+      "profileUrl": "https://github.com/NailTechLtd",
+      "bio": "Rwanda's leading software development company, turning complex challenges into elegant digital solutions. We don't just code, we nail it.",
+      "company": "@NailTechLtd",
+      "accountCreatedAt": "2022-11-09T15:36:34Z",
+      "location": {
+        "raw": "Kigali Rwanda",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": "Kigali",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1607,
+        "contributions365d": 0,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 4,
+        "repositoriesSampled": 4,
+        "repoStatsTruncated": false,
+        "starsReceived": 25,
+        "forksReceived": 2,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 9,
+          "commits": 6,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 4,
+          "commits": 2,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 27.54,
+        "activity": 0,
+        "impact": 50.53,
+        "community": 99.39,
+        "collaboration": 0
+      },
+      "rank": 28
+    },
+    {
+      "login": "samuelumutiti",
+      "name": "Umutiti Samuel",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/183544930?u=58f55bbd52497f53adadb7a8671b5a27791092e2&v=4",
+      "profileUrl": "https://github.com/samuelumutiti",
+      "bio": "Currently Software Developer included skills: React.js, Html, Css, Php, Flutter, Javascript, Firebase, Xampp\r\n",
+      "company": "Freelancer",
+      "accountCreatedAt": "2024-10-01T19:22:11Z",
+      "location": {
+        "raw": "Rwanda / Kigali City",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": "Kigali",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 618,
+        "contributions365d": 0,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 5,
+        "repositoriesSampled": 5,
+        "repoStatsTruncated": false,
+        "starsReceived": 27,
+        "forksReceived": 0,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 13,
+          "commits": 7,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 25.36,
+        "activity": 0,
+        "impact": 49.51,
+        "community": 86.54,
+        "collaboration": 0
+      },
+      "rank": 29
+    },
+    {
+      "login": "IMENAKING",
+      "name": "IMENA KING",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/197406005?u=cee4a1c833b57263ef457221b40ff00963b66d6b&v=4",
+      "profileUrl": "https://github.com/IMENAKING",
+      "bio": "fight for your  goal",
+      "company": null,
+      "accountCreatedAt": "2025-02-01T16:22:49Z",
+      "location": {
+        "raw": "rwanda",
+        "accepted": true,
+        "countryCode": "RW",
+        "country": "Rwanda",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 239,
+        "contributions365d": 0,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 3,
+        "repositoriesSampled": 3,
+        "repoStatsTruncated": false,
+        "starsReceived": 10,
+        "forksReceived": 1,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 18,
+          "commits": 10,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 20.59,
+        "activity": 0,
+        "impact": 38.11,
+        "community": 73.79,
+        "collaboration": 0
+      },
+      "rank": 30
+    }
+  ]
 }
