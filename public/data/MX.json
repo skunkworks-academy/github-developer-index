@@ -1,11 +1,2433 @@
 {
   "schemaVersion": 1,
-  "generatedAt": null,
-  "source": {"provider":"GitHub","api":"GraphQL","officialLeaderboard":false},
-  "country": {"code":"MX","name":"Mexico"},
-  "availableYears": [],
-  "calendarWindows": [],
-  "methodology": {"version":"1.0.0","weights":{"activity":0.45,"impact":0.25,"community":0.15,"collaboration":0.15},"windowDays":365,"notes":["Pending first live refresh."]},
-  "collection": {"discoveredCandidates":0,"acceptedCandidates":0,"rejectedCandidates":0,"window":null},
-  "developers": []
+  "generatedAt": "2026-08-26T03:41:49.869Z",
+  "source": {
+    "provider": "GitHub",
+    "api": "GraphQL",
+    "officialLeaderboard": false
+  },
+  "country": {
+    "code": "MX",
+    "name": "Mexico"
+  },
+  "availableYears": [
+    2026,
+    2025,
+    2024,
+    2023,
+    2022
+  ],
+  "calendarWindows": [
+    {
+      "year": 2026,
+      "from": "2026-01-01T00:00:00.000Z",
+      "to": "2026-08-26T03:41:49.869Z",
+      "complete": false
+    },
+    {
+      "year": 2025,
+      "from": "2025-01-01T00:00:00.000Z",
+      "to": "2025-12-31T23:59:59.999Z",
+      "complete": true
+    },
+    {
+      "year": 2024,
+      "from": "2024-01-01T00:00:00.000Z",
+      "to": "2024-12-31T23:59:59.999Z",
+      "complete": true
+    },
+    {
+      "year": 2023,
+      "from": "2023-01-01T00:00:00.000Z",
+      "to": "2023-12-31T23:59:59.999Z",
+      "complete": true
+    },
+    {
+      "year": 2022,
+      "from": "2022-01-01T00:00:00.000Z",
+      "to": "2022-12-31T23:59:59.999Z",
+      "complete": true
+    }
+  ],
+  "methodology": {
+    "version": "1.0.0",
+    "weights": {
+      "activity": 0.45,
+      "impact": 0.25,
+      "community": 0.15,
+      "collaboration": 0.15
+    },
+    "windowDays": 365,
+    "notes": [
+      "Candidate discovery uses GitHub user search location qualifiers.",
+      "Country resolution uses explicit country aliases plus a bounded set of recognized cities.",
+      "Ambiguous or conflicting country locations are rejected rather than guessed.",
+      "Repository impact samples up to the 100 most-starred public repositories owned by each user.",
+      "Calendar-year filters use GitHub contribution activity for the selected year; current stars and followers are not historical snapshots.",
+      "The index is independent and is not an official GitHub ranking."
+    ]
+  },
+  "collection": {
+    "discoveredCandidates": 30,
+    "acceptedCandidates": 28,
+    "rejectedCandidates": 2,
+    "window": {
+      "from": "2025-08-26T03:41:49.869Z",
+      "to": "2026-08-26T03:41:49.869Z"
+    }
+  },
+  "developers": [
+    {
+      "login": "holasoymalva",
+      "name": "Leon Martin",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/13058234?u=ae4ceed46991f5f69557cc193b4e38c63b409ff1&v=4",
+      "profileUrl": "https://github.com/holasoymalva",
+      "bio": "Data Analyst & Software Engineer  🦄\r\n\r\nNode.js | Swift | React.js | Python",
+      "company": "@nexcar-ai",
+      "accountCreatedAt": "2015-06-26T02:20:59Z",
+      "location": {
+        "raw": "CDMX - Mexico.",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 2297,
+        "contributions365d": 4618,
+        "commits365d": 2251,
+        "issues365d": 2,
+        "pullRequests365d": 863,
+        "reviews365d": 4,
+        "restrictedContributions365d": 1423,
+        "publicRepositories": 278,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 884,
+        "forksReceived": 120,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 496,
+          "commits": 421,
+          "issues": 3,
+          "pullRequests": 52,
+          "reviews": 1,
+          "restrictedContributions": 2
+        },
+        "2023": {
+          "contributions": 298,
+          "commits": 255,
+          "issues": 1,
+          "pullRequests": 7,
+          "reviews": 0,
+          "restrictedContributions": 24
+        },
+        "2024": {
+          "contributions": 595,
+          "commits": 411,
+          "issues": 0,
+          "pullRequests": 6,
+          "reviews": 3,
+          "restrictedContributions": 76
+        },
+        "2025": {
+          "contributions": 5530,
+          "commits": 3997,
+          "issues": 89,
+          "pullRequests": 1165,
+          "reviews": 0,
+          "restrictedContributions": 206
+        },
+        "2026": {
+          "contributions": 3241,
+          "commits": 1327,
+          "issues": 0,
+          "pullRequests": 509,
+          "reviews": 4,
+          "restrictedContributions": 1366
+        }
+      },
+      "scores": {
+        "overall": 92.54,
+        "activity": 100,
+        "impact": 73.85,
+        "community": 93.86,
+        "collaboration": 100
+      },
+      "rank": 1
+    },
+    {
+      "login": "vic",
+      "name": "Victor Borja",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/331?u=ea47695d8043dd3fa560050620ef541ef316eec6&v=4",
+      "profileUrl": "https://github.com/vic",
+      "bio": "Psalm 27:8. Mi corazón te ha oído decir: «Ven y conversa conmigo». Y mi corazón responde: «Aquí vengo, Señor».",
+      "company": "https://berean.faith",
+      "accountCreatedAt": "2008-02-17T05:48:58Z",
+      "location": {
+        "raw": "Mexico City",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": "Mexico City",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 684,
+        "contributions365d": 2073,
+        "commits365d": 1287,
+        "issues365d": 117,
+        "pullRequests365d": 445,
+        "reviews365d": 93,
+        "restrictedContributions365d": 29,
+        "publicRepositories": 387,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 2086,
+        "forksReceived": 271,
+        "archivedRepositoriesSampled": 4
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 464,
+          "commits": 382,
+          "issues": 24,
+          "pullRequests": 29,
+          "reviews": 16,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 151,
+          "commits": 114,
+          "issues": 10,
+          "pullRequests": 14,
+          "reviews": 1,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 7,
+          "commits": 6,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 2695,
+          "commits": 1970,
+          "issues": 123,
+          "pullRequests": 459,
+          "reviews": 22,
+          "restrictedContributions": 58
+        },
+        "2026": {
+          "contributions": 1293,
+          "commits": 803,
+          "issues": 69,
+          "pullRequests": 265,
+          "reviews": 81,
+          "restrictedContributions": 12
+        }
+      },
+      "scores": {
+        "overall": 87.63,
+        "activity": 90.51,
+        "impact": 82.78,
+        "community": 79.18,
+        "collaboration": 95.54
+      },
+      "rank": 2
+    },
+    {
+      "login": "beto-rodriguez",
+      "name": "Beto Rodríguez",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/10853349?u=a3e8ea4a421c475b7e50a9c039cd7535b307daa3&v=4",
+      "profileUrl": "https://github.com/beto-rodriguez",
+      "bio": "I love building things, I am experienced with dotnet technologies and also with Angular, TypeScript and VanillaJS.",
+      "company": null,
+      "accountCreatedAt": "2015-02-04T18:19:54Z",
+      "location": {
+        "raw": "Guadalajara, Mexico",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": "Guadalajara",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 879,
+        "contributions365d": 3107,
+        "commits365d": 1816,
+        "issues365d": 8,
+        "pullRequests365d": 254,
+        "reviews365d": 16,
+        "restrictedContributions365d": 1008,
+        "publicRepositories": 32,
+        "repositoriesSampled": 32,
+        "repoStatsTruncated": false,
+        "starsReceived": 391,
+        "forksReceived": 72,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1037,
+          "commits": 728,
+          "issues": 8,
+          "pullRequests": 75,
+          "reviews": 9,
+          "restrictedContributions": 201
+        },
+        "2023": {
+          "contributions": 1253,
+          "commits": 884,
+          "issues": 11,
+          "pullRequests": 60,
+          "reviews": 16,
+          "restrictedContributions": 272
+        },
+        "2024": {
+          "contributions": 1254,
+          "commits": 894,
+          "issues": 7,
+          "pullRequests": 51,
+          "reviews": 12,
+          "restrictedContributions": 278
+        },
+        "2025": {
+          "contributions": 1345,
+          "commits": 1207,
+          "issues": 7,
+          "pullRequests": 59,
+          "reviews": 8,
+          "restrictedContributions": 58
+        },
+        "2026": {
+          "contributions": 2595,
+          "commits": 1372,
+          "issues": 5,
+          "pullRequests": 225,
+          "reviews": 14,
+          "restrictedContributions": 977
+        }
+      },
+      "scores": {
+        "overall": 84.24,
+        "activity": 95.3,
+        "impact": 66.06,
+        "community": 82.22,
+        "collaboration": 83.39
+      },
+      "rank": 3
+    },
+    {
+      "login": "obie",
+      "name": "Obie Fernandez",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/3908?u=f7883d386266bce3ef8b8cc26e53fa015e0c9459&v=4",
+      "profileUrl": "https://github.com/obie",
+      "bio": "Consultant, 30 year veteran of professional software development, serial entrepreneur, and best-selling author. CTO at ZAR",
+      "company": "@zarpay ",
+      "accountCreatedAt": "2008-03-26T16:10:01Z",
+      "location": {
+        "raw": "Mexico City",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": "Mexico City",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 850,
+        "contributions365d": 4120,
+        "commits365d": 318,
+        "issues365d": 16,
+        "pullRequests365d": 11,
+        "reviews365d": 2,
+        "restrictedContributions365d": 3766,
+        "publicRepositories": 88,
+        "repositoriesSampled": 88,
+        "repoStatsTruncated": false,
+        "starsReceived": 1839,
+        "forksReceived": 130,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 289,
+          "commits": 0,
+          "issues": 1,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 285
+        },
+        "2023": {
+          "contributions": 1957,
+          "commits": 211,
+          "issues": 35,
+          "pullRequests": 12,
+          "reviews": 7,
+          "restrictedContributions": 1682
+        },
+        "2024": {
+          "contributions": 1629,
+          "commits": 76,
+          "issues": 4,
+          "pullRequests": 3,
+          "reviews": 0,
+          "restrictedContributions": 1537
+        },
+        "2025": {
+          "contributions": 1508,
+          "commits": 414,
+          "issues": 171,
+          "pullRequests": 40,
+          "reviews": 24,
+          "restrictedContributions": 847
+        },
+        "2026": {
+          "contributions": 3623,
+          "commits": 303,
+          "issues": 15,
+          "pullRequests": 10,
+          "reviews": 1,
+          "restrictedContributions": 3292
+        }
+      },
+      "scores": {
+        "overall": 83.72,
+        "activity": 98.65,
+        "impact": 80.42,
+        "community": 81.81,
+        "collaboration": 46.32
+      },
+      "rank": 4
+    },
+    {
+      "login": "EliverLara",
+      "name": "Eliver L.",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/9838260?u=e60c3b14b50801de5bf47c492cb282f393049430&v=4",
+      "profileUrl": "https://github.com/EliverLara",
+      "bio": "Passionate Open-Sourcerer :ram:",
+      "company": null,
+      "accountCreatedAt": "2014-11-19T05:52:40Z",
+      "location": {
+        "raw": "Mexico",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1163,
+        "contributions365d": 429,
+        "commits365d": 355,
+        "issues365d": 1,
+        "pullRequests365d": 1,
+        "reviews365d": 27,
+        "restrictedContributions365d": 44,
+        "publicRepositories": 59,
+        "repositoriesSampled": 59,
+        "repoStatsTruncated": false,
+        "starsReceived": 11923,
+        "forksReceived": 803,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 937,
+          "commits": 916,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 19,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 850,
+          "commits": 814,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 19,
+          "restrictedContributions": 8
+        },
+        "2024": {
+          "contributions": 966,
+          "commits": 900,
+          "issues": 1,
+          "pullRequests": 0,
+          "reviews": 13,
+          "restrictedContributions": 49
+        },
+        "2025": {
+          "contributions": 771,
+          "commits": 672,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 20,
+          "restrictedContributions": 76
+        },
+        "2026": {
+          "contributions": 186,
+          "commits": 149,
+          "issues": 1,
+          "pullRequests": 1,
+          "reviews": 14,
+          "restrictedContributions": 21
+        }
+      },
+      "scores": {
+        "overall": 78.51,
+        "activity": 71.86,
+        "impact": 100,
+        "community": 85.61,
+        "collaboration": 55.56
+      },
+      "rank": 5
+    },
+    {
+      "login": "ernestognw",
+      "name": "Ernesto García",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/33379285?u=b9a07043e91990ee62232632be0a567324c0f1c4&v=4",
+      "profileUrl": "https://github.com/ernestognw",
+      "bio": "Smart Contract Engineer and Ethereum Magician @OpenZeppelin | Founder @PlumaaID | Former Degen Intern @Google",
+      "company": "@OpenZeppelin, @PlumaaID, @platzi",
+      "accountCreatedAt": "2017-11-04T18:44:16Z",
+      "location": {
+        "raw": "Mexico City",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": "Mexico City",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 539,
+        "contributions365d": 851,
+        "commits365d": 172,
+        "issues365d": 20,
+        "pullRequests365d": 103,
+        "reviews365d": 308,
+        "restrictedContributions365d": 246,
+        "publicRepositories": 206,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 273,
+        "forksReceived": 125,
+        "archivedRepositoriesSampled": 1
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1112,
+          "commits": 236,
+          "issues": 16,
+          "pullRequests": 65,
+          "reviews": 55,
+          "restrictedContributions": 705
+        },
+        "2023": {
+          "contributions": 1171,
+          "commits": 572,
+          "issues": 54,
+          "pullRequests": 159,
+          "reviews": 212,
+          "restrictedContributions": 155
+        },
+        "2024": {
+          "contributions": 1567,
+          "commits": 483,
+          "issues": 18,
+          "pullRequests": 103,
+          "reviews": 295,
+          "restrictedContributions": 660
+        },
+        "2025": {
+          "contributions": 1246,
+          "commits": 407,
+          "issues": 13,
+          "pullRequests": 217,
+          "reviews": 421,
+          "restrictedContributions": 174
+        },
+        "2026": {
+          "contributions": 527,
+          "commits": 103,
+          "issues": 19,
+          "pullRequests": 67,
+          "reviews": 178,
+          "restrictedContributions": 159
+        }
+      },
+      "scores": {
+        "overall": 77.97,
+        "activity": 79.97,
+        "impact": 65.82,
+        "community": 76.3,
+        "collaboration": 93.89
+      },
+      "rank": 6
+    },
+    {
+      "login": "lavrton",
+      "name": "Anton Lavrenov",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1443320?u=22dcc3b123b82bb0d93e185371526d65a135a266&v=4",
+      "profileUrl": "https://github.com/lavrton",
+      "bio": "Making graphical web applications",
+      "company": null,
+      "accountCreatedAt": "2012-02-16T13:49:27Z",
+      "location": {
+        "raw": "Cancun, Mexico",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 716,
+        "contributions365d": 3820,
+        "commits365d": 991,
+        "issues365d": 2,
+        "pullRequests365d": 3,
+        "reviews365d": 0,
+        "restrictedContributions365d": 2820,
+        "publicRepositories": 36,
+        "repositoriesSampled": 36,
+        "repoStatsTruncated": false,
+        "starsReceived": 301,
+        "forksReceived": 39,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1503,
+          "commits": 466,
+          "issues": 1,
+          "pullRequests": 3,
+          "reviews": 1,
+          "restrictedContributions": 1029
+        },
+        "2023": {
+          "contributions": 1597,
+          "commits": 602,
+          "issues": 3,
+          "pullRequests": 0,
+          "reviews": 3,
+          "restrictedContributions": 983
+        },
+        "2024": {
+          "contributions": 2106,
+          "commits": 710,
+          "issues": 4,
+          "pullRequests": 0,
+          "reviews": 3,
+          "restrictedContributions": 1381
+        },
+        "2025": {
+          "contributions": 2128,
+          "commits": 774,
+          "issues": 1,
+          "pullRequests": 4,
+          "reviews": 1,
+          "restrictedContributions": 1343
+        },
+        "2026": {
+          "contributions": 2834,
+          "commits": 626,
+          "issues": 1,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 2204
+        }
+      },
+      "scores": {
+        "overall": 75.13,
+        "activity": 97.75,
+        "impact": 62.44,
+        "community": 79.73,
+        "collaboration": 23.77
+      },
+      "rank": 7
+    },
+    {
+      "login": "ivam3",
+      "name": "Milton Mújica",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/27752315?u=4f616e3c3fdcb3d1f77418a7ff2ceca4a8f0bdbc&v=4",
+      "profileUrl": "https://github.com/ivam3",
+      "bio": "Developer | freelancer | Content Creator | Founder of ivam3bycinderella: a community focused on learning all +Linux capabilities using Termux (OS Android)",
+      "company": "Ivam3byCinderella",
+      "accountCreatedAt": "2017-04-19T02:16:40Z",
+      "location": {
+        "raw": "Mexico",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 607,
+        "contributions365d": 656,
+        "commits365d": 650,
+        "issues365d": 0,
+        "pullRequests365d": 4,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 15,
+        "repositoriesSampled": 15,
+        "repoStatsTruncated": false,
+        "starsReceived": 1251,
+        "forksReceived": 164,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 500,
+          "commits": 496,
+          "issues": 2,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 248,
+          "commits": 241,
+          "issues": 1,
+          "pullRequests": 4,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 178,
+          "commits": 173,
+          "issues": 0,
+          "pullRequests": 3,
+          "reviews": 1,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 299,
+          "commits": 297,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 503,
+          "commits": 499,
+          "issues": 0,
+          "pullRequests": 3,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 69.18,
+        "activity": 76.89,
+        "impact": 77.42,
+        "community": 77.74,
+        "collaboration": 23.77
+      },
+      "rank": 8
+    },
+    {
+      "login": "marcosrivasr",
+      "name": "Marcos Rivas R @vidamrr",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/641704?u=dd757dc6f7a08d8df3e2051461793c8d08a48100&v=4",
+      "profileUrl": "https://github.com/marcosrivasr",
+      "bio": "\r\n    Empower every developer in the world to achieve more\r\n",
+      "company": "@microsoft",
+      "accountCreatedAt": "2011-02-28T03:43:48Z",
+      "location": {
+        "raw": "Mexico",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1716,
+        "contributions365d": 136,
+        "commits365d": 49,
+        "issues365d": 7,
+        "pullRequests365d": 9,
+        "reviews365d": 2,
+        "restrictedContributions365d": 59,
+        "publicRepositories": 102,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 2987,
+        "forksReceived": 1749,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 175,
+          "commits": 152,
+          "issues": 0,
+          "pullRequests": 3,
+          "reviews": 0,
+          "restrictedContributions": 2
+        },
+        "2023": {
+          "contributions": 197,
+          "commits": 168,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 25
+        },
+        "2024": {
+          "contributions": 4,
+          "commits": 2,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 29,
+          "commits": 22,
+          "issues": 2,
+          "pullRequests": 0,
+          "reviews": 1,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 120,
+          "commits": 38,
+          "issues": 5,
+          "pullRequests": 9,
+          "reviews": 1,
+          "restrictedContributions": 59
+        }
+      },
+      "scores": {
+        "overall": 69.07,
+        "activity": 58.31,
+        "impact": 92.27,
+        "community": 90.32,
+        "collaboration": 41.41
+      },
+      "rank": 9
+    },
+    {
+      "login": "Siedrix",
+      "name": "Siedrix Zavala",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/188538?v=4",
+      "profileUrl": "https://github.com/Siedrix",
+      "bio": "",
+      "company": null,
+      "accountCreatedAt": "2010-01-23T21:47:34Z",
+      "location": {
+        "raw": "Mexico",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 558,
+        "contributions365d": 1474,
+        "commits365d": 21,
+        "issues365d": 0,
+        "pullRequests365d": 16,
+        "reviews365d": 0,
+        "restrictedContributions365d": 1436,
+        "publicRepositories": 8,
+        "repositoriesSampled": 8,
+        "repoStatsTruncated": false,
+        "starsReceived": 40,
+        "forksReceived": 19,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 192,
+          "commits": 72,
+          "issues": 0,
+          "pullRequests": 21,
+          "reviews": 0,
+          "restrictedContributions": 99
+        },
+        "2023": {
+          "contributions": 323,
+          "commits": 30,
+          "issues": 0,
+          "pullRequests": 18,
+          "reviews": 0,
+          "restrictedContributions": 275
+        },
+        "2024": {
+          "contributions": 942,
+          "commits": 19,
+          "issues": 0,
+          "pullRequests": 18,
+          "reviews": 0,
+          "restrictedContributions": 905
+        },
+        "2025": {
+          "contributions": 1227,
+          "commits": 122,
+          "issues": 1,
+          "pullRequests": 82,
+          "reviews": 0,
+          "restrictedContributions": 1020
+        },
+        "2026": {
+          "contributions": 897,
+          "commits": 14,
+          "issues": 0,
+          "pullRequests": 11,
+          "reviews": 0,
+          "restrictedContributions": 871
+        }
+      },
+      "scores": {
+        "overall": 68.18,
+        "activity": 86.47,
+        "impact": 45.93,
+        "community": 76.72,
+        "collaboration": 41.85
+      },
+      "rank": 10
+    },
+    {
+      "login": "nanochess",
+      "name": "Oscar Toledo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/9663372?u=e805bdf13b0771ec4047b8ec3f7afcce3e2d23cc&v=4",
+      "profileUrl": "https://github.com/nanochess",
+      "bio": "x5 IOCCC winner\r\n2nd JS1K 2010/MSXdev'10\r\nDev MSX/Atari/CV/Intellivision games (2->Colecovision Flashback)\r\nWorld's smallest chess progs in C/6502/x86/JS/Java",
+      "company": null,
+      "accountCreatedAt": "2014-11-10T20:52:31Z",
+      "location": {
+        "raw": "Mexico",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1223,
+        "contributions365d": 249,
+        "commits365d": 247,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 44,
+        "repositoriesSampled": 44,
+        "repoStatsTruncated": false,
+        "starsReceived": 5323,
+        "forksReceived": 344,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 21,
+          "commits": 19,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 39,
+          "commits": 37,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 379,
+          "commits": 369,
+          "issues": 0,
+          "pullRequests": 5,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 313,
+          "commits": 308,
+          "issues": 1,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 123,
+          "commits": 122,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 65.25,
+        "activity": 65.44,
+        "impact": 91.47,
+        "community": 86.22,
+        "collaboration": 0
+      },
+      "rank": 11
+    },
+    {
+      "login": "cldrn",
+      "name": "Paulino Calderon",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/191724?v=4",
+      "profileUrl": "https://github.com/cldrn",
+      "bio": "Security researcher & open source builder | @nmap official dev team | Author (Packt & No Starch Press) | websec.mx & websec.ca | @pwnlabmx",
+      "company": "Websec",
+      "accountCreatedAt": "2010-01-28T18:02:45Z",
+      "location": {
+        "raw": "Mexico city",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": "Mexico City",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 733,
+        "contributions365d": 248,
+        "commits365d": 28,
+        "issues365d": 2,
+        "pullRequests365d": 1,
+        "reviews365d": 0,
+        "restrictedContributions365d": 217,
+        "publicRepositories": 70,
+        "repositoriesSampled": 70,
+        "repoStatsTruncated": false,
+        "starsReceived": 2027,
+        "forksReceived": 650,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 47,
+          "commits": 32,
+          "issues": 0,
+          "pullRequests": 2,
+          "reviews": 1,
+          "restrictedContributions": 8
+        },
+        "2023": {
+          "contributions": 79,
+          "commits": 46,
+          "issues": 7,
+          "pullRequests": 6,
+          "reviews": 1,
+          "restrictedContributions": 17
+        },
+        "2024": {
+          "contributions": 31,
+          "commits": 18,
+          "issues": 4,
+          "pullRequests": 7,
+          "reviews": 1,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 76,
+          "commits": 60,
+          "issues": 0,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 13
+        },
+        "2026": {
+          "contributions": 242,
+          "commits": 23,
+          "issues": 2,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 216
+        }
+      },
+      "scores": {
+        "overall": 65.18,
+        "activity": 65.39,
+        "impact": 85.26,
+        "community": 80.02,
+        "collaboration": 16.23
+      },
+      "rank": 12
+    },
+    {
+      "login": "josedlujan",
+      "name": "José Dimas Luján Castillo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1326172?u=ccd761cfff3032cef5c5fc4c561a2e87b3b27391&v=4",
+      "profileUrl": "https://github.com/josedlujan",
+      "bio": "Developer, Professor, Writer, DevRel.\r\nAndroid, Rust, Java, Kotlin, Flutter, iOS, Python, Blockchain\r\n",
+      "company": "@josedlujan",
+      "accountCreatedAt": "2012-01-12T23:04:50Z",
+      "location": {
+        "raw": "Cancun Mexico",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 577,
+        "contributions365d": 1649,
+        "commits365d": 38,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 1598,
+        "publicRepositories": 207,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 82,
+        "forksReceived": 58,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 180,
+          "commits": 31,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 135
+        },
+        "2023": {
+          "contributions": 236,
+          "commits": 50,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 177
+        },
+        "2024": {
+          "contributions": 125,
+          "commits": 98,
+          "issues": 0,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 19
+        },
+        "2025": {
+          "contributions": 547,
+          "commits": 59,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 482
+        },
+        "2026": {
+          "contributions": 1266,
+          "commits": 18,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 1236
+        }
+      },
+      "scores": {
+        "overall": 64.99,
+        "activity": 87.8,
+        "impact": 55.64,
+        "community": 77.12,
+        "collaboration": 0
+      },
+      "rank": 13
+    },
+    {
+      "login": "dpsanders",
+      "name": "David P. Sanders",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/191822?u=db1dff106d444509276417abd7979a16d68dab79&v=4",
+      "profileUrl": "https://github.com/dpsanders",
+      "bio": "",
+      "company": "Universidad Nacional Autónoma de México (UNAM)",
+      "accountCreatedAt": "2010-01-28T20:42:30Z",
+      "location": {
+        "raw": "Mexico City, Mexico",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": "Mexico City",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 785,
+        "contributions365d": 88,
+        "commits365d": 32,
+        "issues365d": 5,
+        "pullRequests365d": 31,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 260,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 910,
+        "forksReceived": 419,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 70,
+          "commits": 31,
+          "issues": 26,
+          "pullRequests": 4,
+          "reviews": 1,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 26,
+          "commits": 16,
+          "issues": 2,
+          "pullRequests": 7,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 160,
+          "commits": 86,
+          "issues": 45,
+          "pullRequests": 20,
+          "reviews": 4,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 7,
+          "commits": 0,
+          "issues": 5,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 88,
+          "commits": 32,
+          "issues": 5,
+          "pullRequests": 31,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 63.53,
+        "activity": 53.2,
+        "impact": 78.49,
+        "community": 80.85,
+        "collaboration": 52.31
+      },
+      "rank": 14
+    },
+    {
+      "login": "carlogilmar",
+      "name": "Carlo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/17634377?u=581fd7ee75cf1767376839dfe92eecac37f6c605&v=4",
+      "profileUrl": "https://github.com/carlogilmar",
+      "bio": "A green programmer 🌱",
+      "company": "@visualpartnership ",
+      "accountCreatedAt": "2016-03-04T05:01:58Z",
+      "location": {
+        "raw": "Mexico",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 771,
+        "contributions365d": 520,
+        "commits365d": 81,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 430,
+        "publicRepositories": 256,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 373,
+        "forksReceived": 77,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1608,
+          "commits": 614,
+          "issues": 19,
+          "pullRequests": 5,
+          "reviews": 77,
+          "restrictedContributions": 873
+        },
+        "2023": {
+          "contributions": 450,
+          "commits": 304,
+          "issues": 1,
+          "pullRequests": 3,
+          "reviews": 1,
+          "restrictedContributions": 136
+        },
+        "2024": {
+          "contributions": 532,
+          "commits": 235,
+          "issues": 2,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 284
+        },
+        "2025": {
+          "contributions": 416,
+          "commits": 162,
+          "issues": 1,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 246
+        },
+        "2026": {
+          "contributions": 461,
+          "commits": 43,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 411
+        }
+      },
+      "scores": {
+        "overall": 61.93,
+        "activity": 74.14,
+        "impact": 65.9,
+        "community": 80.63,
+        "collaboration": 0
+      },
+      "rank": 15
+    },
+    {
+      "login": "xiam",
+      "name": "José Nieto",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/385670?u=1fde06de3d2788eb23fcb32bd204b343224293bd&v=4",
+      "profileUrl": "https://github.com/xiam",
+      "bio": "ḣ̸̩̓4̶̢̝̘̆̌̿͆ͅc̵̨̝̳͓͎̘͑ͅk̴̖͍̮̀̀3̵̨͓̘̺̥͇̝̀͌̾̇r̶̝̠̬͇̠̙̞̎́̀̋/oaxaqueño\r\n",
+      "company": null,
+      "accountCreatedAt": "2010-09-02T20:07:25Z",
+      "location": {
+        "raw": "Mexico City",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": "Mexico City",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 606,
+        "contributions365d": 81,
+        "commits365d": 53,
+        "issues365d": 0,
+        "pullRequests365d": 21,
+        "reviews365d": 6,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 38,
+        "repositoriesSampled": 38,
+        "repoStatsTruncated": false,
+        "starsReceived": 809,
+        "forksReceived": 181,
+        "archivedRepositoriesSampled": 7
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 92,
+          "commits": 74,
+          "issues": 0,
+          "pullRequests": 17,
+          "reviews": 1,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 64,
+          "commits": 54,
+          "issues": 0,
+          "pullRequests": 8,
+          "reviews": 2,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 77,
+          "commits": 51,
+          "issues": 0,
+          "pullRequests": 14,
+          "reviews": 8,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 174,
+          "commits": 132,
+          "issues": 0,
+          "pullRequests": 32,
+          "reviews": 8,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 26,
+          "commits": 16,
+          "issues": 0,
+          "pullRequests": 8,
+          "reviews": 1,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 61.34,
+        "activity": 52.23,
+        "impact": 74.28,
+        "community": 77.72,
+        "collaboration": 50.73
+      },
+      "rank": 16
+    },
+    {
+      "login": "josejesusguzman",
+      "name": "Jose Jesus Guzman Eusebio",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/8755301?u=a41422e7adcd600befe4db1bf1af1a663cf71815&v=4",
+      "profileUrl": "https://github.com/josejesusguzman",
+      "bio": "Backend y Android Developer. CTO en Envíaje. Sherpa Digital de Innovacción Virtual de @microsoft. Btujo mayor de No es Brujería, es Tecnología @brujeriatech",
+      "company": "@innovaccion-virtual",
+      "accountCreatedAt": "2014-09-12T23:20:09Z",
+      "location": {
+        "raw": "Ciudad de Mexico",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1080,
+        "contributions365d": 62,
+        "commits365d": 38,
+        "issues365d": 2,
+        "pullRequests365d": 2,
+        "reviews365d": 0,
+        "restrictedContributions365d": 11,
+        "publicRepositories": 146,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 1423,
+        "forksReceived": 908,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 145,
+          "commits": 103,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 14
+        },
+        "2023": {
+          "contributions": 103,
+          "commits": 81,
+          "issues": 1,
+          "pullRequests": 0,
+          "reviews": 3,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 54,
+          "commits": 22,
+          "issues": 13,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 14
+        },
+        "2025": {
+          "contributions": 115,
+          "commits": 104,
+          "issues": 0,
+          "pullRequests": 3,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 59,
+          "commits": 35,
+          "issues": 2,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 11
+        }
+      },
+      "scores": {
+        "overall": 59.12,
+        "activity": 49.1,
+        "impact": 84.97,
+        "community": 84.71,
+        "collaboration": 20.48
+      },
+      "rank": 17
+    },
+    {
+      "login": "doguedogue",
+      "name": "Rafael Vilches",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/23409026?u=9dd054fd9ba8e4f68fe67f443a65da0e7ded6f4b&v=4",
+      "profileUrl": "https://github.com/doguedogue",
+      "bio": "Software developer, Systems Analyst and Project Manager 💾 ",
+      "company": null,
+      "accountCreatedAt": "2016-11-11T21:53:58Z",
+      "location": {
+        "raw": "Mexico City",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": "Mexico City",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1294,
+        "contributions365d": 607,
+        "commits365d": 13,
+        "issues365d": 0,
+        "pullRequests365d": 1,
+        "reviews365d": 0,
+        "restrictedContributions365d": 591,
+        "publicRepositories": 89,
+        "repositoriesSampled": 89,
+        "repoStatsTruncated": false,
+        "starsReceived": 37,
+        "forksReceived": 6,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1207,
+          "commits": 835,
+          "issues": 8,
+          "pullRequests": 9,
+          "reviews": 0,
+          "restrictedContributions": 248
+        },
+        "2023": {
+          "contributions": 468,
+          "commits": 327,
+          "issues": 0,
+          "pullRequests": 3,
+          "reviews": 0,
+          "restrictedContributions": 104
+        },
+        "2024": {
+          "contributions": 83,
+          "commits": 22,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 60
+        },
+        "2025": {
+          "contributions": 960,
+          "commits": 27,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 929
+        },
+        "2026": {
+          "contributions": 150,
+          "commits": 13,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 135
+        }
+      },
+      "scores": {
+        "overall": 59.04,
+        "activity": 75.97,
+        "impact": 41.12,
+        "community": 86.9,
+        "collaboration": 10.24
+      },
+      "rank": 18
+    },
+    {
+      "login": "sergiornelas",
+      "name": "Sergio Ornelas",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/42797252?u=95368712f7b9ca5e222f75ff86c82b71457ef983&v=4",
+      "profileUrl": "https://github.com/sergiornelas",
+      "bio": "Senior Frontend Engineer focused on React ecosystem. I write vim plugins in my free time.",
+      "company": "Harley-Davidson",
+      "accountCreatedAt": "2018-08-29T06:33:05Z",
+      "location": {
+        "raw": "Guadalajara, Mexico",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": "Guadalajara",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 1411,
+        "contributions365d": 403,
+        "commits365d": 117,
+        "issues365d": 2,
+        "pullRequests365d": 1,
+        "reviews365d": 0,
+        "restrictedContributions365d": 280,
+        "publicRepositories": 26,
+        "repositoriesSampled": 26,
+        "repoStatsTruncated": false,
+        "starsReceived": 47,
+        "forksReceived": 1,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 299,
+          "commits": 220,
+          "issues": 7,
+          "pullRequests": 3,
+          "reviews": 0,
+          "restrictedContributions": 67
+        },
+        "2023": {
+          "contributions": 228,
+          "commits": 132,
+          "issues": 6,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 85
+        },
+        "2024": {
+          "contributions": 165,
+          "commits": 125,
+          "issues": 5,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 34
+        },
+        "2025": {
+          "contributions": 542,
+          "commits": 114,
+          "issues": 1,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 423
+        },
+        "2026": {
+          "contributions": 155,
+          "commits": 108,
+          "issues": 2,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 41
+        }
+      },
+      "scores": {
+        "overall": 57.91,
+        "activity": 71.12,
+        "impact": 41.12,
+        "community": 87.95,
+        "collaboration": 16.23
+      },
+      "rank": 19
+    },
+    {
+      "login": "FiliSantillan",
+      "name": "Fili Santillán",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/5623751?u=c9a42d01f83dae09c73867641fb04ba7c9ae93e4&v=4",
+      "profileUrl": "https://github.com/FiliSantillan",
+      "bio": "🔥 I create content in Spanish about web development.\r\n\r\n🌳HTML\r\n🎨CSS\r\n⚙️JAVASCRIPT\r\n⚛️REACT",
+      "company": null,
+      "accountCreatedAt": "2013-10-06T17:44:04Z",
+      "location": {
+        "raw": "Mexico City",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": "Mexico City",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 661,
+        "contributions365d": 348,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 348,
+        "publicRepositories": 61,
+        "repositoriesSampled": 61,
+        "repoStatsTruncated": false,
+        "starsReceived": 140,
+        "forksReceived": 63,
+        "archivedRepositoriesSampled": 3
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 16,
+          "commits": 0,
+          "issues": 1,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 12
+        },
+        "2023": {
+          "contributions": 4,
+          "commits": 2,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 1
+        },
+        "2024": {
+          "contributions": 418,
+          "commits": 3,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 415
+        },
+        "2025": {
+          "contributions": 413,
+          "commits": 1,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 411
+        },
+        "2026": {
+          "contributions": 194,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 194
+        }
+      },
+      "scores": {
+        "overall": 57.72,
+        "activity": 69.39,
+        "impact": 58.73,
+        "community": 78.77,
+        "collaboration": 0
+      },
+      "rank": 20
+    },
+    {
+      "login": "deromafilossali",
+      "name": "Rodrigo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/87487520?u=5f822815228593bb4f19abf65f19e812a855f252&v=4",
+      "profileUrl": "https://github.com/deromafilossali",
+      "bio": "MX",
+      "company": "RP",
+      "accountCreatedAt": "2021-07-15T14:50:21Z",
+      "location": {
+        "raw": "Mexico",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 2289,
+        "contributions365d": 427,
+        "commits365d": 2,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 425,
+        "publicRepositories": 2,
+        "repositoriesSampled": 2,
+        "repoStatsTruncated": false,
+        "starsReceived": 27,
+        "forksReceived": 0,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1041,
+          "commits": 6,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 1034
+        },
+        "2023": {
+          "contributions": 1006,
+          "commits": 9,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 997
+        },
+        "2024": {
+          "contributions": 738,
+          "commits": 24,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 714
+        },
+        "2025": {
+          "contributions": 537,
+          "commits": 11,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 525
+        },
+        "2026": {
+          "contributions": 237,
+          "commits": 2,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 235
+        }
+      },
+      "scores": {
+        "overall": 55.14,
+        "activity": 71.81,
+        "impact": 35.03,
+        "community": 93.82,
+        "collaboration": 0
+      },
+      "rank": 21
+    },
+    {
+      "login": "edglaz",
+      "name": "edglaz",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/48146403?u=ddade1690d15c3514a7f58bee38d1205fcd6047a&v=4",
+      "profileUrl": "https://github.com/edglaz",
+      "bio": "Python and Java developer",
+      "company": null,
+      "accountCreatedAt": "2019-03-02T05:50:45Z",
+      "location": {
+        "raw": "Mexico City",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": "Mexico City",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 636,
+        "contributions365d": 340,
+        "commits365d": 339,
+        "issues365d": 1,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 10,
+        "repositoriesSampled": 10,
+        "repoStatsTruncated": false,
+        "starsReceived": 6,
+        "forksReceived": 21,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 624,
+          "commits": 622,
+          "issues": 1,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 70,
+          "commits": 70,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 53.97,
+        "activity": 69.12,
+        "impact": 40.91,
+        "community": 78.3,
+        "collaboration": 5.99
+      },
+      "rank": 22
+    },
+    {
+      "login": "mikenieva",
+      "name": "Mike Nieva",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1256678?u=970d93778fdd443fd7b51b75e391ed4e6092c448&v=4",
+      "profileUrl": "https://github.com/mikenieva",
+      "bio": "Web Developer",
+      "company": "NIEVA",
+      "accountCreatedAt": "2011-12-12T06:34:26Z",
+      "location": {
+        "raw": "Mexico City",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": "Mexico City",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 908,
+        "contributions365d": 18,
+        "commits365d": 14,
+        "issues365d": 0,
+        "pullRequests365d": 3,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 328,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 98,
+        "forksReceived": 232,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 154,
+          "commits": 110,
+          "issues": 0,
+          "pullRequests": 7,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 181,
+          "commits": 136,
+          "issues": 2,
+          "pullRequests": 14,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 51,
+          "commits": 36,
+          "issues": 0,
+          "pullRequests": 3,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 14,
+          "commits": 10,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 14,
+          "commits": 11,
+          "issues": 0,
+          "pullRequests": 3,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 47.81,
+        "activity": 34.9,
+        "impact": 66.58,
+        "community": 82.61,
+        "collaboration": 20.48
+      },
+      "rank": 23
+    },
+    {
+      "login": "Elteoremadebeethoven",
+      "name": "Alexander Vázquez",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/43224662?u=0c81ed594d5fcd225cf461b2fd631682435f4f97&v=4",
+      "profileUrl": "https://github.com/Elteoremadebeethoven",
+      "bio": "I'm a mechanic engineering student at Universidad Nacional Autónoma de México.",
+      "company": null,
+      "accountCreatedAt": "2018-09-13T00:49:07Z",
+      "location": {
+        "raw": "Mexico City",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": "Mexico City",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 582,
+        "contributions365d": 2,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 32,
+        "repositoriesSampled": 32,
+        "repoStatsTruncated": false,
+        "starsReceived": 1532,
+        "forksReceived": 316,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 28,
+          "commits": 21,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 37,
+          "commits": 29,
+          "issues": 1,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 3,
+          "commits": 1,
+          "issues": 1,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 4,
+          "commits": 1,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 37.63,
+        "activity": 13.02,
+        "impact": 80.74,
+        "community": 77.23,
+        "collaboration": 0
+      },
+      "rank": 24
+    },
+    {
+      "login": "anncode1",
+      "name": "Anahí Salgado",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/11036504?u=aa616058e74114d02e534a0212b1c44d81459cf9&v=4",
+      "profileUrl": "https://github.com/anncode1",
+      "bio": "🦄 Android Native, Kotlin, Geek & Teacher\r\n✨ Share more to learn more ",
+      "company": null,
+      "accountCreatedAt": "2015-02-16T22:40:08Z",
+      "location": {
+        "raw": "Mexico City",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": "Mexico City",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 2254,
+        "contributions365d": 0,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 65,
+        "repositoriesSampled": 65,
+        "repoStatsTruncated": false,
+        "starsReceived": 657,
+        "forksReceived": 2044,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 5,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 56,
+          "commits": 9,
+          "issues": 0,
+          "pullRequests": 5,
+          "reviews": 0,
+          "restrictedContributions": 35
+        },
+        "2024": {
+          "contributions": 43,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 43
+        },
+        "2025": {
+          "contributions": 13,
+          "commits": 12,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 36.29,
+        "activity": 0,
+        "impact": 88.99,
+        "community": 93.63,
+        "collaboration": 0
+      },
+      "rank": 25
+    },
+    {
+      "login": "stan8086",
+      "name": "Jose Rodríguez",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/154884797?u=d24a512495508cd7605eb55c8148d174cd8fe06d&v=4",
+      "profileUrl": "https://github.com/stan8086",
+      "bio": "I'm building @ProductivityDirectory ",
+      "company": "@ProductivityDirectory",
+      "accountCreatedAt": "2023-12-26T10:22:06Z",
+      "location": {
+        "raw": "Mexico",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 3812,
+        "contributions365d": 2,
+        "commits365d": 2,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 13,
+        "repositoriesSampled": 13,
+        "repoStatsTruncated": false,
+        "starsReceived": 122,
+        "forksReceived": 19,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 8,
+          "commits": 5,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 121,
+          "commits": 98,
+          "issues": 2,
+          "pullRequests": 9,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 2,
+          "commits": 2,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 34.21,
+        "activity": 13.02,
+        "impact": 53.42,
+        "community": 100,
+        "collaboration": 0
+      },
+      "rank": 26
+    },
+    {
+      "login": "romarpla",
+      "name": "Romarpla",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/18484319?u=ebc028905f2cc76166186ec0edd51d6c47c9e90e&v=4",
+      "profileUrl": "https://github.com/romarpla",
+      "bio": "apasionate web developer 👨🏻‍💻 and cibersecurity specialist 🕵🏻, technology lover, motorcycle rider 🏍️ and dog dad 🐕",
+      "company": "Ember / Microsoft",
+      "accountCreatedAt": "2016-04-15T13:05:47Z",
+      "location": {
+        "raw": "Mexico",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 710,
+        "contributions365d": 0,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 18,
+        "repositoriesSampled": 18,
+        "repoStatsTruncated": false,
+        "starsReceived": 262,
+        "forksReceived": 1658,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 415,
+          "commits": 79,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 310
+        },
+        "2023": {
+          "contributions": 194,
+          "commits": 55,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 138
+        },
+        "2024": {
+          "contributions": 33,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 33
+        },
+        "2025": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 33.45,
+        "activity": 0,
+        "impact": 86.02,
+        "community": 79.63,
+        "collaboration": 0
+      },
+      "rank": 27
+    },
+    {
+      "login": "SymbianSyMoh",
+      "name": "Mohamed A. Basset",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/3141848?u=8a23d5935961944b1c3d8ee651de6d5e101b742a&v=4",
+      "profileUrl": "https://github.com/SymbianSyMoh",
+      "bio": "CyberVillain, Builder by night, Breaker by day. I'm on making the CyberSpace a safer place since Y2K.",
+      "company": "Seekurity",
+      "accountCreatedAt": "2012-12-28T12:57:03Z",
+      "location": {
+        "raw": "Mexico",
+        "accepted": true,
+        "countryCode": "MX",
+        "country": "Mexico",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 617,
+        "contributions365d": 0,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 117,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 47,
+        "forksReceived": 8,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 1,
+          "commits": 1,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 1,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 1
+        },
+        "2025": {
+          "contributions": 2,
+          "commits": 2,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 22.62,
+        "activity": 0,
+        "impact": 43.72,
+        "community": 77.93,
+        "collaboration": 0
+      },
+      "rank": 28
+    }
+  ]
 }
