@@ -1,11 +1,2601 @@
 {
   "schemaVersion": 1,
-  "generatedAt": null,
-  "source": {"provider":"GitHub","api":"GraphQL","officialLeaderboard":false},
-  "country": {"code":"FR","name":"France"},
-  "availableYears": [],
-  "calendarWindows": [],
-  "methodology": {"version":"1.0.0","weights":{"activity":0.45,"impact":0.25,"community":0.15,"collaboration":0.15},"windowDays":365,"notes":["Pending first live refresh."]},
-  "collection": {"discoveredCandidates":0,"acceptedCandidates":0,"rejectedCandidates":0,"window":null},
-  "developers": []
+  "generatedAt": "2026-08-26T03:51:57.957Z",
+  "source": {
+    "provider": "GitHub",
+    "api": "GraphQL",
+    "officialLeaderboard": false
+  },
+  "country": {
+    "code": "FR",
+    "name": "France"
+  },
+  "availableYears": [
+    2026,
+    2025,
+    2024,
+    2023,
+    2022
+  ],
+  "calendarWindows": [
+    {
+      "year": 2026,
+      "from": "2026-01-01T00:00:00.000Z",
+      "to": "2026-08-26T03:51:57.957Z",
+      "complete": false
+    },
+    {
+      "year": 2025,
+      "from": "2025-01-01T00:00:00.000Z",
+      "to": "2025-12-31T23:59:59.999Z",
+      "complete": true
+    },
+    {
+      "year": 2024,
+      "from": "2024-01-01T00:00:00.000Z",
+      "to": "2024-12-31T23:59:59.999Z",
+      "complete": true
+    },
+    {
+      "year": 2023,
+      "from": "2023-01-01T00:00:00.000Z",
+      "to": "2023-12-31T23:59:59.999Z",
+      "complete": true
+    },
+    {
+      "year": 2022,
+      "from": "2022-01-01T00:00:00.000Z",
+      "to": "2022-12-31T23:59:59.999Z",
+      "complete": true
+    }
+  ],
+  "methodology": {
+    "version": "1.0.0",
+    "weights": {
+      "activity": 0.45,
+      "impact": 0.25,
+      "community": 0.15,
+      "collaboration": 0.15
+    },
+    "windowDays": 365,
+    "notes": [
+      "Candidate discovery uses GitHub user search location qualifiers.",
+      "Country resolution uses explicit country aliases plus a bounded set of recognized cities.",
+      "Ambiguous or conflicting country locations are rejected rather than guessed.",
+      "Repository impact samples up to the 100 most-starred public repositories owned by each user.",
+      "Calendar-year filters use GitHub contribution activity for the selected year; current stars and followers are not historical snapshots.",
+      "The index is independent and is not an official GitHub ranking."
+    ]
+  },
+  "collection": {
+    "discoveredCandidates": 30,
+    "acceptedCandidates": 30,
+    "rejectedCandidates": 0,
+    "window": {
+      "from": "2025-08-26T03:51:57.957Z",
+      "to": "2026-08-26T03:51:57.957Z"
+    }
+  },
+  "developers": [
+    {
+      "login": "crazy-max",
+      "name": "CrazyMax",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1951866?v=4",
+      "profileUrl": "https://github.com/crazy-max",
+      "bio": "Open source, containers, and build systems",
+      "company": "@docker",
+      "accountCreatedAt": "2012-07-10T18:54:34Z",
+      "location": {
+        "raw": "France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 2797,
+        "contributions365d": 15246,
+        "commits365d": 8035,
+        "issues365d": 41,
+        "pullRequests365d": 1752,
+        "reviews365d": 2647,
+        "restrictedContributions365d": 2741,
+        "publicRepositories": 264,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 22075,
+        "forksReceived": 2377,
+        "archivedRepositoriesSampled": 47
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 9763,
+          "commits": 4403,
+          "issues": 43,
+          "pullRequests": 1244,
+          "reviews": 1308,
+          "restrictedContributions": 2731
+        },
+        "2023": {
+          "contributions": 12937,
+          "commits": 5881,
+          "issues": 39,
+          "pullRequests": 1376,
+          "reviews": 1571,
+          "restrictedContributions": 4026
+        },
+        "2024": {
+          "contributions": 10977,
+          "commits": 4853,
+          "issues": 78,
+          "pullRequests": 1103,
+          "reviews": 1421,
+          "restrictedContributions": 3491
+        },
+        "2025": {
+          "contributions": 10335,
+          "commits": 4522,
+          "issues": 47,
+          "pullRequests": 1223,
+          "reviews": 1503,
+          "restrictedContributions": 3000
+        },
+        "2026": {
+          "contributions": 12024,
+          "commits": 6530,
+          "issues": 19,
+          "pullRequests": 1400,
+          "reviews": 2063,
+          "restrictedContributions": 1994
+        }
+      },
+      "scores": {
+        "overall": 88.83,
+        "activity": 89.64,
+        "impact": 86.08,
+        "community": 79.81,
+        "collaboration": 100
+      },
+      "rank": 1
+    },
+    {
+      "login": "fasterthanlime",
+      "name": "Amos Wenger",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/7998310?u=fd6cb24423c35c26ee1ce7e00f0a3925bc964d1d&v=4",
+      "profileUrl": "https://github.com/fasterthanlime",
+      "bio": "hi, I'm amos! 🐿️ co-host of self-directed research podcast 🫐 teacher, video maker, software mercenary ✨ be kind, be curious",
+      "company": "@bearcove",
+      "accountCreatedAt": "2014-06-26T17:10:33Z",
+      "location": {
+        "raw": "Lyon, France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": "Lyon",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 4712,
+        "contributions365d": 46439,
+        "commits365d": 17472,
+        "issues365d": 1243,
+        "pullRequests365d": 1649,
+        "reviews365d": 61,
+        "restrictedContributions365d": 25987,
+        "publicRepositories": 511,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 2905,
+        "forksReceived": 201,
+        "archivedRepositoriesSampled": 4
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 4654,
+          "commits": 650,
+          "issues": 59,
+          "pullRequests": 79,
+          "reviews": 4,
+          "restrictedContributions": 3826
+        },
+        "2023": {
+          "contributions": 2042,
+          "commits": 792,
+          "issues": 61,
+          "pullRequests": 88,
+          "reviews": 6,
+          "restrictedContributions": 1073
+        },
+        "2024": {
+          "contributions": 3272,
+          "commits": 1568,
+          "issues": 132,
+          "pullRequests": 200,
+          "reviews": 18,
+          "restrictedContributions": 1329
+        },
+        "2025": {
+          "contributions": 11816,
+          "commits": 5800,
+          "issues": 667,
+          "pullRequests": 896,
+          "reviews": 92,
+          "restrictedContributions": 4334
+        },
+        "2026": {
+          "contributions": 39146,
+          "commits": 14307,
+          "issues": 754,
+          "pullRequests": 1050,
+          "reviews": 41,
+          "restrictedContributions": 22981
+        }
+      },
+      "scores": {
+        "overall": 88.32,
+        "activity": 100,
+        "impact": 68.41,
+        "community": 85.06,
+        "collaboration": 89.74
+      },
+      "rank": 2
+    },
+    {
+      "login": "jedisct1",
+      "name": "Frank Denis",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/124872?v=4",
+      "profileUrl": "https://github.com/jedisct1",
+      "bio": "Get my public keys here: https://sk.tl/7CPRo8kn",
+      "company": null,
+      "accountCreatedAt": "2009-09-09T10:20:57Z",
+      "location": {
+        "raw": "Antibes, France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 4342,
+        "contributions365d": 7748,
+        "commits365d": 6920,
+        "issues365d": 18,
+        "pullRequests365d": 188,
+        "reviews365d": 89,
+        "restrictedContributions365d": 452,
+        "publicRepositories": 520,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 36773,
+        "forksReceived": 4748,
+        "archivedRepositoriesSampled": 8
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1561,
+          "commits": 1327,
+          "issues": 10,
+          "pullRequests": 85,
+          "reviews": 44,
+          "restrictedContributions": 61
+        },
+        "2023": {
+          "contributions": 2154,
+          "commits": 1824,
+          "issues": 40,
+          "pullRequests": 97,
+          "reviews": 33,
+          "restrictedContributions": 119
+        },
+        "2024": {
+          "contributions": 1868,
+          "commits": 1678,
+          "issues": 33,
+          "pullRequests": 69,
+          "reviews": 18,
+          "restrictedContributions": 37
+        },
+        "2025": {
+          "contributions": 5440,
+          "commits": 4486,
+          "issues": 17,
+          "pullRequests": 117,
+          "reviews": 29,
+          "restrictedContributions": 703
+        },
+        "2026": {
+          "contributions": 5229,
+          "commits": 4713,
+          "issues": 12,
+          "pullRequests": 118,
+          "reviews": 75,
+          "restrictedContributions": 275
+        }
+      },
+      "scores": {
+        "overall": 82.87,
+        "activity": 83.34,
+        "impact": 90.68,
+        "community": 84.23,
+        "collaboration": 67.05
+      },
+      "rank": 3
+    },
+    {
+      "login": "fabpot",
+      "name": "Fabien Potencier",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/47313?u=7ba05204271a726f8642ac15864e2f361b5c0198&v=4",
+      "profileUrl": "https://github.com/fabpot",
+      "bio": "Founder and project lead at Symfony\r\nCTO at Upsun",
+      "company": "Symfony/Upsun",
+      "accountCreatedAt": "2009-01-17T13:42:51Z",
+      "location": {
+        "raw": "Paris, France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": "Paris",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 13583,
+        "contributions365d": 12464,
+        "commits365d": 3910,
+        "issues365d": 75,
+        "pullRequests365d": 315,
+        "reviews365d": 501,
+        "restrictedContributions365d": 7651,
+        "publicRepositories": 91,
+        "repositoriesSampled": 91,
+        "repoStatsTruncated": false,
+        "starsReceived": 1435,
+        "forksReceived": 117,
+        "archivedRepositoriesSampled": 2
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 11206,
+          "commits": 4189,
+          "issues": 178,
+          "pullRequests": 234,
+          "reviews": 742,
+          "restrictedContributions": 5848
+        },
+        "2023": {
+          "contributions": 9790,
+          "commits": 3697,
+          "issues": 201,
+          "pullRequests": 213,
+          "reviews": 804,
+          "restrictedContributions": 4872
+        },
+        "2024": {
+          "contributions": 8045,
+          "commits": 4035,
+          "issues": 164,
+          "pullRequests": 348,
+          "reviews": 852,
+          "restrictedContributions": 2639
+        },
+        "2025": {
+          "contributions": 5290,
+          "commits": 2244,
+          "issues": 180,
+          "pullRequests": 192,
+          "reviews": 864,
+          "restrictedContributions": 1808
+        },
+        "2026": {
+          "contributions": 10548,
+          "commits": 3247,
+          "issues": 22,
+          "pullRequests": 253,
+          "reviews": 183,
+          "restrictedContributions": 6832
+        }
+      },
+      "scores": {
+        "overall": 81.65,
+        "activity": 87.76,
+        "impact": 62.64,
+        "community": 95.7,
+        "collaboration": 80.96
+      },
+      "rank": 4
+    },
+    {
+      "login": "fzaninotto",
+      "name": "Francois Zaninotto",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/99944?u=24e77d6928aa3af0d7cb71cf5097fcdb9ed23c53&v=4",
+      "profileUrl": "https://github.com/fzaninotto",
+      "bio": "Open-source software enthusiast, React.js, Node.js and PHP expert, Lean & Agile management practicioner, Leadership & motivation experimenter, CEO @marmelab",
+      "company": "@marmelab ",
+      "accountCreatedAt": "2009-06-29T12:20:45Z",
+      "location": {
+        "raw": "Nancy, France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 4317,
+        "contributions365d": 4431,
+        "commits365d": 2709,
+        "issues365d": 4,
+        "pullRequests365d": 53,
+        "reviews365d": 174,
+        "restrictedContributions365d": 1485,
+        "publicRepositories": 81,
+        "repositoriesSampled": 81,
+        "repoStatsTruncated": false,
+        "starsReceived": 32955,
+        "forksReceived": 5064,
+        "archivedRepositoriesSampled": 6
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 3602,
+          "commits": 1908,
+          "issues": 26,
+          "pullRequests": 214,
+          "reviews": 422,
+          "restrictedContributions": 1031
+        },
+        "2023": {
+          "contributions": 2748,
+          "commits": 1051,
+          "issues": 16,
+          "pullRequests": 153,
+          "reviews": 269,
+          "restrictedContributions": 1257
+        },
+        "2024": {
+          "contributions": 2899,
+          "commits": 1563,
+          "issues": 29,
+          "pullRequests": 149,
+          "reviews": 289,
+          "restrictedContributions": 839
+        },
+        "2025": {
+          "contributions": 2686,
+          "commits": 1546,
+          "issues": 8,
+          "pullRequests": 54,
+          "reviews": 182,
+          "restrictedContributions": 889
+        },
+        "2026": {
+          "contributions": 3380,
+          "commits": 2053,
+          "issues": 0,
+          "pullRequests": 39,
+          "reviews": 123,
+          "restrictedContributions": 1161
+        }
+      },
+      "scores": {
+        "overall": 80.29,
+        "activity": 78.14,
+        "impact": 90.08,
+        "community": 84.18,
+        "collaboration": 66.53
+      },
+      "rank": 5
+    },
+    {
+      "login": "jeromeetienne",
+      "name": "Jerome Etienne",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/252962?v=4",
+      "profileUrl": "https://github.com/jeromeetienne",
+      "bio": "I build AI tools that turn ideas into shipped products in days.",
+      "company": "Making WebAR a reality",
+      "accountCreatedAt": "2010-04-26T11:58:29Z",
+      "location": {
+        "raw": "France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 2895,
+        "contributions365d": 4222,
+        "commits365d": 3310,
+        "issues365d": 718,
+        "pullRequests365d": 141,
+        "reviews365d": 3,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 354,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 28655,
+        "forksReceived": 6563,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 134,
+          "commits": 123,
+          "issues": 4,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 20,
+          "commits": 16,
+          "issues": 1,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 1160,
+          "commits": 1083,
+          "issues": 19,
+          "pullRequests": 40,
+          "reviews": 2,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 3092,
+          "commits": 2248,
+          "issues": 704,
+          "pullRequests": 101,
+          "reviews": 1,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 80.23,
+        "activity": 77.69,
+        "impact": 89.82,
+        "community": 80.16,
+        "collaboration": 71.92
+      },
+      "rank": 6
+    },
+    {
+      "login": "ornicar",
+      "name": "Thibault Duplessis",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/140370?v=4",
+      "profileUrl": "https://github.com/ornicar",
+      "bio": "Maker of lichess.org, a gay hippie communist chess server for drug fueled transgender atheists.",
+      "company": "lichess.org",
+      "accountCreatedAt": "2009-10-15T20:28:03Z",
+      "location": {
+        "raw": "France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 6472,
+        "contributions365d": 8720,
+        "commits365d": 7848,
+        "issues365d": 52,
+        "pullRequests365d": 210,
+        "reviews365d": 137,
+        "restrictedContributions365d": 467,
+        "publicRepositories": 425,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 2106,
+        "forksReceived": 540,
+        "archivedRepositoriesSampled": 13
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 6354,
+          "commits": 4564,
+          "issues": 41,
+          "pullRequests": 184,
+          "reviews": 49,
+          "restrictedContributions": 1492
+        },
+        "2023": {
+          "contributions": 5625,
+          "commits": 5071,
+          "issues": 37,
+          "pullRequests": 224,
+          "reviews": 64,
+          "restrictedContributions": 220
+        },
+        "2024": {
+          "contributions": 6980,
+          "commits": 6430,
+          "issues": 63,
+          "pullRequests": 224,
+          "reviews": 114,
+          "restrictedContributions": 141
+        },
+        "2025": {
+          "contributions": 7117,
+          "commits": 6534,
+          "issues": 28,
+          "pullRequests": 183,
+          "reviews": 127,
+          "restrictedContributions": 237
+        },
+        "2026": {
+          "contributions": 5532,
+          "commits": 4940,
+          "issues": 33,
+          "pullRequests": 122,
+          "reviews": 82,
+          "restrictedContributions": 351
+        }
+      },
+      "scores": {
+        "overall": 78.82,
+        "activity": 84.44,
+        "impact": 68.1,
+        "community": 88.25,
+        "collaboration": 70.38
+      },
+      "rank": 7
+    },
+    {
+      "login": "dunglas",
+      "name": "Kévin Dunglas",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/57224?u=2ab77030d95d614776e39106fbd6e5285793f082&v=4",
+      "profileUrl": "https://github.com/dunglas",
+      "bio": "Founder of @coopTilleuls, a dev co-op. Creator of FrankenPHP, @api-platform, Mercure.rocks, and numerous other free/open-source software. @symfony Core Team. ",
+      "company": "@coopTilleuls ",
+      "accountCreatedAt": "2009-02-23T20:14:55Z",
+      "location": {
+        "raw": "Lille, France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 4605,
+        "contributions365d": 2052,
+        "commits365d": 591,
+        "issues365d": 12,
+        "pullRequests365d": 461,
+        "reviews365d": 268,
+        "restrictedContributions365d": 697,
+        "publicRepositories": 469,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 15962,
+        "forksReceived": 1767,
+        "archivedRepositoriesSampled": 15
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1431,
+          "commits": 445,
+          "issues": 44,
+          "pullRequests": 245,
+          "reviews": 232,
+          "restrictedContributions": 437
+        },
+        "2023": {
+          "contributions": 1796,
+          "commits": 604,
+          "issues": 27,
+          "pullRequests": 387,
+          "reviews": 216,
+          "restrictedContributions": 537
+        },
+        "2024": {
+          "contributions": 2208,
+          "commits": 733,
+          "issues": 35,
+          "pullRequests": 430,
+          "reviews": 356,
+          "restrictedContributions": 597
+        },
+        "2025": {
+          "contributions": 1612,
+          "commits": 468,
+          "issues": 13,
+          "pullRequests": 317,
+          "reviews": 361,
+          "restrictedContributions": 432
+        },
+        "2026": {
+          "contributions": 1440,
+          "commits": 421,
+          "issues": 5,
+          "pullRequests": 321,
+          "reviews": 148,
+          "restrictedContributions": 532
+        }
+      },
+      "scores": {
+        "overall": 77.24,
+        "activity": 70.98,
+        "impact": 83.39,
+        "community": 84.82,
+        "collaboration": 78.2
+      },
+      "rank": 8
+    },
+    {
+      "login": "Dimillian",
+      "name": "Thomas Ricouard",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/535509?u=a524d1f7b7a36460c2ac86cda00988dda135431f&v=4",
+      "profileUrl": "https://github.com/Dimillian",
+      "bio": "Developer Experience, Codex @openai \r\n\r\nPreviously: \r\n@medium, @glose, @google, Co-Founded @MySeeen (Share movies !) @RobinBrowser (The smart Browser).",
+      "company": "@OpenAI",
+      "accountCreatedAt": "2010-12-24T10:49:30Z",
+      "location": {
+        "raw": "France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 4321,
+        "contributions365d": 2437,
+        "commits365d": 1723,
+        "issues365d": 2,
+        "pullRequests365d": 161,
+        "reviews365d": 3,
+        "restrictedContributions365d": 523,
+        "publicRepositories": 174,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 35323,
+        "forksReceived": 3159,
+        "archivedRepositoriesSampled": 1
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1090,
+          "commits": 194,
+          "issues": 5,
+          "pullRequests": 0,
+          "reviews": 6,
+          "restrictedContributions": 879
+        },
+        "2023": {
+          "contributions": 1644,
+          "commits": 1115,
+          "issues": 26,
+          "pullRequests": 6,
+          "reviews": 57,
+          "restrictedContributions": 423
+        },
+        "2024": {
+          "contributions": 1170,
+          "commits": 542,
+          "issues": 0,
+          "pullRequests": 7,
+          "reviews": 12,
+          "restrictedContributions": 599
+        },
+        "2025": {
+          "contributions": 1668,
+          "commits": 732,
+          "issues": 2,
+          "pullRequests": 82,
+          "reviews": 1,
+          "restrictedContributions": 832
+        },
+        "2026": {
+          "contributions": 1557,
+          "commits": 1312,
+          "issues": 2,
+          "pullRequests": 97,
+          "reviews": 3,
+          "restrictedContributions": 126
+        }
+      },
+      "scores": {
+        "overall": 76.61,
+        "activity": 72.58,
+        "impact": 89.8,
+        "community": 84.18,
+        "collaboration": 59.16
+      },
+      "rank": 9
+    },
+    {
+      "login": "LaurentMazare",
+      "name": "Laurent Mazare",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1041292?u=4d4c5fe94c63a8eb244d812c6d97511c3640d122&v=4",
+      "profileUrl": "https://github.com/LaurentMazare",
+      "bio": "Co-founder Kyutai & Gradium",
+      "company": null,
+      "accountCreatedAt": "2011-09-10T20:09:57Z",
+      "location": {
+        "raw": "Paris, France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": "Paris",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 2820,
+        "contributions365d": 5594,
+        "commits365d": 962,
+        "issues365d": 0,
+        "pullRequests365d": 123,
+        "reviews365d": 20,
+        "restrictedContributions365d": 4477,
+        "publicRepositories": 103,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 8043,
+        "forksReceived": 815,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1173,
+          "commits": 369,
+          "issues": 5,
+          "pullRequests": 32,
+          "reviews": 37,
+          "restrictedContributions": 726
+        },
+        "2023": {
+          "contributions": 3670,
+          "commits": 1685,
+          "issues": 8,
+          "pullRequests": 964,
+          "reviews": 226,
+          "restrictedContributions": 775
+        },
+        "2024": {
+          "contributions": 5721,
+          "commits": 1811,
+          "issues": 10,
+          "pullRequests": 401,
+          "reviews": 209,
+          "restrictedContributions": 3274
+        },
+        "2025": {
+          "contributions": 4487,
+          "commits": 647,
+          "issues": 3,
+          "pullRequests": 232,
+          "reviews": 118,
+          "restrictedContributions": 3479
+        },
+        "2026": {
+          "contributions": 3759,
+          "commits": 899,
+          "issues": 0,
+          "pullRequests": 104,
+          "reviews": 14,
+          "restrictedContributions": 2735
+        }
+      },
+      "scores": {
+        "overall": 76.22,
+        "activity": 80.31,
+        "impact": 77.47,
+        "community": 79.89,
+        "collaboration": 58.19
+      },
+      "rank": 10
+    },
+    {
+      "login": "elder-plinius",
+      "name": "pliny",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/133052465?u=c1db0fe5b4b94c9949a0135136e43ca2469e39e2&v=4",
+      "profileUrl": "https://github.com/elder-plinius",
+      "bio": "latent space liberator; prompter, red teamer, hacker, builder, whisperer 𓆩𓆗𓆪\r\n⊰-•-•✧•-•-⦑/L\\O/V\\E/\\P/L\\I/N\\Y/⦒-•-•✧•-•-⊱ \r\n{GODMODE:ENABLED}",
+      "company": "Pliny the Prompter",
+      "accountCreatedAt": "2023-05-09T19:46:10Z",
+      "location": {
+        "raw": "France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 20829,
+        "contributions365d": 656,
+        "commits365d": 312,
+        "issues365d": 0,
+        "pullRequests365d": 74,
+        "reviews365d": 0,
+        "restrictedContributions365d": 260,
+        "publicRepositories": 46,
+        "repositoriesSampled": 46,
+        "repoStatsTruncated": false,
+        "starsReceived": 101034,
+        "forksReceived": 19224,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 458,
+          "commits": 338,
+          "issues": 30,
+          "pullRequests": 27,
+          "reviews": 0,
+          "restrictedContributions": 45
+        },
+        "2024": {
+          "contributions": 873,
+          "commits": 536,
+          "issues": 0,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 324
+        },
+        "2025": {
+          "contributions": 515,
+          "commits": 351,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 155
+        },
+        "2026": {
+          "contributions": 547,
+          "commits": 254,
+          "issues": 0,
+          "pullRequests": 73,
+          "reviews": 0,
+          "restrictedContributions": 210
+        }
+      },
+      "scores": {
+        "overall": 74.65,
+        "activity": 60.37,
+        "impact": 100,
+        "community": 100,
+        "collaboration": 49.88
+      },
+      "rank": 11
+    },
+    {
+      "login": "atinux",
+      "name": "Sébastien Chopin",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/904724?u=6c520432e20d5ed603246764658accea4b4043c3&v=4",
+      "profileUrl": "https://github.com/atinux",
+      "bio": "Creator of @nuxt • Working on OSS at @vercel to make the Web faster with a great DX & AX.",
+      "company": "@nuxt . @vercel",
+      "accountCreatedAt": "2011-07-09T14:36:46Z",
+      "location": {
+        "raw": "France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 5498,
+        "contributions365d": 1657,
+        "commits365d": 814,
+        "issues365d": 33,
+        "pullRequests365d": 169,
+        "reviews365d": 305,
+        "restrictedContributions365d": 315,
+        "publicRepositories": 321,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 5918,
+        "forksReceived": 716,
+        "archivedRepositoriesSampled": 3
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1374,
+          "commits": 34,
+          "issues": 237,
+          "pullRequests": 158,
+          "reviews": 509,
+          "restrictedContributions": 396
+        },
+        "2023": {
+          "contributions": 3018,
+          "commits": 1401,
+          "issues": 109,
+          "pullRequests": 143,
+          "reviews": 322,
+          "restrictedContributions": 995
+        },
+        "2024": {
+          "contributions": 3649,
+          "commits": 1847,
+          "issues": 51,
+          "pullRequests": 163,
+          "reviews": 228,
+          "restrictedContributions": 1330
+        },
+        "2025": {
+          "contributions": 1692,
+          "commits": 916,
+          "issues": 25,
+          "pullRequests": 114,
+          "reviews": 240,
+          "restrictedContributions": 374
+        },
+        "2026": {
+          "contributions": 981,
+          "commits": 429,
+          "issues": 16,
+          "pullRequests": 112,
+          "reviews": 206,
+          "restrictedContributions": 207
+        }
+      },
+      "scores": {
+        "overall": 74.03,
+        "activity": 68.99,
+        "impact": 75.15,
+        "community": 86.61,
+        "collaboration": 74.72
+      },
+      "rank": 12
+    },
+    {
+      "login": "AliSoftware",
+      "name": "Olivier Halligon",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/216089?v=4",
+      "profileUrl": "https://github.com/AliSoftware",
+      "bio": "iOS architect & Swift lover. OSS enthusiast.",
+      "company": "Freelance on iOS Tooling and DX",
+      "accountCreatedAt": "2010-03-04T21:27:14Z",
+      "location": {
+        "raw": "Rennes, France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 3097,
+        "contributions365d": 1045,
+        "commits365d": 617,
+        "issues365d": 5,
+        "pullRequests365d": 121,
+        "reviews365d": 300,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 88,
+        "repositoriesSampled": 88,
+        "repoStatsTruncated": false,
+        "starsReceived": 11740,
+        "forksReceived": 1453,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 2316,
+          "commits": 1496,
+          "issues": 40,
+          "pullRequests": 266,
+          "reviews": 511,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 486,
+          "commits": 206,
+          "issues": 3,
+          "pullRequests": 52,
+          "reviews": 223,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 1017,
+          "commits": 524,
+          "issues": 20,
+          "pullRequests": 132,
+          "reviews": 340,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 919,
+          "commits": 504,
+          "issues": 7,
+          "pullRequests": 113,
+          "reviews": 294,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 672,
+          "commits": 374,
+          "issues": 1,
+          "pullRequests": 79,
+          "reviews": 217,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 72.49,
+        "activity": 64.7,
+        "impact": 80.97,
+        "community": 80.84,
+        "collaboration": 73.4
+      },
+      "rank": 13
+    },
+    {
+      "login": "florent37",
+      "name": "Florent CHAMPIGNY",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/5754972?u=146792677acad27984a3ac7c16bf66e1c4af9269&v=4",
+      "profileUrl": "https://github.com/florent37",
+      "bio": "",
+      "company": null,
+      "accountCreatedAt": "2013-10-23T09:45:34Z",
+      "location": {
+        "raw": "Paris, France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": "Paris",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 4115,
+        "contributions365d": 534,
+        "commits365d": 236,
+        "issues365d": 19,
+        "pullRequests365d": 222,
+        "reviews365d": 57,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 129,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 48138,
+        "forksReceived": 7635,
+        "archivedRepositoriesSampled": 63
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 2,
+          "commits": 1,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 2,
+          "commits": 1,
+          "issues": 1,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 17,
+          "commits": 5,
+          "issues": 1,
+          "pullRequests": 6,
+          "reviews": 5,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 779,
+          "commits": 353,
+          "issues": 39,
+          "pullRequests": 295,
+          "reviews": 91,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 25,
+          "commits": 10,
+          "issues": 1,
+          "pullRequests": 6,
+          "reviews": 8,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 72.18,
+        "activity": 58.46,
+        "impact": 93.34,
+        "community": 83.69,
+        "collaboration": 66.57
+      },
+      "rank": 14
+    },
+    {
+      "login": "ogrisel",
+      "name": "Olivier Grisel",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/89061?v=4",
+      "profileUrl": "https://github.com/ogrisel",
+      "bio": "Machine Learning Engineer at :probabl. and core contributor to scikit-learn.",
+      "company": "probabl.ai",
+      "accountCreatedAt": "2009-05-27T09:03:40Z",
+      "location": {
+        "raw": "Paris, France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": "Paris",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 5001,
+        "contributions365d": 1021,
+        "commits365d": 350,
+        "issues365d": 65,
+        "pullRequests365d": 104,
+        "reviews365d": 493,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 225,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 3255,
+        "forksReceived": 1398,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1419,
+          "commits": 590,
+          "issues": 90,
+          "pullRequests": 132,
+          "reviews": 597,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 1149,
+          "commits": 473,
+          "issues": 86,
+          "pullRequests": 92,
+          "reviews": 488,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 813,
+          "commits": 243,
+          "issues": 45,
+          "pullRequests": 89,
+          "reviews": 425,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 1219,
+          "commits": 644,
+          "issues": 59,
+          "pullRequests": 98,
+          "reviews": 410,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 713,
+          "commits": 263,
+          "issues": 38,
+          "pullRequests": 73,
+          "reviews": 332,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 71.99,
+        "activity": 64.49,
+        "impact": 73.51,
+        "community": 85.65,
+        "collaboration": 78.29
+      },
+      "rank": 15
+    },
+    {
+      "login": "Charles-Chrismann",
+      "name": "Charles Chrismann",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/78157563?u=cbf78192d42e983fce3c9131d547f697f684f21f&v=4",
+      "profileUrl": "https://github.com/Charles-Chrismann",
+      "bio": "24, CS, I code, I run.",
+      "company": "@Smylen",
+      "accountCreatedAt": "2021-01-28T14:18:01Z",
+      "location": {
+        "raw": "Paris, France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": "Paris",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 15499,
+        "contributions365d": 14291,
+        "commits365d": 14101,
+        "issues365d": 2,
+        "pullRequests365d": 10,
+        "reviews365d": 0,
+        "restrictedContributions365d": 172,
+        "publicRepositories": 28,
+        "repositoriesSampled": 28,
+        "repoStatsTruncated": false,
+        "starsReceived": 320,
+        "forksReceived": 26,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 113,
+          "commits": 46,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 66
+        },
+        "2023": {
+          "contributions": 427,
+          "commits": 224,
+          "issues": 111,
+          "pullRequests": 7,
+          "reviews": 0,
+          "restrictedContributions": 78
+        },
+        "2024": {
+          "contributions": 286,
+          "commits": 144,
+          "issues": 33,
+          "pullRequests": 6,
+          "reviews": 0,
+          "restrictedContributions": 94
+        },
+        "2025": {
+          "contributions": 32366,
+          "commits": 32155,
+          "issues": 3,
+          "pullRequests": 39,
+          "reviews": 1,
+          "restrictedContributions": 159
+        },
+        "2026": {
+          "contributions": 3094,
+          "commits": 2984,
+          "issues": 0,
+          "pullRequests": 3,
+          "reviews": 0,
+          "restrictedContributions": 105
+        }
+      },
+      "scores": {
+        "overall": 71.42,
+        "activity": 89.03,
+        "impact": 49.99,
+        "community": 97.03,
+        "collaboration": 28.71
+      },
+      "rank": 16
+    },
+    {
+      "login": "ocornut",
+      "name": "omar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/8225057?u=de42cf0fa1f1970187db446beea30c61b9c1e6d3&v=4",
+      "profileUrl": "https://github.com/ocornut",
+      "bio": "\r\n    \r\n",
+      "company": "Disco Hello / Lizardcube",
+      "accountCreatedAt": "2014-07-21T14:23:24Z",
+      "location": {
+        "raw": "Paris, France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": "Paris",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 4203,
+        "contributions365d": 985,
+        "commits365d": 948,
+        "issues365d": 23,
+        "pullRequests365d": 8,
+        "reviews365d": 2,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 19,
+        "repositoriesSampled": 19,
+        "repoStatsTruncated": false,
+        "starsReceived": 78312,
+        "forksReceived": 12328,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 608,
+          "commits": 580,
+          "issues": 20,
+          "pullRequests": 5,
+          "reviews": 2,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 790,
+          "commits": 777,
+          "issues": 7,
+          "pullRequests": 5,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 956,
+          "commits": 928,
+          "issues": 19,
+          "pullRequests": 3,
+          "reviews": 2,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 1125,
+          "commits": 1086,
+          "issues": 24,
+          "pullRequests": 8,
+          "reviews": 2,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 606,
+          "commits": 583,
+          "issues": 15,
+          "pullRequests": 6,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 71.28,
+        "activity": 64.15,
+        "impact": 97.44,
+        "community": 83.91,
+        "collaboration": 36.47
+      },
+      "rank": 17
+    },
+    {
+      "login": "oliviertassinari",
+      "name": "Olivier Tassinari",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/3165635?u=15a7ca3a64c1839a55c83a987d6f906c817d9e85&v=4",
+      "profileUrl": "https://github.com/oliviertassinari",
+      "bio": "CEO, co-founder at @mui • co-creator of Material UI • studied @Telecom-Paris • ex @doctolib",
+      "company": "MUI",
+      "accountCreatedAt": "2013-01-01T23:34:22Z",
+      "location": {
+        "raw": "Paris, France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": "Paris",
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 3336,
+        "contributions365d": 1198,
+        "commits365d": 481,
+        "issues365d": 119,
+        "pullRequests365d": 156,
+        "reviews365d": 90,
+        "restrictedContributions365d": 326,
+        "publicRepositories": 182,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 7350,
+        "forksReceived": 763,
+        "archivedRepositoriesSampled": 18
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 2612,
+          "commits": 1054,
+          "issues": 154,
+          "pullRequests": 459,
+          "reviews": 529,
+          "restrictedContributions": 391
+        },
+        "2023": {
+          "contributions": 2636,
+          "commits": 1260,
+          "issues": 146,
+          "pullRequests": 403,
+          "reviews": 422,
+          "restrictedContributions": 375
+        },
+        "2024": {
+          "contributions": 3229,
+          "commits": 1440,
+          "issues": 294,
+          "pullRequests": 477,
+          "reviews": 498,
+          "restrictedContributions": 494
+        },
+        "2025": {
+          "contributions": 1605,
+          "commits": 625,
+          "issues": 117,
+          "pullRequests": 230,
+          "reviews": 171,
+          "restrictedContributions": 444
+        },
+        "2026": {
+          "contributions": 738,
+          "commits": 303,
+          "issues": 81,
+          "pullRequests": 100,
+          "reviews": 48,
+          "restrictedContributions": 193
+        }
+      },
+      "scores": {
+        "overall": 71.27,
+        "activity": 65.97,
+        "impact": 76.75,
+        "community": 81.58,
+        "collaboration": 67.72
+      },
+      "rank": 18
+    },
+    {
+      "login": "MaJerle",
+      "name": "Tilen Majerle",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/405717?u=38e08e0842ed71ef9d972f001cfa73e8aa896362&v=4",
+      "profileUrl": "https://github.com/MaJerle",
+      "bio": "tilen@majerle.eu",
+      "company": null,
+      "accountCreatedAt": "2010-09-18T08:42:02Z",
+      "location": {
+        "raw": "France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 3074,
+        "contributions365d": 1397,
+        "commits365d": 289,
+        "issues365d": 23,
+        "pullRequests365d": 5,
+        "reviews365d": 9,
+        "restrictedContributions365d": 1052,
+        "publicRepositories": 43,
+        "repositoriesSampled": 43,
+        "repoStatsTruncated": false,
+        "starsReceived": 13811,
+        "forksReceived": 4200,
+        "archivedRepositoriesSampled": 1
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 2243,
+          "commits": 864,
+          "issues": 28,
+          "pullRequests": 1,
+          "reviews": 14,
+          "restrictedContributions": 1326
+        },
+        "2023": {
+          "contributions": 1528,
+          "commits": 556,
+          "issues": 24,
+          "pullRequests": 2,
+          "reviews": 12,
+          "restrictedContributions": 931
+        },
+        "2024": {
+          "contributions": 1345,
+          "commits": 316,
+          "issues": 30,
+          "pullRequests": 5,
+          "reviews": 10,
+          "restrictedContributions": 979
+        },
+        "2025": {
+          "contributions": 932,
+          "commits": 241,
+          "issues": 29,
+          "pullRequests": 4,
+          "reviews": 2,
+          "restrictedContributions": 641
+        },
+        "2026": {
+          "contributions": 1065,
+          "commits": 201,
+          "issues": 13,
+          "pullRequests": 4,
+          "reviews": 8,
+          "restrictedContributions": 829
+        }
+      },
+      "scores": {
+        "overall": 69.52,
+        "activity": 67.4,
+        "impact": 84.49,
+        "community": 80.76,
+        "collaboration": 39.67
+      },
+      "rank": 19
+    },
+    {
+      "login": "slavaGanzin",
+      "name": "Slava",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1011721?u=54101ce88509df591d69f9510efe0f6810030af3&v=4",
+      "profileUrl": "https://github.com/slavaGanzin",
+      "bio": "",
+      "company": null,
+      "accountCreatedAt": "2011-08-29T11:52:03Z",
+      "location": {
+        "raw": "Nice, France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 3326,
+        "contributions365d": 11610,
+        "commits365d": 452,
+        "issues365d": 3,
+        "pullRequests365d": 14,
+        "reviews365d": 0,
+        "restrictedContributions365d": 11136,
+        "publicRepositories": 107,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 424,
+        "forksReceived": 26,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1279,
+          "commits": 33,
+          "issues": 14,
+          "pullRequests": 4,
+          "reviews": 0,
+          "restrictedContributions": 1218
+        },
+        "2023": {
+          "contributions": 1343,
+          "commits": 158,
+          "issues": 6,
+          "pullRequests": 6,
+          "reviews": 0,
+          "restrictedContributions": 1161
+        },
+        "2024": {
+          "contributions": 2002,
+          "commits": 140,
+          "issues": 22,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 1834
+        },
+        "2025": {
+          "contributions": 3749,
+          "commits": 197,
+          "issues": 12,
+          "pullRequests": 10,
+          "reviews": 0,
+          "restrictedContributions": 3527
+        },
+        "2026": {
+          "contributions": 9702,
+          "commits": 346,
+          "issues": 0,
+          "pullRequests": 4,
+          "reviews": 0,
+          "restrictedContributions": 9349
+        }
+      },
+      "scores": {
+        "overall": 69.3,
+        "activity": 87.1,
+        "impact": 52.07,
+        "community": 81.55,
+        "collaboration": 32.39
+      },
+      "rank": 20
+    },
+    {
+      "login": "holtzy",
+      "name": "Holtz Yan",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/10254401?u=d554070e82949f6c7c6c57d4597f4cfddb053956&v=4",
+      "profileUrl": "https://github.com/holtzy",
+      "bio": "I ❤️ data visualization 🤷🏻‍♂️",
+      "company": "Software Engineer - Dataviz",
+      "accountCreatedAt": "2014-12-20T17:39:05Z",
+      "location": {
+        "raw": "Montpellier, France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 4667,
+        "contributions365d": 1930,
+        "commits365d": 279,
+        "issues365d": 23,
+        "pullRequests365d": 2,
+        "reviews365d": 1,
+        "restrictedContributions365d": 1618,
+        "publicRepositories": 79,
+        "repositoriesSampled": 79,
+        "repoStatsTruncated": false,
+        "starsReceived": 5876,
+        "forksReceived": 1442,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1805,
+          "commits": 238,
+          "issues": 37,
+          "pullRequests": 5,
+          "reviews": 2,
+          "restrictedContributions": 1519
+        },
+        "2023": {
+          "contributions": 1652,
+          "commits": 375,
+          "issues": 48,
+          "pullRequests": 2,
+          "reviews": 2,
+          "restrictedContributions": 1217
+        },
+        "2024": {
+          "contributions": 1888,
+          "commits": 777,
+          "issues": 108,
+          "pullRequests": 5,
+          "reviews": 4,
+          "restrictedContributions": 980
+        },
+        "2025": {
+          "contributions": 2119,
+          "commits": 482,
+          "issues": 32,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 1601
+        },
+        "2026": {
+          "contributions": 1202,
+          "commits": 145,
+          "issues": 10,
+          "pullRequests": 2,
+          "reviews": 1,
+          "restrictedContributions": 1039
+        }
+      },
+      "scores": {
+        "overall": 68.39,
+        "activity": 70.41,
+        "impact": 76.64,
+        "community": 84.96,
+        "collaboration": 32.03
+      },
+      "rank": 21
+    },
+    {
+      "login": "Akryum",
+      "name": "Guillaume Chau",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/2798204?u=d45556d7e920c0f57552d1dc1250a7cdb807eddb&v=4",
+      "profileUrl": "https://github.com/Akryum",
+      "bio": "Web & JavaScript enthusiast, @vuejs core team.",
+      "company": null,
+      "accountCreatedAt": "2012-11-14T18:18:54Z",
+      "location": {
+        "raw": "France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 5317,
+        "contributions365d": 602,
+        "commits365d": 571,
+        "issues365d": 13,
+        "pullRequests365d": 5,
+        "reviews365d": 7,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 218,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 24057,
+        "forksReceived": 2267,
+        "archivedRepositoriesSampled": 3
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1867,
+          "commits": 1690,
+          "issues": 51,
+          "pullRequests": 31,
+          "reviews": 42,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 439,
+          "commits": 395,
+          "issues": 12,
+          "pullRequests": 16,
+          "reviews": 4,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 496,
+          "commits": 453,
+          "issues": 11,
+          "pullRequests": 17,
+          "reviews": 3,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 634,
+          "commits": 569,
+          "issues": 29,
+          "pullRequests": 15,
+          "reviews": 10,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 382,
+          "commits": 365,
+          "issues": 7,
+          "pullRequests": 1,
+          "reviews": 6,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 66.84,
+        "activity": 59.58,
+        "impact": 86.62,
+        "community": 86.27,
+        "collaboration": 36.22
+      },
+      "rank": 22
+    },
+    {
+      "login": "rougier",
+      "name": "Nicolas P. Rougier",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/327203?v=4",
+      "profileUrl": "https://github.com/rougier",
+      "bio": "Researcher in computational and cognitive neuroscience supporting open source, open access and open science.\r\n",
+      "company": "@INRIA ",
+      "accountCreatedAt": "2010-07-09T07:44:10Z",
+      "location": {
+        "raw": "Bordeaux, France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 7936,
+        "contributions365d": 283,
+        "commits365d": 268,
+        "issues365d": 4,
+        "pullRequests365d": 0,
+        "reviews365d": 6,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 300,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 51905,
+        "forksReceived": 11473,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 649,
+          "commits": 556,
+          "issues": 7,
+          "pullRequests": 3,
+          "reviews": 10,
+          "restrictedContributions": 46
+        },
+        "2023": {
+          "contributions": 483,
+          "commits": 376,
+          "issues": 5,
+          "pullRequests": 1,
+          "reviews": 3,
+          "restrictedContributions": 76
+        },
+        "2024": {
+          "contributions": 286,
+          "commits": 232,
+          "issues": 6,
+          "pullRequests": 0,
+          "reviews": 1,
+          "restrictedContributions": 40
+        },
+        "2025": {
+          "contributions": 258,
+          "commits": 239,
+          "issues": 2,
+          "pullRequests": 0,
+          "reviews": 10,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 182,
+          "commits": 176,
+          "issues": 3,
+          "pullRequests": 0,
+          "reviews": 1,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 65.19,
+        "activity": 52.57,
+        "impact": 94.75,
+        "community": 90.3,
+        "collaboration": 28.71
+      },
+      "rank": 23
+    },
+    {
+      "login": "johnBuffer",
+      "name": "Jean Tampon",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/9960400?u=bc8911ac87edb913bca811d23f14c109d11e9dfa&v=4",
+      "profileUrl": "https://github.com/johnBuffer",
+      "bio": "",
+      "company": null,
+      "accountCreatedAt": "2014-11-26T09:26:44Z",
+      "location": {
+        "raw": "France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 3384,
+        "contributions365d": 1377,
+        "commits365d": 22,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 1353,
+        "publicRepositories": 104,
+        "repositoriesSampled": 100,
+        "repoStatsTruncated": true,
+        "starsReceived": 7435,
+        "forksReceived": 877,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 678,
+          "commits": 68,
+          "issues": 1,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 602
+        },
+        "2023": {
+          "contributions": 347,
+          "commits": 107,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 237
+        },
+        "2024": {
+          "contributions": 584,
+          "commits": 51,
+          "issues": 2,
+          "pullRequests": 2,
+          "reviews": 1,
+          "restrictedContributions": 523
+        },
+        "2025": {
+          "contributions": 1344,
+          "commits": 38,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 1303
+        },
+        "2026": {
+          "contributions": 826,
+          "commits": 9,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 815
+        }
+      },
+      "scores": {
+        "overall": 61.79,
+        "activity": 67.27,
+        "impact": 77.04,
+        "community": 81.73,
+        "collaboration": 0
+      },
+      "rank": 24
+    },
+    {
+      "login": "gentilkiwi",
+      "name": "Benjamin DELPY",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/2307945?v=4",
+      "profileUrl": "https://github.com/gentilkiwi",
+      "bio": "",
+      "company": "@BdF-LabSec",
+      "accountCreatedAt": "2012-09-08T19:48:50Z",
+      "location": {
+        "raw": "France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 4697,
+        "contributions365d": 162,
+        "commits365d": 128,
+        "issues365d": 0,
+        "pullRequests365d": 8,
+        "reviews365d": 0,
+        "restrictedContributions365d": 22,
+        "publicRepositories": 25,
+        "repositoriesSampled": 25,
+        "repoStatsTruncated": false,
+        "starsReceived": 24676,
+        "forksReceived": 4692,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 35,
+          "commits": 27,
+          "issues": 1,
+          "pullRequests": 3,
+          "reviews": 0,
+          "restrictedContributions": 4
+        },
+        "2023": {
+          "contributions": 66,
+          "commits": 47,
+          "issues": 1,
+          "pullRequests": 9,
+          "reviews": 0,
+          "restrictedContributions": 4
+        },
+        "2024": {
+          "contributions": 108,
+          "commits": 66,
+          "issues": 1,
+          "pullRequests": 15,
+          "reviews": 0,
+          "restrictedContributions": 23
+        },
+        "2025": {
+          "contributions": 175,
+          "commits": 152,
+          "issues": 0,
+          "pullRequests": 10,
+          "reviews": 0,
+          "restrictedContributions": 8
+        },
+        "2026": {
+          "contributions": 119,
+          "commits": 95,
+          "issues": 0,
+          "pullRequests": 7,
+          "reviews": 0,
+          "restrictedContributions": 14
+        }
+      },
+      "scores": {
+        "overall": 59.92,
+        "activity": 47.4,
+        "impact": 88.1,
+        "community": 85.02,
+        "collaboration": 25.38
+      },
+      "rank": 25
+    },
+    {
+      "login": "Solido",
+      "name": "Robert Felker",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1295961?u=b85eaeb98c4c24aeec8046b7839a5ddf2d504289&v=4",
+      "profileUrl": "https://github.com/Solido",
+      "bio": "Solution Architect, JVM, Cloud, Devops & Dart/Flutter, Artist, ML",
+      "company": null,
+      "accountCreatedAt": "2011-12-31T02:00:39Z",
+      "location": {
+        "raw": "France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 3092,
+        "contributions365d": 65,
+        "commits365d": 27,
+        "issues365d": 33,
+        "pullRequests365d": 1,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 26,
+        "repositoriesSampled": 26,
+        "repoStatsTruncated": false,
+        "starsReceived": 61522,
+        "forksReceived": 6985,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 76,
+          "commits": 47,
+          "issues": 18,
+          "pullRequests": 4,
+          "reviews": 0,
+          "restrictedContributions": 4
+        },
+        "2023": {
+          "contributions": 122,
+          "commits": 65,
+          "issues": 27,
+          "pullRequests": 14,
+          "reviews": 0,
+          "restrictedContributions": 7
+        },
+        "2024": {
+          "contributions": 138,
+          "commits": 71,
+          "issues": 30,
+          "pullRequests": 5,
+          "reviews": 2,
+          "restrictedContributions": 4
+        },
+        "2025": {
+          "contributions": 56,
+          "commits": 25,
+          "issues": 19,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 11
+        },
+        "2026": {
+          "contributions": 44,
+          "commits": 13,
+          "issues": 26,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 58.43,
+        "activity": 38.99,
+        "impact": 94.82,
+        "community": 80.82,
+        "collaboration": 33.71
+      },
+      "rank": 26
+    },
+    {
+      "login": "cfrBernard",
+      "name": "C. Bernard",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/153459846?u=65388d43a6fe3542df013dbba9875071d8762e71&v=4",
+      "profileUrl": "https://github.com/cfrBernard",
+      "bio": "🐍 Open Source Tooling | Python, Unity (C#) | Code & Coffee Addict ☕",
+      "company": null,
+      "accountCreatedAt": "2023-12-10T20:10:13Z",
+      "location": {
+        "raw": "France ",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 5651,
+        "contributions365d": 499,
+        "commits365d": 214,
+        "issues365d": 0,
+        "pullRequests365d": 2,
+        "reviews365d": 0,
+        "restrictedContributions365d": 273,
+        "publicRepositories": 44,
+        "repositoriesSampled": 44,
+        "repoStatsTruncated": false,
+        "starsReceived": 763,
+        "forksReceived": 25,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 17,
+          "commits": 11,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 4
+        },
+        "2024": {
+          "contributions": 225,
+          "commits": 187,
+          "issues": 0,
+          "pullRequests": 13,
+          "reviews": 0,
+          "restrictedContributions": 16
+        },
+        "2025": {
+          "contributions": 832,
+          "commits": 576,
+          "issues": 0,
+          "pullRequests": 24,
+          "reviews": 0,
+          "restrictedContributions": 201
+        },
+        "2026": {
+          "contributions": 246,
+          "commits": 76,
+          "issues": 0,
+          "pullRequests": 2,
+          "reviews": 0,
+          "restrictedContributions": 165
+        }
+      },
+      "scores": {
+        "overall": 55.11,
+        "activity": 57.83,
+        "impact": 56.58,
+        "community": 86.88,
+        "collaboration": 12.69
+      },
+      "rank": 27
+    },
+    {
+      "login": "JonathanSalwan",
+      "name": "Jonathan Salwan",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/991046?u=52c5870e39063cf3305299a806d72dcbfb40ff61&v=4",
+      "profileUrl": "https://github.com/JonathanSalwan",
+      "bio": "Program analysis, reverse engineering and vulnerability research",
+      "company": null,
+      "accountCreatedAt": "2011-08-19T13:25:12Z",
+      "location": {
+        "raw": "France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 3086,
+        "contributions365d": 12,
+        "commits365d": 11,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 14,
+        "repositoriesSampled": 14,
+        "repoStatsTruncated": false,
+        "starsReceived": 12489,
+        "forksReceived": 1862,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 584,
+          "commits": 548,
+          "issues": 23,
+          "pullRequests": 1,
+          "reviews": 8,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 27,
+          "commits": 24,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 3,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 20,
+          "commits": 18,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 2,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 17,
+          "commits": 16,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 1,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 6,
+          "commits": 5,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 43.32,
+        "activity": 23.87,
+        "impact": 81.83,
+        "community": 80.8,
+        "collaboration": 0
+      },
+      "rank": 28
+    },
+    {
+      "login": "x0rz",
+      "name": "x0rz",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/7819248?u=4734dff0545d398abecace1ac7348bdf6c37717f&v=4",
+      "profileUrl": "https://github.com/x0rz",
+      "bio": "hacking things",
+      "company": null,
+      "accountCreatedAt": "2014-06-06T20:39:15Z",
+      "location": {
+        "raw": "France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 3623,
+        "contributions365d": 0,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 6,
+        "repositoriesSampled": 6,
+        "repoStatsTruncated": false,
+        "starsReceived": 11106,
+        "forksReceived": 4221,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 33.21,
+        "activity": 0,
+        "impact": 83.41,
+        "community": 82.41,
+        "collaboration": 0
+      },
+      "rank": 29
+    },
+    {
+      "login": "cyrilmottier",
+      "name": "Cyril Mottier",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/92794?u=dbaf486019055a558a441b4f272eee84fe88d4ad&v=4",
+      "profileUrl": "https://github.com/cyrilmottier",
+      "bio": "",
+      "company": null,
+      "accountCreatedAt": "2009-06-07T10:13:51Z",
+      "location": {
+        "raw": "France",
+        "accepted": true,
+        "countryCode": "FR",
+        "country": "France",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 4308,
+        "contributions365d": 0,
+        "commits365d": 0,
+        "issues365d": 0,
+        "pullRequests365d": 0,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 24,
+        "repositoriesSampled": 24,
+        "repoStatsTruncated": false,
+        "starsReceived": 3795,
+        "forksReceived": 1111,
+        "archivedRepositoriesSampled": 0
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 1,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 8,
+          "commits": 6,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 26,
+          "commits": 25,
+          "issues": 1,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 3,
+          "commits": 1,
+          "issues": 0,
+          "pullRequests": 1,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 0,
+          "commits": 0,
+          "issues": 0,
+          "pullRequests": 0,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 30.99,
+        "activity": 0,
+        "impact": 73.47,
+        "community": 84.15,
+        "collaboration": 0
+      },
+      "rank": 30
+    }
+  ]
 }
