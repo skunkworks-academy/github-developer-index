@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-15T08:13:50.112Z",
+  "generatedAt": "2026-10-16T07:56:03.079Z",
   "source": {
     "provider": "GitHub",
     "api": "GraphQL",
@@ -21,7 +21,7 @@
     {
       "year": 2026,
       "from": "2026-01-01T00:00:00.000Z",
-      "to": "2026-10-15T08:13:50.112Z",
+      "to": "2026-10-16T07:56:03.079Z",
       "complete": false
     },
     {
@@ -72,8 +72,8 @@
     "acceptedCandidates": 30,
     "rejectedCandidates": 0,
     "window": {
-      "from": "2025-10-15T08:13:50.112Z",
-      "to": "2026-10-15T08:13:50.112Z"
+      "from": "2025-10-16T07:56:03.079Z",
+      "to": "2026-10-16T07:56:03.079Z"
     }
   },
   "developers": [
@@ -96,19 +96,19 @@
         "reason": "explicit-country"
       },
       "metrics": {
-        "followers": 6307,
-        "contributions365d": 40171,
-        "commits365d": 30627,
-        "issues365d": 5879,
-        "pullRequests365d": 1427,
+        "followers": 6311,
+        "contributions365d": 40760,
+        "commits365d": 30988,
+        "issues365d": 5902,
+        "pullRequests365d": 1431,
         "reviews365d": 8,
-        "restrictedContributions365d": 2135,
-        "publicRepositories": 197,
+        "restrictedContributions365d": 2336,
+        "publicRepositories": 198,
         "repositoriesSampled": 100,
         "repoStatsTruncated": true,
-        "starsReceived": 18894,
-        "forksReceived": 3937,
-        "archivedRepositoriesSampled": 2
+        "starsReceived": 18912,
+        "forksReceived": 3830,
+        "archivedRepositoriesSampled": 3
       },
       "metricsByYear": {
         "2022": {
@@ -144,19 +144,19 @@
           "restrictedContributions": 105
         },
         "2026": {
-          "contributions": 39703,
-          "commits": 30240,
-          "issues": 5854,
-          "pullRequests": 1427,
+          "contributions": 40295,
+          "commits": 30602,
+          "issues": 5878,
+          "pullRequests": 1431,
           "reviews": 5,
-          "restrictedContributions": 2087
+          "restrictedContributions": 2288
         }
       },
       "scores": {
-        "overall": 93.15,
-        "activity": 98.93,
-        "impact": 83.97,
-        "community": 84.26,
+        "overall": 94.25,
+        "activity": 99,
+        "impact": 83.9,
+        "community": 91.47,
         "collaboration": 100
       },
       "rank": 1
@@ -180,17 +180,17 @@
         "reason": "explicit-country"
       },
       "metrics": {
-        "followers": 4849,
-        "contributions365d": 45051,
-        "commits365d": 21297,
+        "followers": 4848,
+        "contributions365d": 45353,
+        "commits365d": 21345,
         "issues365d": 128,
         "pullRequests365d": 242,
         "reviews365d": 6,
-        "restrictedContributions365d": 23349,
+        "restrictedContributions365d": 23603,
         "publicRepositories": 154,
         "repositoriesSampled": 100,
         "repoStatsTruncated": true,
-        "starsReceived": 27679,
+        "starsReceived": 27681,
         "forksReceived": 3404,
         "archivedRepositoriesSampled": 13
       },
@@ -228,106 +228,22 @@
           "restrictedContributions": 2395
         },
         "2026": {
-          "contributions": 44492,
-          "commits": 21270,
+          "contributions": 44794,
+          "commits": 21318,
           "issues": 128,
           "pullRequests": 216,
           "reviews": 6,
-          "restrictedContributions": 22845
+          "restrictedContributions": 23099
         }
       },
       "scores": {
-        "overall": 89.07,
+        "overall": 90.11,
         "activity": 100,
-        "impact": 86.05,
-        "community": 81.72,
-        "collaboration": 68.65
+        "impact": 86.04,
+        "community": 88.71,
+        "collaboration": 68.62
       },
       "rank": 2
-    },
-    {
-      "login": "tiangolo",
-      "name": "Sebastián Ramírez",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/1326112?u=cb5d06e73a9e1998141b1641aa88e443c6717651&v=4",
-      "profileUrl": "https://github.com/tiangolo",
-      "bio": "Creator of FastAPI, Typer, SQLModel, Asyncer, etc. 🚀\r\nFrom 🇨🇴 in 🇩🇪. \r\nOpen Source, Python, APIs, AI. 🤖 Building FastAPI Cloud. ⚡️",
-      "company": "FastAPI Cloud",
-      "accountCreatedAt": "2012-01-12T22:37:04Z",
-      "location": {
-        "raw": "Berlin, Germany",
-        "accepted": true,
-        "countryCode": "DE",
-        "country": "Germany",
-        "city": "Berlin",
-        "region": null,
-        "confidence": 1,
-        "reason": "explicit-country"
-      },
-      "metrics": {
-        "followers": 32357,
-        "contributions365d": 6320,
-        "commits365d": 1761,
-        "issues365d": 33,
-        "pullRequests365d": 1483,
-        "reviews365d": 435,
-        "restrictedContributions365d": 2523,
-        "publicRepositories": 55,
-        "repositoriesSampled": 55,
-        "repoStatsTruncated": false,
-        "starsReceived": 16179,
-        "forksReceived": 2848,
-        "archivedRepositoriesSampled": 22
-      },
-      "metricsByYear": {
-        "2022": {
-          "contributions": 2245,
-          "commits": 628,
-          "issues": 8,
-          "pullRequests": 288,
-          "reviews": 36,
-          "restrictedContributions": 1274
-        },
-        "2023": {
-          "contributions": 2349,
-          "commits": 633,
-          "issues": 20,
-          "pullRequests": 397,
-          "reviews": 36,
-          "restrictedContributions": 1048
-        },
-        "2024": {
-          "contributions": 4660,
-          "commits": 1134,
-          "issues": 22,
-          "pullRequests": 695,
-          "reviews": 131,
-          "restrictedContributions": 2143
-        },
-        "2025": {
-          "contributions": 3247,
-          "commits": 593,
-          "issues": 16,
-          "pullRequests": 350,
-          "reviews": 361,
-          "restrictedContributions": 1820
-        },
-        "2026": {
-          "contributions": 4801,
-          "commits": 1422,
-          "issues": 21,
-          "pullRequests": 1292,
-          "reviews": 293,
-          "restrictedContributions": 1702
-        }
-      },
-      "scores": {
-        "overall": 86.06,
-        "activity": 81.67,
-        "impact": 82.31,
-        "community": 100,
-        "collaboration": 91.53
-      },
-      "rank": 3
     },
     {
       "login": "schacon",
@@ -348,18 +264,18 @@
         "reason": "explicit-country"
       },
       "metrics": {
-        "followers": 14278,
-        "contributions365d": 10383,
-        "commits365d": 6934,
-        "issues365d": 172,
-        "pullRequests365d": 1144,
+        "followers": 14275,
+        "contributions365d": 10510,
+        "commits365d": 7028,
+        "issues365d": 182,
+        "pullRequests365d": 1161,
         "reviews365d": 2,
-        "restrictedContributions365d": 2106,
+        "restrictedContributions365d": 2112,
         "publicRepositories": 246,
         "repositoriesSampled": 100,
         "repoStatsTruncated": true,
         "starsReceived": 6236,
-        "forksReceived": 4211,
+        "forksReceived": 4212,
         "archivedRepositoriesSampled": 1
       },
       "metricsByYear": {
@@ -396,22 +312,22 @@
           "restrictedContributions": 1773
         },
         "2026": {
-          "contributions": 10012,
-          "commits": 6856,
-          "issues": 120,
-          "pullRequests": 1095,
+          "contributions": 10139,
+          "commits": 6950,
+          "issues": 130,
+          "pullRequests": 1112,
           "reviews": 2,
-          "restrictedContributions": 1917
+          "restrictedContributions": 1923
         }
       },
       "scores": {
-        "overall": 85.14,
-        "activity": 86.3,
-        "impact": 79.01,
-        "community": 92.12,
-        "collaboration": 84.89
+        "overall": 86.37,
+        "activity": 86.36,
+        "impact": 79,
+        "community": 100,
+        "collaboration": 85.07
       },
-      "rank": 4
+      "rank": 3
     },
     {
       "login": "sharkdp",
@@ -433,17 +349,17 @@
       },
       "metrics": {
         "followers": 8333,
-        "contributions365d": 2623,
-        "commits365d": 1029,
+        "contributions365d": 2619,
+        "commits365d": 1025,
         "issues365d": 121,
-        "pullRequests365d": 705,
-        "reviews365d": 554,
-        "restrictedContributions365d": 206,
+        "pullRequests365d": 700,
+        "reviews365d": 548,
+        "restrictedContributions365d": 217,
         "publicRepositories": 122,
         "repositoriesSampled": 100,
         "repoStatsTruncated": true,
-        "starsReceived": 172050,
-        "forksReceived": 7730,
+        "starsReceived": 172099,
+        "forksReceived": 7861,
         "archivedRepositoriesSampled": 1
       },
       "metricsByYear": {
@@ -480,22 +396,22 @@
           "restrictedContributions": 58
         },
         "2026": {
-          "contributions": 1985,
-          "commits": 745,
+          "contributions": 2001,
+          "commits": 747,
           "issues": 76,
           "pullRequests": 562,
-          "reviews": 418,
-          "restrictedContributions": 176
+          "reviews": 421,
+          "restrictedContributions": 187
         }
       },
       "scores": {
-        "overall": 84.3,
-        "activity": 73.47,
+        "overall": 85.36,
+        "activity": 73.41,
         "impact": 100,
-        "community": 86.94,
-        "collaboration": 87.97
+        "community": 94.37,
+        "collaboration": 87.83
       },
-      "rank": 5
+      "rank": 4
     },
     {
       "login": "orhun",
@@ -516,18 +432,18 @@
         "reason": "explicit-country"
       },
       "metrics": {
-        "followers": 5485,
-        "contributions365d": 4447,
-        "commits365d": 2771,
+        "followers": 5484,
+        "contributions365d": 4432,
+        "commits365d": 2761,
         "issues365d": 93,
-        "pullRequests365d": 268,
-        "reviews365d": 1054,
+        "pullRequests365d": 267,
+        "reviews365d": 1050,
         "restrictedContributions365d": 201,
         "publicRepositories": 541,
         "repositoriesSampled": 100,
         "repoStatsTruncated": true,
-        "starsReceived": 35384,
-        "forksReceived": 1196,
+        "starsReceived": 35385,
+        "forksReceived": 1197,
         "archivedRepositoriesSampled": 0
       },
       "metricsByYear": {
@@ -573,13 +489,13 @@
         }
       },
       "scores": {
-        "overall": 82.92,
-        "activity": 78.39,
-        "impact": 86.8,
-        "community": 82.91,
-        "collaboration": 90.02
+        "overall": 83.93,
+        "activity": 78.31,
+        "impact": 86.79,
+        "community": 90,
+        "collaboration": 89.94
       },
-      "rank": 6
+      "rank": 5
     },
     {
       "login": "nikic",
@@ -600,12 +516,12 @@
         "reason": "explicit-country"
       },
       "metrics": {
-        "followers": 6643,
-        "contributions365d": 3296,
-        "commits365d": 706,
+        "followers": 6642,
+        "contributions365d": 3298,
+        "commits365d": 701,
         "issues365d": 82,
         "pullRequests365d": 521,
-        "reviews365d": 1984,
+        "reviews365d": 1991,
         "restrictedContributions365d": 0,
         "publicRepositories": 116,
         "repositoriesSampled": 100,
@@ -648,22 +564,22 @@
           "restrictedContributions": 0
         },
         "2026": {
-          "contributions": 2875,
+          "contributions": 2888,
           "commits": 570,
           "issues": 75,
           "pullRequests": 474,
-          "reviews": 1753,
+          "reviews": 1766,
           "restrictedContributions": 0
         }
       },
       "scores": {
-        "overall": 82.66,
-        "activity": 75.6,
-        "impact": 85.22,
-        "community": 84.75,
-        "collaboration": 97.46
+        "overall": 83.72,
+        "activity": 75.56,
+        "impact": 85.21,
+        "community": 92,
+        "collaboration": 97.45
       },
-      "rank": 7
+      "rank": 6
     },
     {
       "login": "sebastianbergmann",
@@ -684,9 +600,9 @@
         "reason": "explicit-country"
       },
       "metrics": {
-        "followers": 7658,
-        "contributions365d": 4815,
-        "commits365d": 4596,
+        "followers": 7659,
+        "contributions365d": 4847,
+        "commits365d": 4628,
         "issues365d": 108,
         "pullRequests365d": 95,
         "reviews365d": 6,
@@ -694,7 +610,7 @@
         "publicRepositories": 75,
         "repositoriesSampled": 75,
         "repoStatsTruncated": false,
-        "starsReceived": 152508,
+        "starsReceived": 152509,
         "forksReceived": 4847,
         "archivedRepositoriesSampled": 33
       },
@@ -732,8 +648,8 @@
           "restrictedContributions": 0
         },
         "2026": {
-          "contributions": 4287,
-          "commits": 4088,
+          "contributions": 4319,
+          "commits": 4120,
           "issues": 99,
           "pullRequests": 89,
           "reviews": 1,
@@ -741,13 +657,13 @@
         }
       },
       "scores": {
-        "overall": 82.3,
-        "activity": 79.13,
-        "impact": 98.81,
-        "community": 86.12,
-        "collaboration": 60.45
+        "overall": 83.4,
+        "activity": 79.15,
+        "impact": 98.79,
+        "community": 93.49,
+        "collaboration": 60.43
       },
-      "rank": 8
+      "rank": 7
     },
     {
       "login": "sokra",
@@ -768,13 +684,13 @@
         "reason": "explicit-country"
       },
       "metrics": {
-        "followers": 9590,
-        "contributions365d": 5929,
-        "commits365d": 436,
+        "followers": 9589,
+        "contributions365d": 5954,
+        "commits365d": 434,
         "issues365d": 1,
         "pullRequests365d": 573,
-        "reviews365d": 479,
-        "restrictedContributions365d": 4435,
+        "reviews365d": 486,
+        "restrictedContributions365d": 4455,
         "publicRepositories": 131,
         "repositoriesSampled": 100,
         "repoStatsTruncated": true,
@@ -816,22 +732,22 @@
           "restrictedContributions": 762
         },
         "2026": {
-          "contributions": 5554,
-          "commits": 361,
+          "contributions": 5595,
+          "commits": 364,
           "issues": 1,
-          "pullRequests": 490,
-          "reviews": 393,
-          "restrictedContributions": 4305
+          "pullRequests": 496,
+          "reviews": 400,
+          "restrictedContributions": 4330
         }
       },
       "scores": {
-        "overall": 79.8,
-        "activity": 81.08,
-        "impact": 69.02,
-        "community": 88.29,
-        "collaboration": 85.45
+        "overall": 80.93,
+        "activity": 81.06,
+        "impact": 69.01,
+        "community": 95.84,
+        "collaboration": 85.51
       },
-      "rank": 9
+      "rank": 8
     },
     {
       "login": "rusty1s",
@@ -853,12 +769,12 @@
       },
       "metrics": {
         "followers": 5231,
-        "contributions365d": 3918,
-        "commits365d": 764,
+        "contributions365d": 3954,
+        "commits365d": 783,
         "issues365d": 0,
-        "pullRequests365d": 341,
-        "reviews365d": 209,
-        "restrictedContributions365d": 2603,
+        "pullRequests365d": 352,
+        "reviews365d": 213,
+        "restrictedContributions365d": 2605,
         "publicRepositories": 54,
         "repositoriesSampled": 54,
         "repoStatsTruncated": false,
@@ -900,22 +816,22 @@
           "restrictedContributions": 3867
         },
         "2026": {
-          "contributions": 3277,
-          "commits": 756,
+          "contributions": 3323,
+          "commits": 775,
           "issues": 0,
-          "pullRequests": 341,
-          "reviews": 204,
-          "restrictedContributions": 1975
+          "pullRequests": 352,
+          "reviews": 208,
+          "restrictedContributions": 1987
         }
       },
       "scores": {
-        "overall": 76.9,
-        "activity": 77.21,
-        "impact": 72.75,
-        "community": 82.45,
-        "collaboration": 77.35
+        "overall": 78.02,
+        "activity": 77.25,
+        "impact": 72.74,
+        "community": 89.51,
+        "collaboration": 77.62
       },
-      "rank": 10
+      "rank": 9
     },
     {
       "login": "rovo89",
@@ -937,16 +853,16 @@
       },
       "metrics": {
         "followers": 8165,
-        "contributions365d": 2927,
-        "commits365d": 275,
-        "issues365d": 15,
+        "contributions365d": 2915,
+        "commits365d": 272,
+        "issues365d": 14,
         "pullRequests365d": 45,
         "reviews365d": 9,
-        "restrictedContributions365d": 2564,
+        "restrictedContributions365d": 2556,
         "publicRepositories": 80,
         "repositoriesSampled": 80,
         "repoStatsTruncated": false,
-        "starsReceived": 17585,
+        "starsReceived": 17583,
         "forksReceived": 5128,
         "archivedRepositoriesSampled": 14
       },
@@ -984,22 +900,22 @@
           "restrictedContributions": 1134
         },
         "2026": {
-          "contributions": 2296,
+          "contributions": 2300,
           "commits": 240,
           "issues": 10,
           "pullRequests": 37,
           "reviews": 9,
-          "restrictedContributions": 1982
+          "restrictedContributions": 1986
         }
       },
       "scores": {
-        "overall": 75.13,
-        "activity": 74.49,
-        "impact": 84.29,
-        "community": 86.74,
-        "collaboration": 50.15
+        "overall": 76.18,
+        "activity": 74.41,
+        "impact": 84.28,
+        "community": 94.16,
+        "collaboration": 50.04
       },
-      "rank": 11
+      "rank": 10
     },
     {
       "login": "rwieruch",
@@ -1021,16 +937,16 @@
       },
       "metrics": {
         "followers": 9088,
-        "contributions365d": 11199,
+        "contributions365d": 11216,
         "commits365d": 22,
         "issues365d": 1,
         "pullRequests365d": 5,
         "reviews365d": 0,
-        "restrictedContributions365d": 11166,
+        "restrictedContributions365d": 11183,
         "publicRepositories": 158,
         "repositoriesSampled": 100,
         "repoStatsTruncated": true,
-        "starsReceived": 6675,
+        "starsReceived": 6674,
         "forksReceived": 2179,
         "archivedRepositoriesSampled": 1
       },
@@ -1068,22 +984,22 @@
           "restrictedContributions": 3884
         },
         "2026": {
-          "contributions": 9483,
+          "contributions": 9504,
           "commits": 22,
           "issues": 1,
           "pullRequests": 5,
           "reviews": 0,
-          "restrictedContributions": 9451
+          "restrictedContributions": 9472
         }
       },
       "scores": {
-        "overall": 74.84,
-        "activity": 87.01,
-        "impact": 76.67,
-        "community": 87.77,
-        "collaboration": 22.32
+        "overall": 75.94,
+        "activity": 86.97,
+        "impact": 76.66,
+        "community": 95.28,
+        "collaboration": 22.31
       },
-      "rank": 12
+      "rank": 11
     },
     {
       "login": "ChristianLempa",
@@ -1105,16 +1021,16 @@
       },
       "metrics": {
         "followers": 11749,
-        "contributions365d": 980,
-        "commits365d": 578,
-        "issues365d": 95,
+        "contributions365d": 971,
+        "commits365d": 572,
+        "issues365d": 92,
         "pullRequests365d": 86,
         "reviews365d": 210,
         "restrictedContributions365d": 0,
         "publicRepositories": 22,
         "repositoriesSampled": 22,
         "repoStatsTruncated": false,
-        "starsReceived": 17323,
+        "starsReceived": 17326,
         "forksReceived": 4140,
         "archivedRepositoriesSampled": 0
       },
@@ -1161,13 +1077,13 @@
         }
       },
       "scores": {
-        "overall": 74.29,
-        "activity": 64.29,
-        "impact": 83.6,
-        "community": 90.25,
-        "collaboration": 72.85
+        "overall": 75.38,
+        "activity": 64.16,
+        "impact": 83.59,
+        "community": 97.96,
+        "collaboration": 72.78
       },
-      "rank": 13
+      "rank": 12
     },
     {
       "login": "Neo23x0",
@@ -1189,16 +1105,16 @@
       },
       "metrics": {
         "followers": 6292,
-        "contributions365d": 1381,
-        "commits365d": 759,
+        "contributions365d": 1393,
+        "commits365d": 761,
         "issues365d": 2,
-        "pullRequests365d": 174,
+        "pullRequests365d": 176,
         "reviews365d": 7,
-        "restrictedContributions365d": 427,
+        "restrictedContributions365d": 435,
         "publicRepositories": 156,
         "repositoriesSampled": 100,
         "repoStatsTruncated": true,
-        "starsReceived": 17674,
+        "starsReceived": 17676,
         "forksReceived": 3017,
         "archivedRepositoriesSampled": 0
       },
@@ -1236,22 +1152,22 @@
           "restrictedContributions": 25
         },
         "2026": {
-          "contributions": 1289,
-          "commits": 699,
+          "contributions": 1301,
+          "commits": 701,
           "issues": 1,
-          "pullRequests": 166,
+          "pullRequests": 168,
           "reviews": 7,
-          "restrictedContributions": 407
+          "restrictedContributions": 415
         }
       },
       "scores": {
-        "overall": 73.1,
-        "activity": 67.48,
-        "impact": 82.97,
-        "community": 84.23,
-        "collaboration": 62.36
+        "overall": 74.21,
+        "activity": 67.52,
+        "impact": 82.96,
+        "community": 91.44,
+        "collaboration": 62.46
       },
-      "rank": 14
+      "rank": 13
     },
     {
       "login": "tonsky",
@@ -1272,18 +1188,18 @@
         "reason": "explicit-country"
       },
       "metrics": {
-        "followers": 5830,
-        "contributions365d": 850,
-        "commits365d": 622,
+        "followers": 5832,
+        "contributions365d": 853,
+        "commits365d": 620,
         "issues365d": 13,
         "pullRequests365d": 17,
         "reviews365d": 2,
-        "restrictedContributions365d": 184,
+        "restrictedContributions365d": 189,
         "publicRepositories": 140,
         "repositoriesSampled": 100,
         "repoStatsTruncated": true,
-        "starsReceived": 102417,
-        "forksReceived": 4264,
+        "starsReceived": 102423,
+        "forksReceived": 4263,
         "archivedRepositoriesSampled": 3
       },
       "metricsByYear": {
@@ -1320,22 +1236,22 @@
           "restrictedContributions": 50
         },
         "2026": {
-          "contributions": 648,
-          "commits": 433,
+          "contributions": 655,
+          "commits": 435,
           "issues": 8,
           "pullRequests": 16,
           "reviews": 2,
-          "restrictedContributions": 179
+          "restrictedContributions": 184
         }
       },
       "scores": {
-        "overall": 70.7,
-        "activity": 62.96,
-        "impact": 95.68,
-        "community": 83.5,
-        "collaboration": 39.53
+        "overall": 71.77,
+        "activity": 62.95,
+        "impact": 95.66,
+        "community": 90.64,
+        "collaboration": 39.51
       },
-      "rank": 15
+      "rank": 14
     },
     {
       "login": "philipplackner",
@@ -1357,17 +1273,17 @@
       },
       "metrics": {
         "followers": 13372,
-        "contributions365d": 1161,
+        "contributions365d": 1172,
         "commits365d": 116,
         "issues365d": 0,
         "pullRequests365d": 4,
         "reviews365d": 6,
-        "restrictedContributions365d": 1022,
+        "restrictedContributions365d": 1033,
         "publicRepositories": 318,
         "repositoriesSampled": 100,
         "repoStatsTruncated": true,
         "starsReceived": 8508,
-        "forksReceived": 4419,
+        "forksReceived": 4421,
         "archivedRepositoriesSampled": 0
       },
       "metricsByYear": {
@@ -1404,22 +1320,22 @@
           "restrictedContributions": 751
         },
         "2026": {
-          "contributions": 1093,
+          "contributions": 1106,
           "commits": 91,
           "issues": 0,
           "pullRequests": 4,
           "reviews": 4,
-          "restrictedContributions": 983
+          "restrictedContributions": 996
         }
       },
       "scores": {
-        "overall": 68.18,
-        "activity": 65.87,
+        "overall": 69.37,
+        "activity": 65.91,
         "impact": 80.39,
-        "community": 91.49,
-        "collaboration": 31.47
+        "community": 99.32,
+        "collaboration": 31.46
       },
-      "rank": 16
+      "rank": 15
     },
     {
       "login": "mschwarzmueller",
@@ -1440,7 +1356,7 @@
         "reason": "explicit-country"
       },
       "metrics": {
-        "followers": 8387,
+        "followers": 8389,
         "contributions365d": 727,
         "commits365d": 694,
         "issues365d": 5,
@@ -1450,7 +1366,7 @@
         "publicRepositories": 64,
         "repositoriesSampled": 64,
         "repoStatsTruncated": false,
-        "starsReceived": 6681,
+        "starsReceived": 6686,
         "forksReceived": 6332,
         "archivedRepositoriesSampled": 0
       },
@@ -1497,13 +1413,13 @@
         }
       },
       "scores": {
-        "overall": 66.84,
-        "activity": 61.5,
-        "impact": 81.29,
-        "community": 87,
-        "collaboration": 38.63
+        "overall": 67.94,
+        "activity": 61.46,
+        "impact": 81.28,
+        "community": 94.44,
+        "collaboration": 38.61
       },
-      "rank": 17
+      "rank": 16
     },
     {
       "login": "joschan21",
@@ -1525,17 +1441,17 @@
       },
       "metrics": {
         "followers": 6184,
-        "contributions365d": 197,
-        "commits365d": 149,
+        "contributions365d": 192,
+        "commits365d": 147,
         "issues365d": 0,
-        "pullRequests365d": 37,
+        "pullRequests365d": 34,
         "reviews365d": 2,
         "restrictedContributions365d": 0,
         "publicRepositories": 46,
         "repositoriesSampled": 46,
         "repoStatsTruncated": false,
-        "starsReceived": 13619,
-        "forksReceived": 2794,
+        "starsReceived": 13621,
+        "forksReceived": 2793,
         "archivedRepositoriesSampled": 0
       },
       "metricsByYear": {
@@ -1572,22 +1488,22 @@
           "restrictedContributions": 0
         },
         "2026": {
-          "contributions": 163,
-          "commits": 118,
+          "contributions": 159,
+          "commits": 117,
           "issues": 0,
-          "pullRequests": 37,
+          "pullRequests": 34,
           "reviews": 1,
           "restrictedContributions": 0
         }
       },
       "scores": {
-        "overall": 61.77,
-        "activity": 49.35,
-        "impact": 81.23,
-        "community": 84.07,
-        "collaboration": 44.29
+        "overall": 62.59,
+        "activity": 49.08,
+        "impact": 81.22,
+        "community": 91.26,
+        "collaboration": 43.37
       },
-      "rank": 18
+      "rank": 17
     },
     {
       "login": "mirayavandiepen",
@@ -1608,17 +1524,17 @@
         "reason": "explicit-country"
       },
       "metrics": {
-        "followers": 4924,
-        "contributions365d": 1616,
+        "followers": 4925,
+        "contributions365d": 1623,
         "commits365d": 85,
         "issues365d": 0,
         "pullRequests365d": 0,
         "reviews365d": 0,
-        "restrictedContributions365d": 1526,
+        "restrictedContributions365d": 1533,
         "publicRepositories": 121,
         "repositoriesSampled": 100,
         "repoStatsTruncated": true,
-        "starsReceived": 1444,
+        "starsReceived": 1446,
         "forksReceived": 174,
         "archivedRepositoriesSampled": 0
       },
@@ -1656,20 +1572,104 @@
           "restrictedContributions": 370
         },
         "2026": {
-          "contributions": 1606,
+          "contributions": 1613,
           "commits": 85,
           "issues": 0,
           "pullRequests": 0,
           "reviews": 0,
-          "restrictedContributions": 1516
+          "restrictedContributions": 1523
         }
       },
       "scores": {
-        "overall": 58.73,
+        "overall": 59.78,
         "activity": 68.95,
         "impact": 61.7,
-        "community": 81.87,
+        "community": 88.88,
         "collaboration": 0
+      },
+      "rank": 18
+    },
+    {
+      "login": "notthebee",
+      "name": "Wolfgang",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/30384331?u=a3008e313a88650427f6280d9704a8e9f23b9c1b&v=4",
+      "profileUrl": "https://github.com/notthebee",
+      "bio": "",
+      "company": null,
+      "accountCreatedAt": "2017-07-23T08:34:20Z",
+      "location": {
+        "raw": "Germany",
+        "accepted": true,
+        "countryCode": "DE",
+        "country": "Germany",
+        "city": null,
+        "region": null,
+        "confidence": 1,
+        "reason": "explicit-country"
+      },
+      "metrics": {
+        "followers": 4251,
+        "contributions365d": 68,
+        "commits365d": 53,
+        "issues365d": 0,
+        "pullRequests365d": 8,
+        "reviews365d": 0,
+        "restrictedContributions365d": 0,
+        "publicRepositories": 34,
+        "repositoriesSampled": 34,
+        "repoStatsTruncated": false,
+        "starsReceived": 5113,
+        "forksReceived": 711,
+        "archivedRepositoriesSampled": 20
+      },
+      "metricsByYear": {
+        "2022": {
+          "contributions": 48,
+          "commits": 16,
+          "issues": 4,
+          "pullRequests": 19,
+          "reviews": 4,
+          "restrictedContributions": 0
+        },
+        "2023": {
+          "contributions": 46,
+          "commits": 22,
+          "issues": 2,
+          "pullRequests": 18,
+          "reviews": 3,
+          "restrictedContributions": 0
+        },
+        "2024": {
+          "contributions": 37,
+          "commits": 15,
+          "issues": 2,
+          "pullRequests": 13,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2025": {
+          "contributions": 82,
+          "commits": 54,
+          "issues": 5,
+          "pullRequests": 20,
+          "reviews": 0,
+          "restrictedContributions": 0
+        },
+        "2026": {
+          "contributions": 17,
+          "commits": 9,
+          "issues": 0,
+          "pullRequests": 4,
+          "reviews": 0,
+          "restrictedContributions": 0
+        }
+      },
+      "scores": {
+        "overall": 52.89,
+        "activity": 39.49,
+        "impact": 72.35,
+        "community": 87.34,
+        "collaboration": 26.19
       },
       "rank": 19
     },
@@ -1702,7 +1702,7 @@
         "publicRepositories": 81,
         "repositoriesSampled": 81,
         "repoStatsTruncated": false,
-        "starsReceived": 23734,
+        "starsReceived": 23735,
         "forksReceived": 4710,
         "archivedRepositoriesSampled": 0
       },
@@ -1749,10 +1749,10 @@
         }
       },
       "scores": {
-        "overall": 51.51,
-        "activity": 38.52,
-        "impact": 85.73,
-        "community": 84.96,
+        "overall": 52.58,
+        "activity": 38.49,
+        "impact": 85.72,
+        "community": 92.22,
         "collaboration": 0
       },
       "rank": 20
@@ -1776,7 +1776,7 @@
         "reason": "explicit-country"
       },
       "metrics": {
-        "followers": 5069,
+        "followers": 5070,
         "contributions365d": 37,
         "commits365d": 27,
         "issues365d": 1,
@@ -1786,7 +1786,7 @@
         "publicRepositories": 37,
         "repositoriesSampled": 37,
         "repoStatsTruncated": false,
-        "starsReceived": 15639,
+        "starsReceived": 15637,
         "forksReceived": 2338,
         "archivedRepositoriesSampled": 0
       },
@@ -1833,11 +1833,11 @@
         }
       },
       "scores": {
-        "overall": 48.75,
-        "activity": 33.95,
-        "impact": 81.7,
-        "community": 82.15,
-        "collaboration": 4.84
+        "overall": 49.79,
+        "activity": 33.93,
+        "impact": 81.68,
+        "community": 89.18,
+        "collaboration": 4.83
       },
       "rank": 21
     },
@@ -1870,7 +1870,7 @@
         "publicRepositories": 22,
         "repositoriesSampled": 22,
         "repoStatsTruncated": false,
-        "starsReceived": 5085,
+        "starsReceived": 5086,
         "forksReceived": 1039,
         "archivedRepositoriesSampled": 2
       },
@@ -1917,10 +1917,10 @@
         }
       },
       "scores": {
-        "overall": 45.64,
-        "activity": 33.95,
-        "impact": 73.11,
-        "community": 80.59,
+        "overall": 46.66,
+        "activity": 33.93,
+        "impact": 73.1,
+        "community": 87.49,
         "collaboration": 0
       },
       "rank": 22
@@ -1945,8 +1945,8 @@
       },
       "metrics": {
         "followers": 6561,
-        "contributions365d": 104,
-        "commits365d": 101,
+        "contributions365d": 93,
+        "commits365d": 90,
         "issues365d": 0,
         "pullRequests365d": 0,
         "reviews365d": 0,
@@ -2001,10 +2001,10 @@
         }
       },
       "scores": {
-        "overall": 45.48,
-        "activity": 43.43,
+        "overall": 46.08,
+        "activity": 42.37,
         "impact": 52.94,
-        "community": 84.64,
+        "community": 91.87,
         "collaboration": 0
       },
       "rank": 23
@@ -2028,10 +2028,10 @@
         "reason": "explicit-country"
       },
       "metrics": {
-        "followers": 8775,
-        "contributions365d": 40,
+        "followers": 8776,
+        "contributions365d": 41,
         "commits365d": 38,
-        "issues365d": 1,
+        "issues365d": 2,
         "pullRequests365d": 1,
         "reviews365d": 0,
         "restrictedContributions365d": 0,
@@ -2076,20 +2076,20 @@
           "restrictedContributions": 0
         },
         "2026": {
-          "contributions": 36,
+          "contributions": 37,
           "commits": 34,
-          "issues": 1,
+          "issues": 2,
           "pullRequests": 1,
           "reviews": 0,
           "restrictedContributions": 0
         }
       },
       "scores": {
-        "overall": 40.57,
-        "activity": 34.66,
+        "overall": 42.11,
+        "activity": 34.86,
         "impact": 40.87,
-        "community": 87.43,
-        "collaboration": 10.93
+        "community": 94.92,
+        "collaboration": 13.1
       },
       "rank": 24
     },
@@ -2112,7 +2112,7 @@
         "reason": "explicit-country"
       },
       "metrics": {
-        "followers": 5687,
+        "followers": 5690,
         "contributions365d": 4,
         "commits365d": 3,
         "issues365d": 0,
@@ -2122,8 +2122,8 @@
         "publicRepositories": 28,
         "repositoriesSampled": 28,
         "repoStatsTruncated": false,
-        "starsReceived": 3982,
-        "forksReceived": 1091,
+        "starsReceived": 3983,
+        "forksReceived": 1092,
         "archivedRepositoriesSampled": 0
       },
       "metricsByYear": {
@@ -2169,10 +2169,10 @@
         }
       },
       "scores": {
-        "overall": 37.22,
-        "activity": 15.02,
+        "overall": 38.28,
+        "activity": 15.01,
         "impact": 71.87,
-        "community": 83.26,
+        "community": 90.39,
         "collaboration": 0
       },
       "rank": 25
@@ -2253,11 +2253,11 @@
         }
       },
       "scores": {
-        "overall": 33.97,
-        "activity": 6.47,
-        "impact": 72.26,
-        "community": 81.81,
-        "collaboration": 4.84
+        "overall": 35.02,
+        "activity": 6.46,
+        "impact": 72.25,
+        "community": 88.81,
+        "collaboration": 4.83
       },
       "rank": 26
     },
@@ -2290,7 +2290,7 @@
         "publicRepositories": 32,
         "repositoriesSampled": 32,
         "repoStatsTruncated": false,
-        "starsReceived": 23458,
+        "starsReceived": 23457,
         "forksReceived": 3713,
         "archivedRepositoriesSampled": 0
       },
@@ -2337,10 +2337,10 @@
         }
       },
       "scores": {
-        "overall": 33.76,
+        "overall": 34.82,
         "activity": 0,
-        "impact": 85.15,
-        "community": 83.14,
+        "impact": 85.13,
+        "community": 90.25,
         "collaboration": 0
       },
       "rank": 27
@@ -2364,7 +2364,7 @@
         "reason": "explicit-country"
       },
       "metrics": {
-        "followers": 4295,
+        "followers": 4293,
         "contributions365d": 7,
         "commits365d": 2,
         "issues365d": 0,
@@ -2421,10 +2421,10 @@
         }
       },
       "scores": {
-        "overall": 32.69,
-        "activity": 19.41,
-        "impact": 47.51,
-        "community": 80.56,
+        "overall": 33.72,
+        "activity": 19.39,
+        "impact": 47.5,
+        "community": 87.44,
         "collaboration": 0
       },
       "rank": 28
@@ -2505,10 +2505,10 @@
         }
       },
       "scores": {
-        "overall": 29.65,
+        "overall": 30.7,
         "activity": 0,
         "impact": 69.36,
-        "community": 82.07,
+        "community": 89.09,
         "collaboration": 0
       },
       "rank": 29
@@ -2589,10 +2589,10 @@
         }
       },
       "scores": {
-        "overall": 25.75,
+        "overall": 26.83,
         "activity": 0,
-        "impact": 52.35,
-        "community": 84.43,
+        "impact": 52.34,
+        "community": 91.66,
         "collaboration": 0
       },
       "rank": 30
